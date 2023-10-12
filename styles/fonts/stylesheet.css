@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('Kanit-Regular.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PoiretOne';
+    src: url('PoiretOne-Regular.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BlackOps';
+    src: url('BlackOpsOne-Regular.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
