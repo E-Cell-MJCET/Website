@@ -1,23 +1,24 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      animation:{
-        tilt: 'tilt 10s infinite linear'
+      animation: {
+        tilt: "tilt 10s infinite linear",
+        fadein: "fadein 2s ease",
       },
       keyframes: {
-        tilt : {
+        tilt: {
           "0%, 50%, 100%": {
             transform: "rotate(0deg)",
           },
@@ -27,14 +28,23 @@ const config: Config = {
           "75%": {
             transform: "rotate(-1.5deg)",
           },
-        }
-      },
-      screens: {
-        'mobile': {'max': '639px'},
-        'desktop': {'min': '640px'},
+        },
+
+        fadein: {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "100",
+          },
+        },
+        screens: {
+          mobile: { max: "639px" },
+          desktop: { min: "640px" },
+        },
       },
     },
+    plugins: [],
   },
-  plugins: [],
-}
-export default config
+};
+export default config;

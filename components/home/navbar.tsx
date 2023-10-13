@@ -18,21 +18,21 @@ const Navbar = () => {
 
       <div className="w-[70%] -mt:20 lg:mt-10  ">
         {/* <div className='text-[40px] font-bold poiret  -mb-8 opacity-100'> Welcome to </div> */}
-          <div className="relative">
-        <div className="text-[max(3.2rem,min(5.6vw,5.6rem))] absolute hidden desktop:inline  -inset-1 blur-sm opacity-60 font-medium blackOps bg-clip-text text-transparent bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
-        Enterpreneurship Cell
-        </div>
-        <div className="text-[max(3.2rem,min(5.6vw,5.6rem))] hidden desktop:inline font-medium blackOps bg-clip-text text-transparent bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] opacity-100 ">
-        Enterpreneurship Cell
-        </div>
+        <div className="relative">
+          <div className="text-[max(3.2rem,min(5.6vw,5.6rem))] absolute hidden lg:inline  -inset-1 blur-sm opacity-60 font-medium blackOps bg-clip-text text-transparent bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
+            Enterpreneurship Cell
+          </div>
+          <div className="text-[max(3.2rem,min(5.6vw,5.6rem))] hidden lg:inline font-medium blackOps bg-clip-text text-transparent bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] opacity-100 ">
+            Enterpreneurship Cell
+          </div>
         </div>
         <div className="relative">
-        <div className="text-[max(3.2rem,min(5.6vw,5.6rem))] inline desktop:hidden absolute  -inset-1 blur-sm opacity-60 font-medium blackOps bg-clip-text text-transparent bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
-        E-Cell
-        </div>
-        <div className="text-[max(3.2rem,min(5.6vw,5.6rem))] inline desktop:hidden font-medium blackOps bg-clip-text text-transparent bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] opacity-100 ">
-        E-Cell
-        </div>
+          <div className="text-[max(3.2rem,min(5.6vw,5.6rem))] inline desktop:hidden lg:hidden absolute  -inset-1 blur-sm opacity-60 font-medium blackOps bg-clip-text text-transparent bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
+            E-Cell
+          </div>
+          <div className="text-[max(3.2rem,min(5.6vw,5.6rem))] inline desktop:hidden lg:hidden font-medium blackOps bg-clip-text text-transparent bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] opacity-100 ">
+            E-Cell
+          </div>
         </div>
         <div className="text-[50px] font-medium blackOps text-gray-300 opacity-100 ">
           MJCET
