@@ -4,12 +4,17 @@ import UpcomEv from './upcomEv'
 
 const PageEv = () => {
   return (
-    <div className='flex justify-center bg-gray-800'>
-      <div className='w-[90%]'>
-        <div className='flex flex-col lg:flex-row'>
-         <div> <PrevEv /></div> 
-         <div> <UpcomEv /></div>
+    <div className='flex justify-center  h-screen bg-[#000]'>
+      <div className='w-[95%]'>
+        <div className='text-center text-[45px] text-white header mt-10 mb-14'>
+         <span className='blackOps uppercase'>Events</span>  
         </div>
+       
+         <div className='flex justify-center'> 
+         <div>Previous Events</div>
+         <PrevEv /></div> 
+         {/* <div> <UpcomEv /></div> */}
+        
       </div>
     </div>
   )
