@@ -3,6 +3,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Execom from "../team/execom";
 
 const Navbar = () => {
   return (
@@ -16,7 +17,7 @@ const Navbar = () => {
             </div>
         </div> */}
 
-      <div className="w-[70%] -mt:20 lg:mt-10  ">
+      <div className="w-[70%] -mt:2k0 lg:mt-10  ">
         {/* <div className='text-[40px] font-bold poiret  -mb-8 opacity-100'> Welcome to </div> */}
         <div className="relative">
           <div className="text-[max(3.2rem,min(5.6vw,5.6rem))] absolute hidden lg:inline  -inset-1 blur-sm opacity-60 font-medium blackOps bg-clip-text text-transparent bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
@@ -37,6 +38,8 @@ const Navbar = () => {
         <div className="text-[50px] font-medium blackOps text-gray-300 opacity-100 ">
           MJCET
         </div>
+
+        <Execom />
 
         {/* <div className='text-[14px]  mt-2 lg:max-w-[400px] poiret font-semibold text-gray-300'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugit eligendi dolores neque dolor sed sunt quisquam tempora 
           nesciunt? Quas nihil totam alias quos, sunt....</div> */}
