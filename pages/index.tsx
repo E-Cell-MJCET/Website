@@ -9,20 +9,27 @@ import Footers from '@/components/home/footer2'
 import Blog from '@/components/home/bloghome'
 import Gallery from '@/components/home/gallery'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
+
+
 export default function Home() {
-  return (
-    <div>
-      
-      <Header />
-      <Navbar />
-      <About />
-      <Banner />
-      {/* <Gallery /> */}
-      <Blog />
-      <Footer />
-      <Footers />
-    </div>
-  )
-}
+ 
+
+  
+
+    return (
+      <div>
+        <Header  />
+        <Navbar />
+        <About />
+        <Banner />
+        <Gallery />
+        <Blog />
+        <Footer />
+        <Footers />
+      </div>
+    )
+  }
+

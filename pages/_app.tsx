@@ -5,7 +5,7 @@ import Cursor from '@/components/cursor'
 
 export default function App({ Component, pageProps }: AppProps) {
   return(
-    <div>
+    <div className='max-w-[1920px]'>
       {/* <Cursor /> */}
        <Component {...pageProps} />
     </div>
