@@ -39,8 +39,6 @@ const Navbar = () => {
           MJCET
         </div>
 
-        <Execom />
-
         {/* <div className='text-[14px]  mt-2 lg:max-w-[400px] poiret font-semibold text-gray-300'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugit eligendi dolores neque dolor sed sunt quisquam tempora 
           nesciunt? Quas nihil totam alias quos, sunt....</div> */}
         <div className="grid gap-8 items-start justify-center my-20">
