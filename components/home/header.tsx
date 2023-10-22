@@ -4,12 +4,7 @@ import Image from "next/image";
 import elnwt from "../../public/assets/ewnlt.png";
 import Link from "next/link";
 
-
-
 const Header = () => {
- 
-
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -32,18 +27,17 @@ const Header = () => {
             className="h-[48px] lg:h-[70px] w-[48px] lg:w-full lg:mt-1 logo"
             height={200}
             width={500}
-           
           />
         </div>
-        <div className="hidden md:block ">
+        <div className="hidden lg:inline ">
           <ul className="flex items-center justify-center px-3 mt-6 ">
-            <li className="mx-3 text-xl font-semibold menu1 hover:font-bold hover:underline underline-offset-8" >
+            <li className="mx-3 text-xl font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
               <Link href={""}>Events</Link>
             </li>
             <li className="mx-3 text-xl font-semibold menu2 hover:font-bold hover:underline underline-offset-8">
               <Link href={""}>Team</Link>
             </li>
-            <li className="mx-3 text-xl font-semibold menu3 hover:font-bold hover:underline underline-offset-8" >
+            <li className="mx-3 text-xl font-semibold menu3 hover:font-bold hover:underline underline-offset-8">
               <Link href={""}>Gallery</Link>
             </li>
             {/* <li className='mx-3 text-xl font-semibold  hover:font-bold hover:underline underline-offset-8'><Link href={''}>Blogs</Link></li> */}
@@ -52,7 +46,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="md:hidden text-right mr-5 transition duration-300 ease-in-out">
+        <div className="in-line lg:hidden text-right mr-5 transition duration-300 ease-in-out">
           <button
             onClick={toggleMenu}
             type="button"
