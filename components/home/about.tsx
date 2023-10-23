@@ -18,11 +18,22 @@ const About = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="text-center mt-10 lg:w-[70%] text-gray-500 header text-sm">
             <div>
-            Welcome to Ecell MJCET, your gateway to the world of entrepreneurship! We are a dynamic student club at Muffakham Jah College of Engineering and Technology dedicated to fostering innovation, creativity, and business acumen. Our mission is to ideate groundbreaking ideas, innovate solutions, and incubate startups that have the potential to change the world....
+              Welcome to Ecell MJCET, your gateway to the world of
+              entrepreneurship! We are a dynamic student club at Muffakham Jah
+              College of Engineering and Technology dedicated to fostering
+              innovation, creativity, and business acumen. Our mission is to
+              ideate groundbreaking ideas, innovate solutions, and incubate
+              startups that have the potential to change the world....
             </div>
           </div>
-          <div className="lg:w-[80%] w-full h-[200px] md:h-[250px] lg:h-[300px] bg-black mt-10 overflow-hidden hover:cursor-progress ">
-          <video autoPlay className="object-cover opacity-50 hover:opacity-100" loop muted  src="../../assets/main.mp4" />
+          <div className="lg:w-[80%] w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[400px] bg-black mt-10 overflow-hidden hover:cursor-progress ">
+            <video
+              autoPlay
+              className="object-cover opacity-50 hover:opacity-100"
+              loop
+              muted
+              src="../../assets/aboutus.webm"
+            />
           </div>
         </div>
       </div>
