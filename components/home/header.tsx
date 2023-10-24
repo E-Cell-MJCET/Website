@@ -42,7 +42,7 @@ const Header = () => {
             </li>
             {/* <li className='mx-3 text-xl font-semibold  hover:font-bold hover:underline underline-offset-8'><Link href={''}>Blogs</Link></li> */}
             <li className="mx-3 text-xl font-semibold menu4 hover:font-bold hover:underline underline-offset-8">
-              <Link href={""}>Memberships</Link>
+              <Link href={"/contactus"}>Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -71,16 +71,16 @@ const Header = () => {
               <div>
                 <ul>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Events</Link>
+                    <Link href={"/events"}>Events</Link>
                   </li>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/team"}>Team</Link>
                   </li>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Gallery</Link>
+                    <Link href={"/gallery"}>Gallery</Link>
                   </li>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Memberships</Link>
+                    <Link href={"/contactus"}>Contact Us</Link>
                   </li>
                 </ul>
               </div>
