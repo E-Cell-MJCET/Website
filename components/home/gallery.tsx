@@ -5,7 +5,7 @@ import b2 from "../../public/assets/blog2.jpeg";
 
 const Gallery = () => {
   return (
-    <div className="flex justify-center items-center mt-16 mx-auto ">
+    <div className="flex justify-center items-center mt-10 mx-auto ">
       <div className="w-[98%]">
       <div className="flex justify-center items-center mb-10">
         <div className="flex flex-col items-center justify-center">

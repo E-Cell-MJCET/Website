@@ -19,12 +19,12 @@ const Banner = () => {
   return (
     <div className="flex justify-center ">
       <div className="w-[85%]">
-        <div className="text-center header text-[36px] font-semibold my-10">
-          Meet Our Team
+        <div className="text-center header text-[36px] font-semibold my-5">
+          Governing Body
         </div>
-        <div className="flex justify-center items-center relative">
+        {/* <div className="flex justify-center items-center relative">
           <div className="flex flex-col items-center ">
-            {/* <div className='h-[3px] w-[300px] bg-pink-600 rounded-lg mb-[2px]'></div> */}
+            
             <div className="h-[3px] w-[260px] bg-[#c23c83] rounded-lg my-[2px]"></div>
             <div className="h-[3px] w-[320px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
           </div>
@@ -32,11 +32,11 @@ const Banner = () => {
           <div className="text-center poiret text-[30px] font-bold opacity-100 z-30 bg-black px-3 absolute">
             Governing Body
           </div>
-        </div>
+        </div> */}
         <div>
           <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-x-8 place-items-center items-center">
             {/* 1 */}
-            <div className="flex flex-col mt-10 lg:m-10 text-center  bg-gray-900 lg:col-span-4 lg:-mb-2">
+            <div className="flex flex-col mt-3 lg:m-5 text-center  bg-gray-900 lg:col-span-4 lg:-mb-2">
               <div className="w-[250px]   m-1 h-fit text-center shadow-lg ">
                 <div className="text-center rounded-t-[20px]">
                   <Image
