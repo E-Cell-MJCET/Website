@@ -26,7 +26,7 @@ const About = () => {
               startups that have the potential to change the world....
             </div>
           </div>
-          <div className="lg:w-[80%] w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[400px] bg-black mt-10 overflow-hidden hover:cursor-progress ">
+          <div className="lg:w-[80%] w-full h-auto aspect-video bg-black mt-10 overflow-hidden hover:cursor-progress ">
             <video
               autoPlay
               className="object-cover opacity-50 hover:opacity-100"

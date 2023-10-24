@@ -1,8 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import elnwt from "../../public/assets/ewnlt.png";
-import ectext from '../../public/assets/ectext.png'
+import ectext from "../../public/assets/ectext.png";
 import Link from "next/link";
 
 const Header = () => {
@@ -11,24 +10,20 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
-    <div className={`${isOpen ? 'overscroll-none' : ''}`}>
+    <div className={`${isOpen ? "overscroll-none" : ""}`}>
       <div className="w-full lg:h-screen absolute -z-10 opacity-50">
-        <img
-          src="../../assets/banner3.png"
-          alt=""
-          className=""
-        />
+        <img src="../../assets/banner3.png" alt="" className="" />
       </div>
       <div className="flex  flex-row justify-between lg:justify-around pt-10 mb-2 lg:mb-24 header mx-4 ">
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Image
             src={ectext}
             alt=""
             className="h-[48px] lg:h-[70px] w-[48px] lg:w-full lg:mt-1 logo"
             height={200}
             width={500}
-           
           />
         </div>
         <div className="block md:hidden">
@@ -53,7 +48,7 @@ const Header = () => {
             </li>
             {/* <li className='mx-3 text-xl font-semibold  hover:font-bold hover:underline underline-offset-8'><Link href={''}>Blogs</Link></li> */}
             <li className="mx-3 text-xl font-semibold menu4 hover:font-bold hover:underline underline-offset-8">
-              <Link href={""}>Contact</Link>
+              <Link href={"/contactus"}>Contact</Link>
             </li>
           </ul>
         </div>
@@ -78,23 +73,20 @@ const Header = () => {
             )}
           </button>
           {isOpen ? (
-          
             <div className="md:w-1/3 text-right mt-6 overscroll-none absolute right-5 bg-black bg-opacity-70 z-10 transition-all ease-in duration-100 rounded-lg py-5 px-7  h-screen w-full">
-            
               <div>
-                
                 <ul>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Events</Link>
+                    <Link href={"/events"}>Events</Link>
                   </li>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/team"}>Team</Link>
                   </li>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Gallery</Link>
+                    <Link href={"/gallery"}>Gallery</Link>
                   </li>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Contact</Link>
+                    <Link href={"/contactus"}>Contact</Link>
                   </li>
                 </ul>
               </div>
