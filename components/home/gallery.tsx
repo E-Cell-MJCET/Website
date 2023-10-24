@@ -5,7 +5,7 @@ import b2 from "../../public/assets/blog2.jpeg";
 
 const Gallery = () => {
   return (
-    <div className="flex justify-center items-center mt-20 mx-auto">
+    <div className="flex justify-center items-center mt-16 mx-auto ">
       <div className="w-[98%]">
       <div className="flex justify-center items-center mb-10">
         <div className="flex flex-col items-center justify-center">
@@ -17,26 +17,26 @@ const Gallery = () => {
           Gallery
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center shadow-lg shadow-gray-800 opacity-50">
+      <div className="flex flex-col lg:flex-row items-center justify-center shadow-lg shadow-gray-800  cursor-alias">
         <div className="flex flex-col justify-center items-center">
           <div className="grid grid-cols-2 ">
           <Image
                     src={b1}
                     alt=""
-                    className="h-[200px] w-[300px] object-cover border-4 border-black"
+                    className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50"
                     
                   ></Image>
                    <Image
                     src={b2}
                     alt=""
-                    className="h-[200px] w-[300px] object-cover border-4 border-black"
+                    className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50"
                     
                   ></Image>
           </div>
           <Image
                     src={b2}
                     alt=""
-                    className="h-[200px] w-[600px] object-cover border-4 border-black"
+                    className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50"
                     
                   ></Image>
         </div>
@@ -46,20 +46,20 @@ const Gallery = () => {
           <Image
                     src={b2}
                     alt=""
-                    className="h-[200px] w-[600px] object-cover border-4 border-black"
+                    className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-300 duration-300"
                     
                   ></Image>
           <div className="grid grid-cols-2 ">
           <Image
                     src={b1}
-                    alt=""
-                    className="h-[200px] w-[300px] object-cover border-4 border-black"
+                    alt="" 
+                    className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50"
                     
                   ></Image>
                    <Image
                     src={b2}
                     alt=""
-                    className="h-[200px] w-[300px] object-cover border-4 border-black"
+                    className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50"
                     
                   ></Image>
           </div>

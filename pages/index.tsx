@@ -8,8 +8,9 @@ import About from '@/components/home/about'
 import Footers from '@/components/home/footer2'
 import Blog from '@/components/home/bloghome'
 import Gallery from '@/components/home/gallery'
+import Coordinator from '@/components/home/coordinator'
 
-
+  
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -24,7 +25,8 @@ export default function Home() {
         <Header  />
         <Navbar />
         <About />
-        <Banner />
+        {/* <Banner /> */}
+        <Coordinator />
         <Gallery />
         <Blog />
         <Footer />

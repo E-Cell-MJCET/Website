@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import elnwt from "../../public/assets/ewnlt.png";
+import ectext from '../../public/assets/ectext.png'
 import Link from "next/link";
 
 const Header = () => {
@@ -11,16 +12,26 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="">
-      <div className="">
+    <div className={`${isOpen ? 'overscroll-none' : ''}`}>
+      <div className="w-full lg:h-screen absolute -z-10 opacity-50">
         <img
           src="../../assets/banner3.png"
           alt=""
-          className="w-full lg:h-screen absolute -z-10 "
+          className=""
         />
       </div>
       <div className="flex  flex-row justify-between lg:justify-around pt-5 mb-2 lg:mb-24 header mx-4">
-        <div>
+        <div className="hidden md:block">
+          <Image
+            src={ectext}
+            alt=""
+            className="h-[48px] lg:h-[70px] w-[48px] lg:w-full lg:mt-1 logo"
+            height={200}
+            width={500}
+           
+          />
+        </div>
+        <div className="block md:hidden">
           <Image
             src={elnwt}
             alt=""
@@ -42,7 +53,7 @@ const Header = () => {
             </li>
             {/* <li className='mx-3 text-xl font-semibold  hover:font-bold hover:underline underline-offset-8'><Link href={''}>Blogs</Link></li> */}
             <li className="mx-3 text-xl font-semibold menu4 hover:font-bold hover:underline underline-offset-8">
-              <Link href={""}>Memberships</Link>
+              <Link href={""}>Contact</Link>
             </li>
           </ul>
         </div>
@@ -67,8 +78,11 @@ const Header = () => {
             )}
           </button>
           {isOpen ? (
-            <div className="md:w-1/3 text-right mt-5 absolute right-5 bg-black z-10 transition-all ease-in duration-100 rounded-lg p-2">
+          
+            <div className="md:w-1/3 text-right mt-6 overscroll-none absolute right-5 bg-black bg-opacity-70 z-10 transition-all ease-in duration-100 rounded-lg py-5 px-7  h-screen w-full">
+            
               <div>
+                
                 <ul>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={""}>Events</Link>
@@ -80,7 +94,7 @@ const Header = () => {
                     <Link href={""}>Gallery</Link>
                   </li>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Memberships</Link>
+                    <Link href={""}>Contact</Link>
                   </li>
                 </ul>
               </div>
@@ -99,7 +113,7 @@ const Header = () => {
                     <Link href={""}>Gallery</Link>
                   </li>
                   <li className="mx-3 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Memberships</Link>
+                    <Link href={""}>Contact</Link>
                   </li>
                 </ul>
               </div>
