@@ -4,12 +4,18 @@ import React from "react";
 // import elwt from '../../public/assets/money heaist.png'
 import abme from "../../public/assets/abme.webp";
 
+export interface ExecomCardProps {
+  dp: string;
+  username: string;
+  position: string;
+}
+
 const Execom = () => {
   return (
     <div className="flex flex-col w-[155px] items-center justify-center mt-24 bg-[#212121] rounded-md">
-      <div className="flex items-center justify-center w-[80px] h-[80px] mt-[25px] rounded-full bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
+      <div className="flex items-center justify-center w-[75px] h-[75px] mt-[25px] rounded-full bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
         <Image
-          className="w-[70px] h-[70px]  object-cover rounded-full"
+          className="w-[65px] h-[65px]  object-cover rounded-full"
           src={abme}
           alt={""}
         ></Image>
@@ -18,7 +24,10 @@ const Execom = () => {
       <h1 className="mt-[20px] text-[20px] leading-3 font-medium Header">
         Abid Nafi
       </h1>
-      <p className="mt-[8px] text-[12px] mb-[25px] text-[#8e8e8e]">Web</p>
+
+      <div className="rounded-md bg-[#6b28d5] text-[12px] mb-[25px] mt-[12px] px-[7px] py-[2px]">
+        Web
+      </div>
     </div>
   );
 };

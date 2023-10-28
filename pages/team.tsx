@@ -1,14 +1,16 @@
-import Banner from '@/components/home/team'
-import Nav from '@/components/nav'
-import React from 'react'
+import Banner from "@/components/home/team";
+import Nav from "@/components/nav";
+import Execom from "@/components/team/execom";
+import React from "react";
 
 const Team = () => {
   return (
     <div>
       <Nav />
       <Banner />
+      <Execom />
     </div>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;
