@@ -26,10 +26,10 @@ const About = () => {
               startups that have the potential to change the world....
             </div>
           </div>
-          <div className="lg:w-[80%] w-full h-auto aspect-video bg-black mt-10 overflow-hidden hover:cursor-progress ">
+          <div className="w-[80%]  h-auto aspect-video bg-black mt-10 overflow-hidden hover:cursor-progress  hidden lg:block">
             <video
               autoPlay
-              className="object-cover opacity-50 hover:opacity-100 hidden lg:block"
+              className="object-cover opacity-50 hover:opacity-100 "
               loop
               muted
               src="../../assets/aboutus.webm"
@@ -42,6 +42,7 @@ const About = () => {
               playsInline
               src="../../assets/ecell.mp4"
             />
+            
           </div>
         </div>
       </div>
