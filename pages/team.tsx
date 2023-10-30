@@ -8,7 +8,6 @@ const Team = () => {
     <div>
       <Nav />
       <Banner />
-      <Execom />
     </div>
   );
 };
