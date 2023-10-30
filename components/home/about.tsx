@@ -34,12 +34,13 @@ const About = () => {
               muted
               src="../../assets/aboutus.webm"
             />
-             <video
+            <video
               autoPlay
               className="object-cover opacity-50 hover:opacity-100 lg:hidden block"
               loop
               muted
-              src="../../assets/main.mp4"
+              playsInline
+              src="../../assets/ecell.mp4"
             />
           </div>
         </div>
