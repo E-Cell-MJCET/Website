@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import elnwt from "../public/assets/ewnlt.png";
-import ectext from '../public/assets/ectext.png'
+import ectext from "../public/assets/ectext.png";
 import Link from "next/link";
 
 const Nav = () => {
@@ -12,8 +12,7 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className={`${isOpen ? 'overscroll-none' : ''}`}>
-     
+    <div className={`${isOpen ? "overscroll-none" : ""}`}>
       <div className="flex  flex-row justify-between lg:justify-around pt-5 mb-2 lg:mb-5 header mx-4 bg-black">
         <div className="hidden md:block">
           <Image
@@ -22,7 +21,6 @@ const Nav = () => {
             className="h-[48px] lg:h-[70px] w-[48px] lg:w-full lg:mt-1 logo"
             height={200}
             width={500}
-           
           />
         </div>
         <div className="block md:hidden">
@@ -36,19 +34,18 @@ const Nav = () => {
         </div>
         <div className="hidden lg:inline ">
           <ul className="flex items-center justify-center px-3 mt-6 ">
-            
             <li className="mx-3 text-xl font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
               <Link href={"/events"}>Events</Link>
             </li>
             <li className="mx-3 text-xl font-semibold menu2 hover:font-bold hover:underline underline-offset-8 active:text-red-700">
-              <Link href={""}>Team</Link>
+              <Link href={"/team"}>Team</Link>
             </li>
             <li className="mx-3 text-xl font-semibold menu3 hover:font-bold hover:underline underline-offset-8">
               <Link href={"/gallery"}>Gallery</Link>
             </li>
             {/* <li className='mx-3 text-xl font-semibold  hover:font-bold hover:underline underline-offset-8'><Link href={''}>Blogs</Link></li> */}
             <li className="mx-3 text-xl font-semibold menu4 hover:font-bold hover:underline underline-offset-8">
-              <Link href={""}>Contact</Link>
+              <Link href={"/contactus"}>Contact</Link>
             </li>
           </ul>
         </div>
@@ -73,15 +70,12 @@ const Nav = () => {
             )}
           </button>
           {isOpen ? (
-          
             <div className="md:w-1/3 text-right mt-6 overscroll-none absolute right-5 bg-black bg-opacity-70 z-10 transition-all ease-in duration-100 rounded-lg py-5 px-7  h-screen w-full">
-            
               <div>
-                
                 <ul>
-                <li className="mx-3 text-xl font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
-              <Link href={"/"}>Home</Link>
-            </li>
+                  <li className="mx-3 text-xl font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
+                    <Link href={"/"}>Home</Link>
+                  </li>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/events"}>Events</Link>
                   </li>
@@ -92,7 +86,7 @@ const Nav = () => {
                     <Link href={"/gallery"}>Gallery</Link>
                   </li>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Contact</Link>
+                    <Link href={"/contactus"}>Contact</Link>
                   </li>
                 </ul>
               </div>

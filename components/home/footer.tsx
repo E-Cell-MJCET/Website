@@ -7,7 +7,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import AcUnitIcon from '@mui/icons-material/AcUnit';
+import AcUnitIcon from "@mui/icons-material/AcUnit";
 import Link from "next/link";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
@@ -79,25 +79,21 @@ const Footer = () => {
               href="https://instagram.com/ecellmjcet?igshid=NjIwNzIyMDk2Mg=="
               target="_blank"
             >
-              <InstagramIcon className="h-10 w-10 text-white" />
+              <InstagramIcon className="h-14 w-14 text-white" />
             </Link>
           </div>
           <div className=" h-14 w-14 rounded-full flex justify-center items-center cursor-pointer transition-transform transform hover:translate-y-[-5px] duration-500 ease-in-out">
-          <Link
+            <Link
               passHref
               href="https://in.linkedin.com/company/e-cell-mjcet"
               target="_blank"
             >
-            <LinkedInIcon className="h-10 w-10 text-white" />
+              <LinkedInIcon className="h-14 w-14 text-white" />
             </Link>
           </div>
           <div className=" h-14 w-14 rounded-full flex justify-center items-center cursor-pointer transition-transform transform hover:translate-y-[-5px] duration-500 ease-in-out">
-             <Link
-              passHref
-              href="https://linktr.ee/ecellmjcet"
-              target="_blank"
-            >
-            <AcUnitIcon className="h-10 w-10 text-white" />
+            <Link passHref href="https://linktr.ee/ecellmjcet" target="_blank">
+              <AcUnitIcon className="h-14 w-14 text-white" />
             </Link>
           </div>
           <div className=" h-14 w-14 rounded-full flex justify-center items-center cursor-pointer transition-transform transform hover:translate-y-[-5px] duration-500 ease-in-out">
@@ -106,12 +102,11 @@ const Footer = () => {
               href="https://www.facebook.com/groups/ecellmj/"
               target="_blank"
             >
-            <FacebookIcon className="h-10 w-10 text-white" />
+              <FacebookIcon className="h-14 w-14 text-white" />
             </Link>
           </div>
         </div>
       </div>
-      
     </div>
   );
 };
