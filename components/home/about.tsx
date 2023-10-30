@@ -29,10 +29,17 @@ const About = () => {
           <div className="lg:w-[80%] w-full h-auto aspect-video bg-black mt-10 overflow-hidden hover:cursor-progress ">
             <video
               autoPlay
-              className="object-cover opacity-50 hover:opacity-100"
+              className="object-cover opacity-50 hover:opacity-100 hidden lg:block"
               loop
               muted
               src="../../assets/aboutus.webm"
+            />
+             <video
+              autoPlay
+              className="object-cover opacity-50 hover:opacity-100 lg:hidden block"
+              loop
+              muted
+              src="../../assets/main.mp4"
             />
           </div>
         </div>

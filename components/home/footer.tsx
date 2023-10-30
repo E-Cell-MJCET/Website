@@ -76,6 +76,7 @@ const Footer = () => {
             <Link
               passHref
               href="https://instagram.com/ecellmjcet?igshid=NjIwNzIyMDk2Mg=="
+              target="_blank"
             >
               <InstagramIcon className="h-10 w-10 text-white" />
             </Link>
