@@ -38,7 +38,7 @@ const PageEv = () => {
             desc="It was a huge success as a lot of participants of the event gained proficiency in Data Structures and Algorithms, the essential building block of coding.
              The Event “The DSA Adventure” was led by 3 main speakers Md.Mubeen Uddin, Madiha Waheed and Habeeb Ullah Tabrez. 
              The online workshop provided 7 Days of Interactive Learning and Fun. There were Hands on challenges and Daily Quizzes as well.
-              “The DSA Adventures” took place from 18th of May and lasted till 24th May. The online      workshop timings were 3pm-4pm and the sessions were organized on Google Meet."
+              “The DSA Adventures” took place from 18th of May and lasted till 24th May. The online workshop timings were 3pm-4pm and the sessions were organized on Google Meet."
           />
           <PrevEv
           image={HackathonPath}

@@ -15,10 +15,9 @@ const PrevEv: React.FC<PrevEvProps> = ({title, desc, image}) => {
                     <div className='relative h-[150px] w-[220px] lg:block hidden'>
                         <Image
                             src={image}
-                            width={100}
-                            height={100}
+                            layout='fill'
                             alt=""
-                            className="rounded-lg"
+                            className="rounded-lg object-cover"
                         />
                     </div>
                     <div className='flex flex-col text-left mt-4 lg:mt-0 lg:w-[70%] lg:px-5 justify-between'>
@@ -26,10 +25,9 @@ const PrevEv: React.FC<PrevEvProps> = ({title, desc, image}) => {
                         <div className='relative h-[150px] w-[220px] lg:hidden block'>
                             <Image
                                 src={image}
-                                width={100}
-                                height={100}
+                                layout='fill'
                                 alt=""
-                                className="rounded-lg"
+                                className="rounded-lg object-cover"
                             />
                         </div>
                         <div className='text-sm tracking-tight break-all mt-5 lg:mt-0'>{desc}</div>
