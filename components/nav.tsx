@@ -36,10 +36,11 @@ const Nav = () => {
         </div>
         <div className="hidden lg:inline ">
           <ul className="flex items-center justify-center px-3 mt-6 ">
+            
             <li className="mx-3 text-xl font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
               <Link href={"/events"}>Events</Link>
             </li>
-            <li className="mx-3 text-xl font-semibold menu2 hover:font-bold hover:underline underline-offset-8">
+            <li className="mx-3 text-xl font-semibold menu2 hover:font-bold hover:underline underline-offset-8 active:text-red-700">
               <Link href={""}>Team</Link>
             </li>
             <li className="mx-3 text-xl font-semibold menu3 hover:font-bold hover:underline underline-offset-8">
@@ -78,14 +79,17 @@ const Nav = () => {
               <div>
                 
                 <ul>
+                <li className="mx-3 text-xl font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
+              <Link href={"/"}>Home</Link>
+            </li>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Events</Link>
+                    <Link href={"/events"}>Events</Link>
                   </li>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/team"}>Team</Link>
                   </li>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Gallery</Link>
+                    <Link href={"/gallery"}>Gallery</Link>
                   </li>
                   <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={""}>Contact</Link>
@@ -98,13 +102,13 @@ const Nav = () => {
               <div>
                 <ul>
                   <li className="mx-3 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Events</Link>
+                    <Link href={"/events"}>Events</Link>
                   </li>
                   <li className="mx-3 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/team"}>Team</Link>
                   </li>
                   <li className="mx-3 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Gallery</Link>
+                    <Link href={"/gallery"}>Gallery</Link>
                   </li>
                   <li className="mx-3 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={""}>Contact</Link>
