@@ -28,21 +28,31 @@ const PageEv = () => {
 
           <PrevEv
             image={AlumniMeetPath}
-            title="Alumni meet"
+            title="ALUMINI MEET"
             desc="We had our Alumni meet up, recently, with Mr Umair Mohammed which was a very productive and insightful meeting! 
             He gave us a brief overview of his past experience as Ex Chief Coordinator of E-Cell MJCET,his practical knowledge and insights of starting a business from scratch."
           />
           <PrevEv
+<<<<<<< HEAD
             image={DSAPath}
             title="“The DSA Adventure”"
+=======
+          image={DSAPath}
+            title="THE DSA ADVENTURE"
+>>>>>>> 15e3152 (IDK)
             desc="It was a huge success as a lot of participants of the event gained proficiency in Data Structures and Algorithms, the essential building block of coding.
              The Event “The DSA Adventure” was led by 3 main speakers Md.Mubeen Uddin, Madiha Waheed and Habeeb Ullah Tabrez. 
              The online workshop provided 7 Days of Interactive Learning and Fun. There were Hands on challenges and Daily Quizzes as well.
               “The DSA Adventures” took place from 18th of May and lasted till 24th May. The online      workshop timings were 3pm-4pm and the sessions were organized on Google Meet."
           />
           <PrevEv
+<<<<<<< HEAD
             image={HackathonPath}
             title="HACKATHON"
+=======
+          image={HackathonPath}
+            title="HACK REVOLUTION 2023"
+>>>>>>> 15e3152 (IDK)
             desc="Hack Revolution is a social coding competition conducted by the Smart India hackathon, consisting of 3-6 members in a team. It provides an exceptional opportunity to network with people from different backgrounds and gives a career boost to the students. It was a collaboration between CSI and E-Cell clubs of the MJCET. The duration was about 15 hours. Winners of the hackathon would qualify for the national-level Hackathon organized by the Govt. of India and All India Council for Technical Education."
           />
           <PrevEv
