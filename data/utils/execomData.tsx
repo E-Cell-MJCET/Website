@@ -1,6 +1,7 @@
 import { ExecomCardProps } from "@/components/team/execom";
+import React from "react";
 
-export const execomData: ExecomCardProps[] = [
+const execomData: ExecomCardProps[] = [
   {
     username: "Maliha Ishaq",
     dp: "../../public/assets/ayesha.jpg",
@@ -117,3 +118,5 @@ export const execomData: ExecomCardProps[] = [
     position: "Events",
   },
 ];
+
+export default execomData;
