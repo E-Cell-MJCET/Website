@@ -15,7 +15,7 @@ const execomData: ExecomCardProps[] = [
   {
     username: "Omar Feroz",
     dp: "../../public/assets/ayesha.jpg",
-    position: "Ideattion",
+    position: "Ideation",
   },
   {
     username: "Madiha Wahed",
@@ -63,9 +63,24 @@ const execomData: ExecomCardProps[] = [
     position: "Operations",
   },
   {
-    username: "Maliha Ishaq",
+    username: "Abdur Rafee",
+    dp: "../../public/assets/rafee.jpg",
+    position: "Design",
+  },
+  {
+    username: "Ayesha Fatima",
     dp: "../../public/assets/ayesha.jpg",
-    position: "Events",
+    position: "Design",
+  },
+  {
+    username: "Mohammad Shujauddin",
+    dp: "../../public/assets/ayesha.jpg",
+    position: "Web",
+  },
+  {
+    username: "Mohammed Abid Nafi",
+    dp: "../../public/assets/ayesha.jpg",
+    position: "Web",
   },
   {
     username: "Maliha Ishaq",
@@ -73,49 +88,39 @@ const execomData: ExecomCardProps[] = [
     position: "Events",
   },
   {
-    username: "Maliha Ishaq",
+    username: "Syed Mujtaba Biyabani",
     dp: "../../public/assets/ayesha.jpg",
-    position: "Events",
+    position: "Documentation",
   },
   {
-    username: "Maliha Ishaq",
+    username: "Kalluri Sasanka",
     dp: "../../public/assets/ayesha.jpg",
-    position: "Events",
+    position: "Documentation",
   },
   {
-    username: "Maliha Ishaq",
+    username: "Aimen Laiba Mohammad",
     dp: "../../public/assets/ayesha.jpg",
-    position: "Events",
+    position: "HR",
   },
   {
-    username: "Maliha Ishaq",
+    username: "Mohammad Irfan",
     dp: "../../public/assets/ayesha.jpg",
-    position: "Events",
+    position: "HR",
   },
   {
-    username: "Maliha Ishaq",
+    username: "Nooria Kanchanwala Yusuf",
     dp: "../../public/assets/ayesha.jpg",
-    position: "Events",
+    position: "Media",
   },
   {
-    username: "Maliha Ishaq",
+    username: "Imaduddin Mohammad",
     dp: "../../public/assets/ayesha.jpg",
-    position: "Events",
+    position: "Media",
   },
   {
-    username: "Maliha Ishaq",
+    username: "Emaad Ali Khan",
     dp: "../../public/assets/ayesha.jpg",
-    position: "Events",
-  },
-  {
-    username: "Maliha Ishaq",
-    dp: "../../public/assets/ayesha.jpg",
-    position: "Events",
-  },
-  {
-    username: "Maliha Ishaq",
-    dp: "../../public/assets/ayesha.jpg",
-    position: "Events",
+    position: "Media",
   },
 ];
 
