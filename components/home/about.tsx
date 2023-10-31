@@ -11,7 +11,7 @@ const About = () => {
             <div className="h-[3px] w-[350px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
           </div>
 
-          <div className="text-center poiret text-[30px] font-bold opacity-100 z-30 bg-black px-3 absolute">
+          <div className="text-center poiret text-[30px] font-bold opacity-100  bg-black px-3 absolute">
             About Our Club
           </div>
         </div>
@@ -26,17 +26,21 @@ const About = () => {
               startups that have the potential to change the world....
             </div>
           </div>
-          <div className="lg:w-[80%] w-full h-auto aspect-video bg-black mt-10 overflow-hidden hover:cursor-progress ">
+<<<<<<< HEAD
+          <div className="w-[80%]  h-auto aspect-video bg-black mt-10 overflow-hidden hover:cursor-progress block">
+=======
+          <div className="w-[80%]  h-auto aspect-video bg-black mt-10 overflow-hidden hover:cursor-progress ">
+>>>>>>> 15e3152 (IDK)
             <video
               autoPlay
-              className="object-cover opacity-50 hover:opacity-100 hidden lg:block"
+              className="object-cover opacity-50 hover:opacity-100  hidden lg:block"
               loop
               muted
               src="../../assets/aboutus.webm"
             />
             <video
               autoPlay
-              className="object-cover opacity-50 hover:opacity-100 lg:hidden block"
+              className="object-cover aspect-video opacity-50 hover:opacity-100 lg:hidden block"
               loop
               muted
               playsInline

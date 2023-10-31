@@ -2,12 +2,16 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import '../styles/fonts/stylesheet.css'
 import Cursor from '@/components/cursor'
+import Head from 'next/head'
+import { Html } from 'next/document'
 
 export default function App({ Component, pageProps }: AppProps) {
   return(
+   
     <div className='max-w-[1920px]'>
       {/* <Cursor /> */}
        <Component {...pageProps} />
     </div>
+   
   )
 }
