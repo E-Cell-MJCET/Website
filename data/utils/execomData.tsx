@@ -4,32 +4,32 @@ import React from "react";
 const execomData: ExecomCardProps[] = [
   {
     username: "Maliha Ishaq",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/maliha.webp",
     position: "Events",
   },
   {
     username: "Mohammad Yaseen",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/MOHAMMED YASEEN.webp",
     position: "Events",
   },
   {
     username: "Omar Feroz",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/Syed Omer Feroz.webp",
     position: "Ideation",
   },
   {
     username: "Madiha Wahed",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/Madiha-Wahed.jpeg.webp",
     position: "Ideation",
   },
   {
     username: "Mohammed Zaid Ahmed",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/Zzy Zaid.webp",
     position: "Ideation",
   },
   {
     username: "Faisal Abdul Qadeer",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/Faisal-abdul-qader.webp",
     position: "Marketing",
   },
   {
@@ -44,27 +44,27 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Saifuddin Syed",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/saif syed.webp",
     position: "CRM",
   },
   {
     username: "Mohammed Saad Zubair",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/Saad Zubair.jpeg.webp",
     position: "CRM",
   },
   {
     username: "Mohammed Siddiq Uddin Afnan",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/MOHAMMED SIDDIQ UDDIN AFNAN.webp",
     position: "Operations",
   },
   {
     username: "Mohammed Rayyan Ali",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/rayyan.webp",
     position: "Operations",
   },
   {
-    username: "Abdur Rafee",
-    dp: "../../public/assets/rafee.jpg",
+    username: "Abdur Raafe",
+    dp: "../../public/assets/abdur-raafe.webp",
     position: "Design",
   },
   {
@@ -74,52 +74,47 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Mohammad Shujauddin",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/Mohammad Shujauddin.webp",
     position: "Web",
   },
   {
     username: "Mohammed Abid Nafi",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/Mohammed Abid Nafi.jpeg.webp",
     position: "Web",
   },
   {
-    username: "Maliha Ishaq",
-    dp: "../../public/assets/ayesha.jpg",
-    position: "Events",
-  },
-  {
     username: "Syed Mujtaba Biyabani",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/Mujtaba Biabani.webp",
     position: "Documentation",
   },
   {
     username: "Kalluri Sasanka",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/Writer sasanka.jpeg.webp",
     position: "Documentation",
   },
   {
     username: "Aimen Laiba Mohammad",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/Aimen-Laiba.webp",
     position: "HR",
   },
   {
     username: "Mohammad Irfan",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/irfan-Mohammad.webp",
     position: "HR",
   },
   {
     username: "Nooria Kanchanwala Yusuf",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/Nooria Kanchwala.webp",
     position: "Media",
   },
   {
     username: "Imaduddin Mohammad",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/imad-mohammed.webp",
     position: "Media",
   },
   {
     username: "Emaad Ali Khan",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/Emaad-Ali-Khan.webp",
     position: "Media",
   },
 ];
