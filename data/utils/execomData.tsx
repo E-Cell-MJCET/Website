@@ -33,13 +33,13 @@ const execomData: ExecomCardProps[] = [
     position: "Marketing",
   },
   {
-    username: "Shafi",
-    dp: "../../public/assets/ayesha.jpg",
+    username: "Zayn",
+    dp: "../../public/assets/Zayn.webp",
     position: "Marketing",
   },
   {
     username: "Faiz Ali",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/shuja.jpg",
     position: "Marketing",
   },
   {

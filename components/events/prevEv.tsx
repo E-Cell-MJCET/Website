@@ -37,7 +37,7 @@ const PrevEv: React.FC<PrevEvProps> = ({title, desc, image}) => {
                     </div>
                 </div>
             </div>
-            <div className="text-sm tracking-tight mt-5 lg:mt-0">{desc}</div>
+           
           </div>
        
   );
