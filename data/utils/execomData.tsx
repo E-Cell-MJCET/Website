@@ -3,7 +3,7 @@ import React from "react";
 
 const execomData: ExecomCardProps[] = [
   {
-    username: "Maliha Ishaq",
+    username: " Syeda Maliha Ishaq",
     dp: "../../public/assets/maliha.webp",
     position: "Events",
   },
@@ -13,7 +13,7 @@ const execomData: ExecomCardProps[] = [
     position: "Events",
   },
   {
-    username: "Omar Feroz",
+    username: "Syed Omar Feroz",
     dp: "../../public/assets/Syed Omer Feroz.webp",
     position: "Ideation",
   },
@@ -33,13 +33,8 @@ const execomData: ExecomCardProps[] = [
     position: "Marketing",
   },
   {
-    username: "Zayn",
-    dp: "../../public/assets/Zayn.webp",
-    position: "Marketing",
-  },
-  {
     username: "Faiz Ali",
-    dp: "../../public/assets/shuja.jpg",
+    dp: "../../public/assets/Zayn.webp",
     position: "Marketing",
   },
   {
@@ -69,7 +64,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Ayesha Fatima",
-    dp: "../../public/assets/ayesha.jpg",
+    dp: "../../public/assets/—Pngtree—muslimah-cartoon-with-brown-hijab_9019571.webp",
     position: "Design",
   },
   {
