@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export interface ExecomCardProps {
-  dp: any;
   username: string;
+  dp: any;
   position: string;
   instalink: string;
   linkedlinlink: string;
@@ -15,21 +15,22 @@ export interface ExecomCardProps {
 }
 
 const Execom: React.FC<ExecomCardProps> = ({
-  dp,
   username,
+  dp,
   position,
   instalink,
   linkedlinlink,
   twitterlink,
 }) => {
+  console.log(dp);
   return (
-    <div className="flex flex-col w-[180px] items-center justify-center mt-24 bg-[#212121] rounded-md m-[20px]">
-      <div className="flex items-center justify-center w-[75px] h-[75px] mt-[25px] rounded-full bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
+    <div className="flex flex-col w-[160px] items-center  mt-[20px] bg-[#212121] rounded-md mx-[10px] md:w-[180px] mb-[20px]">
+      <div className="flex items-center justify-center w-[85px] h-[85px] mt-[25px] rounded-full bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
         <Image
-          className="w-[65px] h-[65px]  object-cover rounded-full"
+          className="w-[80px] h-[80px]  object-cover rounded-full"
           src={dp}
-          width={65}
-          height={65}
+          width={80}
+          height={80}
           alt={""}
         ></Image>
       </div>
@@ -42,7 +43,7 @@ const Execom: React.FC<ExecomCardProps> = ({
         {position}
       </div>
 
-      <div className="flex justify-center space-x-4 mb-3 mt-1">
+      <div className="flex justify-center space-x-4 mb-3 mt-auto">
         <a
           href={instalink}
           className="text-gray-500 hover:text-blue-500"

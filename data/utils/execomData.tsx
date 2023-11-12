@@ -1,11 +1,9 @@
 import { ExecomCardProps } from "@/components/team/execom";
 
-import maliha from "/public/assets/maliha.webp";
-
 const execomData: ExecomCardProps[] = [
   {
     username: "Maliha Ishaq",
-    dp: { maliha },
+    dp: "/assets/execom/maliha.webp",
     position: "Events",
     instalink: "https://www.instagram.com/ishaaaa__05",
     linkedlinlink: "https://www.linkedin.com/in/syeda-maliha-ishaq-7b4273262/",
@@ -13,7 +11,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Mohammad Yaseen",
-    dp: "../../public/assets/MOHAMMED YASEEN.webp",
+    dp: "/assets/execom/yaseen.webp",
     position: "Events",
     instalink: "https://www.instagram.com/i.yaseen.07",
     linkedlinlink: "https://www.linkedin.com/in/yaseen-mohammed-5a4ba925b/",
@@ -21,7 +19,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Syed Omar Feroz",
-    dp: "../../public/assets/Syed Omer Feroz.webp",
+    dp: "/assets/execom/omer.webp",
     position: "Ideation",
     instalink: "https://www.instagram.com/omar._.0145",
     linkedlinlink: "",
@@ -29,7 +27,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Madiha Wahed",
-    dp: "../../public/assets/Madiha-Wahed.jpeg.webp",
+    dp: "/assets/execom/madiha.webp",
     position: "Ideation",
     instalink: "https://www.instagram.com/madiha_wahed",
     linkedlinlink: "https://www.linkedin.com/in/madiha-wahed-6b5872201/",
@@ -37,7 +35,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Mohammed Zaid Ahmed",
-    dp: "../../public/assets/Zzy Zaid.webp",
+    dp: "/assets/execom/zzy.webp",
     position: "Ideation",
     instalink: "https://www.instagram.com/Zaidzzy",
     linkedlinlink: "https://www.linkedin.com/in/zaid-ahmed-a9b842201/",
@@ -45,7 +43,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Faisal Abdul Qadeer",
-    dp: "../../public/assets/Faisal-abdul-qader.webp",
+    dp: "/assets/execom/faisal.webp",
     position: "Marketing",
     instalink: "https://www.instagram.com/faisl.abdl",
     linkedlinlink: "https://www.linkedin.com/in/fqader/",
@@ -53,7 +51,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Faiz Ali",
-    dp: "../../public/assets/Zayn.webp",
+    dp: "/assets/execom/zayn.webp",
     position: "Marketing",
     instalink: "https://www.instagram.com/Faiz7.x",
     linkedlinlink: "",
@@ -61,7 +59,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Saifuddin Syed",
-    dp: "../../public/assets/saif syed.webp",
+    dp: "/assets/execom/saif.webp",
     position: "CRM",
     instalink: "https://www.instagram.com/sayf_syd",
     linkedlinlink: "https://www.linkedin.com/in/saifuddin-syed-06426a263/",
@@ -69,7 +67,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Mohammed Saad Zubair",
-    dp: "../../public/assets/Saad Zubair.jpeg.webp",
+    dp: "/assets/execom/saad.webp",
     position: "CRM",
     instalink: "https://www.instagram.com/saadzzz__",
     linkedlinlink: "https://www.linkedin.com/in/saad-zubair-95007a208/",
@@ -77,7 +75,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Siddiq Afnan",
-    dp: "../../public/assets/MOHAMMED SIDDIQ UDDIN AFNAN.webp",
+    dp: "/assets/execom/afnan.webp",
     position: "Operations",
     instalink: "https://www.instagram.com/_siddiq_afnan_",
     linkedlinlink: "",
@@ -85,7 +83,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Mohammed Rayyan Ali",
-    dp: "../../public/assets/rayyan.webp",
+    dp: "/assets/execom/rayyan.webp",
     position: "Operations",
     instalink: "https://www.instagram.com/itzz__rayyannn",
     linkedlinlink: "https://www.linkedin.com/in/mohammed-rayyan-6a0026256/",
@@ -93,7 +91,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Abdur Raafe",
-    dp: "../../public/assets/abdur-raafe.webp",
+    dp: "/assets/execom/abdur.webp",
     position: "Design",
     instalink: "https://www.instagram.com/a.raafe.a",
     linkedlinlink: "https://www.linkedin.com/in/abdur-raafe-akheel-356451227/",
@@ -101,7 +99,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Ayesha Fatima",
-    dp: "../../public/assets/—Pngtree—muslimah-cartoon-with-brown-hijab_9019571.webp",
+    dp: "/assets/execom/ayesha.webp",
     position: "Design",
     instalink: "",
     linkedlinlink: "",
@@ -109,7 +107,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Mohammad Shujauddin",
-    dp: "../../public/assets/Mohammad Shujauddin.webp",
+    dp: "/assets/execom/shuja.webp",
     position: "Web",
     instalink: "",
     linkedlinlink: "",
@@ -117,7 +115,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Mohammed Abid Nafi",
-    dp: "../../public/assets/Mohammed Abid Nafi.jpeg.webp",
+    dp: "/assets/execom/abid.webp",
     position: "Web",
     instalink: "",
     linkedlinlink: "",
@@ -125,7 +123,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Syed Mujtaba Biyabani",
-    dp: "../../public/assets/Mujtaba Biabani.webp",
+    dp: "/assets/execom/mujtaba.webp",
     position: "Documentation",
     instalink: "https://www.instagram.com/mujtaba_biabani",
     linkedlinlink:
@@ -134,7 +132,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Kalluri Sasanka",
-    dp: "../../public/assets/Writer sasanka.jpeg.webp",
+    dp: "/assets/execom/sasanka.webp",
     position: "Documentation",
     instalink: "https://www.instagram.com/_.ikallurisasanka112730._",
     linkedlinlink: "",
@@ -142,7 +140,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Aimen Laiba Mohammad",
-    dp: "../../public/assets/Aimen-Laiba.webp",
+    dp: "/assets/execom/aimen.webp",
     position: "HR",
     instalink: "https://www.instagram.com/aimenlaibaa",
     linkedlinlink: "https://www.linkedin.com/in/aimen-laiba-158aaa256/",
@@ -150,7 +148,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Mohammad Irfan",
-    dp: "../../public/assets/irfan-Mohammad.webp",
+    dp: "/assets/execom/irfan.webp",
     position: "HR",
     instalink: "https://www.instagram.com/Irfan__79_",
     linkedlinlink: "https://www.linkedin.com/in/mohammad-irfan-1453b829b/",
@@ -158,7 +156,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Nooria Kanchanwala Yusuf",
-    dp: "../../public/assets/Nooria Kanchwala.webp",
+    dp: "/assets/execom/nooria.webp",
     position: "Media",
     instalink: "https://www.instagram.com/nooria.kay",
     linkedlinlink: "",
@@ -166,7 +164,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Imaduddin Mohammad",
-    dp: "../../public/assets/imad-mohammed.webp",
+    dp: "/assets/execom/imad.webp",
     position: "Media",
     instalink: "https://www.instagram.com/imadolization",
     linkedlinlink: "",
@@ -174,7 +172,7 @@ const execomData: ExecomCardProps[] = [
   },
   {
     username: "Emaad Ali Khan",
-    dp: "../../public/assets/Emaad-Ali-Khan.webp",
+    dp: "/assets/execom/emaad.webp",
     position: "Media",
     instalink: "https://www.instagram.com/emaad_ali_khan",
     linkedlinlink: "",
