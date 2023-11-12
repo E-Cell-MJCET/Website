@@ -3,10 +3,10 @@ import Image from "next/image";
 import React from "react";
 // import elwt from '../../public/assets/money heaist.png'
 import abme from "../../public/assets/abme1.jpg";
-import ab1 from "../../public/assets/1117.jpg";
-import shuja from "../../public/assets/shuja.jpg"
-import ayesha from "../../public/assets/ay.jpg"
-import sofain from "../../public/assets/sofain.jpg"
+import ab1 from "../../public/assets/basith.jpeg";
+import shuja from "../../public/assets/shuja.jpg";
+import ayesha from "../../public/assets/ay.jpg";
+import sofain from "../../public/assets/sofain.jpg";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -49,12 +49,10 @@ const Banner = () => {
                   ></Image>
                 </div>
                 <div className=" flex flex-col justify-center items-center">
-                 
-                    <div className="font-sans  header  text-white text-center   text-[20px] tracking-[0.07em] ">
-                      ABDUL BASITH
-                    </div>
-                   
-                
+                  <div className="font-sans  header  text-white text-center   text-[20px] tracking-[0.07em] ">
+                    ABDUL BASITH
+                  </div>
+
                   <p className="font-sans header text-white text-center  text-[12px]">
                     CHIEF COORDINATOR
                   </p>
@@ -104,12 +102,10 @@ const Banner = () => {
                   ></Image>
                 </div>
                 <div className=" flex flex-col justify-center items-center">
-                 
-                    <div className="font-sans  header  text-white text-center  uppercase text-[20px] tracking-[0.07em] ">
-                      Shujauddin
-                    </div>
-                   
-                
+                  <div className="font-sans  header  text-white text-center  uppercase text-[20px] tracking-[0.07em] ">
+                    Shujauddin
+                  </div>
+
                   <p className="font-sans header text-white text-center  text-[12px]">
                     DEPUTY CHIEF COORDINATOR
                   </p>
@@ -159,12 +155,10 @@ const Banner = () => {
                   ></Image>
                 </div>
                 <div className=" flex flex-col justify-center items-center">
-                 
-                    <div className="font-sans  header  text-white text-center   text-[20px] tracking-[0.07em] ">
-                      SOFAIN HUSSAIN
-                    </div>
-                   
-                
+                  <div className="font-sans  header  text-white text-center   text-[20px] tracking-[0.07em] ">
+                    SOFAIN HUSSAIN
+                  </div>
+
                   <p className="font-sans header text-white text-center  text-[12px]">
                     CHIEF OPERATING OFFICER
                   </p>
@@ -214,12 +208,10 @@ const Banner = () => {
                   ></Image>
                 </div>
                 <div className=" flex flex-col justify-center items-center">
-                 
-                    <div className="font-sans  header  text-white text-center   text-[20px] tracking-[0.07em] ">
-                      AYESHA FATIMA
-                    </div>
-                   
-                
+                  <div className="font-sans  header  text-white text-center   text-[20px] tracking-[0.07em] ">
+                    AYESHA FATIMA
+                  </div>
+
                   <p className="font-sans header text-white text-center  text-[12px]">
                     CHIEF INFORMATION OFFICER
                   </p>
@@ -256,7 +248,7 @@ const Banner = () => {
               </div>
             </div>
             {/* 5 */}
-           
+
             {/* end */}
             <div className="flex flex-col mt-10 lg:m-10 text-center  bg-gray-900 ">
               <div className="w-[250px]   m-1 h-fit text-center shadow-lg ">
@@ -271,12 +263,10 @@ const Banner = () => {
                   ></Image>
                 </div>
                 <div className=" flex flex-col justify-center items-center">
-                 
-                    <div className="font-sans  header  text-white text-center   text-[20px] tracking-[0.07em] ">
-                      ABDUL BASITH
-                    </div>
-                   
-                
+                  <div className="font-sans  header  text-white text-center   text-[20px] tracking-[0.07em] ">
+                    ABDUL BASITH
+                  </div>
+
                   <p className="font-sans header text-white text-center  text-[12px]">
                     CHIEF TECHNOLOGY OFFICER
                   </p>
