@@ -34,11 +34,11 @@ const Execom: React.FC<ExecomCardProps> = ({
         ></Image>
       </div>
 
-      <h1 className="mt-[20px] text-[20px] text-center px-[10px] font-medium Header">
+      <h1 className="mt-[20px] text-[20px] text-white text-center px-[10px] font-medium Header">
         {username}
       </h1>
 
-      <div className="rounded-md bg-[#6b28d5] text-[12px] mb-[25px] mt-[12px] px-[7px] py-[2px]">
+      <div className="rounded-md bg-[#6b28d5] text-white text-[12px] mb-[25px] mt-[12px] px-[7px] py-[2px]">
         {position}
       </div>
 

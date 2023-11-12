@@ -4,7 +4,7 @@ import dean from "../../public/assets/dean3.jpeg"
 
 const Coordinator = () => {
   return (
-    <div className='flex justify-center items-center mt-16'>
+    <div className='flex justify-center items-center mt-16 bg-black'>
         <div className='w-[97%] lg:w-[85%]'>
         <div className="flex justify-center items-center relative">
           <div className="flex flex-col items-center ">
@@ -13,7 +13,7 @@ const Coordinator = () => {
             <div className="h-[3px] w-[370px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
           </div>
 
-          <div className="text-center poiret text-[30px] font-bold opacity-100 z-30 bg-black px-3 absolute">
+          <div className="text-center text-white poiret text-[30px] font-bold opacity-100 z-30 bg-black px-3 absolute">
             Faculty Coordinator
           </div>
         </div>
@@ -32,7 +32,7 @@ const Coordinator = () => {
             </div>
         </div>
         <div className='flex justify-center items-center'>
-        <div className='header text-center text-gray-500 text-sm lg:w-[80%]'>
+        <div className='header text-center text-gray-400 text-sm lg:w-[80%]'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos in assumenda mollitia aut quia sapiente soluta
              perferendis tempore cupiditate porro saepe accusantium facilis id, excepturi ab pariatur maxime quis ea 
              voluptate doloremque eaque iusto adipisci modi obcaecati. Assumenda velit debitis inventore mollitia pariatur 

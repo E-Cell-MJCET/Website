@@ -29,7 +29,7 @@ const GB = () => {
               <div className="h-[3px] w-[320px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
             </div>
 
-            <div className="text-center poiret text-[30px] font-bold opacity-100  bg-black px-3 absolute">
+            <div className="text-center text-white poiret text-[30px] font-bold opacity-100  bg-black px-3 absolute">
               Governing Body
             </div>
           </div>

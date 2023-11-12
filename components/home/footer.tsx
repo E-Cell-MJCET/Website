@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div className="flex justify-center bg-black  mt-14 pt-10 pb-10 header font-light tracking-wider">
       <div className="lg:w-[72%]">
-        <div className=" flex justify-between flex-col lg:flex-row">
+        <div className=" flex justify-between text-white flex-col lg:flex-row">
           <div className="">
             <div>
               <Image

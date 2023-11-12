@@ -14,6 +14,7 @@ const Nav = () => {
   return (
     <div className={`${isOpen ? "overscroll-none" : ""}`}>
       <div className="flex  flex-row justify-between lg:justify-around pt-5 mb-2 lg:mb-5 header mx-4 bg-black">
+        <Link href={"/"}>
         <div className="hidden md:block">
           <Image
             src={ectext}
@@ -32,19 +33,20 @@ const Nav = () => {
             width={500}
           />
         </div>
+        </Link>
         <div className="hidden lg:inline ">
           <ul className="flex items-center justify-center px-3 mt-6 ">
-            <li className="mx-3 text-xl font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
+            <li className="mx-3 text-xl text-white font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
               <Link href={"/events"}>Events</Link>
             </li>
-            <li className="mx-3 text-xl font-semibold menu2 hover:font-bold hover:underline underline-offset-8 active:text-red-700">
+            <li className="mx-3 text-xl text-white font-semibold menu2 hover:font-bold hover:underline underline-offset-8 active:text-red-700">
               <Link href={"/team"}>Team</Link>
             </li>
-            <li className="mx-3 text-xl font-semibold menu3 hover:font-bold hover:underline underline-offset-8">
+            <li className="mx-3 text-xl text-white font-semibold menu3 hover:font-bold hover:underline underline-offset-8">
               <Link href={"/gallery"}>Gallery</Link>
             </li>
             {/* <li className='mx-3 text-xl font-semibold  hover:font-bold hover:underline underline-offset-8'><Link href={''}>Blogs</Link></li> */}
-            <li className="mx-3 text-xl font-semibold menu4 hover:font-bold hover:underline underline-offset-8">
+            <li className="mx-3 text-xl text-white font-semibold menu4 hover:font-bold hover:underline underline-offset-8">
               <Link href={"/contactus"}>Contact</Link>
             </li>
           </ul>

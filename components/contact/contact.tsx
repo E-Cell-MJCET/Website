@@ -6,8 +6,8 @@ import AddressIcon from "@mui/icons-material/LocationOn";
 const ContactBlock = () => {
   return (
     <div className="flex flex-col  items-center justify-center mt-[50px]">
-      <div className="flex flex-wrap justify-center items-center mt-[40px]">
-        <div className="flex flex-col justify-center items-center px-[30px] max-w-[300px] text-center">
+      <div className="flex flex-wrap justify-center  text-white items-center mt-[40px]">
+        <div className="flex flex-col  justify-center items-center px-[30px] max-w-[300px] text-center">
           <PhoneInTalkIcon />
           <h1>Phone</h1>
           <p>Phone: +966570781826</p>

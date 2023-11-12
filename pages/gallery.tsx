@@ -6,7 +6,7 @@ import React from "react";
 
 const GalleryPage = () => {
   return (
-    <div>
+    <div className="bg-black">
       <Nav />
       <Gallery />
     </div>

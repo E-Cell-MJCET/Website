@@ -25,7 +25,7 @@ const UpcomEv: React.FC<UpcomEvProps> = ({ title, desc, image, link }) => {
               />
             </div>
             <div className="flex flex-col text-center mt-4 lg:mt-0 lg:w-[70%] lg:px-5 items-center justify-center">
-              <div className="text-[24px] header mb-5 ">{title}</div>
+              <div className="text-[24px] text-white header mb-5 ">{title}</div>
               <div className="flex items-center justify-center h-[150px] w-[220px] lg:hidden">
                 <Image
                   src={image}
@@ -35,7 +35,7 @@ const UpcomEv: React.FC<UpcomEvProps> = ({ title, desc, image, link }) => {
                   className="rounded-lg text-center"
                 />
               </div>
-              <div className="text-sm tracking-tight mt-5 lg:mt-0">{desc}</div>
+              <div className="text-sm tracking-tight text-white mt-5 lg:mt-0">{desc}</div>
             </div>
           </div>
         </div>

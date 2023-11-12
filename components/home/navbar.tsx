@@ -7,7 +7,7 @@ import Execom from "../team/execom";
 
 const Navbar = () => {
   return (
-    <div className="flex text-center justify-center items-start lg:items-center leading-tight flex-grow ">
+    <div className="flex text-center justify-center items-start lg:items-center leading-tight flex-grow bg-black  ">
       {/* <div className='h-10 bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] opacity-25 flex items-center justify-center  backdrop-filter backdrop-blur-2xl'>
             <div className=''>
             <InstagramIcon  className='text-black mx-5 h-7 w-7'/>

@@ -4,7 +4,7 @@ import React from "react";
 
 const Events = () => {
   return (
-    <div>
+    <div className="bg-black">
       <Nav />
       <PageEv />
     </div>

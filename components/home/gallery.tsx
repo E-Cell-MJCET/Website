@@ -12,7 +12,7 @@ import a9 from "../../public/assets/gallery/9.jpeg";
 
 const Gallery = () => {
   return (
-    <div className="flex justify-center items-center mt-10 mx-auto ">
+    <div className="flex justify-center items-center mt-10 mx-auto bg-black ">
       <div className="w-[98%]">
         <div className="flex justify-center items-center mb-10">
           <div className="flex flex-col items-center justify-center">
@@ -20,7 +20,7 @@ const Gallery = () => {
             <div className="h-[3px] w-[240px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
           </div>
 
-          <div className="text-center poiret text-[30px] font-bold opacity-100 z-30 bg-black px-3 absolute">
+          <div className="text-center poiret text-white text-[30px] font-bold opacity-100 z-30 bg-black px-3 absolute">
             Gallery
           </div>
         </div>
@@ -30,29 +30,29 @@ const Gallery = () => {
               <Image
                 src={a1}
                 alt=""
-                className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50"
+                className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-300 duration-300"
               ></Image>
               <Image
                 src={a2}
                 alt=""
-                className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50"
+                className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-300 duration-300"
               ></Image>
             </div>
             <Image
               src={a3}
               alt=""
-              className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50"
+              className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-300 duration-300"
             ></Image>
             <div className="grid grid-cols-2 ">
               <Image
                 src={a8}
                 alt=""
-                className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50"
+                className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-300 duration-300"
               ></Image>
               <Image
                 src={a7}
                 alt=""
-                className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50"
+                className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-300 duration-300"
               ></Image>
             </div>
           </div>
@@ -62,24 +62,24 @@ const Gallery = () => {
               <Image
                 src={a4}
                 alt=""
-                className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-300 duration-300"
+                className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50  hover:opacity-70 delay-300 duration-300"
               ></Image>
               <div className="grid grid-cols-2 ">
                 <Image
                   src={a9}
                   alt=""
-                  className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50"
+                  className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-300 duration-300"
                 ></Image>
                 <Image
                   src={a6}
                   alt=""
-                  className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50"
+                  className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-300 duration-300"
                 ></Image>
               </div>
               <Image
                 src={a5}
                 alt=""
-                className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-300 duration-300"
+                className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50  hover:opacity-70 delay-300 duration-300"
               ></Image>
             </div>
           </div>

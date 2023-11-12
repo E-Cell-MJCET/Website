@@ -10,7 +10,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div>
+    <div className="bg-black">
       <Nav />
       <Title />
       <ContactBlock />

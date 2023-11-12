@@ -14,7 +14,7 @@ import elnwt from "../public/assets/ewnlt.png";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-black opacity-100">
       <Head>
         <title>E-Cell MJCET</title>
         <meta
