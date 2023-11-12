@@ -26,7 +26,7 @@ const Header = () => {
             width={500}
           />
         </div>
-        <div className="block md:hidden">
+        <div className="block lg:hidden">
           <Image
             src={elnwt}
             alt=""
@@ -96,16 +96,16 @@ const Header = () => {
               <div>
                 <ul>
                   <li className="mx-3 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Events</Link>
+                    <Link href={"/events"}>Events</Link>
                   </li>
                   <li className="mx-3 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/team"}>Team</Link>
                   </li>
                   <li className="mx-3 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Gallery</Link>
+                    <Link href={"/gallery"}>Gallery</Link>
                   </li>
                   <li className="mx-3 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={""}>Contact</Link>
+                    <Link href={"/contactus"}>Contact</Link>
                   </li>
                 </ul>
               </div>

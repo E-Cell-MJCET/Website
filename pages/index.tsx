@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Header from "@/components/home/header";
-import Banner from "@/components/home/team";
+import Banner from "@/components/team/team";
 import Navbar from "@/components/home/navbar";
 import Footer from "@/components/home/footer";
 import About from "@/components/home/about";
@@ -35,7 +35,7 @@ export default function Home() {
       {/* <Banner /> */}
       <Coordinator />
       <Gallery />
-      <Blog />
+      {/*<Blog />*/}
       <Footer />
       <Footers />
     </div>
