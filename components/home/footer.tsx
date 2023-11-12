@@ -29,29 +29,42 @@ const Footer = () => {
             <div>
               <div className="mt-4 flex  items-center">
                 <div>
-                  <WhatsAppIcon />
+                  <PhoneInTalkIcon />
                 </div>
-                <div className="font-medium ml-[4px]">
-                  {" "}
-                  Abdul Basith :- +966 57 078 1826
-                </div>
+                <Link href={"tel:+919618462926"}>
+                  <div className="font-medium ml-[4px]">
+                    {" "}
+                    Abdul Basith :-{" "}
+                    <span className="hover:underline">+91 96184 62926</span>
+                  </div>
+                </Link>
               </div>
               <div className="mt-2 flex  items-center">
                 <div>
                   <PhoneInTalkIcon />
                 </div>
-                <div className="font-medium ml-[4px]">
-                  {" "}
-                  Shujauddin :- +91 95151 30124
-                </div>
+                <Link href={"tel:+919515130124"}>
+                  <div className="font-medium ml-[4px]">
+                    {" "}
+                    Shujauddin :-{" "}
+                    <span className="hover:underline">+91 95151 30124</span>
+                  </div>
+                </Link>
+                <div className="font-medium ml-[4px]"> </div>
               </div>
               <div className="mt-6 flex  items-center">
                 <div>
                   <EmailIcon />
                 </div>
+
                 <div className="font-semibold ml-[4px]">
                   {" "}
-                  - documentationecell@gmail.com
+                  <Link href={"mailto:documentationecell@gmail.com"}>
+                    -{" "}
+                    <span className="hover:underline">
+                      documentationecell@gmail.com
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>

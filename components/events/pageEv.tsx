@@ -34,7 +34,7 @@ const PageEv = () => {
           />
           <PrevEv
             image={DSAPath}
-            title="“The DSA Adventure”"
+            title="THE DSA ADVENTURE"
             desc="It was a huge success as a lot of participants of the event gained proficiency in Data Structures and Algorithms, the essential building block of coding.
              The Event “The DSA Adventure” was led by 3 main speakers Md.Mubeen Uddin, Madiha Waheed and Habeeb Ullah Tabrez. 
              The online workshop provided 7 Days of Interactive Learning and Fun. There were Hands on challenges and Daily Quizzes as well.

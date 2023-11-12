@@ -19,8 +19,20 @@ const Banner = () => {
   return (
     <div className="flex justify-center ">
       <div className="w-[85%]">
-        <div className="text-center header text-[36px] font-semibold my-5">
-          Governing Body
+        <div className="flex justify-center flex-col items-center">
+          <div className="text-center text-[45px] text-white header mt-10 mb-14">
+            <span className="blackOps uppercase">Teams</span>
+          </div>
+          <div className="flex justify-center items-center mb-10">
+            <div className="flex flex-col items-center justify-center">
+              <div className="h-[3px] w-[260px] bg-[#c23c83] rounded-lg my-[2px]"></div>
+              <div className="h-[3px] w-[320px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
+            </div>
+
+            <div className="text-center poiret text-[30px] font-bold opacity-100  bg-black px-3 absolute">
+              Governing Body
+            </div>
+          </div>
         </div>
         {/* <div className="flex justify-center items-center relative">
           <div className="flex flex-col items-center ">

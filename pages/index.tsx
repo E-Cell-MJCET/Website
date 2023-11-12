@@ -34,8 +34,8 @@ export default function Home() {
       <About />
       {/* <Banner /> */}
       <Coordinator />
-      {/*<Gallery />
-      <Blog />*/}
+      <Gallery />
+      {/*<Blog />*/}
       <Footer />
       <Footers />
     </div>
