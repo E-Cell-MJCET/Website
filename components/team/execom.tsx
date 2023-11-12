@@ -10,8 +10,11 @@ export interface ExecomCardProps {
   dp: any;
   position: string;
   instalink: string;
+  insta: boolean;
   linkedlinlink: string;
+  linkedln: boolean;
   twitterlink: string;
+  twitter: boolean;
 }
 
 const Execom: React.FC<ExecomCardProps> = ({
@@ -21,6 +24,9 @@ const Execom: React.FC<ExecomCardProps> = ({
   instalink,
   linkedlinlink,
   twitterlink,
+  insta,
+  linkedln,
+  twitter,
 }) => {
   console.log(dp);
   return (
@@ -43,31 +49,45 @@ const Execom: React.FC<ExecomCardProps> = ({
         {position}
       </div>
 
-      <div className="flex justify-center space-x-4 mb-3 mt-auto">
-        <a
-          href={instalink}
-          className="text-gray-500 hover:text-blue-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <InstagramIcon className="h-5 w-5" />
-        </a>
-        <a
-          href={linkedlinlink}
-          className="text-gray-500 hover:text-pink-600"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LinkedInIcon className="h-5 w-5" />
-        </a>
-        <a
-          href={twitterlink}
-          className="text-gray-500 hover:text-blue-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <TwitterIcon className="h-5 w-5" />
-        </a>
+      <div className="flex justify-center  mb-3 mt-auto">
+        {insta ? (
+          <a
+            href={instalink}
+            className="text-gray-500 hover:text-blue-500 mx-[6px]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramIcon className="h-5 w-5" />
+          </a>
+        ) : (
+          <span></span>
+        )}
+
+        {linkedln ? (
+          <a
+            href={linkedlinlink}
+            className="text-gray-500 hover:text-pink-600 mx-[6px]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedInIcon className="h-5 w-5" />
+          </a>
+        ) : (
+          <span></span>
+        )}
+
+        {twitter ? (
+          <a
+            href={twitterlink}
+            className="text-gray-500 hover:text-blue-500 mx-[6px]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <TwitterIcon className="h-5 w-5" />
+          </a>
+        ) : (
+          <span></span>
+        )}
       </div>
     </div>
   );
