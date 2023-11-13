@@ -20,7 +20,7 @@ const Gallery = () => {
             <div className="h-[3px] w-[240px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
           </div>
 
-          <div className="text-center poiret text-[30px] font-bold opacity-100 z-30 bg-black px-3 absolute">
+          <div className="text-center poiret text-[30px] font-bold opacity-100 z-30 bg-black text-white px-3 absolute">
             Gallery
           </div>
         </div>
