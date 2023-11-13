@@ -7,7 +7,7 @@ import Execom from "../team/execom";
 
 const Navbar = () => {
   return (
-    <div className="flex text-center justify-center items-start lg:items-center leading-tight flex-grow bg-black  ">
+    <div className="flex text-center justify-center items-start lg:items-center leading-tight flex-grow ">
       {/* <div className='h-10 bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] opacity-25 flex items-center justify-center  backdrop-filter backdrop-blur-2xl'>
             <div className=''>
             <InstagramIcon  className='text-black mx-5 h-7 w-7'/>
@@ -20,13 +20,13 @@ const Navbar = () => {
       <div className="w-[70%] -mt:20   ">
         {/* <div className='text-[40px] font-bold poiret  -mb-8 opacity-100'> Welcome to </div> */}
         {/* <div className="relative"> */}
-          {/* <div className="text-[max(3.2rem,min(5.2vw,5.3rem))] absolute hidden lg:inline uppercase -inset-1 blur-sm opacity-60 font-extrabold header bg-clip-text text-transparent bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
+        {/* <div className="text-[max(3.2rem,min(5.2vw,5.3rem))] absolute hidden lg:inline uppercase -inset-1 blur-sm opacity-60 font-extrabold header bg-clip-text text-transparent bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
             Entrepreneurship Cell
           </div> */}
-          <div className="text-[max(3rem,min(5vw,5rem))] hidden lg:inline font-extrabold  uppercase bg-clip-text text-transparent bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] opacity-100 ">
-            Entrepreneurship Cell
-          </div>
-        {/* </div> */} 
+        <div className="text-[max(3rem,min(5vw,5rem))] hidden lg:inline font-extrabold  uppercase bg-clip-text text-transparent bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] opacity-100 ">
+          Entrepreneurship Cell
+        </div>
+        {/* </div> */}
         {/* https://www.youtube.com/watch?v=ANKNNKPJAMI */}
         {/* text animation above */}
         <div className="relative">
@@ -41,7 +41,6 @@ const Navbar = () => {
           MJCET
         </div>
 
-        
         {/* <div className='text-[14px]  mt-2 lg:max-w-[400px] poiret font-semibold text-gray-300'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugit eligendi dolores neque dolor sed sunt quisquam tempora 
           nesciunt? Quas nihil totam alias quos, sunt....</div> */}
         <div className="grid gap-8 items-start justify-center mt-10 mb-14 lg:my-20">
