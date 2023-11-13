@@ -10,8 +10,12 @@ const ContactBlock = () => {
         <div className="flex flex-col  justify-center items-center px-[30px] max-w-[300px] text-center">
           <PhoneInTalkIcon />
           <h1>Phone</h1>
-          <p>Phone: +966570781826</p>
-          <p>Phone: +91 95151 30124</p>
+          <a href="tel:+919618462926" className="hover:underline">
+            Phone: +91 96184 62926
+          </a>
+          <a href="tel:+919515130124" className="hover:underline">
+            Phone: +91 95151 30124
+          </a>
         </div>
 
         <div className="w-[2px] h-[100px] bg-red-500 hidden lg:block mt-[40px]"></div>
@@ -27,7 +31,12 @@ const ContactBlock = () => {
         <div className="flex flex-col justify-center items-center px-[30px]   max-w-[300px] text-center">
           <EmailIcon />
           <h1>E-Mail</h1>
-          <p>documentationecell@gmail.com</p>
+          <a
+            href="mailto:documentationecell@gmail.com"
+            className="hover:underline"
+          >
+            documentationecell@gmail.com
+          </a>
         </div>
       </div>
     </div>
