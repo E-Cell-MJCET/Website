@@ -35,7 +35,9 @@ const UpcomEv: React.FC<UpcomEvProps> = ({ title, desc, image, link }) => {
                   className="rounded-lg text-center"
                 />
               </div>
-              <div className="text-sm tracking-tight text-white mt-5 lg:mt-0">{desc}</div>
+              <div className="text-sm tracking-tight text-white mt-5 lg:mt-0">
+                {desc}
+              </div>
             </div>
           </div>
         </div>

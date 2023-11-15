@@ -1,3 +1,5 @@
+import Footer from "@/components/home/footer";
+import Footers from "@/components/home/footer2";
 import Nav from "@/components/nav";
 import Execom from "@/components/team/execom";
 import ExecomList from "@/components/team/execomList";
@@ -20,6 +22,8 @@ const Team = () => {
         </div>
       </div>
       <ExecomList />
+      <Footer />
+      <Footers />
     </div>
   );
 };

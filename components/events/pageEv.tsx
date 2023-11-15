@@ -61,7 +61,27 @@ const PageEv = () => {
           <UpcomEv
             image={BOB}
             title="BATTLE OF BRANDS"
-            desc="More information coming soon :)"
+            desc="Introducing The Battle Of Brands 🏆
+            A 3-round, fun and informative event. 📊
+            
+            - Round 1: PICTIONARY 🖌️
+            Two teams compete at a time, racing to draw and identify brand logos. The quickest team advances!
+            
+            - Round 2: Battle of Facts? 📈
+            Two teams engage in a fact-based showdown, defending their given brands. The winning team progresses!
+            
+            - Round 3: 🤫 SURPRISE ROUND 🎁
+            
+            The winners of this competition gets the cash prices!
+            
+            👉 The price pool stands at ₹2000 💰
+            
+            ➡️ Entry: Assemble your team of 2 or 4 members.
+            ➡️ Event venue: Ghulam Ahmed Hall
+            ➡️ Date: November 16, 2023 📅
+            ➡️ Timings: 1:45 pm - 4:00 pm 🕒
+            ➡️ Price: ₹60 for a team of two
+            ➡️₹100 for a team of four"
             link="https://docs.google.com/forms/d/e/1FAIpQLSfN-yj3Y9ri8sWadnFDaW_GTIt1LduIwX6QnpvT9MnR-L9P7Q/viewform"
           />
         </div>

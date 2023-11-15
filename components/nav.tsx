@@ -15,24 +15,24 @@ const Nav = () => {
     <div className={`${isOpen ? "overscroll-none" : ""}`}>
       <div className="flex  flex-row justify-between lg:justify-around pt-5 mb-2 lg:mb-5 header mx-4 bg-black">
         <Link href={"/"}>
-        <div className="hidden md:block">
-          <Image
-            src={ectext}
-            alt=""
-            className="h-[48px] lg:h-[70px] w-[48px] lg:w-full lg:mt-1 logo"
-            height={200}
-            width={500}
-          />
-        </div>
-        <div className="block md:hidden">
-          <Image
-            src={elnwt}
-            alt=""
-            className="h-[48px] lg:h-[70px] w-[48px] lg:w-full lg:mt-1 logo"
-            height={200}
-            width={500}
-          />
-        </div>
+          <div className="hidden md:block">
+            <Image
+              src={ectext}
+              alt=""
+              className="h-[48px] lg:h-[70px] w-[48px] lg:w-full lg:mt-1 logo"
+              height={200}
+              width={500}
+            />
+          </div>
+          <div className="block md:hidden">
+            <Image
+              src={elnwt}
+              alt=""
+              className="h-[48px] lg:h-[70px] w-[48px] lg:w-full lg:mt-1 logo"
+              height={200}
+              width={500}
+            />
+          </div>
         </Link>
         <div className="hidden lg:inline ">
           <ul className="flex items-center justify-center px-3 mt-6 ">
@@ -75,19 +75,19 @@ const Nav = () => {
             <div className="md:w-1/3 text-right mt-6 overscroll-none absolute right-5 bg-black bg-opacity-70 z-10 transition-all ease-in duration-100 rounded-lg py-5 px-7  h-screen w-full">
               <div>
                 <ul>
-                  <li className="mx-3 text-xl font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
+                  <li className="mx-3 text-xl text-white font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
                     <Link href={"/"}>Home</Link>
                   </li>
-                  <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 pt-2 pb-2 text-white text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/events"}>Events</Link>
                   </li>
-                  <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 pt-2 pb-2 text-white text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/team"}>Team</Link>
                   </li>
-                  <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 pt-2 pb-2 text-white text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/gallery"}>Gallery</Link>
                   </li>
-                  <li className="mx-3 pt-2 pb-2 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 pt-2 pb-2 text-white text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/contactus"}>Contact</Link>
                   </li>
                 </ul>
@@ -97,16 +97,16 @@ const Nav = () => {
             <div className="md:w-1/2 text-right mt-5 absolute right-0 bg-black z-10 scale-0 transition-all ease-in duration-100">
               <div>
                 <ul>
-                  <li className="mx-3 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/events"}>Events</Link>
                   </li>
-                  <li className="mx-3 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/team"}>Team</Link>
                   </li>
-                  <li className="mx-3 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/gallery"}>Gallery</Link>
                   </li>
-                  <li className="mx-3 text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={""}>Contact</Link>
                   </li>
                 </ul>
