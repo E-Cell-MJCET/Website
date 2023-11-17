@@ -33,9 +33,10 @@ const PageEv = () => {
 
           <UpcomEv
             image={HackRev2}
-            title="Hack Revolution 2023"
+            title="Hack Revolution 2023 2.0"
             desc="Hack Revolution is a social coding competition powered by ACES, consisting of 4-6 members in a team. It provides an exceptional opportunity to network with people from different backgrounds and gives a career boost to the students. It is a collaboration between CSI and E-Cell clubs of the MJCET. The duration is about 15 hours. Winners of the hackathon would qualify for a price pool of Rs. 3,00,000 and Internship oppurtunity at ACES  Register now at https://hackrevolution.in"
             link="https://hackrevolution.in"
+            date="17th December 2023"
           />
           <UpcomEv
             image={Flutter}
@@ -57,11 +58,25 @@ const PageEv = () => {
             Register now: https://forms.gle/QNmKJtBuXNngv9mo9
             "
             link="https://forms.gle/QNmKJtBuXNngv9mo9"
+            date="19th November 2023"
           />
-          <UpcomEv
-            image={BOB}
-            title="BATTLE OF BRANDS"
-            desc="Introducing The Battle Of Brands 🏆
+
+          <div className="flex justify-center flex-col items-center mt-20 bg-black">
+            <div className="flex justify-center items-center mb-10 ">
+              <div className="flex flex-col items-center justify-center">
+                <div className="h-[3px] w-[260px] bg-[#c23c83] rounded-lg my-[2px]"></div>
+                <div className="h-[3px] w-[320px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
+              </div>
+
+              <div className="text-center poiret text-[30px] font-bold opacity-100 text-white bg-black px-3 absolute">
+                Previous Events
+              </div>
+            </div>
+
+            <PrevEv
+              image={BOB}
+              title="BATTLE OF BRANDS"
+              desc="Introducing The Battle Of Brands 🏆
             A 3-round, fun and informative event. 📊
             
             - Round 1: PICTIONARY 🖌️
@@ -74,30 +89,15 @@ const PageEv = () => {
             
             The winners of this competition gets the cash prices!
             
-            👉 The price pool stands at ₹2000 💰
+            👉 The price pool stands was of ₹2000 💰
             
             ➡️ Entry: Assemble your team of 2 or 4 members.
             ➡️ Event venue: Ghulam Ahmed Hall
             ➡️ Date: November 16, 2023 📅
             ➡️ Timings: 1:45 pm - 4:00 pm 🕒
-            ➡️ Price: ₹60 for a team of two
-            ➡️₹100 for a team of four"
-            link="https://docs.google.com/forms/d/e/1FAIpQLSfN-yj3Y9ri8sWadnFDaW_GTIt1LduIwX6QnpvT9MnR-L9P7Q/viewform"
-          />
-        </div>
-
-        <div className="flex justify-center flex-col items-center mt-20 bg-black">
-          <div className="flex justify-center items-center mb-10 ">
-            <div className="flex flex-col items-center justify-center">
-              <div className="h-[3px] w-[260px] bg-[#c23c83] rounded-lg my-[2px]"></div>
-              <div className="h-[3px] w-[320px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
-            </div>
-
-            <div className="text-center poiret text-[30px] font-bold opacity-100 text-white bg-black px-3 absolute">
-              Previous Events
-            </div>
+            "
+            />
           </div>
-
           <PrevEv
             image={AlumniMeetPath}
             title="ALUMINI MEET"
@@ -114,13 +114,13 @@ const PageEv = () => {
           />
           <PrevEv
             image={HackathonPath}
-            title="HACKATHON"
+            title="HACK REVOLUTION 2023"
             desc="Hack Revolution is a social coding competition conducted by the Smart India hackathon, consisting of 3-6 members in a team. It provides an exceptional opportunity to network with people from different backgrounds and gives a career boost to the students. It was a collaboration between CSI and E-Cell clubs of the MJCET. The duration was about 15 hours. Winners of the hackathon would qualify for the national-level Hackathon organized by the Govt. of India and All India Council for Technical Education."
           />
           <PrevEv
             image={GameOfInvestersImagePath}
             title="GAME OF INVESTORS"
-            desc="Entrepreneurship -cell MJCET, has conducted a fun learning event called the Game of Investors, which exposes their fellow students to the biggest money circulation mediums of the world. The game was played in pairs and trios, The game included 10 rounds, of several companies to choose from and invest into, it was time sensitive and certain situations like the pandemic and wars severely had a huge impact on the way the stock market works were put into the game for the fun twists and losses. And at the end team with the greatest number of returns wins the game!"
+            desc="Entrepreneurship-Cell MJCET, has conducted a fun learning event called the Game of Investors, which exposes their fellow students to the biggest money circulation mediums of the world. The game was played in pairs and trios, The game included 10 rounds, of several companies to choose from and invest into, it was time sensitive and certain situations like the pandemic and wars severely had a huge impact on the way the stock market works were put into the game for the fun twists and losses. And at the end team with the greatest number of returns wins the game!"
           />
         </div>
       </div>

@@ -15,7 +15,7 @@ const Nav = () => {
     <div className={`${isOpen ? "overscroll-none" : ""}`}>
       <div className="flex  flex-row justify-between lg:justify-around pt-5 mb-2 lg:mb-5 header mx-4 bg-black">
         <Link href={"/"}>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Image
               src={ectext}
               alt=""
@@ -24,7 +24,7 @@ const Nav = () => {
               width={500}
             />
           </div>
-          <div className="block md:hidden">
+          <div className="block lg:hidden">
             <Image
               src={elnwt}
               alt=""
