@@ -38,10 +38,23 @@ const PageEv = () => {
             link="https://hackrevolution.in"
             date="17th December 2023"
           />
-          <UpcomEv
-            image={Flutter}
-            title="FLUTTER FIESTA"
-            desc="A journey into App Development with Flutter
+
+          <div className="flex justify-center flex-col items-center mt-20 bg-black">
+            <div className="flex justify-center items-center mb-10 ">
+              <div className="flex flex-col items-center justify-center">
+                <div className="h-[3px] w-[260px] bg-[#c23c83] rounded-lg my-[2px]"></div>
+                <div className="h-[3px] w-[320px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
+              </div>
+
+              <div className="text-center poiret text-[30px] font-bold opacity-100 text-white bg-black px-3 absolute">
+                Previous Events
+              </div>
+            </div>
+
+            <PrevEv
+              image={Flutter}
+              title="FLUTTER FIESTA"
+              desc="A journey into App Development with Flutter
 
             Are you aspiring to become an App Developer but unsure where to begin?🤔
             
@@ -57,21 +70,7 @@ const PageEv = () => {
             
             Register now: https://forms.gle/QNmKJtBuXNngv9mo9
             "
-            link="https://forms.gle/QNmKJtBuXNngv9mo9"
-            date="19th November 2023"
-          />
-
-          <div className="flex justify-center flex-col items-center mt-20 bg-black">
-            <div className="flex justify-center items-center mb-10 ">
-              <div className="flex flex-col items-center justify-center">
-                <div className="h-[3px] w-[260px] bg-[#c23c83] rounded-lg my-[2px]"></div>
-                <div className="h-[3px] w-[320px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
-              </div>
-
-              <div className="text-center poiret text-[30px] font-bold opacity-100 text-white bg-black px-3 absolute">
-                Previous Events
-              </div>
-            </div>
+            />
 
             <PrevEv
               image={BOB}
