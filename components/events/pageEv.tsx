@@ -68,7 +68,6 @@ const PageEv = () => {
             
             Increase your chance to win *Hackathon* which has a prize pool of *₹3,00,000*
             
-            Register now: https://forms.gle/QNmKJtBuXNngv9mo9
             "
             />
 
