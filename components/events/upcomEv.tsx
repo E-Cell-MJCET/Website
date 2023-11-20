@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Calendar from "@mui/icons-material/CalendarMonthRounded";
+import Location from "@mui/icons-material/LocationOn";
 
 interface UpcomEvProps {
   title: string;
@@ -9,6 +10,7 @@ interface UpcomEvProps {
   image: any;
   link: string;
   date: string;
+  venue: string;
 }
 
 const UpcomEv: React.FC<UpcomEvProps> = ({
@@ -17,6 +19,7 @@ const UpcomEv: React.FC<UpcomEvProps> = ({
   date,
   image,
   link,
+  venue,
 }) => {
   return (
     <div className="w-[80%] mb-6">
@@ -43,9 +46,13 @@ const UpcomEv: React.FC<UpcomEvProps> = ({
                   className="rounded-lg text-center"
                 />
               </div>
-              <div className="flex flex-row mt-5">
+              <div className="flex flex-row mt-5 lg:mt-0 mb-5">
                 <Calendar className="w-5 h-5" />
-                <div className="text-sm  text-white lg:mt-0">: {date}</div>
+                <div className="text-sm  text-white "> : {date}</div>
+              </div>
+              <div className="flex flex-row mb-5">
+                <Location className="w-5 h-5" />
+                <div className="text-sm  text-white "> : {venue}</div>
               </div>
               <div className="text-sm tracking-tight text-white mt-5 lg:mt-0">
                 {desc}

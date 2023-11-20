@@ -10,6 +10,8 @@ const PageEv = () => {
   const HackRev2 = "/assets/upcoming-events/hackrev.jpeg";
   const Flutter = "/assets/upcoming-events/flutter.jpeg";
   const BOB = "/assets/upcoming-events/bob.webp";
+  const DataForge = "/assets/upcoming-events/dataforge.jpeg";
+  const ComingSoon = "/assets/upcoming-events/coming-soon.png";
 
   return (
     <div className="flex justify-center  bg-black h-auto">
@@ -37,6 +39,52 @@ const PageEv = () => {
             desc="Hack Revolution is a social coding competition powered by ACES, consisting of 4-6 members in a team. It provides an exceptional opportunity to network with people from different backgrounds and gives a career boost to the students. It is a collaboration between CSI and E-Cell clubs of the MJCET. The duration is about 15 hours. Winners of the hackathon would qualify for a price pool of Rs. 3,00,000 and Internship oppurtunity at ACES  Register now at https://hackrevolution.in"
             link="https://hackrevolution.in"
             date="17th December 2023"
+            venue="Gulam Ahmed Hall, MJCET"
+          />
+
+          <UpcomEv
+            image={DataForge}
+            title="DataForge Fusion"
+            desc="🚀 Calling all data enthusiasts! 📊
+
+            CSI & E-Cell MJCET presents our latest venture,
+            
+            DataForge Fusion: Data Engineering & Analysis Workshop.
+            
+            Delve deep into the dynamic world of data and unravel the secrets of data analysis with our guest speaker:
+            Imaduddin Mohammed
+            Senior Cloud Engineer @ PwC Australia
+            
+            Embark on a journey into the dynamic world of data as we bring you an engaging pre-hackathon workshop that explores the intricacies of Data Engineering and Analysis.📈🧑‍💻
+            
+            Are you keen on mastering the skills required for effective Data Engineering? Eager to unravel the secrets of data analysis? Look no further!
+            
+            🖥️ Unlock the power of Data Engineering and Analysis with hands-on sessions!
+            
+            🖥️ Dive into practical experiences with cutting-edge tools and techniques in the realm of data.
+            
+            🖥️ Boost your chances to win the upcoming Hackathon with a generous prize pool of *₹3,00,000!*
+            
+            Register now: https://forms.gle/Gkbyj6qVM9UAmmzP7
+            
+            ⏰ Time: 10:30 AM - 4:30 PM
+            
+            CSI and E-Cell members: Free
+            Non-members: ₹50
+            
+            "
+            link="https://forms.gle/Gkbyj6qVM9UAmmzP7"
+            date=" 25th November 2023, Saturday"
+            venue="CIC Lab (Microsoft Lab), Block 2"
+          />
+
+          <UpcomEv
+            image={ComingSoon}
+            title="Entrepreneurship Program"
+            desc="Coming soon :)"
+            link="/events"
+            date="TBD"
+            venue="TBD"
           />
 
           <div className="flex justify-center flex-col items-center mt-20 bg-black">
