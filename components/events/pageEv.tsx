@@ -43,42 +43,6 @@ const PageEv = () => {
           />
 
           <UpcomEv
-            image={DataForge}
-            title="DataForge Fusion"
-            desc="🚀 Calling all data enthusiasts! 📊
-
-            CSI & E-Cell MJCET presents our latest venture,
-            
-            DataForge Fusion: Data Engineering & Analysis Workshop.
-            
-            Delve deep into the dynamic world of data and unravel the secrets of data analysis with our guest speaker:
-            Imaduddin Mohammed
-            Senior Cloud Engineer @ PwC Australia
-            
-            Embark on a journey into the dynamic world of data as we bring you an engaging pre-hackathon workshop that explores the intricacies of Data Engineering and Analysis.📈🧑‍💻
-            
-            Are you keen on mastering the skills required for effective Data Engineering? Eager to unravel the secrets of data analysis? Look no further!
-            
-            🖥️ Unlock the power of Data Engineering and Analysis with hands-on sessions!
-            
-            🖥️ Dive into practical experiences with cutting-edge tools and techniques in the realm of data.
-            
-            🖥️ Boost your chances to win the upcoming Hackathon with a generous prize pool of *₹3,00,000!*
-            
-            Register now: https://forms.gle/Gkbyj6qVM9UAmmzP7
-            
-            ⏰ Time: 10:30 AM - 4:30 PM
-            
-            CSI and E-Cell members: Free
-            Non-members: ₹50
-            
-            "
-            link="https://forms.gle/Gkbyj6qVM9UAmmzP7"
-            date=" 25th November 2023, Saturday"
-            venue="CIC Lab (Microsoft Lab), Block 2"
-          />
-
-          <UpcomEv
             image={ComingSoon}
             title="Entrepreneurship Program"
             desc="Coming soon :)"
@@ -98,6 +62,33 @@ const PageEv = () => {
                 Previous Events
               </div>
             </div>
+
+            <PrevEv
+              image={DataForge}
+              title="DataForge Fusion"
+              desc="🚀 Calling all data enthusiasts! 📊
+
+            CSI & E-Cell MJCET presents our latest venture,
+            
+            DataForge Fusion: Data Engineering & Analysis Workshop.
+            
+            Delve deep into the dynamic world of data and unravel the secrets of data analysis with our guest speaker:
+            Imaduddin Mohammed
+            Senior Cloud Engineer @ PwC Australia
+            
+            Embark on a journey into the dynamic world of data as we bring you an engaging pre-hackathon workshop that explores the intricacies of Data Engineering and Analysis.📈🧑‍💻
+            
+            Are you keen on mastering the skills required for effective Data Engineering? Eager to unravel the secrets of data analysis? Look no further!
+            
+            🖥️ Unlock the power of Data Engineering and Analysis with hands-on sessions!
+            
+            🖥️ Dive into practical experiences with cutting-edge tools and techniques in the realm of data.
+            
+            🖥️ Boost your chances to win the upcoming Hackathon with a generous prize pool of *₹3,00,000!*
+            
+            
+            "
+            />
 
             <PrevEv
               image={Flutter}
