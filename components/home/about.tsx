@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="flex justify-center lg:mt-24 z-10 text-white">
+    <div className="flex justify-center  lg:mt-24 z-10 text-white">
       <div className="w-[97%] lg:w-[70%] ">
         <div className="flex justify-center items-center relative">
           <div className="flex flex-col items-center ">

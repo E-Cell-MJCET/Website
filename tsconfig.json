@@ -17,6 +17,10 @@
       "@/*": ["./*"]
     }
   },
+<<<<<<< HEAD
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/ep/epbackground.jsx"],
+=======
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/ep/countdown.jsx"],
+>>>>>>> 4f96e7647d9ff4cd418bf3b2c31b9edc7f404b52
   "exclude": ["node_modules"]
 }
