@@ -18,3 +18,17 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Bernoru';
+    src: url('Bernoru-Regular.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
