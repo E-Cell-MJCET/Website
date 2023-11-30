@@ -12,8 +12,8 @@ const EPNav = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className={`${isOpen ? "overscroll-none" : ""}`}>
-      <div className="flex  flex-row justify-between lg:justify-around pt-5 header bg-[#031c35]">
+    <div className={`${isOpen ? "" : ""}`}>
+      <div className="flex flex-row justify-between lg:justify-around pt-5 header bg-[#031c35]">
         <Link href={"/"}>
           <div className="hidden lg:block">
             <Image

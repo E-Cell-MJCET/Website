@@ -25,7 +25,7 @@ function PhasesList() {
   return (
     <div className="bg-[#031c35] pt-5">
       <div className="-mx-4 flex flex-wrap">
-        <div className="w-full px-4">
+        <div className="w-full">
           <div className="mx-auto mb-[60px] max-w-[520px] text-center">
             <h2 className="mt-4 text-3xl font-bold text-dark bernoru sm:text-[40px]/[48px]">
               Phases
@@ -34,7 +34,7 @@ function PhasesList() {
           </div>
         </div>
       </div>
-      <div className="px-4 lg:px-6 xl:px-8 sm:p-8 grid grid-cols-1 gap-2 lg:grid-cols-2 justify-center items-center ">
+      <div className="px-4 lg:px-6 xl:px-8 grid grid-cols-1 gap-2 lg:grid-cols-2 justify-center items-center ">
         {arry.map((phase, id) => (
           <Phases key={id} title={phase.title} desc={phase.desc} />
         ))}

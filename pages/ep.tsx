@@ -15,7 +15,7 @@ import EPFooter2 from "@/components/ep/epFooter2";
 
 const EP = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-[#031c35]">
       <EPNav />
       <Hero />
       <ShiftingCountdown />

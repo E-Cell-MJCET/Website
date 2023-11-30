@@ -14,7 +14,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const EPFooter = () => {
   return (
-    <div className="flex justify-center bg-[#031c35]  pt-14 pt-10 pb-10 header font-light tracking-wider">
+    <div className="flex justify-center bg-[#031c35] pt-10 pb-10 header font-light tracking-wider">
       <div className="lg:w-[72%]">
         <div className=" flex justify-between text-white flex-col lg:flex-row">
           <div className="">
