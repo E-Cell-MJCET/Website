@@ -12,6 +12,7 @@ import ShiftingCountdown from "@/components/ep/countdown";
 import EPNav from "@/components/ep/epNav";
 import EPFooter from "@/components/ep/epFooter";
 import EPFooter2 from "@/components/ep/epFooter2";
+import Register from "@/components/ep/register";
 
 const EP = () => {
   return (
