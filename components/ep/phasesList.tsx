@@ -24,7 +24,7 @@ function PhasesList() {
 
   return (
     <div className="bg-[#031c35] pt-5">
-      <div className="-mx-4 flex flex-wrap">
+      <div className=" flex flex-wrap">
         <div className="w-full">
           <div className="mx-auto mb-[60px] max-w-[520px] text-center">
             <h2 className="mt-4 text-3xl font-bold text-dark bernoru sm:text-[40px]/[48px]">
