@@ -1,4 +1,5 @@
 import React from "react";
+import ReadMoreButton from "./readMoreBtn";
 
 function Phases({ title, desc }: { title: String; desc: String }) {
   return (
@@ -20,7 +21,13 @@ function Phases({ title, desc }: { title: String; desc: String }) {
         <h2 className="text-lg bernoru text-white font-bold title-font mb-2">
           {title}
         </h2>
-        <p className="leading-relaxed text-base poppins">{desc}</p>
+        <div className="lg:block hidden">
+          <ReadMoreButton text={desc} maxlength={100} />
+        </div>
+
+        <div className="lg:hidden block">
+          <p className="leading-relaxed text-base poppins">{desc}</p>
+        </div>
       </div>
     </>
   );
