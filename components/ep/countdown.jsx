@@ -62,7 +62,7 @@ const ShiftingCountdown = () => {
   );
 };
 
-const CountdownItem = ({ num, text }: { num: any; text: String }) => {
+const CountdownItem = ({ num, text }) => {
   return (
     <div className="poppins w-1/4 h-24 md:h-36 flex flex-col gap-1 md:gap-2 items-center justify-center border-r-[1px] border-slate-200">
       <div className="w-full text-center relative overflow-hidden">
