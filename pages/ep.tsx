@@ -7,18 +7,22 @@ import Footer from "@/components/home/footer";
 import Footers from "@/components/home/footer2";
 import Nav from "@/components/nav";
 import React from "react";
-import ParticleRing from '@/components/ep/epbackground';
+import ParticleRing from "@/components/ep/epbackground";
+import ShiftingCountdown from "@/components/ep/countdown";
+import EPNav from "@/components/ep/epNav";
+import EPFooter from "@/components/ep/epFooter";
+import EPFooter2 from "@/components/ep/epFooter2";
 
 const EP = () => {
   return (
     <div className="bg-black">
-      <PageEp />
+      <EPNav />
       <Hero />
-      <ParticleRing />
+      <ShiftingCountdown />
       <PhasesList />
       <FAQ />
-      <Footer />
-      <Footers />
+      <EPFooter />
+      <EPFooter2 />
     </div>
   );
 };

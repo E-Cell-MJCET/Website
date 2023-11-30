@@ -3,7 +3,7 @@ import FAQBox from "./faqBox";
 
 const FAQ = () => {
   return (
-    <section className="relative z-20 overflow-hidden bg-[#031c35] pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px] mx-[20px] lg:mx-0">
+    <section className="relative z-20 overflow-hidden bg-[#031c35] pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px] px-[20px] lg:mx-0">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
@@ -70,8 +70,15 @@ const FAQ = () => {
               text="Yes it costs ₹500 to register"
             />
             <FAQBox
-              header="When is the last date to register?"
-              text="December 20th is the last date to resgiter"
+              header="Why 4 phases?"
+              text="The foundational understanding of entrepreneurship provides the basis for acquiring technical skills,
+              which in turn are crucial for innovative and efficient business practices. The development phase,
+              focusing on both skillset enhancement and effective management, is directly connected to the initial
+              phases, as it builds upon the knowledge gained. Additionally, the financial phase is interwoven with
+              all the preceding phases, ensuring that participants have the financial acumen needed to make
+              informed decisions that support the sustainability and growth of their entrepreneurial ventures.
+              Together, these phases create a cohesive and interconnected framework for a well-rounded
+              entrepreneurial journey."
             />
           </div>
         </div>
