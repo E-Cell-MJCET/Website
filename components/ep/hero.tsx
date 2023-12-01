@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="container lg:w-[80%] mx-auto flex px-5 py-8 md:flex-row flex-col-reverse items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font bernoru sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Entreprenuership Program
+            Entrepreneurship Program
           </h1>
           <p className="mb-8 poppins text-white leading-relaxed opacity-80">
             The 6-week Entrepreneurship Program is an inclusive initiative open

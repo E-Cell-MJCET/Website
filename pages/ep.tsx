@@ -13,15 +13,37 @@ import EPNav from "@/components/ep/epNav";
 import EPFooter from "@/components/ep/epFooter";
 import EPFooter2 from "@/components/ep/epFooter2";
 import Register from "@/components/ep/register";
+import Brouchere from "@/components/ep/brouchere";
 
 const EP = () => {
   return (
     <div className="bg-[#031c35]">
       <EPNav />
       <Hero />
-      <ShiftingCountdown />
+      <Brouchere />
+      <div className="relative flex overflow-none  bg-[#cd3e35]">
+        <div className="py-8 animate-marquee whitespace-nowrap">
+          <span className="text-4xl mx-4">Limited Seats Only!!!</span>
+          <span className="text-4xl mx-4">Limited Seats Only!!!</span>
+          <span className="text-4xl mx-4">Limited Seats Only!!!</span>
+          <span className="text-4xl mx-4">Limited Seats Only!!!</span>
+          <span className="text-4xl mx-4">Limited Seats Only!!!</span>
+          <span className="text-4xl mx-4">Limited Seats Only!!!</span>
+        </div>
+
+        <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap ">
+          <span className="text-4xl mx-4">Limited Seats Only!!!</span>
+          <span className="text-4xl mx-4">Limited Seats Only!!!</span>
+          <span className="text-4xl mx-4">Limited Seats Only!!!</span>
+          <span className="text-4xl mx-4">Limited Seats Only!!!</span>
+          <span className="text-4xl mx-4">Limited Seats Only!!!</span>
+          <span className="text-4xl mx-4">Limited Seats Only!!!</span>
+        </div>
+      </div>
+
       <PhasesList />
       <FAQ />
+
       <EPFooter />
       <EPFooter2 />
     </div>

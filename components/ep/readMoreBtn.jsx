@@ -24,7 +24,7 @@ const ReadMoreButton = ({ text, maxlength }) => {
       <p className="leading-relaxed text-base poppins">{showFullText ? "" : "..."}</p>
       <button
         onClick={ToggleReadMore}
-        className="underline text-[#031c35] mt-[20px]"
+        className="underline text-[#dcdcdc] mt-[20px]"
       >
         {showFullText ? "Read Less" : "Read More"}
       </button>

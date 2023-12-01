@@ -23,62 +23,37 @@ const FAQ = () => {
           <div className="w-full px-4 lg:w-1/2">
             <FAQBox
               header="What is Entrepreneurship program?"
-              text="The 6-week Entrepreneurship Program is an inclusive initiative open to all students,
-              meticulously designed to equip participants with essential entrepreneurial skills.
-              Structured through a combination of building basics, mentorship sessions, and a focus on
-              fostering innovation and creativity, we have 4 phases in this program that provide a
-              comprehensive learning experience. Our commitment to hands-on learning ensures that
-              participants not only gain theoretical knowledge but also acquire practical insights for
-              lifelong entrepreneurial success."
+              text="The Entrepreneurship Program is a comprehensive educational initiative that equips individuals with the skills, knowledge, and resources needed to navigate and succeed in the entrepreneurial landscape."
             />
             <FAQBox
               header="Duration of the Course?"
-              text="Embark on a transformative journey through our 4 phases—Entrepreneurship Basics,
-              Technical Skills, Skill Development, and Finances. This comprehensive program ensures
-              participants gain everything they need for a head start in their entrepreneurial endeavours.
-              From laying the foundation with entrepreneurship basics to honing technical skills, fostering
-              personal development, and mastering financial aspects, participants will acquire a well-
-              rounded skill set essential for success in the entrepreneurial landscape."
+              text="The course duration is 6 weeks, with sessions held every Friday and Saturday."
             />
             <FAQBox
               header="What Will the Participants Gain from the Program?"
-              text="Embark on a transformative journey through our 4 phases—Entrepreneurship Basics,
-              Technical Skills, Skill Development, and Finances. This comprehensive program ensures
-              participants gain everything they need for a head start in their entrepreneurial endeavours.
-              From laying the foundation with entrepreneurship basics to honing technical skills, fostering
-              personal development, and mastering financial aspects, participants will acquire a well-
-              rounded skill set essential for success in the entrepreneurial landscape."
+              text="Choose the Entrepreneurship Program to gain comprehensive entrepreneurial skills, collaborate in a student-led initiative, and prepare yourself for success in the dynamic world of business."
+            />
+            <FAQBox
+              header="When does the Entrepreneurship Program commence?"
+              text="The Entrepreneurship Program is scheduled to commence in the last week of December."
             />
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <FAQBox
               header="Why choose Entrepreneurship program?"
-              text="Embark on a transformative journey of personal and professional growth by joining our
-              entrepreneurship program. Our comprehensive curriculum is designed to equip you with a diverse
-              skill set, including leadership, problem-solving, and strategic thinking. Connect with like-minded
-              individuals and seasoned mentors, fostering valuable networks that can shape your entrepreneurial
-              path. Access to resources, such as potential funding avenues and support services, ensures that your
-              innovative ideas can flourish. Immerse yourself in an environment that not only encourages seeking
-              knowledge but also nurtures an entrepreneurial mindset—essential for success in today's dynamic
-              business landscape. Through this program, you'll step out of your comfort zone, overcome
-              challenges, and develop the resilience needed to thrive. Join us on this exciting journey where
-              personal growth, practical skills, and valuable insights converge to empower you in building a
-              successful and sustainable business."
+              text="Choose the Entrepreneurship Program to gain comprehensive entrepreneurial skills, collaborate in a student-led initiative, and prepare yourself for success in the dynamic world of business."
             />
             <FAQBox
               header="Is there any registration fees?"
-              text="Yes it costs ₹500 to register"
+              text="Yes, there is a registration fee of ₹500 for the Entrepreneurship Program."
             />
             <FAQBox
               header="Why 4 phases?"
-              text="The foundational understanding of entrepreneurship provides the basis for acquiring technical skills,
-              which in turn are crucial for innovative and efficient business practices. The development phase,
-              focusing on both skillset enhancement and effective management, is directly connected to the initial
-              phases, as it builds upon the knowledge gained. Additionally, the financial phase is interwoven with
-              all the preceding phases, ensuring that participants have the financial acumen needed to make
-              informed decisions that support the sustainability and growth of their entrepreneurial ventures.
-              Together, these phases create a cohesive and interconnected framework for a well-rounded
-              entrepreneurial journey."
+              text="The four phases are designed to cover different aspects of entrepreneurship, helping participants gradually build their skills from basics to advanced topics. This structure ensures a well-rounded learning experience for a successful entrepreneurial journey."
+            />
+            <FAQBox
+              header="Where is the Entreprenurship Program being held?"
+              text="The Entrepreneurship Program is being held in the facilities of Muffakham Jah College of Engineering and Technology."
             />
           </div>
         </div>

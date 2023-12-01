@@ -49,7 +49,7 @@ const Nav = () => {
             <li className="mx-3 text-xl text-white font-semibold menu4 hover:font-bold hover:underline underline-offset-8">
               <Link href={"/contactus"}>Contact</Link>
             </li>
-            <li className="mx-3 text-xl text-white font-semibold menu4 hover:font-bold hover:underline underline-offset-8">
+            <li className="mx-3 text-xl text-[#E04A2F] font-semibold menu4 hover:font-bold hover:underline underline-offset-8">
               <Link href={"/ep"}>Entrepreneurship Program</Link>
             </li>
           </ul>
@@ -93,7 +93,7 @@ const Nav = () => {
                   <li className="mx-3 pt-2 pb-2 text-white text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/contactus"}>Contact</Link>
                   </li>
-                  <li className="mx-3 pt-2 pb-2 text-white text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 pt-2 pb-2 text-[#E04A2F] text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/ep"}>Entrepreneurship Program</Link>
                   </li>
                 </ul>
@@ -115,7 +115,7 @@ const Nav = () => {
                   <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/contact"}>Contact</Link>
                   </li>
-                  <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 text-xl text-[#E04A2F] font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/ep"}>Entrepreneurship Program</Link>
                   </li>
                 </ul>
