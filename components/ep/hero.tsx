@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
-  const eplogo = "/assets/ep/logo/3.png";
+  const eplogo = "/assets/ep/logo/2.png";
   return (
     <section className="bg-[#031c35] text-gray-600 body-font lg:mt-[100px]">
       <div className="container lg:w-[80%] mx-auto flex px-5 py-8 md:flex-row flex-col-reverse items-center">
@@ -30,7 +30,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-[70%] md:w-1/2 w-5/6 mb-10 lg:mb-0">
+        <div className=" lg:w-[40%] md:w-1/2  mb-10 lg:mb-0">
           <img className="object-cover object-center" alt="hero" src={eplogo} />
         </div>
       </div>
