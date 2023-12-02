@@ -46,7 +46,7 @@ const ShiftingCountdown = () => {
   };
 
   return (
-    <div className="p-4 bg-[#031c35]">
+    <div className="bg-[#031c35] mx-[20px] lg:mt-[100px]">
       <div className="text-center">
         <h2 className="mb-4 text-3xl font-bold text-dark  sm:text-[40px]/[48px]">
           Time left to register!

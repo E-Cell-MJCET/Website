@@ -16,7 +16,11 @@ const config: Config = {
       animation: {
         tilt: "tilt 10s infinite linear",
         fadein: "fadein 2s ease",
+        marquee: 'marquee 25s linear infinite',
+        marquee2: 'marquee2 25s linear infinite',
       },
+      
+    
       keyframes: {
         tilt: {
           "0%, 50%, 100%": {
@@ -28,6 +32,15 @@ const config: Config = {
           "75%": {
             transform: "rotate(-1.5deg)",
           },
+        },
+
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
 
         fadein: {
