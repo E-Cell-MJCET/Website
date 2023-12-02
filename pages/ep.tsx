@@ -21,7 +21,7 @@ const EP = () => {
       <EPNav />
       <Hero />
       <Brouchere />
-      <div className="relative flex overflow-none  bg-[#cd3e35]">
+      <div className="relative flex overflow-x-hidden  bg-[#cd3e35]">
         <div className="py-8 animate-marquee whitespace-nowrap">
           <span className="text-4xl mx-4">Limited Seats Only!!!</span>
           <span className="text-4xl mx-4">Limited Seats Only!!!</span>
@@ -31,7 +31,7 @@ const EP = () => {
           <span className="text-4xl mx-4">Limited Seats Only!!!</span>
         </div>
 
-        <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap ">
+        <div className="absolute top-0 py-8 animate-marquee2 whitespace-nowrap ">
           <span className="text-4xl mx-4">Limited Seats Only!!!</span>
           <span className="text-4xl mx-4">Limited Seats Only!!!</span>
           <span className="text-4xl mx-4">Limited Seats Only!!!</span>
