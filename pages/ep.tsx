@@ -14,8 +14,8 @@ import EPFooter from "@/components/ep/epFooter";
 import EPFooter2 from "@/components/ep/epFooter2";
 
 const EP = () => {
-  return (
-    <div className="bg-[#031c35]">
+  return (<>
+  <div className="bg-white max-w-[100%] ">
       <EPNav />
       <Hero />
       <ShiftingCountdown />
@@ -23,7 +23,8 @@ const EP = () => {
       <FAQ />
       <EPFooter />
       <EPFooter2 />
-    </div>
+    </div></>
+    
   );
 };
 

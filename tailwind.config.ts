@@ -39,7 +39,7 @@ const config: Config = {
           },
         },
         screens: {
-          mobile: { max: "639px" },
+          mobile: { max: "700px" },
           desktop: { min: "640px" },
         },
       },
