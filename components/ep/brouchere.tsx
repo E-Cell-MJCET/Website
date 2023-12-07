@@ -4,7 +4,7 @@ import React from "react";
 const Brouchere = () => {
   const eplogo = "/assets/ep/logo/3.png";
   return (
-    <section className="relative z-20 overflow-hidden bg-[#031c35] pb-8 pt-20 dark:bg-dark lg:pb-[70px] lg:pt-[120px] px-[20px] lg:mx-0">
+    <section className="relative z-20 overflow-hidden bg-[#031c35] pb-4 pt-20 dark:bg-dark lg:pb-[70px] lg:pt-[70px] px-[20px] lg:mx-0">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">

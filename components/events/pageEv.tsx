@@ -36,7 +36,7 @@ const PageEv = () => {
           <UpcomEv
             image={HackRev2}
             title="Hack Revolution 2023 2.0"
-            desc="Hack Revolution is a social coding competition powered by ACES, consisting of 4-6 members in a team. It provides an exceptional opportunity to network with people from different backgrounds and gives a career boost to the students. It is a collaboration between CSI and E-Cell clubs of the MJCET. The duration is about 15 hours. Winners of the hackathon would qualify for a price pool of Rs. 3,00,000 and Internship oppurtunity at ACES  Register now at https://hackrevolution.in"
+            desc="Hack Revolution is a social coding competition powered by ACES, consisting of 4-6 members in a team. It provides an exceptional opportunity to network with people from different backgrounds and gives a career boost to the students. It is a collaboration between CSI and E-Cell clubs of the MJCET. The duration is about 15 hours. Winners of the hackathon would qualify for a price pool of Rs. 3,00,000 and Internship oppurtunity at ACES."
             link="https://hackrevolution.in"
             date="17th December 2023"
             venue="Gulam Ahmed Hall, MJCET"

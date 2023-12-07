@@ -29,6 +29,9 @@ const Hero = () => {
               Register now
             </a>
           </div>
+          <div className="mb-8 poppins text-white leading-relaxed mt-4">
+            The Sessions are conducted only on Fridays and Saturdays
+          </div>
         </div>
         <div className=" lg:w-[40%] md:w-1/2  mb-10 lg:mb-0">
           <img className="object-cover object-center" alt="hero" src={eplogo} />

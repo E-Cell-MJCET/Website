@@ -37,6 +37,9 @@ const EPNav = () => {
         <div className="hidden lg:inline ">
           <ul className="flex items-center justify-center px-3 mt-6 ">
             <li className="mx-3 text-xl text-white font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
+              <Link href={"/"}>Home</Link>
+            </li>
+            <li className="mx-3 text-xl text-white font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
               <Link href={"/events"}>Events</Link>
             </li>
             <li className="mx-3 text-xl text-white font-semibold menu2 hover:font-bold hover:underline underline-offset-8 active:text-red-700">

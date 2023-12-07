@@ -2,7 +2,7 @@ import { ExecomCardProps } from "@/components/team/execom";
 
 const execomData: ExecomCardProps[] = [
   {
-    username: "Aimen Laiba Mohammad",
+    username: "Aimen Laiba \n Mohammad",
     dp: "/assets/execom/aimen.webp",
     position: "HR",
     instalink: "https://www.instagram.com/aimenlaibaa",

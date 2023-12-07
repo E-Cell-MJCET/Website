@@ -21,7 +21,8 @@ const EP = () => {
       <EPNav />
       <Hero />
       <Brouchere />
-      <div className="relative flex overflow-x-hidden  bg-[#cd3e35]">
+      <ShiftingCountdown />
+      <div className="relative flex overflow-x-hidden mt-10  bg-[#cd3e35]">
         <div className="py-4 animate-marquee whitespace-nowrap">
           <span className="text-3xl mx-4">Limited Seats Only!!!</span>
           <span className="text-3xl mx-4">Limited Seats Only!!!</span>
@@ -42,6 +43,7 @@ const EP = () => {
       </div>
 
       <PhasesList />
+
       <FAQ />
 
       <EPFooter />
