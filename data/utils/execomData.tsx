@@ -145,17 +145,6 @@ const execomData: ExecomCardProps[] = [
     twitter: false,
   },
   {
-    username: "Abdur Raafe",
-    dp: "/assets/execom/abdur.webp",
-    position: "Design",
-    instalink: "https://www.instagram.com/a.raafe.a",
-    linkedlinlink: "https://www.linkedin.com/in/abdur-raafe-akheel-356451227/",
-    twitterlink: "https://twitter.com/Raafe18561115",
-    insta: true,
-    linkedln: true,
-    twitter: true,
-  },
-  {
     username: "Ayesha Fatima",
     dp: "/assets/execom/ayesha.webp",
     position: "Design",
@@ -166,6 +155,18 @@ const execomData: ExecomCardProps[] = [
     linkedln: false,
     twitter: false,
   },
+  {
+    username: "Abdur Raafe",
+    dp: "/assets/execom/abdur.webp",
+    position: "Design",
+    instalink: "https://www.instagram.com/a.raafe.a",
+    linkedlinlink: "https://www.linkedin.com/in/abdur-raafe-akheel-356451227/",
+    twitterlink: "https://twitter.com/Raafe18561115",
+    insta: true,
+    linkedln: true,
+    twitter: true,
+  },
+
   {
     username: "Mohammad Shujauddin",
     dp: "/assets/execom/shuja.webp",

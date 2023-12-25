@@ -34,15 +34,6 @@ const PageEv = () => {
           </div>
 
           <UpcomEv
-            image={HackRev2}
-            title="Hack Revolution 2023 2.0"
-            desc="Hack Revolution is a social coding competition powered by ACES, consisting of 4-6 members in a team. It provides an exceptional opportunity to network with people from different backgrounds and gives a career boost to the students. It is a collaboration between CSI and E-Cell clubs of the MJCET. The duration is about 15 hours. Winners of the hackathon would qualify for a price pool of Rs. 3,00,000 and Internship oppurtunity at ACES."
-            link="https://hackrevolution.in"
-            date="17th December 2023"
-            venue="Gulam Ahmed Hall, MJCET"
-          />
-
-          <UpcomEv
             image={ep}
             title="Entrepreneurship Program"
             desc="The 6-week Entrepreneurship Program is an inclusive initiative open to all students, meticulously designed to equip participants with essential entrepreneurial skills. Structured through a combination of building basics, mentorship sessions, and a focus on fostering innovation and creativity. Our commitment to hands-on learning ensures that participants not only gain theoretical knowledge but also acquire practical insights for lifelong entrepreneurial success."
@@ -62,6 +53,12 @@ const PageEv = () => {
                 Previous Events
               </div>
             </div>
+
+            <PrevEv
+              image={HackRev2}
+              title="Hack Revolution 2023 2.0"
+              desc="Hack Revolution is a social coding competition powered by ACES, consisting of 4-6 members in a team. It provides an exceptional opportunity to network with people from different backgrounds and gives a career boost to the students. It is a collaboration between CSI and E-Cell clubs of the MJCET. The duration is about 15 hours. Winners of the hackathon would qualify for a price pool of Rs. 3,00,000 and Internship oppurtunity at ACES."
+            />
 
             <PrevEv
               image={DataForge}

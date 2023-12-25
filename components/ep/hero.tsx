@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="bg-[#031c35] text-gray-600 body-font lg:mt-[100px]">
       <div className="container lg:w-[80%] mx-auto flex px-5 py-8 md:flex-row flex-col-reverse items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center">
           <h1 className="title-font bernoru sm:text-4xl text-3xl mb-4 font-medium text-white">
             Entrepreneurship Program
           </h1>
@@ -29,8 +29,8 @@ const Hero = () => {
               Register now
             </a>
           </div>
-          <div className="mb-8 poppins text-white leading-relaxed mt-4">
-            The Sessions are conducted only on Fridays and Saturdays
+          <div className="mb-4 poppins text-white text-xl leading-relaxed mt-4 font-extrabold">
+            The Sessions are conducted only on Fridays and Saturdays.
           </div>
         </div>
         <div className=" lg:w-[40%] md:w-1/2  mb-10 lg:mb-0">
