@@ -16,45 +16,52 @@ import Register from "@/components/ep/register";
 import Brouchere from "@/components/ep/brouchere";
 import su from "@/public/assets/ep/logo/su.png";
 import Image from "next/image";
+import Head from "next/head";
+import { Html } from "next/document";
 
 const EP = () => {
-
-  
   return (
-    <div className="bg-[#031c35]">
-      <EPNav />
-      <Hero />
-      <Brouchere />
-      <ShiftingCountdown />
-      <div className="relative flex overflow-x-hidden mt-10  bg-[#cd3e35]">
-        <div className="py-4 animate-marquee whitespace-nowrap">
-          <span className="text-3xl mx-4">Limited Seats Only!!!</span>
-          <span className="text-3xl mx-4">Limited Seats Only!!!</span>
-          <span className="text-3xl mx-4">Limited Seats Only!!!</span>
-          <span className="text-3xl mx-4">Limited Seats Only!!!</span>
-          <span className="text-3xl mx-4">Limited Seats Only!!!</span>
-          <span className="text-3xl mx-4">Limited Seats Only!!!</span>
+    <div>
+      <Head>
+        <meta name="theme-color" content="#031c35" />
+      </Head>
+      <body>
+        <div className="bg-[#031c35]">
+          <EPNav />
+          <Hero />
+          <Brouchere />
+          <ShiftingCountdown />
+          <div className="relative flex overflow-x-hidden mt-10  bg-[#cd3e35]">
+            <div className="py-4 animate-marquee whitespace-nowrap">
+              <span className="text-3xl mx-4">Limited Seats Only!!!</span>
+              <span className="text-3xl mx-4">Limited Seats Only!!!</span>
+              <span className="text-3xl mx-4">Limited Seats Only!!!</span>
+              <span className="text-3xl mx-4">Limited Seats Only!!!</span>
+              <span className="text-3xl mx-4">Limited Seats Only!!!</span>
+              <span className="text-3xl mx-4">Limited Seats Only!!!</span>
+            </div>
+
+            <div className="absolute top-0 py-4 animate-marquee2 whitespace-nowrap ">
+              <span className="text-3xl mx-4">Limited Seats Only!!!</span>
+              <span className="text-3xl mx-4">Limited Seats Only!!!</span>
+              <span className="text-3xl mx-4">Limited Seats Only!!!</span>
+              <span className="text-3xl mx-4">Limited Seats Only!!!</span>
+              <span className="text-3xl mx-4">Limited Seats Only!!!</span>
+              <span className="text-3xl mx-4">Limited Seats Only!!!</span>
+            </div>
+          </div>
+
+          <PhasesList />
+
+          <FAQ />
+          <div className="flex items-center justify-center">
+            <Image src={su} alt={""} width={500} height={500} />
+          </div>
+
+          <EPFooter />
+          <EPFooter2 />
         </div>
-
-        <div className="absolute top-0 py-4 animate-marquee2 whitespace-nowrap ">
-          <span className="text-3xl mx-4">Limited Seats Only!!!</span>
-          <span className="text-3xl mx-4">Limited Seats Only!!!</span>
-          <span className="text-3xl mx-4">Limited Seats Only!!!</span>
-          <span className="text-3xl mx-4">Limited Seats Only!!!</span>
-          <span className="text-3xl mx-4">Limited Seats Only!!!</span>
-          <span className="text-3xl mx-4">Limited Seats Only!!!</span>
-        </div>
-      </div>
-
-      <PhasesList />
-
-      <FAQ />
-      <div className="flex items-center justify-center">
-        <Image src={su} alt={""} width={500} height={500} />
-      </div>
-
-      <EPFooter />
-      <EPFooter2 />
+      </body>
     </div>
   );
 };
