@@ -33,14 +33,9 @@ const PageEv = () => {
             </div>
           </div>
 
-          <UpcomEv
-            image={ep}
-            title="Entrepreneurship Program"
-            desc="The 6-week Entrepreneurship Program is an inclusive initiative open to all students, meticulously designed to equip participants with essential entrepreneurial skills. Structured through a combination of building basics, mentorship sessions, and a focus on fostering innovation and creativity. Our commitment to hands-on learning ensures that participants not only gain theoretical knowledge but also acquire practical insights for lifelong entrepreneurial success."
-            link="/ep"
-            date="End of December"
-            venue="MJCET"
-          />
+          <p className="text-xl md:text-3xl font-bold mt-10">
+            Something great is cooking up :) Stay tuned!!
+          </p>
 
           <div className="flex justify-center flex-col items-center mt-20 bg-black">
             <div className="flex justify-center items-center mb-10 ">
