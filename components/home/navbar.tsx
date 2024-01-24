@@ -48,12 +48,17 @@ const Navbar = () => {
           <div className="relative group">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
             <button className=" relative px-10 py-4 bg-black rounded-lg leading-none flex items-center space-x-5 ">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeYTrY-R004opB_bOdo1Zx0uGIsuVbnC_L-5eaoEvkwi1bVfA/viewform"
-                className="header"
-              >
-                Be part of our core team
-              </a>
+              <span className="text-gray-300 header font-semibold tracking-wide text-[16px] lg:text-[20px] flex items-center justify-center">
+                Ideate{" "}
+                <div className="h-[10px] w-[10px] rounded-full bg-[#6b28d5] mx-2 mt-1 group-hover:bg-[#c23c83] transition duration-1000">
+                  {" "}
+                </div>{" "}
+                Innovate{" "}
+                <div className="h-[10px] w-[10px] rounded-full bg-[#6b28d5] mx-2 mt-1 group-hover:bg-[#c23c83] transition duration-1000">
+                  {" "}
+                </div>
+                Incubate
+              </span>
             </button>
           </div>
         </div>

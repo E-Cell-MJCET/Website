@@ -33,7 +33,7 @@ const PageEv = () => {
             </div>
           </div>
 
-          <p className="text-xl md:text-3xl font-bold mt-10">
+          <p className="text-xl md:text-3xl font-bold mt-10 text-center">
             Something great is cooking up :) Stay tuned!!
           </p>
 

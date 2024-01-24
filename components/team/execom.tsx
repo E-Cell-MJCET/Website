@@ -5,30 +5,31 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-export interface ExecomCardProps {
+export interface CardProps {
   username: string;
   dp: any;
   position: string;
   instalink: string;
   insta: boolean;
+  head: boolean;
   linkedlinlink: string;
   linkedln: boolean;
   twitterlink: string;
   twitter: boolean;
 }
 
-const Execom: React.FC<ExecomCardProps> = ({
+const Execom: React.FC<CardProps> = ({
   username,
   dp,
   position,
   instalink,
   linkedlinlink,
   twitterlink,
+  head,
   insta,
   linkedln,
   twitter,
 }) => {
-  console.log(dp);
   return (
     <div className="flex flex-col w-[160px] items-center  mt-[20px] bg-[#212121] rounded-md mx-[10px] md:w-[180px] mb-[20px]">
       <div className="flex items-center justify-center w-[85px] h-[85px] mt-[25px] rounded-full bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
@@ -45,9 +46,15 @@ const Execom: React.FC<ExecomCardProps> = ({
         {username}
       </h1>
 
-      <div className="rounded-md bg-[#6b28d5] text-white text-[12px] mb-[25px] mt-[12px] px-[7px] py-[2px]">
-        {position}
-      </div>
+      {head ? (
+        <div className="rounded-md bg-[#6b28d5] text-white text-[12px] mb-[25px] mt-[12px] px-[7px] py-[2px]">
+          Head
+        </div>
+      ) : (
+        <div className="rounded-md bg-[#6b28d5] text-white text-[12px] mb-[25px] mt-[12px] px-[7px] py-[2px]">
+          Core
+        </div>
+      )}
 
       <div className="flex justify-center  mb-3 mt-auto">
         {insta ? (

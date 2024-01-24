@@ -1,6 +1,6 @@
-import { ExecomCardProps } from "@/components/team/execom";
+import { CardProps } from "@/components/team/execom";
 
-const execomData: ExecomCardProps[] = [
+const execomData: CardProps[] = [
   {
     username: "Aimen Laiba \n Mohammad",
     dp: "/assets/execom/aimen.webp",
