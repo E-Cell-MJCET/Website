@@ -37,6 +37,30 @@ const ideationData: CardProps[] = [
     linkedln: true,
     twitter: false,
   },
+  {
+    username: "Mohd Jawaad",
+    dp: "/assets/core/jawad.webp",
+    position: "Ideation",
+    instalink: "https://www.instagram.com/jawaaaddd__",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
+  {
+    username: "SALEHA BINT MOHAMMED ABDUL BASEER",
+    dp: "/assets/core/saleha.webp",
+    position: "Ideation",
+    instalink: "https://www.instagram.com/saleha_mab",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
 ];
 
 export default ideationData;

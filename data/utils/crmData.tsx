@@ -25,6 +25,30 @@ const crmData: CardProps[] = [
     linkedln: true,
     twitter: true,
   },
+  {
+    username: "Mateen Hussain",
+    dp: "/assets/core/mateen.webp",
+    position: "CRM",
+    instalink: "https://www.instagram.com/not.ma3",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
+  {
+    username: "Arshiya Naaz",
+    dp: "/assets/core/arshiya.webp",
+    position: "CRM",
+    instalink: "https://www.instagram.com/arshiyanaazzz",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
 ];
 
 export default crmData;

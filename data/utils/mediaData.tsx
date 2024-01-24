@@ -37,6 +37,30 @@ const mediaData: CardProps[] = [
     linkedln: false,
     twitter: false,
   },
+  {
+    username: "shanawaz shareef",
+    dp: "/assets/core/shanawaz.webp",
+    position: "Media",
+    instalink: "https://www.instagram.com/sh4.wz",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
+  {
+    username: "Abdul Rahman hanzala",
+    dp: "/assets/core/rahman.webp",
+    position: "Media",
+    instalink: "https://www.instagram.com/ig_hanzala.pvt",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
 ];
 
 export default mediaData

@@ -25,6 +25,30 @@ const operationsData: CardProps[] = [
     linkedln: true,
     twitter: false,
   },
+  {
+    username: "Aziz Ur Rahman",
+    dp: "/assets/core/aziz.webp",
+    position: "Operations",
+    instalink: "https://www.instagram.com/aziiiiiiiiz._",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
+  {
+    username: "Rayyan Shaji Ansari",
+    dp: "/assets/core/rayyan.webp",
+    position: "Operations",
+    instalink: "https://www.instagram.com/rayyan.ansari.17",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
 ];
 
 export default operationsData

@@ -26,6 +26,30 @@ const documentationData: CardProps[] = [
     linkedln: false,
     twitter: false,
   },
+  {
+    username: "Syeda Zoha Maria ",
+    dp: "/assets/core/zoha.webp",
+    position: "Documentation",
+    instalink: "https://www.instagram.com/zohamaria_19",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
+  // {
+  //   username: "",
+  //   dp: "/assets/execom/.webp",
+  //   position: "Media",
+  //   instalink: "https://www.instagram.com/",
+  //   linkedlinlink: "",
+  //   twitterlink: "",
+  //   insta: true,
+  //   head: false,
+  //   linkedln: false,
+  //   twitter: false,
+  // },
 ];
 
 export default documentationData;

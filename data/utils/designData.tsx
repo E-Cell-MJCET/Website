@@ -25,6 +25,30 @@ const designData: CardProps[] = [
     linkedln: true,
     twitter: true,
   },
+  {
+    username: "MD Himayath Ali ",
+    dp: "/assets/core/himayath.webp",
+    position: "Design",
+    instalink: "https://www.instagram.com/himayathh_07",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
+  {
+    username: "SHAFIYA KHANAM ",
+    dp: "/assets/core/shafiya.webp",
+    position: "Design",
+    instalink: "https://www.instagram.com/monsoon.blossom05",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
 ];
 
 export default designData;

@@ -25,6 +25,30 @@ const webData: CardProps[] = [
     linkedln: true,
     twitter: false,
   },
+  {
+    username: "Mohammad Mutahhar Aquib ",
+    dp: "/assets/core/aquib.webp",
+    position: "Web",
+    instalink: "https://www.instagram.com/mutahharaquib",
+    linkedlinlink: "https://www.linkedin.com/in/mohammad-mutahhar-aquib/",
+    twitterlink: "https://twitter.com/mutahharaquib",
+    insta: true,
+    head: false,
+    linkedln: true,
+    twitter: true,
+  },
+  {
+    username: "Mohammed Affan Sakhib",
+    dp: "/assets/core/affan.webp",
+    position: "Web",
+    instalink: "https://www.instagram.com/md.affansakhib",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
 ];
 
 export default webData;

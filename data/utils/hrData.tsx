@@ -25,6 +25,30 @@ const hrData: CardProps[] = [
     linkedln: true,
     twitter: false,
   },
+  {
+    username: "Amena Wajiha",
+    dp: "/assets/core/amena.webp",
+    position: "Human Resources",
+    instalink: "https://www.instagram.com/naina.1982",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
+  {
+    username: "Q M Taqi uddin",
+    dp: "/assets/core/taqi.webp",
+    position: "Human Resources",
+    instalink: "https://www.instagram.com/taqi__uddin",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
 ];
 
 export default hrData;
