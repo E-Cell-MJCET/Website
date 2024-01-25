@@ -19,7 +19,7 @@ const Nav = () => {
             <Image
               src={ectext}
               alt=""
-              className="h-[48px] lg:h-[70px] w-[48px] lg:w-full lg:mt-1 logo"
+              className="h-[48px] lg:h-[70px] w-[48px] lg:w-fit lg:mt-1 logo"
               height={200}
               width={500}
             />

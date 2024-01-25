@@ -31,10 +31,10 @@ const Execom: React.FC<CardProps> = ({
   twitter,
 }) => {
   return (
-    <div className="flex flex-col w-[160px] items-center  mt-[20px] bg-[#212121] rounded-md mx-[10px] md:w-[180px] mb-[20px]">
-      <div className="flex items-center justify-center w-[85px] h-[85px] mt-[25px] rounded-full bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
+    <div className="flex flex-col w-[160px] items-center  mt-[20px] bg-[#1b1b1b] rounded-lg mx-[5px] md:mx-[25px] md:w-[180px] mb-[20px] border border-gray-900 hover:scale-110 hover:border-[#c23c83] transform duration-300">
+      <div className="flex items-center justify-center w-[93px] h-[93px] mt-[25px] rounded-full bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
         <Image
-          className="w-[80px] h-[80px]  object-cover rounded-full"
+          className="w-[90px] h-[90px]  object-cover rounded-full"
           src={dp}
           width={80}
           height={80}
@@ -42,7 +42,7 @@ const Execom: React.FC<CardProps> = ({
         ></Image>
       </div>
 
-      <h1 className="mt-[20px] text-[20px] text-white text-center px-[10px] font-medium Header">
+      <h1 className="mt-[20px] text-[20px] text-white text-center px-[25px] md:px-[35px] font-medium header">
         {username}
       </h1>
 
@@ -51,7 +51,7 @@ const Execom: React.FC<CardProps> = ({
           Head
         </div>
       ) : (
-        <div className="rounded-md bg-[#6b28d5] text-white text-[12px] mb-[25px] mt-[12px] px-[7px] py-[2px]">
+        <div className="rounded-md bg-[#c23c83] text-white text-[12px] mb-[25px] mt-[12px] px-[7px] py-[2px]">
           Core
         </div>
       )}

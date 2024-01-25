@@ -39,7 +39,7 @@ const operationsData: CardProps[] = [
   },
   {
     username: "Rayyan Shaji Ansari",
-    dp: "/assets/core/rayyan.webp",
+    dp: "/assets/core/rayyan.png",
     position: "Operations",
     instalink: "https://www.instagram.com/rayyan.ansari.17",
     linkedlinlink: "",
@@ -51,4 +51,4 @@ const operationsData: CardProps[] = [
   },
 ];
 
-export default operationsData
+export default operationsData;

@@ -1,4 +1,5 @@
 import ContactBlock from "@/components/contact/contact";
+import Form from "@/components/contact/form";
 import Title from "@/components/contact/title";
 import PageEv from "@/components/events/pageEv";
 import Footer from "@/components/home/footer";
@@ -15,6 +16,7 @@ const ContactUs = () => {
       <Nav />
       <Title />
       <ContactBlock />
+      <Form />
       <Footer />
       <Footers />
     </div>

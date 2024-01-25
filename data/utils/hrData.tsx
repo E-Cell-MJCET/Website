@@ -2,7 +2,7 @@ import { CardProps } from "@/components/team/execom";
 
 const hrData: CardProps[] = [
   {
-    username: "Aimen Laiba \n Mohammad",
+    username: "Aimen Laiba",
     dp: "/assets/execom/aimen.webp",
     position: "HR",
     instalink: "https://www.instagram.com/aimenlaibaa",

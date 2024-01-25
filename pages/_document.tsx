@@ -2,7 +2,11 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html
+      lang="en"
+      className="scroll-smooth"
+      style={{ scrollBehavior: "smooth" }}
+    >
       <Head>
         <link rel="shortcut icon" href="../assets/ewnlt.png" />
         <link rel="manifest" href="/manifest.json" />

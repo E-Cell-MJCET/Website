@@ -15,20 +15,7 @@ import ExecomTeam from "./execomTeam";
 
 const ExecomList = () => {
   return (
-    <div className="w-full">
-      <div className="flex justify-center items-center my-10 flex-col">
-        <ExecomTeam teamName="Human Resources" teamData={hrData} />
-        <ExecomTeam teamName="Events" teamData={eventsData} />
-        <ExecomTeam teamName="Ideation" teamData={ideationData} />
-        <ExecomTeam teamName="Marketing" teamData={marketingData} />
-        <ExecomTeam teamName="CRM" teamData={crmData} />
-        <ExecomTeam teamName="Operations" teamData={operationsData} />
-        <ExecomTeam teamName="Design" teamData={designData} />
-        <ExecomTeam teamName="Web" teamData={webData} />
-        <ExecomTeam teamName="Documentation" teamData={documentationData} />
-        <ExecomTeam teamName="Media" teamData={mediaData} />
-      </div>
-    </div>
+    <></>
   );
 };
 

@@ -38,6 +38,7 @@ const ContactBlock = () => {
             documentationecell@gmail.com
           </a>
         </div>
+       
       </div>
     </div>
   );

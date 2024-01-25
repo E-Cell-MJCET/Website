@@ -2,7 +2,7 @@ import { CardProps } from "@/components/team/execom";
 
 const mediaData: CardProps[] = [
   {
-    username: "Nooria Kanchwala Yousuf",
+    username: "Nooria Yousuf",
     dp: "/assets/execom/nooria.webp",
     position: "Media",
     instalink: "https://www.instagram.com/nooria.kay",
@@ -50,7 +50,7 @@ const mediaData: CardProps[] = [
     twitter: false,
   },
   {
-    username: "Abdul Rahman hanzala",
+    username: "Abdul Rahman",
     dp: "/assets/core/rahman.webp",
     position: "Media",
     instalink: "https://www.instagram.com/ig_hanzala.pvt",
@@ -63,4 +63,4 @@ const mediaData: CardProps[] = [
   },
 ];
 
-export default mediaData
+export default mediaData;
