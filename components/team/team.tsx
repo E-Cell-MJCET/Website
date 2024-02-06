@@ -20,26 +20,26 @@ const GB = () => {
     <div className="flex justify-center ">
       <div className="w-[85%]">
         <div className="flex justify-center flex-col items-center">
-          <div className="text-center text-[45px] text-white header mt-10 mb-14">
+          <div className="text-center text-[45px] text-black dark:text-white header mt-10 mb-14">
             <span className="blackOps uppercase">Teams</span>
           </div>
           <div className="flex justify-center items-center mb-10">
             <div className="flex flex-col items-center justify-center">
-              <div className="h-[3px] w-[260px] bg-[#c23c83] rounded-lg my-[2px]"></div>
-              <div className="h-[3px] w-[320px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
+              <div className="h-[3px] w-[260px] bg-[#ff403c] rounded-lg my-[2px]"></div>
+              <div className="h-[3px] w-[320px] bg-[#ff403c] rounded-lg mt-[2px]"></div>
             </div>
 
-            <div className="text-center text-white poiret text-[30px] font-bold opacity-100  bg-black px-3 absolute">
+            <div className="text-center text-black bg-back-light dark:text-white poiret text-[30px] font-bold opacity-100  dark:bg-back-dark px-3 absolute">
               Governing Body
             </div>
           </div>
         </div>
 
         <div>
-          <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-x-8 place-items-center items-center">
+          <div className="grid grid-cols-1 xl:grid-cols-4 xl:gap-x-8 place-items-center items-center">
             {/* 1 */}
-            <div className="flex flex-col mt-3 h-[400px] lg:m-5 text-center  bg-gray-900 lg:col-span-4 lg:-mb-2">
-              <div className="w-[250px]   m-1 h-fit text-center shadow-lg ">
+            <div className="flex flex-col mt-3 h-[400px] xl:m-5 text-center bg-slate-700  dark:bg-slate-900 xl:col-span-4 xl:-mb-2 rounded-md">
+              <div className="w-[250px]   h-fit text-center ">
                 <div className="text-center rounded-t-[20px]">
                   <Image
                     src={ab1}
@@ -58,14 +58,14 @@ const GB = () => {
                   <p className="font-sans header text-white text-center  text-[12px]">
                     CHIEF COORDINATOR
                   </p>
-                  <p className="font-sans header text-gray-400   mr-10 ml-10 mt-1 mb-2 text-center text-[10px]">
+                  <p className="font-sans header text-gray-300  dark:text-gray-400  mr-10 ml-10 mt-1 mb-2 text-center text-[10px]">
                     "The victory is not about me, it's about us"
                   </p>
                 </div>
                 <div className="flex justify-center space-x-4 mb-3 mt-1">
                   <a
                     href="https://www.instagram.com/basith_ab1235"
-                    className="text-gray-500 hover:text-blue-500"
+                    className="text-gray-300 dark:text-gray-400 hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -73,7 +73,7 @@ const GB = () => {
                   </a>
                   <a
                     href="https://www.linkedin.com/in/abdul-basith-2b90ab267"
-                    className="text-gray-500 hover:text-pink-600"
+                    className="text-gray-300 dark:text-gray-400 hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -81,7 +81,7 @@ const GB = () => {
                   </a>
                   <a
                     href="https://twitter.com/abdul_basith123"
-                    className="text-gray-500 hover:text-blue-500"
+                    className="text-gray-300 dark:text-gray-400 hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -91,8 +91,8 @@ const GB = () => {
               </div>
             </div>
             {/* 2 */}
-            <div className="flex flex-col mt-10 h-[400px] lg:m-10 text-center  bg-gray-900 ">
-              <div className="w-[250px]   m-1 h-fit text-center shadow-lg ">
+            <div className="flex flex-col mt-10 h-[400px] lg:m-10 text-center bg-slate-700  dark:bg-slate-900  dark:rounded-md">
+              <div className="w-[250px]  h-fit text-center ">
                 <div className="text-center rounded-t-[20px]">
                   <Image
                     src={shuja}
@@ -111,15 +111,15 @@ const GB = () => {
                   <p className="font-sans header text-white text-center  text-[12px]">
                     DEPUTY CHIEF COORDINATOR
                   </p>
-                  <p className="font-sans header text-gray-400   mr-10 ml-10 mt-1 mb-2 text-center text-[10px]">
+                  <p className="font-sans header text-gray-300 dark:text-gray-400   mr-10 ml-10 mt-1 mb-2 text-center text-[10px]">
                     "Proximity to power deludes some into believing they wield
                     it. I put on end to that sort of thinking before it begins."
                   </p>
                 </div>
-                <div className="flex justify-center h-[400px] space-x-4 mb-3 mt-1">
+                <div className="flex justify-center space-x-4  mt-auto">
                   <a
                     href="https://www.instagram.com/shoujaboy"
-                    className="text-gray-500 hover:text-blue-500"
+                    className="text-gray-300 dark:text-gray-400 hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -127,7 +127,7 @@ const GB = () => {
                   </a>
                   <a
                     href="https://www.linkedin.com/in/shuj4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                    className="text-gray-500 hover:text-pink-600"
+                    className="text-gray-300 dark:text-gray-400 hover:text-pink-600"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -137,8 +137,8 @@ const GB = () => {
               </div>
             </div>
             {/* 3 */}
-            <div className="flex flex-col mt-10 h-[400px] lg:m-10 text-center  bg-gray-900 ">
-              <div className="w-[250px]   m-1 h-fit text-center shadow-lg ">
+            <div className="flex flex-col mt-10 h-[400px] lg:m-10 text-center bg-slate-700  dark:bg-slate-900  dark:rounded-md">
+              <div className="w-[250px]   h-fit text-center  ">
                 <div className="text-center rounded-t-[20px]">
                   <Image
                     src={sofain}
@@ -157,14 +157,14 @@ const GB = () => {
                   <p className="font-sans header text-white text-center  text-[12px]">
                     CHIEF OPERATING OFFICER
                   </p>
-                  <p className="font-sans header text-gray-400   mr-10 ml-10 mt-1 mb-2 text-center text-[10px]">
+                  <p className="font-sans header text-gray-300  dark:text-gray-400   mr-10 ml-10 mt-1 mb-2 text-center text-[10px]">
                     "Create, Explore, Expand, Conquer"
                   </p>
                 </div>
-                <div className="flex justify-center h-[400px] space-x-4 mb-3 mt-1">
+                <div className="flex justify-center space-x-4  mt-auto">
                   <a
                     href="https://www.instagram.com/__sofain__"
-                    className="text-gray-500 hover:text-blue-500"
+                    className="text-gray-300 dark:text-gray-400 hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -172,7 +172,7 @@ const GB = () => {
                   </a>
                   <a
                     href="https://www.linkedin.com/in/sofain-hussain-554505231/"
-                    className="text-gray-500 hover:text-pink-600"
+                    className="text-gray-300 dark:text-gray-400 hover:text-pink-600"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -180,7 +180,7 @@ const GB = () => {
                   </a>
                   <a
                     href="https://twitter.com/SofainHussain"
-                    className="text-gray-500 hover:text-blue-500"
+                    className="text-gray-300 dark:text-gray-400 hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -190,8 +190,8 @@ const GB = () => {
               </div>
             </div>
             {/* 4 */}
-            <div className="flex flex-col mt-10 h-[400px] lg:m-10 text-center  bg-gray-900 ">
-              <div className="w-[250px]   m-1 h-fit text-center shadow-lg ">
+            <div className="flex flex-col mt-10 h-[400px] lg:m-10 text-center bg-slate-700  dark:bg-slate-900  dark:rounded-md">
+              <div className="w-[250px]   h-fit text-center ">
                 <div className="text-center rounded-t-[20px]">
                   <Image
                     src={ayesha}
@@ -210,7 +210,7 @@ const GB = () => {
                   <p className="font-sans header text-white text-center  text-[12px]">
                     CHIEF INFORMATION OFFICER
                   </p>
-                  <p className="font-sans header text-gray-400   mr-10 ml-10 mt-1 mb-2 text-center text-[10px]">
+                  <p className="font-sans header text-gray-300  dark:text-gray-400   mr-10 ml-10 mt-1 mb-2 text-center text-[10px]">
                     "The best way to predict the future is to create it."
                   </p>
                 </div>
@@ -220,8 +220,8 @@ const GB = () => {
             {/* 5 */}
 
             {/* end */}
-            <div className="flex flex-col mt-10 lg:m-10 h-[400px] text-center  bg-gray-900 ">
-              <div className="w-[250px]   m-1 h-fit text-center shadow-lg ">
+            <div className="flex flex-col mt-10 h-[400px] lg:m-10 text-center bg-slate-700  dark:bg-slate-900  dark:rounded-md">
+              <div className="w-[250px]   h-fit text-center  ">
                 <div className="text-center rounded-t-[20px]">
                   <Image
                     src={abme}
@@ -233,14 +233,14 @@ const GB = () => {
                   ></Image>
                 </div>
                 <div className=" flex flex-col justify-center items-center">
-                  <div className="font-sans  header  text-white text-center   text-[20px] tracking-[0.07em] ">
+                  <div className="font-sans  header  text-white text-center text-[20px] tracking-[0.07em] ">
                     ABDUL BASITH
                   </div>
 
                   <p className="font-sans header text-white text-center  text-[12px]">
                     CHIEF TECHNOLOGY OFFICER
                   </p>
-                  <p className="font-sans header text-gray-400   mr-10 ml-10 mt-1 mb-2 text-center text-[10px]">
+                  <p className="font-sans header text-gray-300  dark:text-gray-400   mr-10 ml-10 mt-1 mb-2 text-center text-[10px]">
                     "Your work is going to fill a large part of your life, and
                     the only way to be truly satisfied is to do what you believe
                     is great work"
@@ -249,7 +249,7 @@ const GB = () => {
                 <div className="flex justify-center space-x-4  mt-auto">
                   <a
                     href="https://www.instagram.com/_abdulbasith07._/"
-                    className="text-gray-500 hover:text-blue-500"
+                    className="text-gray-300 dark:text-gray-400 hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -258,7 +258,7 @@ const GB = () => {
 
                   <a
                     href="https://www.linkedin.com/in/abdulbasith1733/"
-                    className="text-gray-500 hover:text-blue-500"
+                    className="text-gray-300 dark:text-gray-400 hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

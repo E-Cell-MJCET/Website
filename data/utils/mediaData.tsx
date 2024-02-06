@@ -14,7 +14,7 @@ const mediaData: CardProps[] = [
     twitter: false,
   },
   {
-    username: "Imaduddin Mohammad",
+    username: "Imaduddin",
     dp: "/assets/execom/imad.webp",
     position: "Media",
     instalink: "https://www.instagram.com/imadolization",
@@ -38,7 +38,7 @@ const mediaData: CardProps[] = [
     twitter: false,
   },
   {
-    username: "shanawaz shareef",
+    username: "Shanawaz Shareef",
     dp: "/assets/core/shanawaz.webp",
     position: "Media",
     instalink: "https://www.instagram.com/sh4.wz",

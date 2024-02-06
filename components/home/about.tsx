@@ -7,8 +7,8 @@ const About = () => {
         <div className="flex justify-center items-center relative">
           <div className="flex flex-col items-center ">
             {/* <div className='h-[3px] w-[300px] bg-pink-600 rounded-lg mb-[2px]'></div> */}
-            <div className="h-[3px] w-[290px] bg-[#c23c83] rounded-lg my-[2px]"></div>
-            <div className="h-[3px] w-[350px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
+            <div className="h-[3px] w-[290px] bg-[#ff403c] rounded-lg my-[2px]"></div>
+            <div className="h-[3px] w-[350px] bg-[#ff403c] rounded-lg mt-[2px]"></div>
           </div>
 
           <div className="text-center poiret text-[30px] font-bold opacity-100  bg-black px-3 absolute">
@@ -30,14 +30,14 @@ const About = () => {
           <div className="w-[80%]  h-auto aspect-video bg-black mt-10 overflow-hidden hover:cursor-progress ">
             <video
               autoPlay
-              className="object-cover opacity-50 hover:opacity-100  hidden lg:block"
+              className="object-cover opacity-50 hover:opacity-100  hidden lg:block rounded-lg"
               loop
               muted
               src="../../assets/aboutus.webm"
             />
             <video
               autoPlay
-              className="object-cover aspect-video opacity-50 hover:opacity-100 lg:hidden block"
+              className="object-cover aspect-video opacity-50 hover:opacity-100 lg:hidden block rounded-lg"
               loop
               muted
               playsInline

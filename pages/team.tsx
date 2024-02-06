@@ -20,69 +20,69 @@ import React, { useRef } from "react";
 
 const Team = () => {
   return (
-    <div className="bg-black w-full">
+    <div className="bg-back-light dark:bg-back-dark w-full">
       <Nav />
       <GB />
 
       <div className="flex justify-center items-center my-10">
         <div className="flex flex-col items-center justify-center ">
-          <div className="h-[3px] w-[260px] bg-[#c23c83] rounded-lg my-[2px]"></div>
-          <div className="h-[3px] w-[320px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
+          <div className="h-[3px] w-[260px] bg-[#ff403c] rounded-lg my-[2px]"></div>
+          <div className="h-[3px] w-[320px] bg-[#ff403c] rounded-lg mt-[2px]"></div>
         </div>
 
-        <div className="text-center poiret text-[30px] font-bold opacity-100 text-white bg-black px-3 absolute">
+        <div className="text-center poiret text-[30px] font-bold opacity-100 text-black bg-back-light dark:text-white dark:bg-back-dark px-3 absolute">
           Portfolios
         </div>
       </div>
       <div className="md:flex md:flex-wrap grid grid-cols-2 justify-center">
         <Link href="/team/#hr" scroll={true}>
-          <div className="rounded-md border text-center border-[#6b28d5] text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[10px] py-[4px] hover:bg-[#6b28d5] cursor-pointer">
+          <div className="rounded-md border text-center border-[#0b5db0] text-black hover:text-white dark:text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[16px] py-[8px] hover:bg-[#0b5db0] cursor-pointer">
             HR
           </div>
         </Link>
         <Link href="/team/#events" scroll={true}>
-          <div className="rounded-md border text-center border-[#6b28d5] text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[10px] py-[4px] hover:bg-[#6b28d5] cursor-pointer">
+          <div className="rounded-md border text-center border-[#0b5db0] text-black hover:text-white dark:text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[16px] py-[8px] hover:bg-[#0b5db0] cursor-pointer">
             Events
           </div>
         </Link>
         <Link href="/team/#ideation" scroll={true}>
-          <div className="rounded-md border text-center border-[#6b28d5] text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[10px] py-[4px] hover:bg-[#6b28d5] cursor-pointer">
+          <div className="rounded-md border text-center border-[#0b5db0] text-black hover:text-white dark:text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[16px] py-[8px] hover:bg-[#0b5db0] cursor-pointer">
             Ideation
           </div>
         </Link>
         <Link href="/team/#marketing" scroll={true}>
-          <div className="rounded-md border text-center border-[#6b28d5] text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[10px] py-[4px] hover:bg-[#6b28d5] cursor-pointer">
+          <div className="rounded-md border text-center border-[#0b5db0] text-black hover:text-white dark:text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[16px] py-[8px] hover:bg-[#0b5db0] cursor-pointer">
             Marketing
           </div>
         </Link>
         <Link href="/team/#crm" scroll={true}>
-          <div className="rounded-md border text-center border-[#6b28d5] text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[10px] py-[4px] hover:bg-[#6b28d5] cursor-pointer">
+          <div className="rounded-md border text-center border-[#0b5db0] text-black hover:text-white dark:text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[16px] py-[8px] hover:bg-[#0b5db0] cursor-pointer">
             CRM
           </div>
         </Link>
         <Link href="/team/#operations" scroll={true}>
-          <div className="rounded-md border text-center border-[#6b28d5] text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[10px] py-[4px] hover:bg-[#6b28d5] cursor-pointer">
+          <div className="rounded-md border text-center border-[#0b5db0] text-black hover:text-white dark:text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[16px] py-[8px] hover:bg-[#0b5db0] cursor-pointer">
             Operations
           </div>
         </Link>
         <Link href="/team/#design" scroll={true}>
-          <div className="rounded-md border text-center border-[#6b28d5] text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[10px] py-[4px] hover:bg-[#6b28d5] cursor-pointer">
+          <div className="rounded-md border text-center border-[#0b5db0] text-black hover:text-white dark:text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[16px] py-[8px] hover:bg-[#0b5db0] cursor-pointer">
             Design
           </div>
         </Link>
         <Link href="/team/#web" scroll={true}>
-          <div className="rounded-md border text-center border-[#6b28d5] text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[10px] py-[4px] hover:bg-[#6b28d5] cursor-pointer">
+          <div className="rounded-md border text-center border-[#0b5db0] text-black hover:text-white dark:text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[16px] py-[8px] hover:bg-[#0b5db0] cursor-pointer">
             Web
           </div>
         </Link>
         <Link href="/team/#documentation" scroll={true}>
-          <div className="rounded-md border text-center border-[#6b28d5] text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[10px] py-[4px] hover:bg-[#6b28d5] cursor-pointer">
+          <div className="rounded-md border text-center border-[#0b5db0] text-black hover:text-white dark:text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[16px] py-[8px] hover:bg-[#0b5db0] cursor-pointer">
             Documentation
           </div>
         </Link>
 
         <Link href="/team/#media" scroll={true}>
-          <div className="rounded-md border text-center border-[#6b28d5] text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[10px] py-[4px] hover:bg-[#6b28d5] cursor-pointer">
+          <div className="rounded-md border text-center border-[#0b5db0] text-black hover:text-white dark:text-white text-[12px] mb-[0px] mt-[12px] mx-5 px-[16px] py-[8px] hover:bg-[#0b5db0] cursor-pointer">
             Media
           </div>
         </Link>

@@ -50,7 +50,7 @@ const marketingData: CardProps[] = [
     twitter: false,
   },
   {
-    username: "Zulqarnain Mohammed",
+    username: "Zulqarnain",
     dp: "/assets/core/zulqarni.webp",
     position: "Marketing",
     instalink: "https://www.instagram.com/zulqxrnxin.r35",

@@ -8,7 +8,7 @@ export default function Document() {
       style={{ scrollBehavior: "smooth" }}
     >
       <Head>
-        <link rel="shortcut icon" href="../assets/ewnlt.png" />
+        <link rel="shortcut icon" href="../assets/favicon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="description" content="Official web app of E-Cell MJCET" />

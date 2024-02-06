@@ -2,7 +2,7 @@ import { CardProps } from "@/components/team/execom";
 
 const webData: CardProps[] = [
   {
-    username: "Mohammad Shujauddin",
+    username: "Shujauddin",
     dp: "/assets/execom/shuja.webp",
     position: "Web",
     instalink: "",
@@ -14,7 +14,7 @@ const webData: CardProps[] = [
     twitter: false,
   },
   {
-    username: "Mohammed Abid Nafi",
+    username: "Abid Nafi",
     dp: "/assets/execom/abid.webp",
     position: "Web",
     instalink: "https://www.instagram.com/md_abid_nafi",
