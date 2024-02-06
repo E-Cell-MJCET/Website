@@ -27,7 +27,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="w-[80%]  h-auto aspect-video bg-black mt-10 overflow-hidden hover:cursor-progress ">
+          <div className="w-[90%]  h-auto aspect-video bg-black mt-10 overflow-hidden hover:cursor-progress ">
             <video
               autoPlay
               className="object-cover opacity-50 hover:opacity-100  hidden lg:block rounded-lg"

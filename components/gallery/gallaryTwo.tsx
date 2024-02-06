@@ -30,35 +30,35 @@ import c9 from "../../public/assets/gallery/27.webp";
 
 const GalleryTwo = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center shadow-lg shadow-gray-800 ">
+    <div className="flex flex-col lg:flex-row items-center justify-center  ">
       <div className="flex flex-col justify-center items-center">
         <div className="grid grid-cols-2 ">
           <Image
             src={a4}
             alt=""
-            className="h-[200px] w-[300px] border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300 object-cover"
+            className="h-[200px] w-[300px] border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300 object-cover"
           ></Image>
           <Image
             src={b2}
             alt=""
-            className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+            className="h-[200px] w-[300px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
           ></Image>
         </div>
         <Image
           src={c5}
           alt=""
-          className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+          className="h-[200px] w-[600px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
         ></Image>
         <div className="grid grid-cols-2 ">
           <Image
             src={b8}
             alt=""
-            className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+            className="h-[200px] w-[300px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
           ></Image>
           <Image
             src={b5}
             alt=""
-            className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+            className="h-[200px] w-[300px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
           ></Image>
         </div>
       </div>
@@ -68,24 +68,24 @@ const GalleryTwo = () => {
           <Image
             src={b4}
             alt=""
-            className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+            className="h-[200px] w-[600px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
           ></Image>
           <div className="grid grid-cols-2 ">
             <Image
               src={c1}
               alt=""
-              className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+              className="h-[200px] w-[300px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
             ></Image>
             <Image
               src={c3}
               alt=""
-              className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+              className="h-[200px] w-[300px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
             ></Image>
           </div>
           <Image
             src={c7}
             alt=""
-            className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+            className="h-[200px] w-[600px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
           ></Image>
         </div>
       </div>

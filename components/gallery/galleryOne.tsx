@@ -39,39 +39,39 @@ const GalleryOne = () => {
             <div className="h-[3px] w-[240px] bg-[#ff403c] rounded-lg mt-[2px]"></div>
           </div>
 
-          <div className="text-center poiret text-[30px] font-bold opacity-100 z-30 bg-black text-white px-3 absolute">
+          <div className="text-center poiret text-[30px] font-bold opacity-100 z-30 bg-back-light dark:bg-back-dark dark:text-white text-black px-3 absolute">
             Gallery
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row items-center justify-center shadow-lg shadow-gray-800 ">
+        <div className="flex flex-col lg:flex-row items-center justify-center ">
           <div className="flex flex-col justify-center items-center">
             <div className="grid grid-cols-2 ">
               <Image
                 src={a1}
                 alt=""
-                className="h-[200px] w-[300px] border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300 object-cover"
+                className="h-[200px] w-[300px] border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50  hover:opacity-70 delay-100 duration-300 object-cover"
               ></Image>
               <Image
                 src={a2}
                 alt=""
-                className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+                className="h-[200px] w-[300px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
               ></Image>
             </div>
             <Image
               src={b9}
               alt=""
-              className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+              className="h-[200px] w-[600px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
             ></Image>
             <div className="grid grid-cols-2 ">
               <Image
                 src={a8}
                 alt=""
-                className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+                className="h-[200px] w-[300px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
               ></Image>
               <Image
                 src={a7}
                 alt=""
-                className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+                className="h-[200px] w-[300px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
               ></Image>
             </div>
           </div>
@@ -81,24 +81,24 @@ const GalleryOne = () => {
               <Image
                 src={b1}
                 alt=""
-                className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+                className="h-[200px] w-[600px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
               ></Image>
               <div className="grid grid-cols-2 ">
                 <Image
                   src={a9}
                   alt=""
-                  className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+                  className="h-[200px] w-[300px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
                 ></Image>
                 <Image
                   src={a6}
                   alt=""
-                  className="h-[200px] w-[300px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+                  className="h-[200px] w-[300px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
                 ></Image>
               </div>
               <Image
                 src={a5}
                 alt=""
-                className="h-[200px] w-[600px] object-cover border-4 border-black opacity-50 hover:opacity-70 delay-100 duration-300"
+                className="h-[200px] w-[600px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
               ></Image>
             </div>
           </div>

@@ -32,7 +32,7 @@ const Execom: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col w-60 h-80 items-center  mt-[20px] bg-card-light dark:bg-card-dark rounded-lg mx-[5px] md:mx-[20px] md:w-60 mb-[20px] border-[1px] border-[#e4e4e7] dark:border-[#27272a] hover:scale-110 ${
+      className={`flex flex-col w-60 h-80 items-center  mt-[20px]  rounded-lg mx-[5px] md:mx-[20px] md:w-60 mb-[20px] border-[1px] border-card-light dark:border-card-dark hover:scale-110 ${
         head ? "hover:border-[#ff403c]" : "hover:border-[#0b5db0]"
       } transform duration-300`}
     >

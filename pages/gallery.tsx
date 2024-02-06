@@ -11,7 +11,7 @@ import React from "react";
 
 const GalleryPage = () => {
   return (
-    <div className="bg-black">
+    <div className="dark:bg-back-dark bg-back-light">
       <Nav />
       <GalleryOne />
       <GalleryTwo />

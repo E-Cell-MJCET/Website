@@ -7,7 +7,7 @@ const ContactBlock = () => {
   return (
     <div className="flex flex-col  items-center justify-center mt-[50px]">
       <div className="flex flex-wrap justify-center  text-white items-center mt-[40px] gap-5">
-        <div className="flex flex-col h-52 items-start pl-5 pr-32 max-w-[300px] text-left bg-[#1b1b1b] rounded-2xl">
+        <div className="flex flex-col h-52 items-start pl-5 pr-32 max-w-[300px] text-left text-black dark:text-white  rounded-2xl border-[1px] border-card-light dark:border-card-dark">
           <h1 className="text-3xl mt-5 header">Phone</h1>
           <div className="flex flex-col justify-start mt-5 mb-5 ">
             <span className="text-sm">Abdul Basith</span>
@@ -21,7 +21,7 @@ const ContactBlock = () => {
           </div>
         </div>
 
-        <div className="flex flex-col h-52 items-center pl-5 max-w-[300px] bg-[#1b1b1b] rounded-2xl">
+        <div className="flex flex-col h-52 items-center pl-5 max-w-[300px] border-[1px] text-black dark:text-white border-card-light dark:border-card-dark rounded-2xl">
           <div className="flex flex-col justify-start mb-5">
             <h1 className="text-3xl mt-5 header">Address</h1>
             <p className="text-lg mt-5">
@@ -31,7 +31,7 @@ const ContactBlock = () => {
           </div>
         </div>
 
-        <div className="flex flex-col h-52 items-start pl-5 pr-5 bg-[#1b1b1b]   max-w-[300px] text-center rounded-2xl">
+        <div className="flex flex-col h-52 items-start pl-5 pr-5 border-[1px] text-black dark:text-white border-card-light dark:border-card-dark   max-w-[300px] text-center rounded-2xl">
           <h1 className="text-3xl mt-5 header">E-Mail</h1>
           <a
             href="mailto:documentationecell@gmail.com"

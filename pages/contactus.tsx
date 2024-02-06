@@ -12,7 +12,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-back-light dark:bg-back-dark">
       <Nav />
       <Title />
       <ContactBlock />

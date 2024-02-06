@@ -2,8 +2,17 @@
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import elnwt from "../public/assets/ewnlt.png";
+import elwt from "../public/assets/elwt.png";
 import ectext from "../public/assets/ectext.png";
 import Link from "next/link";
+import {
+  SheetTrigger,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetDescription,
+  Sheet,
+} from "./ui/sheet";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +28,14 @@ const Nav = () => {
             <Image
               src={ectext}
               alt=""
-              className="h-[48px] lg:h-[70px] w-[48px] lg:w-fit lg:mt-1 logo"
+              className="h-[48px] lg:h-[70px] w-[48px] lg:w-fit lg:mt-1 logo dark:block hidden"
+              height={200}
+              width={500}
+            />
+            <Image
+              src={elwt}
+              alt=""
+              className="h-[48px] lg:h-[70px] w-[48px] lg:w-fit lg:mt-1 dark:hidden block logo"
               height={200}
               width={500}
             />
@@ -55,7 +71,7 @@ const Nav = () => {
           </ul>
         </div>
         <div className="in-line lg:hidden text-right mr-5 transition duration-300 ease-in-out">
-          <button
+          {/* <button
             onClick={toggleMenu}
             type="button"
             className="text-white focus:outline-none "
@@ -115,7 +131,40 @@ const Nav = () => {
                 </ul>
               </div>
             </div>
-          )}
+          )} */}
+          <Sheet>
+            <SheetTrigger>
+              {" "}
+              <div className="flex flex-col items-center transition-all ease-in duration-100">
+                <div className="flex flex-col items-center transition-all ">
+                  <div className="w-[22px] h-[4px] my-[2.5px] bg-black dark:bg-white rounded-lg transition-all ease-out duration-150"></div>
+                  <div className="w-[34px] h-[4px] my-[2.5px] bg-black dark:bg-white rounded-lg transition-all ease-out duration-150"></div>
+                  <div className="w-[22px] h-[4px] my-[2.5px] bg-black dark:bg-white rounded-lg transition-all ease-out duration-150"></div>
+                </div>
+              </div>
+            </SheetTrigger>
+            <SheetContent>
+              <div className="mt-10 ">
+                <ul>
+                  <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                    <Link href={"/"}>Home</Link>
+                  </li>
+                  <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                    <Link href={"/events"}>Events</Link>
+                  </li>
+                  <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                    <Link href={"/team"}>Team</Link>
+                  </li>
+                  <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                    <Link href={"/gallery"}>Gallery</Link>
+                  </li>
+                  <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                    <Link href={"/contactus"}>Contact</Link>
+                  </li>
+                </ul>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </div>

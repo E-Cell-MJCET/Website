@@ -46,7 +46,7 @@ const Navbar = () => {
           nesciunt? Quas nihil totam alias quos, sunt....</div> */}
         <div className="grid gap-8 items-start justify-center mt-10 mb-14 lg:my-20">
           <div className="relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ff403c]  to-[#0b5db0] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ff403c]  to-[#0b5db0] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-5000 group-hover:duration-2000 animate-tilt"></div>
             <button className=" relative px-10 py-4 bg-black rounded-lg leading-none flex items-center space-x-5 ">
               <span className="text-gray-300 header font-semibold tracking-wide text-[16px] lg:text-[20px] flex items-center justify-center">
                 Ideate{" "}
