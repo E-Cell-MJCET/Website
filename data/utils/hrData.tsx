@@ -2,7 +2,7 @@ import { CardProps } from "@/components/team/execom";
 
 const hrData: CardProps[] = [
   {
-    username: "Aimen Laiba \n Mohammad",
+    username: "Aimen Laiba",
     dp: "/assets/execom/aimen.webp",
     position: "HR",
     instalink: "https://www.instagram.com/aimenlaibaa",
@@ -23,6 +23,30 @@ const hrData: CardProps[] = [
     head: true,
     insta: true,
     linkedln: true,
+    twitter: false,
+  },
+  {
+    username: "Amena Wajiha",
+    dp: "/assets/core/amena.webp",
+    position: "Human Resources",
+    instalink: "https://www.instagram.com/naina.1982",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
+    twitter: false,
+  },
+  {
+    username: "Q M Taqi uddin",
+    dp: "/assets/core/taqi.webp",
+    position: "Human Resources",
+    instalink: "https://www.instagram.com/taqi__uddin",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
+    linkedln: false,
     twitter: false,
   },
 ];

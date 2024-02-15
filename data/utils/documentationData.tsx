@@ -2,7 +2,7 @@ import { CardProps } from "@/components/team/execom";
 
 const documentationData: CardProps[] = [
   {
-    username: "Syed Mujtaba Biyabani",
+    username: "Mujtaba Biyabani",
     dp: "/assets/execom/mujtaba.webp",
     position: "Documentation",
     instalink: "https://www.instagram.com/mujtaba_biabani",
@@ -23,6 +23,18 @@ const documentationData: CardProps[] = [
     twitterlink: "",
     insta: true,
     head: true,
+    linkedln: false,
+    twitter: false,
+  },
+  {
+    username: "Syeda Zoha Maria ",
+    dp: "/assets/core/zoha.webp",
+    position: "Documentation",
+    instalink: "https://www.instagram.com/zohamaria_19",
+    linkedlinlink: "",
+    twitterlink: "",
+    insta: true,
+    head: false,
     linkedln: false,
     twitter: false,
   },

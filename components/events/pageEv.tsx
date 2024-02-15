@@ -12,6 +12,8 @@ const PageEv = () => {
   const BOB = "/assets/upcoming-events/bob.webp";
   const DataForge = "/assets/upcoming-events/dataforge.jpeg";
   const ep = "/assets/upcoming-events/3.png";
+  const byob = "/assets/upcoming-events/byob.png";
+  const stack = "/assets/upcoming-events/stack.jpg";
 
   return (
     <div className="flex justify-center  bg-black h-auto">
@@ -24,15 +26,14 @@ const PageEv = () => {
         <div className="flex justify-center flex-col items-center bg-black">
           <div className="flex justify-center items-center mb-10">
             <div className="flex flex-col items-center justify-center">
-              <div className="h-[3px] w-[260px] bg-[#c23c83] rounded-lg my-[2px]"></div>
-              <div className="h-[3px] w-[320px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
+              <div className="h-[3px] w-[260px] bg-ecell-red-100 rounded-lg my-[2px]"></div>
+              <div className="h-[3px] w-[320px] bg-ecell-red-100 rounded-lg mt-[2px]"></div>
             </div>
 
             <div className="text-center poiret text-white text-[30px] font-bold opacity-100  bg-black px-3 absolute">
               Upcoming Events
             </div>
           </div>
-
           <p className="text-xl md:text-3xl font-bold mt-10 text-center">
             Something great is cooking up :) Stay tuned!!
           </p>
@@ -40,8 +41,8 @@ const PageEv = () => {
           <div className="flex justify-center flex-col items-center mt-20 bg-black">
             <div className="flex justify-center items-center mb-10 ">
               <div className="flex flex-col items-center justify-center">
-                <div className="h-[3px] w-[260px] bg-[#c23c83] rounded-lg my-[2px]"></div>
-                <div className="h-[3px] w-[320px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
+                <div className="h-[3px] w-[260px] bg-ecell-red-100 rounded-lg my-[2px]"></div>
+                <div className="h-[3px] w-[320px] bg-ecell-red-100 rounded-lg mt-[2px]"></div>
               </div>
 
               <div className="text-center poiret text-[30px] font-bold opacity-100 text-white bg-black px-3 absolute">
@@ -49,6 +50,11 @@ const PageEv = () => {
               </div>
             </div>
 
+            <PrevEv
+              title="Build your own business"
+              desc="Learn how to kick off your own business"
+              image={byob}
+            />
             <PrevEv
               image={HackRev2}
               title="Hack Revolution 2023 2.0"
@@ -58,25 +64,21 @@ const PageEv = () => {
             <PrevEv
               image={DataForge}
               title="DataForge Fusion"
-              desc="🚀 Calling all data enthusiasts! 📊
-
-            CSI & E-Cell MJCET presents our latest venture,
-            
+              desc="
+           
             DataForge Fusion: Data Engineering & Analysis Workshop.
             
             Delve deep into the dynamic world of data and unravel the secrets of data analysis with our guest speaker:
             Imaduddin Mohammed
             Senior Cloud Engineer @ PwC Australia
             
-            Embark on a journey into the dynamic world of data as we bring you an engaging pre-hackathon workshop that explores the intricacies of Data Engineering and Analysis.📈🧑‍💻
+            Embarked on a journey into the dynamic world of data as we bring you an engaging pre-hackathon workshop that explores the intricacies of Data Engineering and Analysis.
             
-            Are you keen on mastering the skills required for effective Data Engineering? Eager to unravel the secrets of data analysis? Look no further!
             
-            🖥️ Unlock the power of Data Engineering and Analysis with hands-on sessions!
+            Unlocked the power of Data Engineering and Analysis with hands-on sessions!
             
-            🖥️ Dive into practical experiences with cutting-edge tools and techniques in the realm of data.
-            
-            🖥️ Boost your chances to win the upcoming Hackathon with a generous prize pool of *₹3,00,000!*
+           Dove into practical experiences with cutting-edge tools and techniques in the realm of data.
+          
             
             
             "
@@ -87,19 +89,35 @@ const PageEv = () => {
               title="FLUTTER FIESTA"
               desc="A journey into App Development with Flutter
 
-            Are you aspiring to become an App Developer but unsure where to begin?🤔
             
-            Join us for an interactive workshop on App Development to delve deeper into the expansive realm of technology.
+            An interactive workshop on App Development to delve deeper into the expansive realm of technology.
             
-            This event centers around Flutter, the cutting-edge technology in mobile app development. If you're eager to grasp the skills of creating an app using Flutter, this event is tailor-made for you. By the end of the workshop, you'll have crafted your inaugural Flutter app!
+            This event centers around Flutter, the cutting-edge technology in mobile app development. By the end of the workshop, audience have crafted their inaugural Flutter app!
             
-            Discover how to adeptly build apps using Flutter!
             
-            Gain practical experience with one of the most widely used and coolest technologies in mobile app development.
             
-            Increase your chance to win *Hackathon* which has a prize pool of *₹3,00,000*
+            Gained practical experience with one of the most widely used and coolest technologies in mobile app development.
+            
+            Increased audience chance to win *Hackathon* which has a prize pool of *₹3,00,000*
             
             "
+            />
+
+            <PrevEv
+              image={stack}
+              title="Stack Sprint"
+              desc="Our first pre hackathon workshop
+StackSprint: A Web Development Adventure
+
+Do you wish to become a Web Developer but don’t know where to start?
+
+A two-day hands-on workshop on Web Development and dive deeper into the topics with our guest speaker:
+Syed Zohaib
+Software Engineer @ Apple, Hyderabad
+Chief Coordinator, CSI 2018
+
+Audience were introduced to HTML and CSS by building a basic web page.
+And also, introduction to JavaScript and Vue.js with fundamentals of building a web app."
             />
 
             <PrevEv
@@ -127,25 +145,7 @@ const PageEv = () => {
             "
             />
           </div>
-          <PrevEv
-            image={AlumniMeetPath}
-            title="ALUMINI MEET"
-            desc="We had our Alumni meet up, recently, with Mr Umair Mohammed which was a very productive and insightful meeting! 
-            He gave us a brief overview of his past experience as Ex Chief Coordinator of E-Cell MJCET,his practical knowledge and insights of starting a business from scratch."
-          />
-          <PrevEv
-            image={DSAPath}
-            title="THE DSA"
-            desc="It was a huge success as a lot of participants of the event gained proficiency in Data Structures and Algorithms, the essential building block of coding.
-             The Event “The DSA Adventure” was led by 3 main speakers Md.Mubeen Uddin, Madiha Waheed and Habeeb Ullah Tabrez. 
-             The online workshop provided 7 Days of Interactive Learning and Fun. There were Hands on challenges and Daily Quizzes as well.
-              “The DSA Adventures” took place from 18th of May and lasted till 24th May. The online workshop timings were 3pm-4pm and the sessions were organized on Google Meet."
-          />
-          <PrevEv
-            image={HackathonPath}
-            title="HACK REVOLUTION 2023"
-            desc="Hack Revolution is a social coding competition conducted by the Smart India hackathon, consisting of 3-6 members in a team. It provides an exceptional opportunity to network with people from different backgrounds and gives a career boost to the students. It was a collaboration between CSI and E-Cell clubs of the MJCET. The duration was about 15 hours. Winners of the hackathon would qualify for the national-level Hackathon organized by the Govt. of India and All India Council for Technical Education."
-          />
+
           <PrevEv
             image={GameOfInvestersImagePath}
             title="GAME OF INVESTORS"

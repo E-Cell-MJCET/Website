@@ -24,8 +24,8 @@ const UpcomEv: React.FC<UpcomEvProps> = ({
   return (
     <div className="w-[80%] mb-6">
       <Link href={link} target="_blank">
-        <div className="flex justify-center shadow-lg shadow-gray-900 lg:shadow-none lg:bg-black h-full py-5 px-4 rounded-xl hover:border-pink-600 group border-0 lg:border-[1px] lg:border-purple-700 transition-all duration-300 cursor-pointer">
-          <div className="w-full flex lg:justify-center lg:items-center flex-col lg:flex-row group-hover:scale-95 duration-300">
+        <div className="flex justify-center shadow-lg shadow-gray-900 lg:shadow-none lg:bg-black h-full py-5 px-4 rounded-xl hover:border-ecell-red-100 group border-0 lg:border-[1px] lg:border-ecell-blue-100 transition-all duration-300 cursor-pointer">
+          <div className="w-full flex lg:justify-center lg:items-center flex-col lg:flex-row ">
             <div className="relative h-[150px] w-[220px] lg:block hidden">
               <Image
                 src={image}

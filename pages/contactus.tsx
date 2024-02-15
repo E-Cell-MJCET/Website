@@ -1,4 +1,5 @@
 import ContactBlock from "@/components/contact/contact";
+import Form from "@/components/contact/form";
 import Title from "@/components/contact/title";
 import PageEv from "@/components/events/pageEv";
 import Footer from "@/components/home/footer";
@@ -11,10 +12,11 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-back-light dark:bg-back-dark">
       <Nav />
       <Title />
       <ContactBlock />
+      <Form />
       <Footer />
       <Footers />
     </div>

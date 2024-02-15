@@ -10,9 +10,44 @@ import Blog from "@/components/home/bloghome";
 import Gallery from "@/components/home/gallery";
 import Coordinator from "@/components/home/coordinator";
 import Head from "next/head";
-import elnwt from "../public/assets/ewnlt.png";
+import elnwt from "../public/assets/favicon.png";
+import { useEffect } from "react";
+import SpeedDial from "@/components/home/speedDial";
 
 export default function Home() {
+  const subscribeToPushNotifications = async () => {
+    try {
+      const register = await navigator.serviceWorker.register("/sw.js");
+
+      const subscription = await register.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey:
+          "BAs_w6kZa5wYbd_LXpW5Y24Fo914Dn7wA4PWxqp-wUQNdp7Bk-m5BY-nLJCe_L2voIAhwLbjXjKjEylypvMHbao",
+      });
+
+      const res = await fetch("http://localhost:4000/subscribe", {
+        method: "POST",
+        body: JSON.stringify(subscription),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      const data = await res.json();
+      console.log(data);
+    } catch (error) {
+      console.error("Error registering service worker:", error);
+    }
+  };
+
+  useEffect(() => {
+    // Check if service worker is supported
+    if ("serviceWorker" in navigator) {
+      // Register service worker
+      navigator.serviceWorker.register("/sw.js");
+    }
+  }, []);
+
   return (
     <div>
       <Head>
@@ -79,6 +114,7 @@ export default function Home() {
           rel="apple-touch-startup-image"
         />
       </Head>
+      <SpeedDial />
       <Header />
       <Navbar />
       <About />
@@ -86,6 +122,10 @@ export default function Home() {
       <Coordinator />
       <Gallery />
       {/*<Blog />*/}
+      {/* <button onClick={subscribeToPushNotifications}>
+        Subscribe to Push Notifications
+      </button> */}
+
       <Footer />
       <Footers />
     </div>
