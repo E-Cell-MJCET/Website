@@ -37,7 +37,7 @@ const About = () => {
             />
             <video
               autoPlay
-              className="object-cover aspect-video opacity-50 hover:opacity-100 lg:hidden block rounded-lg"
+              className="object-cover aspect-video opacity-50 bg-black hover:opacity-100 lg:hidden block rounded-lg"
               loop
               muted
               playsInline

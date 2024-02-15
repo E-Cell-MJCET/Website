@@ -13,18 +13,7 @@ const mediaData: CardProps[] = [
     linkedln: false,
     twitter: false,
   },
-  {
-    username: "Imaduddin",
-    dp: "/assets/execom/imad.webp",
-    position: "Media",
-    instalink: "https://www.instagram.com/imadolization",
-    linkedlinlink: "",
-    twitterlink: "",
-    insta: true,
-    head: true,
-    linkedln: false,
-    twitter: false,
-  },
+
   {
     username: "Emaad Ali Khan",
     dp: "/assets/execom/emaad.webp",

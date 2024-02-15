@@ -52,7 +52,7 @@ const GalleryOne = () => {
                 className="h-[200px] w-[300px] border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50  hover:opacity-70 delay-100 duration-300 object-cover"
               ></Image>
               <Image
-                src={a2}
+                src={c6}
                 alt=""
                 className="h-[200px] w-[300px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
               ></Image>
@@ -85,7 +85,7 @@ const GalleryOne = () => {
               ></Image>
               <div className="grid grid-cols-2 ">
                 <Image
-                  src={a9}
+                  src={c1}
                   alt=""
                   className="h-[200px] w-[300px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
                 ></Image>
