@@ -85,7 +85,7 @@ const GalleryTwo = () => {
           <Image
             src={c7}
             alt=""
-            className="h-[200px] w-[600px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
+            className="h-[200px] w-[600px] object-cover border-4 border-back-light dark:border-back-dark opacity-100 dark:opacity-50 hover:opacity-70 delay-100 duration-300"
           ></Image>
         </div>
       </div>
