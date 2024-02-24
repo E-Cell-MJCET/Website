@@ -32,10 +32,10 @@ const ContactBlock = () => {
           <EmailIcon />
           <h1>E-Mail</h1>
           <a
-            href="mailto:documentationecell@gmail.com"
+            href="mailto:ecellmjcet@mjcollege.ac.in"
             className="hover:underline"
           >
-            documentationecell@gmail.com
+            ecellmjcet@mjcollege.ac.in
           </a>
         </div>
       </div>

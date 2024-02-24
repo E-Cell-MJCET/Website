@@ -59,10 +59,10 @@ const Footer = () => {
 
                 <div className="font-semibold ml-[4px]">
                   {" "}
-                  <Link href={"mailto:documentationecell@gmail.com"}>
+                  <Link href={"mailto:ecellmjcet@mjcollege.ac.in"}>
                     -{" "}
                     <span className="hover:underline">
-                      documentationecell@gmail.com
+                    ecellmjcet@mjcollege.ac.in
                     </span>
                   </Link>
                 </div>
