@@ -35,7 +35,7 @@ const ContactBlock = () => {
           <h1 className="text-3xl mt-5 header">E-Mail</h1>
           <a
             href="mailto:ecellmjcet@mjcollege.ac.in"
-            className="hover:underline text-lg mt-5"
+            className="hover:underline text-[22px] mt-5"
           >
             ecellmjcet@mjcollege.ac.in
           </a>
