@@ -13,6 +13,7 @@ import Head from "next/head";
 import elnwt from "../public/assets/favicon.png";
 import { useEffect } from "react";
 import SpeedDial from "@/components/home/speedDial";
+import { Hero } from "@/components/home/hero";
 
 export default function Home() {
   const subscribeToPushNotifications = async () => {
@@ -116,11 +117,12 @@ export default function Home() {
       </Head>
       <SpeedDial />
       <Header />
-      <Navbar />
+      <Hero />
+
       <About />
       {/* <Banner /> */}
       <Coordinator />
-      <Gallery />
+
       {/*<Blog />*/}
       {/* <button onClick={subscribeToPushNotifications}>
         Subscribe to Push Notifications
