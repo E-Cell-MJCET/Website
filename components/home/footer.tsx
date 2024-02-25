@@ -66,7 +66,9 @@ const Footer = () => {
                   <Link href={"mailto:ecellmjcet@mjcollege.ac.in"}>
                     -{" "}
                     <span className="hover:underline text-black dark:text-white">
-                    ecellmjcet@mjcollege.ac.in
+
+                      ecellmjcet@mjcollege.ac.in
+
                     </span>
                   </Link>
                 </div>
@@ -89,7 +91,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-center flex justify-center items-center mt-10">
+        <div className="text-center flex justify-center items-center mt-10 gap-x-5">
           <div className=" h-14 w-14 rounded-full flex justify-center items-center cursor-pointer transition-transform transform hover:translate-y-[-5px] duration-500 ease-in-out">
             <Link
               passHref
