@@ -66,7 +66,9 @@ const Footer = () => {
                   <Link href={"mailto:ecellmjcet@mjcollege.ac.in"}>
                     -{" "}
                     <span className="hover:underline text-black dark:text-white">
+
                       ecellmjcet@mjcollege.ac.in
+
                     </span>
                   </Link>
                 </div>
