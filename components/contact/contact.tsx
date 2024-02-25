@@ -34,10 +34,10 @@ const ContactBlock = () => {
         <div className="flex flex-col h-52 items-start pl-5 pr-5 border-[1px] text-black dark:text-white border-card-light dark:border-card-dark   max-w-[300px] text-center rounded-2xl">
           <h1 className="text-3xl mt-5 header">E-Mail</h1>
           <a
-            href="mailto:documentationecell@gmail.com"
-            className="hover:underline text-lg mt-5"
+            href="mailto:ecellmjcet@mjcollege.ac.in"
+            className="hover:underline text-[22px] mt-5"
           >
-            documentationecell@gmail.com
+            ecellmjcet@mjcollege.ac.in
           </a>
         </div>
       </div>
