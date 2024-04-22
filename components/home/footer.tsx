@@ -27,7 +27,8 @@ const Footer = () => {
               />
             </div>
             <div>
-              <div className="mt-4 flex  items-center">
+              <p className="mt-4">Student Co-Ordinators Contact</p>
+              <div className="mt-2 flex  items-center">
                 <div className="text-black dark:text-white">
                   <PhoneInTalkIcon />
                 </div>
@@ -66,9 +67,7 @@ const Footer = () => {
                   <Link href={"mailto:ecellmjcet@mjcollege.ac.in"}>
                     -{" "}
                     <span className="hover:underline text-black dark:text-white">
-
                       ecellmjcet@mjcollege.ac.in
-
                     </span>
                   </Link>
                 </div>

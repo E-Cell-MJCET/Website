@@ -14,41 +14,17 @@ import elnwt from "../public/assets/favicon.png";
 import { useEffect } from "react";
 import SpeedDial from "@/components/home/speedDial";
 import { Hero } from "@/components/home/hero";
+import { analytics } from "../firebase";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function Home() {
-  const subscribeToPushNotifications = async () => {
-    try {
-      const register = await navigator.serviceWorker.register("/sw.js");
-
-      const subscription = await register.pushManager.subscribe({
-        userVisibleOnly: true,
-        applicationServerKey:
-          "BAs_w6kZa5wYbd_LXpW5Y24Fo914Dn7wA4PWxqp-wUQNdp7Bk-m5BY-nLJCe_L2voIAhwLbjXjKjEylypvMHbao",
-      });
-
-      const res = await fetch("http://localhost:4000/subscribe", {
-        method: "POST",
-        body: JSON.stringify(subscription),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-
-      const data = await res.json();
-      console.log(data);
-    } catch (error) {
-      console.error("Error registering service worker:", error);
-    }
-  };
-
-  useEffect(() => {
-    // Check if service worker is supported
-    if ("serviceWorker" in navigator) {
-      // Register service worker
-      navigator.serviceWorker.register("/sw.js");
-    }
-  }, []);
-
+  // useEffect(() => {
+  //   analytics.logEvent("page_view", {
+  //     page_location: "https://ecellmjcet.com",
+  //     page_path: "/",
+  //     page_title: "E-Cell MJCET",
+  //   });
+  // }, []);
   return (
     <div>
       <Head>
@@ -107,7 +83,7 @@ export default function Home() {
         <link
           href="../public/splashscreens/ipadpro3_splash.png"
           media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
-          rel="apple-touch-startup-image"
+          rel="apple-touch-startup-image "
         />
         <link
           href="../public/splashscreens/ipadpro2_splash.png"
@@ -115,6 +91,7 @@ export default function Home() {
           rel="apple-touch-startup-image"
         />
       </Head>
+      <GoogleAnalytics gaId="G-RVM88W3QHK" />
       <SpeedDial />
       <Header />
       <Hero />

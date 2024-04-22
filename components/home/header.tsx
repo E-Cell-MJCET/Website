@@ -20,10 +20,7 @@ const Header = () => {
         isOpen ? "overscroll-none" : ""
       } fixed flex justify-between items-center w-full z-50 bg-black backdrop-blur-xl  bg-opacity-30`}
     >
-      {/* <div className="w-full lg:h-screen absolute -z-10 opacity-50 bg-fixed">
-        <img src="../../assets/banner3.png" alt="" className="" />
-      </div> */}
-      <div className="flex w-full  flex-row justify-between lg:justify-around pt-5  pb-5  header mx-4 ">
+      <div className="flex w-full  flex-row justify-between lg:justify-around py-3 header mx-4 ">
         <div className="hidden lg:block">
           <Image
             src={ectext}
@@ -60,65 +57,6 @@ const Header = () => {
           </ul>
         </div>
         <div className="in-line lg:hidden text-right mr-5 transition duration-300 ease-in-out">
-          {/* <button
-            onClick={toggleMenu}
-            type="button"
-            className="text-white focus:outline-none "
-          >
-            {isOpen ? (
-              <div className="rotate-90 flex flex-col items-center transition-all ease-in duration-100">
-                <div className="w-[22px] h-[4px] bg-white my-[2.5px] rounded-lg transition-all ease-in duration-150"></div>
-                <div className="w-[34px] h-[4px] bg-white my-[2.5px] rounded-lg transition-all ease-in duration-150"></div>
-                <div className="w-[22px] h-[4px] bg-white my-[2.5px]  rounded-lg transition-all ease-in duration-150 "></div>
-              </div>
-            ) : (
-              <div className="flex flex-col items-center transition-all ">
-                <div className="w-[22px] h-[4px] my-[2.5px] bg-white rounded-lg transition-all ease-out duration-150"></div>
-                <div className="w-[34px] h-[4px] my-[2.5px] bg-white rounded-lg transition-all ease-out duration-150"></div>
-                <div className="w-[22px] h-[4px] my-[2.5px] bg-white rounded-lg transition-all ease-out duration-150"></div>
-              </div>
-            )}
-          </button>
-          {isOpen ? (
-            <div className="md:w-1/3 text-right mt-6 overscroll-none absolute right-5 bg-black bg-opacity-70 z-10 transition-all ease-in duration-100 rounded-lg py-5 px-7  h-screen w-full">
-              <div>
-                <ul>
-                  <li className="mx-3 pt-2 pb-2 text-white text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/events"}>Events</Link>
-                  </li>
-                  <li className="mx-3 pt-2 pb-2 text-white text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/team"}>Team</Link>
-                  </li>
-                  <li className="mx-3 pt-2 pb-2 text-white text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/gallery"}>Gallery</Link>
-                  </li>
-                  <li className="mx-3 pt-2 pb-2 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/contactus"}>Contact</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          ) : (
-            <div className="md:w-1/2 text-right mt-5 absolute right-0 bg-black z-10 scale-0 transition-all ease-in duration-100">
-              <div>
-                <ul>
-                  <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/events"}>Events</Link>
-                  </li>
-                  <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/team"}>Team</Link>
-                  </li>
-                  <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/gallery"}>Gallery</Link>
-                  </li>
-                  <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/contactus"}>Contact</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          )} */}
-
           <Sheet>
             <SheetTrigger>
               {" "}
