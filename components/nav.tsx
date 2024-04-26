@@ -22,13 +22,13 @@ const Nav = () => {
   };
   return (
     <div className={`${isOpen ? "overscroll-none" : ""}`}>
-      <div className="flex  flex-row justify-between lg:justify-around pt-5 mb-2 lg:mb-5 header mx-4 bg-back-light dark:bg-back-dark">
+      <div className="flex  flex-row items-center justify-between lg:justify-around pt-5 mb-2 lg:mb-5 header mx-4 bg-back-light dark:bg-back-dark">
         <Link href={"/"}>
           <div className="hidden lg:block">
             <Image
               src={ectext}
               alt=""
-              className="h-[48px] lg:h-[70px] w-[48px] lg:w-fit lg:mt-1 logo dark:block hidden"
+              className="h-[48px] lg:h-[50px] w-[48px] lg:w-fit lg:mt-1 logo dark:block hidden"
               height={200}
               width={500}
             />
@@ -51,7 +51,7 @@ const Nav = () => {
           </div>
         </Link>
         <div className="hidden lg:inline ">
-          <ul className="flex items-center justify-center px-3 mt-6 ">
+          <ul className="flex items-center justify-center px-3 ">
             <li className="mx-3 text-xl text-black dark:text-white font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
               <Link href={"/"}>Home</Link>
             </li>
