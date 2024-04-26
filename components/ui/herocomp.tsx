@@ -47,13 +47,13 @@ export const HeroParallax = ({
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 100]),
+    useTransform(scrollYProgress, [0, 0.2], [-700, -100]),
     springConfig
   );
   return (
     <div
       ref={ref}
-      className="h-[1800px] md:h-[180vh] lg:h-[170vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[1000px] md:h-[180vh] lg:h-[210vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -65,12 +65,12 @@ export const HeroParallax = ({
         }}
         className="mt-40 md:mt-0"
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-5 mb-10  md:space-x-20  md:mb-20">
           {firstRow.map((product) => (
             <ProductCard product={product} translate={translateX} />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
+        <motion.div className="flex flex-row  mb-10 md:mb-20 space-x-5 md:space-x-20 ">
           {secondRow.map((product) => (
             <ProductCard product={product} translate={translateXReverse} />
           ))}
@@ -87,14 +87,14 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl hidden md:block md:text-7xl font-bold ">
+    <div className="max-w-7xl relative mx-auto  py-20 md:py-40 px-4 w-full  z-40 flex items-center md:items-start flex-col left-0 top-0">
+      <h1 className="text-2xl hidden md:block md:text-7xl font-bold opacity-100 relative blackOps">
         Entreprenuership-Cell <br /> MJCET
       </h1>
-      <h1 className="text-7xl md:hidden md:text-7xl font-bold ">
-        E-Cell <br /> MJCET
+      <h1 className="text-4xl text-center md:hidden md:text-7xl font-medium opacity-100 relative blackOps ">
+        Entrepreneurship Cell <br /> MJCET
       </h1>
-      <span className="text-gray-300 max-w-7xl text-2xl md:text-7xl mt-8 header font-semibold tracking-wide flex items-center">
+      <span className="text-gray-300 opacity-100 relative text-center md:text-start max-w-7xl text-2xl md:text-7xl mt-5 header font-semibold tracking-wide flex items-center">
         Ideate{" "}
         <div className="h-[10px] w-[10px] rounded-full bg-[#0b5db0] mx-2 mt-1 group-hover:bg-[#ff403c] transition duration-1000">
           {" "}
@@ -123,7 +123,7 @@ export const ProductCard = ({
       style={{
         x: translate,
       }}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product h-48 md:h-72 w-[18rem] md:w-[30rem] relative flex-shrink-0"
     >
       <Image
         src={product.thumbnail}
