@@ -66,8 +66,8 @@ const AddPlayer = () => {
 
       indian: true,
       type: "",
-      rating: 0,
-      base: 0,
+      rating: null,
+      base: null,
     });
 
     router.back();
