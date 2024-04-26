@@ -4,7 +4,7 @@ import "../styles/fonts/stylesheet.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="max-w-[1920px] ">
+    <div>
       {/* <Cursor /> */}
       <Component {...pageProps} />
     </div>

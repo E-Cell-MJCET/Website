@@ -32,3 +32,10 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('Helvetica-Regular.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}

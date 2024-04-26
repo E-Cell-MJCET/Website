@@ -5,35 +5,40 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-export interface ExecomCardProps {
+export interface CardProps {
   username: string;
   dp: any;
   position: string;
   instalink: string;
   insta: boolean;
+  head: boolean;
   linkedlinlink: string;
   linkedln: boolean;
   twitterlink: string;
   twitter: boolean;
 }
 
-const Execom: React.FC<ExecomCardProps> = ({
+const Execom: React.FC<CardProps> = ({
   username,
   dp,
   position,
   instalink,
   linkedlinlink,
   twitterlink,
+  head,
   insta,
   linkedln,
   twitter,
 }) => {
-  console.log(dp);
   return (
-    <div className="flex flex-col w-[160px] items-center  mt-[20px] bg-[#212121] rounded-md mx-[10px] md:w-[180px] mb-[20px]">
-      <div className="flex items-center justify-center w-[85px] h-[85px] mt-[25px] rounded-full bg-gradient-to-r from-[#c23c83]  to-[#6b28d5] ">
+    <div
+      className={`flex flex-col w-60 h-80 items-center  mt-[20px]  rounded-lg mx-[5px] md:mx-[20px] md:w-60 mb-[20px] border-[1px] border-card-light dark:border-card-dark hover:scale-110 ${
+        head ? "hover:border-[#ff403c]" : "hover:border-[#0b5db0]"
+      } transform duration-300`}
+    >
+      <div className="flex items-center justify-center w-[93px] h-[93px] mt-[25px] rounded-full bg-gradient-to-r from-[#ff403c]  to-[#0b5db0] ">
         <Image
-          className="w-[80px] h-[80px]  object-cover rounded-full"
+          className="w-[90px] h-[90px]  object-cover rounded-full"
           src={dp}
           width={80}
           height={80}
@@ -41,15 +46,21 @@ const Execom: React.FC<ExecomCardProps> = ({
         ></Image>
       </div>
 
-      <h1 className="mt-[20px] text-[20px] text-white text-center px-[10px] font-medium Header">
+      <h1 className="mt-[20px] text-[20px] text-black dark:text-white text-center px-[25px] md:px-[15px] font-medium header">
         {username}
       </h1>
 
-      <div className="rounded-md bg-[#6b28d5] text-white text-[12px] mb-[25px] mt-[12px] px-[7px] py-[2px]">
-        {position}
-      </div>
+      {head ? (
+        <div className="rounded-md bg-[#ff403c] text-white dark:text-white text-[14px] mb-[25px] mt-[12px] px-[12px] py-[3px]">
+          Head
+        </div>
+      ) : (
+        <div className="rounded-md bg-[#0b5db0] text-white dark:text-white text-[14px] mb-[25px] mt-[12px] px-[12px] py-[3px]">
+          Core
+        </div>
+      )}
 
-      <div className="flex justify-center  mb-3 mt-auto">
+      <div className="flex justify-center  mb-4 mt-auto">
         {insta ? (
           <a
             href={instalink}
@@ -57,7 +68,7 @@ const Execom: React.FC<ExecomCardProps> = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <InstagramIcon className="h-5 w-5" />
+            <InstagramIcon className="h-7 w-7" />
           </a>
         ) : (
           <span></span>
@@ -70,7 +81,7 @@ const Execom: React.FC<ExecomCardProps> = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LinkedInIcon className="h-5 w-5" />
+            <LinkedInIcon className="h-7 w-7" />
           </a>
         ) : (
           <span></span>
@@ -83,7 +94,7 @@ const Execom: React.FC<ExecomCardProps> = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <TwitterIcon className="h-5 w-5" />
+            <TwitterIcon className="h-7 w-7" />
           </a>
         ) : (
           <span></span>
