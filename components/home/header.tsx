@@ -20,12 +20,12 @@ const Header = () => {
         isOpen ? "overscroll-none" : ""
       } fixed flex justify-between items-center w-full z-50 bg-black backdrop-blur-xl  bg-opacity-30`}
     >
-      <div className="flex w-full  flex-row justify-between lg:justify-around py-3 header mx-4 ">
+      <div className="flex w-full  flex-row justify-between items-center lg:justify-around py-2 header mx-4 ">
         <div className="hidden lg:block">
           <Image
             src={ectext}
             alt=""
-            className="h-[48px] lg:h-[70px] w-[48px] lg:w-fit lg:mt-1 logo"
+            className="h-[48px] lg:h-[50px] w-[48px] lg:w-fit lg:mt-1 logo"
             height={200}
             width={500}
           />
@@ -40,18 +40,18 @@ const Header = () => {
           />
         </div>
         <div className="hidden lg:inline ">
-          <ul className="flex items-center justify-center px-3 mt-6 ">
-            <li className="mx-3 text-xl text-white font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
+          <ul className="flex items-center justify-center px-3  ">
+            <li className="mx-3 text-xl text-white font-medium menu1 hover:font-semibold hover:underline underline-offset-8">
               <Link href={"/events"}>Events</Link>
             </li>
-            <li className="mx-3 text-xl text-white font-semibold menu2 hover:font-bold hover:underline underline-offset-8">
+            <li className="mx-3 text-xl text-white font-medium menu2 hover:font-semibold hover:underline underline-offset-8">
               <Link href={"/team"}>Team</Link>
             </li>
-            <li className="mx-3 text-xl text-white font-semibold menu3 hover:font-bold hover:underline underline-offset-8">
+            <li className="mx-3 text-xl text-white font-medium menu3 hover:font-semibold hover:underline underline-offset-8">
               <Link href={"/gallery"}>Gallery</Link>
             </li>
             {/* <li className='mx-3 text-xl font-semibold  hover:font-bold hover:underline underline-offset-8'><Link href={''}>Blogs</Link></li> */}
-            <li className="mx-3 text-xl text-white font-semibold menu4 hover:font-bold hover:underline underline-offset-8">
+            <li className="mx-3 text-xl text-white font-medium menu4 hover:font-semibold hover:underline underline-offset-8">
               <Link href={"/contactus"}>Contact</Link>
             </li>
           </ul>

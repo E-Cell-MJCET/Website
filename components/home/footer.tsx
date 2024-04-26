@@ -90,37 +90,37 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-center flex justify-center items-center mt-10 gap-x-5">
-          <div className=" h-14 w-14 rounded-full flex justify-center items-center cursor-pointer transition-transform transform hover:translate-y-[-5px] duration-500 ease-in-out">
+        <div className="text-center flex justify-center items-center mt-10 gap-x-10">
+          <div className="  rounded-full flex justify-center items-center cursor-pointer transition-transform transform hover:translate-y-[-5px] duration-500 ease-in-out">
             <Link
               passHref
               href="https://instagram.com/ecellmjcet?igshid=NjIwNzIyMDk2Mg=="
               target="_blank"
             >
-              <InstagramIcon className="h-14 w-14 text-black dark:text-white" />
+              <InstagramIcon className="h-9 w-9 text-black dark:text-white" />
             </Link>
           </div>
-          <div className=" h-14 w-14 rounded-full flex justify-center items-center cursor-pointer transition-transform transform hover:translate-y-[-5px] duration-500 ease-in-out">
+          <div className="  rounded-full flex justify-center items-center cursor-pointer transition-transform transform hover:translate-y-[-5px] duration-500 ease-in-out">
             <Link
               passHref
               href="https://in.linkedin.com/company/e-cell-mjcet"
               target="_blank"
             >
-              <LinkedInIcon className="h-14 w-14 text-black dark:text-white" />
+              <LinkedInIcon className="h-9 w-9 text-black dark:text-white" />
             </Link>
           </div>
-          <div className=" h-14 w-14 rounded-full flex justify-center items-center cursor-pointer transition-transform transform hover:translate-y-[-5px] duration-500 ease-in-out">
+          <div className="  rounded-full flex justify-center items-center cursor-pointer transition-transform transform hover:translate-y-[-5px] duration-500 ease-in-out">
             <Link passHref href="https://linktr.ee/ecellmjcet" target="_blank">
-              <AcUnitIcon className="h-14 w-14 text-black dark:text-white" />
+              <AcUnitIcon className="h-9 w-9 text-black dark:text-white" />
             </Link>
           </div>
-          <div className=" h-14 w-14 rounded-full flex justify-center items-center cursor-pointer transition-transform transform hover:translate-y-[-5px] duration-500 ease-in-out">
+          <div className="  rounded-full flex justify-center items-center cursor-pointer transition-transform transform hover:translate-y-[-5px] duration-500 ease-in-out">
             <Link
               passHref
               href="https://www.facebook.com/groups/ecellmj/"
               target="_blank"
             >
-              <FacebookIcon className="h-14 w-14 text-black dark:text-white" />
+              <FacebookIcon className="h-9 w-9 text-black dark:text-white" />
             </Link>
           </div>
         </div>
