@@ -14,7 +14,7 @@ import elnwt from "../public/assets/favicon.png";
 import { useEffect } from "react";
 import SpeedDial from "@/components/home/speedDial";
 import { Hero } from "@/components/home/hero";
-import { analytics } from "../firebase";
+
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function Home() {

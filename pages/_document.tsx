@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/components/theme-provider";
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -67,8 +68,15 @@ export default function Document() {
         />
       </Head>
       <body>
-        <Main />
-        <NextScript />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Main />
+          <NextScript />
+        </ThemeProvider>
       </body>
     </Html>
   );
