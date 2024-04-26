@@ -7,22 +7,29 @@ import {
 } from "firebase/storage";
 import { db, storage } from "@/firebase";
 import { setDoc, doc } from "firebase/firestore";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { useRouter } from "next/router";
 
 const AddPlayer = () => {
+  const router = useRouter();
   const [playerData, setPlayerData] = useState({
     name: "",
-    image: null,
-    nationality: true,
+
+    indian: true,
     type: "",
-    rating: 0,
-    base: 0,
+    rating: null,
+    base: null,
   });
 
   const handleChange = (e: any) => {
-    if (e.target.name == "playerImage") {
-      const file = e.target.files[0];
-
-      setPlayerData({ ...playerData, image: file });
+    console.log(e.target.id);
+    if (e.target.id === "indian") {
+      setPlayerData({ ...playerData, indian: e.target.value });
+      console.log(playerData);
+    } else if (e.target.id === "type") {
+      setPlayerData({ ...playerData, type: e.target.value });
     } else {
       setPlayerData({ ...playerData, [e.target.name]: e.target.value });
     }
@@ -33,36 +40,37 @@ const AddPlayer = () => {
 
     const id = generateID();
 
-    const filename = id + ".jpeg";
-    const imageRef = ref(storage, "players/" + filename);
+    // const filename = id + ".jpeg";
+    // const imageRef = ref(storage, "players/" + filename);
 
-    if (playerData.image) {
-      await uploadBytes(imageRef, playerData.image);
-    }
+    // if (playerData.image) {
+    //   await uploadBytes(imageRef, playerData.image);
+    // }
 
-    const imageURL = await getDownloadURL(imageRef);
-    console.log(imageURL);
+    // const imageURL = await getDownloadURL(imageRef);
+    // console.log(imageURL);
 
     await setDoc(doc(db, "players", id), {
       name: playerData.name,
-      indian: playerData.nationality,
+      indian: playerData.indian,
       type: playerData.type,
-      image: imageURL,
-      sold: false,
-      rating: playerData.rating,
-      base: playerData.base,
+      status: "Not Sold",
+      rating: parseFloat(playerData.rating),
+      base: parseFloat(playerData.base),
     });
 
     alert("Player added successfully");
 
     setPlayerData({
       name: "",
-      image: null,
-      nationality: true,
+
+      indian: true,
       type: "",
       rating: 0,
       base: 0,
     });
+
+    router.back();
   };
 
   const generateID = () => {
@@ -78,48 +86,41 @@ const AddPlayer = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="w-full h-screen flex items-center justify-center">
+      <form onSubmit={handleSubmit} className="max-w-3xl">
         <h3>Player Name</h3>
-        <input
+        <Input
           type="text"
           name="name"
           value={playerData.name}
-          className="text-black dark:text-white bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 w-full focus:outline-none focus:border-blue-500"
           placeholder="input player name"
           onChange={handleChange}
         />
         <br />
         <br />
 
-        <h3>Player Image</h3>
-        <input
-          type="file"
-          id="playerImage"
-          accept="image/*"
-          name="playerImage"
-          onChange={handleChange}
-        />
-        <br />
-        <br />
-
-        <h3>nationality</h3>
+        <h3>Nationality</h3>
         <p>Is the player Indian?</p>
-        <div>
-          <input
-            type="radio"
-            name="indian"
-            id="indian"
-            onChange={handleChange}
-          />
-          <label>Yes</label>
-          <input
-            type="radio"
-            name="indian"
-            id="notIndian"
-            onChange={handleChange}
-          />
-          <label>No</label>
+        <div className="space-y-5 mt-5">
+          <div className="flex items-center space-x-2">
+            <input
+              type="radio"
+              id="indian"
+              name="indian"
+              onChange={handleChange}
+              value="Yes"
+            />
+            <label>Yes</label>
+
+            <input
+              type="radio"
+              id="indian"
+              name="indian"
+              value="No"
+              onChange={handleChange}
+            />
+            <label>No</label>
+          </div>
         </div>
 
         <br />
@@ -128,45 +129,53 @@ const AddPlayer = () => {
         <h3>Player Type</h3>
         <p>Is the player batsman/bowler?</p>
 
-        <div>
-          <input
-            type="radio"
-            name="type"
-            id="batsman"
-            value="BAT"
-            onChange={handleChange}
-          />
-          <label>Batsman</label>
-          <input
-            type="radio"
-            name="type"
-            id="bowler"
-            value="BOW"
-            onChange={handleChange}
-          />
-          <label>Bowler</label>
-          <input
-            type="radio"
-            name="type"
-            id="batAndWk"
-            value="BT/WK"
-            onChange={handleChange}
-          />
-          <label>Batsman and WicketKeeper</label>
-          <input
-            type="radio"
-            name="type"
-            id="allRounder"
-            value="AR"
-            onChange={handleChange}
-          />
-          <label>All Rounder</label>
+        <div className="space-y-5 mt-5">
+          <div className="flex items-center space-x-2">
+            <input
+              type="radio"
+              id="type"
+              name="type"
+              value="BAT"
+              onChange={handleChange}
+            />
+            <label>Batsman</label>
+          </div>
+          <div className="flex items-center space-x-2">
+            <input
+              type="radio"
+              id="type"
+              name="type"
+              value="BOW"
+              onChange={handleChange}
+            />
+            <label>Bowler</label>
+          </div>
+          <div className="flex items-center space-x-2">
+            <input
+              type="radio"
+              id="type"
+              name="type"
+              value="BT/WK"
+              onChange={handleChange}
+            />
+            <label>Batsman and WicketKeeper</label>
+          </div>
+          <div className="flex items-center space-x-2">
+            <input
+              type="radio"
+              id="type"
+              value="AR"
+              name="type"
+              onChange={handleChange}
+            />
+            <label>All Rounder</label>
+          </div>
         </div>
 
         <br />
         <br />
         <h3>Player Rating</h3>
-        <input
+        <Input
           type="text"
           name="rating"
           value={playerData.rating}
@@ -177,7 +186,7 @@ const AddPlayer = () => {
         <br />
         <br />
         <h3>Player Base Price</h3>
-        <input
+        <Input
           type="text"
           name="base"
           value={playerData.base}
@@ -188,7 +197,7 @@ const AddPlayer = () => {
         <br />
         <br />
 
-        <button onClick={() => handleSubmit}>Submit</button>
+        <Button onClick={() => handleSubmit}>Submit</Button>
       </form>
     </div>
   );

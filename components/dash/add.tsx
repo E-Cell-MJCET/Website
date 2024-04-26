@@ -1,8 +1,10 @@
 import React from "react";
 import { Button } from "../ui/button";
 import PlayerMain from "./playerData/main";
+import { useRouter } from "next/router";
 
 const Add = () => {
+  const router = useRouter();
   return (
     <div className="h-full w-full bg-gray-950">
       <div className="pt-10 pl-10 flex flex-row justify-between items-center pr-10">
@@ -14,7 +16,7 @@ const Add = () => {
           </p>
         </div>
         <div>
-          <Button>Add Player</Button>
+          <Button onClick={() => router.push("/addplayer")}>Add Player</Button>
         </div>
       </div>
       <PlayerMain />
