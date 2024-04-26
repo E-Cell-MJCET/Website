@@ -165,6 +165,29 @@ const AddPlayer = () => {
 
         <br />
         <br />
+        <h3>Player Rating</h3>
+        <input
+          type="text"
+          name="rating"
+          value={playerData.rating}
+          placeholder="input player rating"
+          onChange={handleChange}
+        />
+
+        <br />
+        <br />
+        <h3>Player Base Price</h3>
+        <input
+          type="text"
+          name="base"
+          value={playerData.base}
+          placeholder="input player base price"
+          onChange={handleChange}
+        />
+
+        <br />
+        <br />
+
         <button onClick={() => handleSubmit}>Submit</button>
       </form>
     </div>
