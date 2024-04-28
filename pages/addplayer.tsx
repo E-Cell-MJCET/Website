@@ -55,8 +55,8 @@ const AddPlayer = () => {
       indian: playerData.indian,
       type: playerData.type,
       status: "Not Sold",
-      rating: parseFloat(playerData.rating),
-      base: parseFloat(playerData.base),
+      // rating: parseFloat(playerData.rating),
+      // base: parseFloat(playerData.base),
     });
 
     alert("Player added successfully");
@@ -178,7 +178,7 @@ const AddPlayer = () => {
         <Input
           type="text"
           name="rating"
-          value={playerData.rating}
+          // value={playerData.rating}
           placeholder="input player rating"
           onChange={handleChange}
         />
@@ -186,13 +186,13 @@ const AddPlayer = () => {
         <br />
         <br />
         <h3>Player Base Price</h3>
-        <Input
+        {/* <Input
           type="text"
           name="base"
           value={playerData.base}
           placeholder="input player base price"
           onChange={handleChange}
-        />
+        /> */}
 
         <br />
         <br />

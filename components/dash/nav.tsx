@@ -189,7 +189,7 @@ const NavDash = ({ setSelectedComponent }: { setSelectedComponent: any }) => {
                     <Avatar.Root>
                       <Avatar.Image
                         className="w-12 h-12 flex items-center gap-x-4 cursor-pointer rounded-full ring-offset-2 ring-gray-800 focus:ring-2 duration-150"
-                        src="https://randomuser.me/api/portraits/women/79.jpg"
+                        src="https://avatars.githubusercontent.com/u/66011381?v=4"
                         alt="vienna"
                       />
                       <Avatar.Fallback

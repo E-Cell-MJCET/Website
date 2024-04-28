@@ -54,6 +54,9 @@ const Header = () => {
             <li className="mx-3 text-xl text-white font-medium menu4 hover:font-semibold hover:underline underline-offset-8">
               <Link href={"/contactus"}>Contact</Link>
             </li>
+            <li className="mx-3 text-xl text-white font-medium menu4 hover:font-semibold hover:underline underline-offset-8">
+              <Link href={"/ipl"}>IPL Auction</Link>
+            </li>
           </ul>
         </div>
         <div className="in-line lg:hidden text-right mr-5 transition duration-300 ease-in-out">
@@ -85,6 +88,9 @@ const Header = () => {
                   </li>
                   <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/contactus"}>Contact</Link>
+                  </li>{" "}
+                  <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                    <Link href={"/ipl"}>IPL Auction</Link>
                   </li>
                 </ul>
               </div>

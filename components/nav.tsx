@@ -21,8 +21,12 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className={`${isOpen ? "overscroll-none" : ""}`}>
-      <div className="flex  flex-row items-center justify-between lg:justify-around pt-5 mb-2 lg:mb-5 header mx-4 bg-back-light dark:bg-back-dark">
+    <div
+      className={`${
+        isOpen ? "overscroll-none" : ""
+      }fixed flex justify-between items-center w-full z-50 bg-black backdrop-blur-xl  bg-opacity-30`}
+    >
+      <div className="flex w-full  flex-row justify-between items-center lg:justify-around py-5 header mx-4 ">
         <Link href={"/"}>
           <div className="hidden lg:block">
             <Image
@@ -67,6 +71,9 @@ const Nav = () => {
             {/* <li className='mx-3 text-xl font-semibold  hover:font-bold hover:underline underline-offset-8'><Link href={''}>Blogs</Link></li> */}
             <li className="mx-3 text-xl text-black dark:text-white font-semibold menu4 hover:font-bold hover:underline underline-offset-8">
               <Link href={"/contactus"}>Contact</Link>
+            </li>
+            <li className="mx-3 text-xl text-black dark:text-white font-semibold menu4 hover:font-bold hover:underline underline-offset-8">
+              <Link href={"/ipl"}>IPL Auction</Link>
             </li>
           </ul>
         </div>
@@ -160,6 +167,9 @@ const Nav = () => {
                   </li>
                   <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/contactus"}>Contact</Link>
+                  </li>
+                  <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                    <Link href={"/ipl"}>IPL Auction</Link>
                   </li>
                 </ul>
               </div>

@@ -148,7 +148,7 @@ const PlayerName = () => {
                     <SelectGroup>
                       <SelectLabel>Activity</SelectLabel>
                       <SelectItem value="not sold">Not sold</SelectItem>
-                      <SelectItem value="auction">Auction</SelectItem>
+
                       <SelectItem value="sold">Sold</SelectItem>
                     </SelectGroup>
                   </SelectContent>
@@ -161,6 +161,7 @@ const PlayerName = () => {
                       <Input
                         id="sold"
                         value={price}
+                        type="number"
                         onChange={(e) => {
                           setPrice(parseFloat(e.target.value));
                         }}
@@ -181,7 +182,20 @@ const PlayerName = () => {
                           <SelectGroup>
                             <SelectLabel>Team Name</SelectLabel>
                             <SelectItem value="csk">CSK</SelectItem>
+                            <SelectItem value="dc">DC</SelectItem>
+                            <SelectItem value="dc_hyd">DC_HYD</SelectItem>
+                            <SelectItem value="kt">KT</SelectItem>
+                            <SelectItem value="pwi">PWI</SelectItem>
+                            <SelectItem value="kkr">KKR</SelectItem>
+                            <SelectItem value="rps">RPS</SelectItem>
+                            <SelectItem value="lsg">LSG</SelectItem>
+                            <SelectItem value="gl">GL</SelectItem>
+                            <SelectItem value="pk">PK</SelectItem>
+                            <SelectItem value="srh">SRH</SelectItem>
                             <SelectItem value="mi">MI</SelectItem>
+                            <SelectItem value="rr">RR</SelectItem>
+                            <SelectItem value="rcb">RCB</SelectItem>
+                            <SelectItem value="dd">DD</SelectItem>
                             <SelectItem value="gt">GT</SelectItem>
                           </SelectGroup>
                         </SelectContent>
