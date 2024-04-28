@@ -64,10 +64,7 @@ const Winner = () => {
 
   return (
     <div>
-      <h1 className="text-3xl pt-40 text-center md:hidden">
-        Please view in laptop or desktop
-      </h1>
-      <div className=" relative  items-center justify-center flex-col overflow-hidden hidden md:flex">
+      <div className=" relative  items-center justify-center flex-col overflow-hidden flex">
         <div className="absolute top-0 left-0 w-full h-full">
           <Animation />
         </div>
@@ -76,8 +73,8 @@ const Winner = () => {
             RESULTS
           </h1>
           {winners.length > 0 && (
-            <div className="m-12 w-[600px] shadow-2xl">
-              <Card className=" space-y-2 w-[700px] shadow-[#fde047] shadow-xl">
+            <div className="m-8 xl:m-12 flex items-center justify-center xl:w-[700px] shadow-2xl">
+              <Card className="w-[80%]  md:w-[90%] xl:w-[700px] shadow-[#fde047] shadow-xl">
                 <CardHeader>
                   <CardTitle>
                     <h1 className="text-center m-1">Winner</h1>
@@ -111,9 +108,9 @@ const Winner = () => {
               </Card>
             </div>
           )}
-          <div className="m-12 flex flex-wrap items-center justify-between space-x-20 ">
+          <div className="m-8 xl:m-12 flex flex-col xl:flex-row xl:space-x-20 items-center justify-between  ">
             {winners.length >= 2 && (
-              <Card className="space-y-2 shadow-slate-500 shadow-xl w-[700px]">
+              <Card className="mb-8 xl:mb-0 w-[80%] shadow-slate-500 shadow-xl xl:w-[700px]">
                 <CardHeader>
                   <CardTitle>
                     <h1 className="text-center m-1 ">1st Runner-Up</h1>
@@ -147,7 +144,7 @@ const Winner = () => {
               </Card>
             )}
             {winners.length >= 3 && (
-              <Card className="space-y-2 w-[700px]  shadow-[#cd7F32] shadow-xl">
+              <Card className="w-[80%]  xl:w-[700px]   shadow-[#cd7F32] shadow-xl">
                 <CardHeader>
                   <CardTitle>
                     <h1 className="text-center m-1 ">2nd Runner-Up</h1>
