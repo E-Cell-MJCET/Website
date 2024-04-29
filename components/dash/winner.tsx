@@ -98,10 +98,10 @@ const Winner = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className=" m-2 flex align-items justify-between">
+                  <div className=" m-2 flex-row w-full align-items justify-between">
                     <h1 className="text-xl">Ratings : {winners[0].rating}</h1>
-                    <h2 className="text-xl">
-                      Remaining Amount : {winners[0].balance}
+                    <h2 className="text-xl mt-2">
+                      Remaining Amount : {winners[0].balance} Cr
                     </h2>
                   </div>
                 </CardContent>
@@ -134,10 +134,10 @@ const Winner = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className=" m-2 flex align-items justify-between">
+                  <div className=" m-2 flex-row align-items justify-between">
                     <h1 className="text-xl">Ratings : {winners[1].rating}</h1>
-                    <h2 className="text-xl">
-                      Remaining Amount : {winners[1].balance}
+                    <h2 className="text-xl mt-2">
+                      Remaining Amount : {winners[1].balance} Cr
                     </h2>
                   </div>
                 </CardContent>
@@ -168,10 +168,10 @@ const Winner = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className=" m-2 flex align-items justify-between">
+                  <div className=" m-2 flex-row align-items justify-between">
                     <h1 className="text-xl">Ratings : {winners[2].rating}</h1>
-                    <h2 className="text-xl">
-                      Remaining Amount : {winners[2].balance}
+                    <h2 className="text-xl mt-2">
+                      Remaining Amount : {winners[2].balance} Cr
                     </h2>
                   </div>
                 </CardContent>
