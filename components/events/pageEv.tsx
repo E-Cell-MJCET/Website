@@ -56,7 +56,7 @@ const PageEv = () => {
 
             <PrevEv
               title="Build your own business"
-              desc="Learn how to kick off your own business"
+              desc="A 90-minute program packed with insights on brand building. From domain ownership to effective marketing strategies, we've got you covered. No coding expertise required!"
               image={byob}
               date="12th February 2024"
               venue="Room 5209"
@@ -72,15 +72,7 @@ const PageEv = () => {
             <PrevEv
               image={DataForge}
               title="DataForge Fusion"
-              desc="
-              DataForge Fusion: Data Engineering & Analysis Workshop.
-              Delve deep into the dynamic world of data and unravel the secrets of data analysis with our guest speaker:
-              Imaduddin Mohammed
-              Senior Cloud Engineer @ PwC Australia
-              Embarked on a journey into the dynamic world of data as we bring you an engaging pre-hackathon workshop that explores the intricacies of Data Engineering and Analysis.
-              Unlocked the power of Data Engineering and Analysis with hands-on sessions!           
-              Dove into practical experiences with cutting-edge tools and techniques in the realm of data.
-            "
+              desc="Explore DataForge Fusion: a workshop on Data Engineering & Analysis. Join Imaduddin Mohammed, Senior Cloud Engineer at PwC Australia, as we delve into the depths of data analysis. Dive into hands-on sessions, unlocking the power of data engineering and analysis with practical experiences and cutting-edge tools."
               date="25th November 2023"
               venue="CIC Lab, Block 2"
             />
@@ -88,47 +80,15 @@ const PageEv = () => {
             <PrevEv
               image={Flutter}
               title="FLUTTER FIESTA"
-              desc="A journey into App Development with Flutter
-
-            
-            An interactive workshop on App Development to delve deeper into the expansive realm of technology.
-            
-            This event centers around Flutter, the cutting-edge technology in mobile app development. By the end of the workshop, audience have crafted their inaugural Flutter app!
-            
-            
-            
-            Gained practical experience with one of the most widely used and coolest technologies in mobile app development.
-            
-            Increased audience chance to win *Hackathon* which has a prize pool of *₹3,00,000*
-            
-            "
+              desc="An interactive workshop, dive into App Development with Flutter! Discover the latest in mobile app technology as you learn to create your own Flutter app. Gain hands-on experience and boost your chances of winning the Hackathon's ₹3,00,000 prize pool!"
               date="18th November 2023"
               venue="CIC Lab, Block 2"
             />
 
             <PrevEv
               image={BOB}
-              title="BATTLE OF BRANDS"
-              desc="Introducing The Battle Of Brands 🏆
-            A 3-round, fun and informative event. 📊
-            
-            - Round 1: PICTIONARY 🖌️
-            Two teams compete at a time, racing to draw and identify brand logos. The quickest team advances!
-            
-            - Round 2: Battle of Facts? 📈
-            Two teams engage in a fact-based showdown, defending their given brands. The winning team progresses!
-            
-            - Round 3: 🤫 SURPRISE ROUND 🎁
-            
-            The winners of this competition gets the cash prices!
-            
-            👉 The price pool stands was of ₹2000 💰
-            
-            ➡️ Entry: Assemble your team of 2 or 4 members.
-            ➡️ Event venue: Ghulam Ahmed Hall
-            ➡️ Date: November 16, 2023 📅
-            ➡️ Timings: 1:45 pm - 4:00 pm 🕒
-            "
+              title="Battle of Brands"
+              desc="A thrilling 3-round event! Round 1 kicks off with PICTIONARY, where teams race to draw and guess brand logos. Round 2 features Battle of Facts, a showdown defending given brands. The surprise Round 3 offers cash prizes! Assemble your team of 2 or 4 for a chance to win from the ₹2000 prize pool."
               date="16th November 2023"
               venue="Seminar Hall 4th Block"
             />
@@ -136,18 +96,8 @@ const PageEv = () => {
             <PrevEv
               image={stack}
               title="Stack Sprint"
-              desc="Our first pre hackathon workshop
-StackSprint: A Web Development Adventure
-
-Do you wish to become a Web Developer but don’t know where to start?
-
-A two-day hands-on workshop on Web Development and dive deeper into the topics with our guest speaker:
-Syed Zohaib
-Software Engineer @ Apple, Hyderabad
-Chief Coordinator, CSI 2018
-
-Audience were introduced to HTML and CSS by building a basic web page.
-And also, introduction to JavaScript and Vue.js with fundamentals of building a web app."
+              desc=" A Web Development Adventure, our first pre-hackathon workshop! Dive into the world of web development over two days with guest speaker Syed Zohaib, Software Engineer at Apple, Hyderabad. Learn HTML, CSS, JavaScript, and Vue.js basics while building a web page and web app. Ready to kickstart your journey as a web developer? Join us!
+              "
               date="10th & 11th November 2023"
               venue="CIC Lab, Block 2"
             />
