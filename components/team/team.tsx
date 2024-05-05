@@ -17,7 +17,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const GB = () => {
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center pt-32">
       <div className="w-[85%]">
         <div className="flex justify-center flex-col items-center">
           <div className="text-center text-[45px] text-black dark:text-white header mt-10 mb-14">

@@ -4,19 +4,16 @@ import UpcomEv from "./upcomEv";
 
 const PageEv = () => {
   const GameOfInvestersImagePath = "/assets/Game-of-Investers.webp";
-  const AlumniMeetPath = "/assets/Alumni-meet.webp";
-  const DSAPath = "/assets/DSA.webp";
-  const HackathonPath = "/assets/Hackakthon.webp";
   const HackRev2 = "/assets/upcoming-events/hackrev.jpeg";
+  const ipl = "/assets/upcoming-events/ipl.webp";
   const Flutter = "/assets/upcoming-events/flutter.jpeg";
   const BOB = "/assets/upcoming-events/bob.webp";
   const DataForge = "/assets/upcoming-events/dataforge.jpeg";
-  const ep = "/assets/upcoming-events/3.png";
   const byob = "/assets/upcoming-events/byob.png";
   const stack = "/assets/upcoming-events/stack.jpg";
 
   return (
-    <div className="flex justify-center  bg-black h-auto">
+    <div className="flex justify-center  bg-black h-auto pt-32">
       <div className="w-[95%]">
         <div className="text-center text-[45px] text-white header mt-10 mb-14">
           <span className="blackOps uppercase">Events</span>
@@ -49,39 +46,43 @@ const PageEv = () => {
                 Previous Events
               </div>
             </div>
+            <PrevEv
+              title="IPL Auction 2024"
+              desc="IPL auction 2024, yet again a fantastic event hosted by your very own Entrepreneurship Cell MJCET where more than 80+ students engaged in groups of up to 5 members each and with names of 16 teams of the Indian Premier League, the teams were been given a budget of 100cr each in which they were expected to build a team of 11 players later with which the winner was decided on the basis of the grand total of every individual player rating of the team. A very competitive and strong play delivered by every single team participated."
+              image={ipl}
+              date="27th April 2024"
+              venue="Seminar Hall 4th Block"
+            />
 
             <PrevEv
               title="Build your own business"
               desc="Learn how to kick off your own business"
               image={byob}
+              date="12th February 2024"
+              venue="Room 5209"
             />
             <PrevEv
               image={HackRev2}
               title="Hack Revolution 2023 2.0"
               desc="Hack Revolution is a social coding competition powered by ACES, consisting of 4-6 members in a team. It provides an exceptional opportunity to network with people from different backgrounds and gives a career boost to the students. It is a collaboration between CSI and E-Cell clubs of the MJCET. The duration is about 15 hours. Winners of the hackathon would qualify for a price pool of Rs. 3,00,000 and Internship oppurtunity at ACES."
+              date="17th December 2023"
+              venue="Ghulam Ahemed Hall"
             />
 
             <PrevEv
               image={DataForge}
               title="DataForge Fusion"
               desc="
-           
-            DataForge Fusion: Data Engineering & Analysis Workshop.
-            
-            Delve deep into the dynamic world of data and unravel the secrets of data analysis with our guest speaker:
-            Imaduddin Mohammed
-            Senior Cloud Engineer @ PwC Australia
-            
-            Embarked on a journey into the dynamic world of data as we bring you an engaging pre-hackathon workshop that explores the intricacies of Data Engineering and Analysis.
-            
-            
-            Unlocked the power of Data Engineering and Analysis with hands-on sessions!
-            
-           Dove into practical experiences with cutting-edge tools and techniques in the realm of data.
-          
-            
-            
+              DataForge Fusion: Data Engineering & Analysis Workshop.
+              Delve deep into the dynamic world of data and unravel the secrets of data analysis with our guest speaker:
+              Imaduddin Mohammed
+              Senior Cloud Engineer @ PwC Australia
+              Embarked on a journey into the dynamic world of data as we bring you an engaging pre-hackathon workshop that explores the intricacies of Data Engineering and Analysis.
+              Unlocked the power of Data Engineering and Analysis with hands-on sessions!           
+              Dove into practical experiences with cutting-edge tools and techniques in the realm of data.
             "
+              date="25th November 2023"
+              venue="CIC Lab, Block 2"
             />
 
             <PrevEv
@@ -101,23 +102,8 @@ const PageEv = () => {
             Increased audience chance to win *Hackathon* which has a prize pool of *₹3,00,000*
             
             "
-            />
-
-            <PrevEv
-              image={stack}
-              title="Stack Sprint"
-              desc="Our first pre hackathon workshop
-StackSprint: A Web Development Adventure
-
-Do you wish to become a Web Developer but don’t know where to start?
-
-A two-day hands-on workshop on Web Development and dive deeper into the topics with our guest speaker:
-Syed Zohaib
-Software Engineer @ Apple, Hyderabad
-Chief Coordinator, CSI 2018
-
-Audience were introduced to HTML and CSS by building a basic web page.
-And also, introduction to JavaScript and Vue.js with fundamentals of building a web app."
+              date="18th November 2023"
+              venue="CIC Lab, Block 2"
             />
 
             <PrevEv
@@ -143,6 +129,27 @@ And also, introduction to JavaScript and Vue.js with fundamentals of building a 
             ➡️ Date: November 16, 2023 📅
             ➡️ Timings: 1:45 pm - 4:00 pm 🕒
             "
+              date="16th November 2023"
+              venue="Seminar Hall 4th Block"
+            />
+
+            <PrevEv
+              image={stack}
+              title="Stack Sprint"
+              desc="Our first pre hackathon workshop
+StackSprint: A Web Development Adventure
+
+Do you wish to become a Web Developer but don’t know where to start?
+
+A two-day hands-on workshop on Web Development and dive deeper into the topics with our guest speaker:
+Syed Zohaib
+Software Engineer @ Apple, Hyderabad
+Chief Coordinator, CSI 2018
+
+Audience were introduced to HTML and CSS by building a basic web page.
+And also, introduction to JavaScript and Vue.js with fundamentals of building a web app."
+              date="10th & 11th November 2023"
+              venue="CIC Lab, Block 2"
             />
           </div>
 
@@ -150,6 +157,8 @@ And also, introduction to JavaScript and Vue.js with fundamentals of building a 
             image={GameOfInvestersImagePath}
             title="GAME OF INVESTORS"
             desc="Entrepreneurship-Cell MJCET, has conducted a fun learning event called the Game of Investors, which exposes their fellow students to the biggest money circulation mediums of the world. The game was played in pairs and trios, The game included 10 rounds, of several companies to choose from and invest into, it was time sensitive and certain situations like the pandemic and wars severely had a huge impact on the way the stock market works were put into the game for the fun twists and losses. And at the end team with the greatest number of returns wins the game!"
+            date="April 27th 2024"
+            venue="Seminar Hall 4th Block"
           />
         </div>
       </div>

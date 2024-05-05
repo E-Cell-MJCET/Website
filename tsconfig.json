@@ -23,6 +23,6 @@
     "**/*.tsx",
     "components/ep/countdown.jsx",
     "components/ep/readMoreBtn.jsx"
-  ],
+, "pages/player/[name].jsx"  ],
   "exclude": ["node_modules"]
 }
