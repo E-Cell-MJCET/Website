@@ -2,6 +2,7 @@ import PageEv from "@/components/events/pageEv";
 import GalleryTwo from "@/components/gallery/gallaryTwo";
 import GalleryOne from "@/components/gallery/galleryOne";
 import Gallery1 from "@/components/gallery/galleryOne";
+import MainGallery from "@/components/gallery/mainGallery";
 import Footer from "@/components/home/footer";
 import Footers from "@/components/home/footer2";
 import Gallery from "@/components/home/gallery";
@@ -13,8 +14,7 @@ const GalleryPage = () => {
   return (
     <div className="dark:bg-back-dark bg-back-light">
       <Nav />
-      <GalleryOne />
-      <GalleryTwo />
+      <MainGallery />
       <Footer />
       <Footers />
     </div>
