@@ -130,7 +130,7 @@ const Banner = () => {
             }}
             className="mt-10"
           >
-            Show Winners
+            Show Winnerssss
           </Button>
 
           {activeSection === "logs" && <Logs />}
