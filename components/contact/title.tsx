@@ -7,7 +7,7 @@ import Execom from "../team/execom";
 
 const Title = () => {
   return (
-    <div className="flex text-center justify-center items-start lg:items-center leading-tight flex-grow ">
+    <div className="flex pt-40 text-center justify-center items-start lg:items-center leading-tight flex-grow ">
       <div className="w-[70%] -mt:20   ">
         <div className="text-[max(2rem,min(4vw,4rem))] tracking-wider font-bold blackOps text-gray-900 dark:text-gray-300 opacity-100 ">
           Contact Us

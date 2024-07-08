@@ -23,6 +23,7 @@ const Form = () => {
 
     try {
       const formData = new FormData(event.currentTarget);
+      console.log(formData);
       await axios.post(
         "https://docs.google.com/forms/d/e/1FAIpQLScq6NKCbVwG03cNkNnEF-u4S2SeU_kmXqa2ViPzkTvz_QOQkg/formResponse",
         formData
