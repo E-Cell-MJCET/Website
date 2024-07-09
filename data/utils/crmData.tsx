@@ -14,7 +14,7 @@ const crmData: CardProps[] = [
     twitter: false,
   },
   {
-    username: "Mohammed Saad Zubair",
+    username: "Saad Zubair",
     dp: "/assets/execom/saad.webp",
     position: "CRM",
     instalink: "https://www.instagram.com/saadzzz__",

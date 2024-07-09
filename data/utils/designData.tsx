@@ -2,6 +2,18 @@ import { CardProps } from "@/components/team/execom";
 
 const designData: CardProps[] = [
   {
+    username: "Abdur Raafe",
+    dp: "/assets/execom/abdur.webp",
+    position: "Design",
+    instalink: "https://www.instagram.com/a.raafe.a",
+    linkedlinlink: "https://www.linkedin.com/in/abdur-raafe-akheel-356451227/",
+    twitterlink: "https://twitter.com/Raafe18561115",
+    insta: true,
+    head: true,
+    linkedln: true,
+    twitter: false,
+  },
+  {
     username: "Ayesha Fatima",
     dp: "/assets/execom/ayesha.webp",
     position: "Design",
@@ -13,20 +25,9 @@ const designData: CardProps[] = [
     linkedln: false,
     twitter: false,
   },
+
   {
-    username: "Abdur Raafe",
-    dp: "/assets/execom/abdur.webp",
-    position: "Design",
-    instalink: "https://www.instagram.com/a.raafe.a",
-    linkedlinlink: "https://www.linkedin.com/in/abdur-raafe-akheel-356451227/",
-    twitterlink: "https://twitter.com/Raafe18561115",
-    insta: true,
-    head: true,
-    linkedln: true,
-    twitter: true,
-  },
-  {
-    username: "MD Himayath Ali ",
+    username: "Himayath Ali ",
     dp: "/assets/core/himayath.webp",
     position: "Design",
     instalink: "https://www.instagram.com/himayathh_07",
@@ -38,7 +39,7 @@ const designData: CardProps[] = [
     twitter: false,
   },
   {
-    username: "SHAFIYA KHANAM ",
+    username: "Shafiya Khanam ",
     dp: "/assets/core/shafiya.webp",
     position: "Design",
     instalink: "https://www.instagram.com/monsoon.blossom05",

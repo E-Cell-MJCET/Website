@@ -2,7 +2,7 @@ import { CardProps } from "@/components/team/execom";
 
 const webData: CardProps[] = [
   {
-    username: "Mohammad Shujauddin",
+    username: "Shujauddin",
     dp: "/assets/execom/shuja.webp",
     position: "Web",
     instalink: "",
@@ -14,7 +14,7 @@ const webData: CardProps[] = [
     twitter: false,
   },
   {
-    username: "Mohammed Abid Nafi",
+    username: "Abid Nafi",
     dp: "/assets/execom/abid.webp",
     position: "Web",
     instalink: "https://www.instagram.com/md_abid_nafi",
@@ -26,7 +26,7 @@ const webData: CardProps[] = [
     twitter: false,
   },
   {
-    username: "Mohammad Mutahhar Aquib ",
+    username: "Mutahhar Aquib ",
     dp: "/assets/core/aquib.webp",
     position: "Web",
     instalink: "https://www.instagram.com/mutahharaquib",
@@ -38,8 +38,8 @@ const webData: CardProps[] = [
     twitter: true,
   },
   {
-    username: "Mohammed Affan Sakhib",
-    dp: "/assets/core/affan.webp",
+    username: "Affan Sakhib",
+    dp: "/assets/core/affan.png",
     position: "Web",
     instalink: "https://www.instagram.com/md.affansakhib",
     linkedlinlink: "",

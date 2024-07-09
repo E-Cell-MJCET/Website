@@ -26,8 +26,8 @@ const ideationData: CardProps[] = [
     twitter: false,
   },
   {
-    username: "Mohammed Zaid Ahmed",
-    dp: "/assets/execom/zzy.webp",
+    username: "Zaid Ahmed",
+    dp: "/assets/execom/zzy.png",
     position: "Ideation",
     instalink: "https://www.instagram.com/Zaidzzy",
     linkedlinlink: "https://www.linkedin.com/in/zaid-ahmed-a9b842201/",
@@ -50,7 +50,7 @@ const ideationData: CardProps[] = [
     twitter: false,
   },
   {
-    username: "SALEHA BINT MOHAMMED ABDUL BASEER",
+    username: "Saleha Baseer",
     dp: "/assets/core/saleha.webp",
     position: "Ideation",
     instalink: "https://www.instagram.com/saleha_mab",

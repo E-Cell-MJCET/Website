@@ -9,8 +9,8 @@ const Coordinator = () => {
         <div className="flex justify-center items-center relative">
           <div className="flex flex-col items-center ">
             {/* <div className='h-[3px] w-[300px] bg-pink-600 rounded-lg mb-[2px]'></div> */}
-            <div className="h-[3px] w-[320px] bg-[#c23c83] rounded-lg my-[2px]"></div>
-            <div className="h-[3px] w-[370px] bg-[#c23c83] rounded-lg mt-[2px]"></div>
+            <div className="h-[3px] w-[320px] bg-[#ff403c] rounded-lg my-[2px]"></div>
+            <div className="h-[3px] w-[370px] bg-[#ff403c] rounded-lg mt-[2px]"></div>
           </div>
 
           <div className="text-center text-white poiret text-[30px] font-bold opacity-100 z-30 bg-black px-3 absolute">

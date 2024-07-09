@@ -26,7 +26,7 @@ const eventsData: CardProps[] = [
     twitter: false,
   },
   {
-    username: "Mohammed Umar Salam",
+    username: "Umar Salam",
     dp: "/assets/core/umar.webp",
     position: "Events",
     instalink: "https://www.instagram.com/_mdumar_18",
