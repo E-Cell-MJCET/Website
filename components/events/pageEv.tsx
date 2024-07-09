@@ -11,6 +11,7 @@ const PageEv = () => {
   const DataForge = "/assets/upcoming-events/dataforge.jpeg";
   const byob = "/assets/upcoming-events/byob.png";
   const stack = "/assets/upcoming-events/stack.jpg";
+  const goi = "/assets/upcoming-events/goi.jpg"
 
   return (
     <div className="flex justify-center  bg-black h-auto pt-32">
