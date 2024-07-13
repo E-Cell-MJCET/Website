@@ -32,19 +32,7 @@ const PageEv = () => {
               Upcoming Events
             </div>
           </div>
-          <UpcomEv
-            image={goi}
-            title="Game Of Investors"
-            desc="Get ready to be INVESTED 💰 in Game Of Investors Season 2 brought to you by E-CELL MJCET!
-              🚀 Dive into the world of entrepreneurship with company insights and live updates 📈
-              Strategize your investments wisely to dominate the game and unlock MAJOR profits 🏆
-              Don't miss out on this epic event - save the date! 📅"
-            link="https://docs.google.com/forms/d/e/1FAIpQLSfEhttOa0gqIifWWnmoRy1Kh_zul8KyhWi5sL69Z6y3lsJRLw/viewform"
-            date="11th July 2024"
-            venue="Gulam Ahmed Hall, MJCET"
-          />
-
-
+          
           <div className="flex justify-center flex-col items-center mt-20 bg-black">
             <div className="flex justify-center items-center mb-10 ">
               <div className="flex flex-col items-center justify-center">
@@ -56,6 +44,19 @@ const PageEv = () => {
                 Previous Events
               </div>
             </div>
+
+            <PrevEv
+            title="Game Of Investors"
+            desc="Get ready to be INVESTED 💰 in Game Of Investors Season 2 brought to you by E-CELL MJCET!
+            🚀 Dive into the world of entrepreneurship with company insights and live updates 📈
+            Strategize your investments wisely to dominate the game and unlock MAJOR profits 🏆
+            Don't miss out on this epic event - save the date! 📅"
+            image={goi}
+            date="11th July 2024"
+            venue="Gulam Ahmed Hall, MJCET"
+            />
+
+
             <PrevEv
               title="IPL Auction 2024"
               desc="IPL auction 2024, yet again a fantastic event hosted by your very own Entrepreneurship Cell MJCET where more than 80+ students engaged in groups of up to 5 members each and with names of 16 teams of the Indian Premier League, the teams were been given a budget of 100cr each in which they were expected to build a team of 11 players later with which the winner was decided on the basis of the grand total of every individual player rating of the team. A very competitive and strong play delivered by every single team participated."
