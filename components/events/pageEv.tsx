@@ -47,10 +47,7 @@ const PageEv = () => {
 
             <PrevEv
             title="Game Of Investors"
-            desc="Get ready to be INVESTED 💰 in Game Of Investors Season 2 brought to you by E-CELL MJCET!
-            🚀 Dive into the world of entrepreneurship with company insights and live updates 📈
-            Strategize your investments wisely to dominate the game and unlock MAJOR profits 🏆
-            Don't miss out on this epic event - save the date! 📅"
+            desc="Join the Ultimate Investment Challenge! Dive into the world of strategic investing with E-Cell’s “Game of Investors.” Discover the excitement of competitive finance as you invest in dynamic companies and make strategic decisions over 10 thrilling rounds. Boost your chances of winning fantastic rewards and the title of Best Investor!"
             image={goi}
             date="11th July 2024"
             venue="Gulam Ahmed Hall, MJCET"
