@@ -1,5 +1,4 @@
 import React from "react";
-import AnimatedGradientText from "./ui/AnimatedGradientText";
 
 const Main = () => {
   return (
