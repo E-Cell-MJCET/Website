@@ -7,11 +7,14 @@ export const metadata: Metadata = {
 
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Main from "@/components/coming-soon/main";
+import { BackgroundBeams } from "@/components/ui/background-beams";
+import Social from "@/components/coming-soon/social";
 
 export default function Home() {
   return (
     <div>
       <GoogleAnalytics gaId="G-RVM88W3QHK" />
+      <BackgroundBeams />
       <Main />
     </div>
   );
