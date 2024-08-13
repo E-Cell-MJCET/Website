@@ -1,3 +1,4 @@
+import { Montserrat } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -180,6 +181,15 @@ const config = {
           mobile: { max: "700px" },
           desktop: { min: "640px" },
         },
+      },
+      fontFamily: {
+        staatliches: ["var(--font-staatliches)"],
+        montserrat: ["var(--font-montserrat)"],
+        nanum: ["var(--font-nanum-pen-script)"],
+      },
+      boxShadow: {
+        ticket:
+          "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px",
       },
     },
   },
