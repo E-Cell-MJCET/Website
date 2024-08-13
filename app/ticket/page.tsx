@@ -1,10 +1,25 @@
+"use client";
 import Ticket from "@/components/ticket/ticket";
-import Image from "next/image";
-import React from "react";
+import html2canvas from "html2canvas";
+import React, { useRef } from "react";
+import { Button } from "@/components/ui/Button";
 
 const TicketPage = () => {
+  const ticketRef = useRef(null);
+
+  const handleDownload = async () => {
+    if (ticketRef.current) {
+      const canvas = await html2canvas(ticketRef.current);
+      const dataUrl = canvas.toDataURL("image/png");
+      const link = document.createElement("a");
+
+      link.href = dataUrl;
+      link.download = "ticket.png";
+      link.click();
+    }
+  };
   return (
-    <div className="flex items-center justify-center h-screen bg-pink-500">
+    <div className="flex flex-col items-center justify-center h-screen bg-pink-500">
       {/* <div className="h-[250px] mx-auto flex bg-white shadow-lg max-w-4xl">
         <div className="left flex">
           <div
@@ -82,7 +97,18 @@ const TicketPage = () => {
           </div>
         </div>
       </div> */}
-      <Ticket />
+      <div ref={ticketRef}>
+        <Ticket />
+      </div>
+
+      <Button
+        variant={"outline"}
+        size="sm"
+        className="mt-5"
+        onClick={handleDownload}
+      >
+        Download Ticket
+      </Button>
     </div>
   );
 };

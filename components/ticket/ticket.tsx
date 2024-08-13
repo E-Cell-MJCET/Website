@@ -2,6 +2,7 @@ import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import logo from "../../public/assets/Logo/logo-big-colour.png";
 import cover from "../../public/assets/test/image.png";
+import qr from "../../public/assets/test/qrcode.png";
 import Image from "next/image";
 
 const Ticket = () => {
@@ -96,13 +97,8 @@ const Ticket = () => {
           </p>
         </div> */}
         <div id="qrcode" className="flex flex-col items-center ">
-          <Image
-            src="https://external-preview.redd.it/cg8k976AV52mDvDb5jDVJABPrSZ3tpi1aXhPjgcDTbw.png?auto=webp&s=1c205ba303c1fa0370b813ea83b9e1bddb7215eb"
-            alt="QR code"
-            width={75}
-            height={75}
-          />
-          <p className="mt-5 text-black">#20030220</p>
+          <Image src={qr} alt="QR code" width={75} height={75} />
+          <p className="mt-3 text-black">#20030220</p>
         </div>
       </div>
     </div>
