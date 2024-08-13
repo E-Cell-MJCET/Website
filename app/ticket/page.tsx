@@ -101,12 +101,7 @@ const TicketPage = () => {
         <Ticket />
       </div>
 
-      <Button
-        variant={"outline"}
-        size="sm"
-        className="mt-5"
-        onClick={handleDownload}
-      >
+      <Button size="sm" className="mt-5" onClick={handleDownload}>
         Download Ticket
       </Button>
     </div>
