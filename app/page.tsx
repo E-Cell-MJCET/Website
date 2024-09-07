@@ -9,13 +9,15 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import Main from "@/components/coming-soon/main";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import Social from "@/components/coming-soon/social";
+import CanvasCursor from "@/components/coming-soon/canvas-cursor";
 
 export default function Home() {
   return (
     <div>
       <GoogleAnalytics gaId="G-RVM88W3QHK" />
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
       <Main />
+      <CanvasCursor />
     </div>
   );
 }
