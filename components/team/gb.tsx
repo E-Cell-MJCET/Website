@@ -6,6 +6,7 @@ import abid from "../../public/assets/GB/abid.png";
 import maliha from "../../public/assets/GB/maliha.jpeg";
 import shuja from "../../public/assets/GB/shuja.jpeg";
 import ayesha from "../../public/assets/GB/ayesha.jpeg";
+import irfan from "../../public/assets/GB/irfan.jpeg";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -52,7 +53,7 @@ const GB = () => {
           </div>
           <div className="flex flex-col lg:flex-row w-full items-center justify-center">
             <GBCOMP
-              image={abid}
+              image={irfan}
               name="MOHAMMAD IRFAN"
               position="CHIEF INFORMATION OFFICER"
               qoute="I see challenges as opportunities to innovate and grow."
