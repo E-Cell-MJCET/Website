@@ -5,6 +5,7 @@ import React from "react";
 import abid from "../../public/assets/GB/abid.png";
 import maliha from "../../public/assets/GB/maliha.jpeg";
 import shuja from "../../public/assets/GB/shuja.jpeg";
+import ayesha from "../../public/assets/GB/ayesha.jpeg";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -43,7 +44,7 @@ const GB = () => {
               qoute="Break boundaries, build legacies"
             />
             <GBCOMP
-              image={abid}
+              image={ayesha}
               name="AYESHA FATHIMA"
               position="CHIEF COORDINATOR"
               qoute="You are not the work you do, you are the person you are."

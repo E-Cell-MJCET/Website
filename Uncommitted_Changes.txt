@@ -1,63 +1,28 @@
-Modified files: Uncommitted_Changes.txt, components/team/gb.tsx
-Added files: components/team/gb-comp.tsx, public/assets/GB/maliha.jpeg, public/assets/GB/shuja.jpeg
+Modified files: components/team/gb.tsx
+Added files: 
 Deleted files: 
 
 
---- Uncommitted_Changes.txt ---
-diff --git a/Uncommitted_Changes.txt b/Uncommitted_Changes.txt
-index e2e1abb..4f6740d 100644
-Binary files a/Uncommitted_Changes.txt and b/Uncommitted_Changes.txt differ
-
-
 --- components/team/gb.tsx ---
+diff --git a/components/team/gb.tsx b/components/team/gb.tsx
+index 295f74c..74efa03 100644
+--- a/components/team/gb.tsx
++++ b/components/team/gb.tsx
+@@ -5,6 +5,7 @@ import React from "react";
+ import abid from "../../public/assets/GB/abid.png";
+ import maliha from "../../public/assets/GB/maliha.jpeg";
+ import shuja from "../../public/assets/GB/shuja.jpeg";
++import ayesha from "../../public/assets/GB/ayesha.jpeg";
+ import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+ import EmailIcon from "@mui/icons-material/Email";
+ import InstagramIcon from "@mui/icons-material/Instagram";
+@@ -43,7 +44,7 @@ const GB = () => {
+               qoute="Break boundaries, build legacies"
+             />
+             <GBCOMP
+-              image={abid}
++              image={ayesha}
+               name="AYESHA FATHIMA"
+               position="CHIEF COORDINATOR"
+               qoute="You are not the work you do, you are the person you are."
 
-
-+++ components/team/gb-comp.tsx +++
-import Image, { StaticImageData } from "next/image";
-import React from "react";
-
-const GBCOMP = ({
-  image,
-  name,
-  position,
-  qoute,
-}: {
-  image: StaticImageData;
-  name: string;
-  position: string;
-  qoute: string;
-}) => {
-  return (
-    <div className="flex flex-col mt-10 w-[250px] h-[400px] lg:m-10 text-center bg-slate-700  dark:bg-slate-900  dark:rounded-md">
-      <div className="text-center rounded-t-[20px]">
-        <Image
-          src={image}
-          alt=""
-          className="h-[230px] w-[100%] object-cover top-52"
-          style={{
-            clipPath: "polygon(0% 0%, 0% 100%, 100% 80%, 100% 0%)",
-          }}
-        ></Image>
-      </div>
-      <div className="flex flex-col mt-10 items-center h-full">
-        <div className="font-sans  header  text-white text-center   text-[20px] tracking-[0.07em] ">
-          {name}
-        </div>
-
-        <p className="font-sans header text-white text-center  text-[12px]">
-          {position}
-        </p>
-        <p className="font-sans header text-gray-300  dark:text-gray-400   mr-10 ml-10 mt-1 mb-2 text-center text-[10px]">
-          {qoute}
-        </p>
-      </div>
-    </div>
-  );
-};
-
-export default GBCOMP;
-
-
-+++ public/assets/GB/maliha.jpeg +++
-
-+++ public/assets/GB/shuja.jpeg +++
