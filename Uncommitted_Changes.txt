@@ -1,28 +1,219 @@
-Modified files: components/team/gb.tsx
+Modified files: Uncommitted_Changes.txt, app/page.tsx, components/coming-soon/old-main.tsx, components/contact/form.tsx, components/events/pageEv.tsx, components/home/hero.tsx
 Added files: 
 Deleted files: 
 
 
---- components/team/gb.tsx ---
-diff --git a/components/team/gb.tsx b/components/team/gb.tsx
-index 295f74c..74efa03 100644
---- a/components/team/gb.tsx
-+++ b/components/team/gb.tsx
-@@ -5,6 +5,7 @@ import React from "react";
- import abid from "../../public/assets/GB/abid.png";
- import maliha from "../../public/assets/GB/maliha.jpeg";
- import shuja from "../../public/assets/GB/shuja.jpeg";
-+import ayesha from "../../public/assets/GB/ayesha.jpeg";
- import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
- import EmailIcon from "@mui/icons-material/Email";
- import InstagramIcon from "@mui/icons-material/Instagram";
-@@ -43,7 +44,7 @@ const GB = () => {
-               qoute="Break boundaries, build legacies"
+--- Uncommitted_Changes.txt ---
+diff --git a/Uncommitted_Changes.txt b/Uncommitted_Changes.txt
+index c464994..60e0b7e 100644
+--- a/Uncommitted_Changes.txt
++++ b/Uncommitted_Changes.txt
+@@ -1,28 +1,9 @@
+ Modified files: components/team/gb.tsx
+-Added files: 
++Added files: public/assets/GB/irfan.jpeg
+ Deleted files: 
+ 
+ 
+ --- components/team/gb.tsx ---
+-diff --git a/components/team/gb.tsx b/components/team/gb.tsx
+-index 295f74c..74efa03 100644
+---- a/components/team/gb.tsx
+-+++ b/components/team/gb.tsx
+-@@ -5,6 +5,7 @@ import React from "react";
+- import abid from "../../public/assets/GB/abid.png";
+- import maliha from "../../public/assets/GB/maliha.jpeg";
+- import shuja from "../../public/assets/GB/shuja.jpeg";
+-+import ayesha from "../../public/assets/GB/ayesha.jpeg";
+- import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+- import EmailIcon from "@mui/icons-material/Email";
+- import InstagramIcon from "@mui/icons-material/Instagram";
+-@@ -43,7 +44,7 @@ const GB = () => {
+-               qoute="Break boundaries, build legacies"
+-             />
+-             <GBCOMP
+--              image={abid}
+-+              image={ayesha}
+-               name="AYESHA FATHIMA"
+-               position="CHIEF COORDINATOR"
+-               qoute="You are not the work you do, you are the person you are."
+ 
++
+++++ public/assets/GB/irfan.jpeg +++
+
+
+--- app/page.tsx ---
+diff --git a/app/page.tsx b/app/page.tsx
+index fad0bf4..282749a 100644
+--- a/app/page.tsx
++++ b/app/page.tsx
+@@ -6,10 +6,6 @@ export const metadata: Metadata = {
+ };
+ 
+ import { GoogleAnalytics } from "@next/third-parties/google";
+-import Main from "@/components/coming-soon/main";
+-import { BackgroundBeams } from "@/components/ui/background-beams";
+-import Social from "@/components/coming-soon/social";
+-import CanvasCursor from "@/components/coming-soon/canvas-cursor";
+ import OldHome from "@/components/coming-soon/old-main";
+ 
+ export default function Home() {
+
+
+--- components/coming-soon/old-main.tsx ---
+diff --git a/components/coming-soon/old-main.tsx b/components/coming-soon/old-main.tsx
+index cecfbd0..5b23419 100644
+--- a/components/coming-soon/old-main.tsx
++++ b/components/coming-soon/old-main.tsx
+@@ -13,13 +13,6 @@ import Navbar from "../home/navbar";
+ import Hero from "../home/hero";
+ 
+ export default function OldHome() {
+-  // useEffect(() => {
+-  //   analytics.logEvent("page_view", {
+-  //     page_location: "https://ecellmjcet.com",
+-  //     page_path: "/",
+-  //     page_title: "E-Cell MJCET",
+-  //   });
+-  // }, []);
+   return (
+     <div>
+       <Head>
+
+
+--- components/contact/form.tsx ---
+diff --git a/components/contact/form.tsx b/components/contact/form.tsx
+index e529836..d98d301 100644
+--- a/components/contact/form.tsx
++++ b/components/contact/form.tsx
+@@ -56,7 +56,7 @@ const Form = () => {
+           className="flex flex-col"
+           method="post"
+           onSubmit={submitForm}
+-          action="https://docs.google.com/forms/d/e/1FAIpQLScq6NKCbVwG03cNkNnEF-u4S2SeU_kmXqa2ViPzkTvz_QOQkg/formResponse"
++          action="https://docs.google.com/forms/d/e/1jzSWNLjvrRppaHhBSURT9M5xZWFTs2jFxumrGQkbmYU/formResponse"
+         >
+           <span className="mt-5 mb-2 header">Name</span>
+           <input
+@@ -64,7 +64,7 @@ const Form = () => {
+             onChange={handleNameChange}
+             id="name"
+             required
+-            name="entry.168604149"
++            name="entry.64340889"
+             type="text"
+             value={name}
+           ></input>
+@@ -75,7 +75,7 @@ const Form = () => {
+             id="email"
+             type="email"
+             required
+-            name="entry.2073712966"
++            name="entry.9328231"
+             value={email}
+           ></input>
+           <span className="mt-5 mb-2 header">Message</span>
+@@ -83,7 +83,7 @@ const Form = () => {
+             className="rounded-md bg-transparent border border-[#538ec8] focus:border-gray-300 outline-none transition duration-300 p-3"
+             onChange={handleMessageChange}
+             value={message}
+-            name="entry.1519679740"
++            name="entry.1889212964"
+             id="message"
+             required
+           ></textarea>
+
+
+--- components/events/pageEv.tsx ---
+diff --git a/components/events/pageEv.tsx b/components/events/pageEv.tsx
+index 765b890..89f9edd 100644
+--- a/components/events/pageEv.tsx
++++ b/components/events/pageEv.tsx
+@@ -3,7 +3,6 @@ import PrevEv from "./prevEv";
+ import UpcomEv from "./upcomEv";
+ 
+ const PageEv = () => {
+-  const GameOfInvestersImagePath = "/assets/Game-of-Investers.webp";
+   const HackRev2 = "/assets/upcoming-events/hackrev.jpeg";
+   const ipl = "/assets/upcoming-events/ipl.webp";
+   const Flutter = "/assets/upcoming-events/flutter.jpeg";
+@@ -22,18 +21,21 @@ const PageEv = () => {
+ 
+         {/* <div> <UpcomEv /></div> */}
+         <div className="flex justify-center flex-col items-center bg-black">
+-          <div className="flex justify-center items-center mb-10">
++          <div className="flex flex-col justify-center items-center ">
+             <div className="flex flex-col items-center justify-center">
+               <div className="h-[3px] w-[260px] bg-ecell-red-100 rounded-lg my-[2px]"></div>
+               <div className="h-[3px] w-[320px] bg-ecell-red-100 rounded-lg mt-[2px]"></div>
++              <div className="text-center poiret text-[30px] font-bold opacity-100 text-white bg-black px-3 absolute">
++                Upcoming Events
++              </div>
+             </div>
+ 
+-            <div className="text-center font-montserrat text-white text-[30px] font-bold opacity-100  bg-black px-3 absolute">
++            <div className="text-center poiret text-[30px] mt-20 font-bold opacity-100 text-white bg-black px-3 ">
+               Something great is cooking up :)
+             </div>
+           </div>
+ 
+-          {/* <div className="flex justify-center flex-col items-center mt-20 bg-black">
++          <div className="flex justify-center flex-col items-center mt-20 bg-black">
+             <div className="flex justify-center items-center mb-10 ">
+               <div className="flex flex-col items-center justify-center">
+                 <div className="h-[3px] w-[260px] bg-ecell-red-100 rounded-lg my-[2px]"></div>
+@@ -109,15 +111,6 @@ const PageEv = () => {
+               venue="CIC Lab, Block 2"
              />
-             <GBCOMP
--              image={abid}
-+              image={ayesha}
-               name="AYESHA FATHIMA"
-               position="CHIEF COORDINATOR"
-               qoute="You are not the work you do, you are the person you are."
+           </div>
+-
+-          <PrevEv
+-            image={GameOfInvestersImagePath}
+-            title="GAME OF INVESTORS"
+-            desc="Entrepreneurship-Cell MJCET, has conducted a fun learning event called the Game of Investors, which exposes their fellow students to the biggest money circulation mediums of the world. The game was played in pairs and trios, The game included 10 rounds, of several companies to choose from and invest into, it was time sensitive and certain situations like the pandemic and wars severely had a huge impact on the way the stock market works were put into the game for the fun twists and losses. And at the end team with the greatest number of returns wins the game!"
+-            date="April 27th 2024"
+-            venue="Seminar Hall 4th Block"
+-          />
+-        </div> */}
+         </div>
+       </div>
+     </div>
+
+
+--- components/home/hero.tsx ---
+diff --git a/components/home/hero.tsx b/components/home/hero.tsx
+index 1b60b6f..659476c 100644
+--- a/components/home/hero.tsx
++++ b/components/home/hero.tsx
+@@ -1,3 +1,4 @@
++import Link from "next/link";
+ import React from "react";
+ 
+ const Hero = () => {
+@@ -42,7 +43,7 @@ const Hero = () => {
+           <div className="relative group">
+             <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ff403c]  to-[#0b5db0] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-5000 group-hover:duration-2000 animate-tilt"></div>
+             <button className=" relative px-10 py-4 bg-black rounded-lg leading-none flex items-center space-x-5 ">
+-              <span className="text-gray-300 header font-semibold tracking-wide text-[16px] lg:text-[20px] flex items-center justify-center">
++              {/* <span className="text-gray-300 header font-semibold tracking-wide text-[16px] lg:text-[20px] flex items-center justify-center">
+                 Ideate{" "}
+                 <div className="h-[10px] w-[10px] rounded-full bg-[#0b5db0] mx-2 mt-1 group-hover:bg-[#ff403c] transition duration-1000">
+                   {" "}
+@@ -52,7 +53,15 @@ const Hero = () => {
+                   {" "}
+                 </div>
+                 Incubate
+-              </span>
++              </span> */}
++              <Link
++                href={
++                  "https://docs.google.com/forms/d/e/1FAIpQLSebLywGHGDN2Vf6KE8lxojQJdpaWsckSa385PK8rfzYNG1aKg/viewform"
++                }
++                className="text-gray-300 header font-semibold tracking-wide text-[16px] lg:text-[20px] flex items-center justify-center"
++              >
++                Join our team
++              </Link>
+             </button>
+           </div>
+         </div>
 

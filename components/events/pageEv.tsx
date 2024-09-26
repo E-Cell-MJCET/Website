@@ -3,7 +3,6 @@ import PrevEv from "./prevEv";
 import UpcomEv from "./upcomEv";
 
 const PageEv = () => {
-  const GameOfInvestersImagePath = "/assets/Game-of-Investers.webp";
   const HackRev2 = "/assets/upcoming-events/hackrev.jpeg";
   const ipl = "/assets/upcoming-events/ipl.webp";
   const Flutter = "/assets/upcoming-events/flutter.jpeg";
@@ -22,18 +21,21 @@ const PageEv = () => {
 
         {/* <div> <UpcomEv /></div> */}
         <div className="flex justify-center flex-col items-center bg-black">
-          <div className="flex justify-center items-center mb-10">
+          <div className="flex flex-col justify-center items-center ">
             <div className="flex flex-col items-center justify-center">
               <div className="h-[3px] w-[260px] bg-ecell-red-100 rounded-lg my-[2px]"></div>
               <div className="h-[3px] w-[320px] bg-ecell-red-100 rounded-lg mt-[2px]"></div>
+              <div className="text-center poiret text-[30px] font-bold opacity-100 text-white bg-black px-3 absolute">
+                Upcoming Events
+              </div>
             </div>
 
-            <div className="text-center font-montserrat text-white text-[30px] font-bold opacity-100  bg-black px-3 absolute">
+            <div className="text-center poiret text-[30px] mt-20 font-bold opacity-100 text-white bg-black px-3 ">
               Something great is cooking up :)
             </div>
           </div>
 
-          {/* <div className="flex justify-center flex-col items-center mt-20 bg-black">
+          <div className="flex justify-center flex-col items-center mt-20 bg-black">
             <div className="flex justify-center items-center mb-10 ">
               <div className="flex flex-col items-center justify-center">
                 <div className="h-[3px] w-[260px] bg-ecell-red-100 rounded-lg my-[2px]"></div>
@@ -109,15 +111,6 @@ const PageEv = () => {
               venue="CIC Lab, Block 2"
             />
           </div>
-
-          <PrevEv
-            image={GameOfInvestersImagePath}
-            title="GAME OF INVESTORS"
-            desc="Entrepreneurship-Cell MJCET, has conducted a fun learning event called the Game of Investors, which exposes their fellow students to the biggest money circulation mediums of the world. The game was played in pairs and trios, The game included 10 rounds, of several companies to choose from and invest into, it was time sensitive and certain situations like the pandemic and wars severely had a huge impact on the way the stock market works were put into the game for the fun twists and losses. And at the end team with the greatest number of returns wins the game!"
-            date="April 27th 2024"
-            venue="Seminar Hall 4th Block"
-          />
-        </div> */}
         </div>
       </div>
     </div>

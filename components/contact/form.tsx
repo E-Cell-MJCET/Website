@@ -56,7 +56,7 @@ const Form = () => {
           className="flex flex-col"
           method="post"
           onSubmit={submitForm}
-          action="https://docs.google.com/forms/d/e/1FAIpQLScq6NKCbVwG03cNkNnEF-u4S2SeU_kmXqa2ViPzkTvz_QOQkg/formResponse"
+          action="https://docs.google.com/forms/d/e/1jzSWNLjvrRppaHhBSURT9M5xZWFTs2jFxumrGQkbmYU/formResponse"
         >
           <span className="mt-5 mb-2 header">Name</span>
           <input
@@ -64,7 +64,7 @@ const Form = () => {
             onChange={handleNameChange}
             id="name"
             required
-            name="entry.168604149"
+            name="entry.64340889"
             type="text"
             value={name}
           ></input>
@@ -75,7 +75,7 @@ const Form = () => {
             id="email"
             type="email"
             required
-            name="entry.2073712966"
+            name="entry.9328231"
             value={email}
           ></input>
           <span className="mt-5 mb-2 header">Message</span>
@@ -83,7 +83,7 @@ const Form = () => {
             className="rounded-md bg-transparent border border-[#538ec8] focus:border-gray-300 outline-none transition duration-300 p-3"
             onChange={handleMessageChange}
             value={message}
-            name="entry.1519679740"
+            name="entry.1889212964"
             id="message"
             required
           ></textarea>

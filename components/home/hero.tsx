@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -42,7 +43,7 @@ const Hero = () => {
           <div className="relative group">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ff403c]  to-[#0b5db0] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-5000 group-hover:duration-2000 animate-tilt"></div>
             <button className=" relative px-10 py-4 bg-black rounded-lg leading-none flex items-center space-x-5 ">
-              <span className="text-gray-300 header font-semibold tracking-wide text-[16px] lg:text-[20px] flex items-center justify-center">
+              {/* <span className="text-gray-300 header font-semibold tracking-wide text-[16px] lg:text-[20px] flex items-center justify-center">
                 Ideate{" "}
                 <div className="h-[10px] w-[10px] rounded-full bg-[#0b5db0] mx-2 mt-1 group-hover:bg-[#ff403c] transition duration-1000">
                   {" "}
@@ -52,7 +53,15 @@ const Hero = () => {
                   {" "}
                 </div>
                 Incubate
-              </span>
+              </span> */}
+              <Link
+                href={
+                  "https://docs.google.com/forms/d/e/1FAIpQLSebLywGHGDN2Vf6KE8lxojQJdpaWsckSa385PK8rfzYNG1aKg/viewform"
+                }
+                className="text-gray-300 header font-semibold tracking-wide text-[16px] lg:text-[20px] flex items-center justify-center"
+              >
+                Join our team
+              </Link>
             </button>
           </div>
         </div>

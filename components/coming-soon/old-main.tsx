@@ -13,13 +13,6 @@ import Navbar from "../home/navbar";
 import Hero from "../home/hero";
 
 export default function OldHome() {
-  // useEffect(() => {
-  //   analytics.logEvent("page_view", {
-  //     page_location: "https://ecellmjcet.com",
-  //     page_path: "/",
-  //     page_title: "E-Cell MJCET",
-  //   });
-  // }, []);
   return (
     <div>
       <Head>
