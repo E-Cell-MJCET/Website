@@ -2,11 +2,13 @@ import axios from "axios";
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiCheckCircle } from "react-icons/fi";
+import { supabase } from "@/lib/supabase/client";
 
 const Form = () => {
   const [submit, setSubmit] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phoneno, setPhoneno] = useState("");
   const [message, setMessage] = useState("");
   const [modal, setModal] = useState(false);
 
@@ -16,23 +18,34 @@ const Form = () => {
     setSubmit(!submit);
     setName("");
     setEmail("");
+    setPhoneno("");
     setMessage("");
 
     // Display a success notification
     setModal(true);
 
+    //Submit data to supabase
     try {
-      const formData = new FormData(event.currentTarget);
-      console.log(formData);
-      await axios.post(
-        "https://docs.google.com/forms/d/e/1FAIpQLScq6NKCbVwG03cNkNnEF-u4S2SeU_kmXqa2ViPzkTvz_QOQkg/formResponse",
-        formData
-      );
+      const { error } = await supabase.from("contact-form").insert({
+        name: name,
+        email: email,
+        phoneno: phoneno,
+        message: message,
+      });
+    } catch (error) {}
 
-      // Handle successful response if needed
-    } catch (error: any) {
-      console.error("Error:", error.message);
-    }
+    // try {
+    //   const formData = new FormData(event.currentTarget);
+    //   console.log(formData);
+    //   await axios.post(
+    //     "https://docs.google.com/forms/d/e/1FAIpQLScq6NKCbVwG03cNkNnEF-u4S2SeU_kmXqa2ViPzkTvz_QOQkg/formResponse",
+    //     formData
+    //   );
+
+    //   // Handle successful response if needed
+    // } catch (error: any) {
+    //   console.error("Error:", error.message);
+    // }
   };
 
   const handleMessageChange = (
@@ -43,6 +56,9 @@ const Form = () => {
   const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value);
   };
+  const handlePhoneno = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPhoneno(event.target.value);
+  };
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
   };
@@ -52,19 +68,13 @@ const Form = () => {
         <h1 className="text-center font-bold header  text-[30px]  opacity-100 text-white">
           Get in touch with us
         </h1>
-        <form
-          className="flex flex-col"
-          method="post"
-          onSubmit={submitForm}
-          action="https://docs.google.com/forms/d/e/1jzSWNLjvrRppaHhBSURT9M5xZWFTs2jFxumrGQkbmYU/formResponse"
-        >
+        <form className="flex flex-col" method="post" onSubmit={submitForm}>
           <span className="mt-5 mb-2 header">Name</span>
           <input
             className="rounded-md bg-transparent border border-[#538ec8] focus:border-gray-300 outline-none transition duration-300 p-3 "
             onChange={handleNameChange}
             id="name"
             required
-            name="entry.64340889"
             type="text"
             value={name}
           ></input>
@@ -75,15 +85,21 @@ const Form = () => {
             id="email"
             type="email"
             required
-            name="entry.9328231"
             value={email}
+          ></input>
+          <span className="mt-5 mb-2 header">Phone number</span>
+          <input
+            className="rounded-md bg-transparent border border-[#538ec8] focus:border-gray-300 outline-none transition duration-300 p-3 "
+            onChange={handlePhoneno}
+            id="phoneno"
+            type="text"
+            value={phoneno}
           ></input>
           <span className="mt-5 mb-2 header">Message</span>
           <textarea
             className="rounded-md bg-transparent border border-[#538ec8] focus:border-gray-300 outline-none transition duration-300 p-3"
             onChange={handleMessageChange}
             value={message}
-            name="entry.1889212964"
             id="message"
             required
           ></textarea>
