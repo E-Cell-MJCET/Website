@@ -39,7 +39,7 @@
     "cwebp": "^3.0.0",
     "eslint": "8.48.0",
     "eslint-config-next": "latest",
-    "firebase": "^10.5.2",
+    "firebase": "^10.14.0",
     "framer-motion": "^10.18.0",
     "gsap": "^3.12.2",
     "html2canvas": "^1.4.1",
