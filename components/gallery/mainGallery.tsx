@@ -9,7 +9,6 @@ const MainGallery = () => {
     "/assets/gallery/4.webp",
     "/assets/gallery/5.webp",
     "/assets/gallery/6.webp",
-
     "/assets/gallery/8.webp",
     "/assets/gallery/9.webp",
     "/assets/gallery/10.webp",

@@ -44,13 +44,6 @@ export const ParallaxScroll = ({
               style={{ y: translateFirst }} // Apply the translateY motion value here
               key={"grid-1" + idx}
             >
-              {/* <Image
-                src={el}
-                className="h-80 w-full object-contain object-left-top rounded-lg gap-10 !m-0 !p-0"
-                height="5000"
-                width="5000"
-                alt="thumbnail"
-              /> */}
               <ZoomedImage url={el} />
             </motion.div>
           ))}
@@ -58,13 +51,6 @@ export const ParallaxScroll = ({
         <div className="grid gap-10">
           {secondPart.map((el, idx) => (
             <motion.div style={{ y: translateSecond }} key={"grid-2" + idx}>
-              {/* <Image
-                src={el}
-                className="h-80 w-full  object-contain object-left-top rounded-lg gap-10 !m-0 !p-0"
-                height="400"
-                width="400"
-                alt="thumbnail"
-              /> */}
               <ZoomedImage url={el} />
             </motion.div>
           ))}
@@ -72,13 +58,6 @@ export const ParallaxScroll = ({
         <div className="grid gap-10">
           {thirdPart.map((el, idx) => (
             <motion.div style={{ y: translateThird }} key={"grid-3" + idx}>
-              {/* <Image
-                src={el}
-                className="h-80 w-full  object-contain object-center rounded-lg gap-10 !m-0 !p-0"
-                height="400"
-                width="400"
-                alt="thumbnail"
-              /> */}
               <ZoomedImage url={el} />
             </motion.div>
           ))}
