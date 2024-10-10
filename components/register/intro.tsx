@@ -9,10 +9,10 @@ const Intro = () => {
       <div className="text-left bg-slate-500 p-5 rounded-xl">
         <h1 className="text">Game of Investors</h1>
         <p>
-          Experience the thrill of investing with Ecell's "Game of Investors".
-          Make strategic decisions, challenge your skills and find out if you
-          can outsmart the market for profit!💰🏆 <br></br>Date: 11.7.24{" "}
-          <br></br>Time: 2PM to 4:30PM <br></br>Venue: Ghulam Ahmed Hall
+          Experience the thrill of investing with Ecell&apos;s &quot;Game of
+          Investors&quot;. Make strategic decisions, challenge your skills and
+          find out if you can outsmart the market for profit!💰🏆 <br></br>Date:
+          11.7.24 <br></br>Time: 2PM to 4:30PM <br></br>Venue: Ghulam Ahmed Hall
         </p>
       </div>
     </div>
