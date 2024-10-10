@@ -152,7 +152,7 @@ Once approved, the changes will be deployed to production.
 ## 3. Commit Message Guidelines
 Use the following prefixes for clear and consistent commit messages:
 
-```sh
+```
 feat: for new features.
 fix: for bug fixes.
 docs: for documentation updates.
