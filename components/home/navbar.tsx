@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className={`${isOpen ? "overscroll-none" : ""}`}>
       <div className="w-full lg:h-screen absolute -z-10 opacity-50 bg-fixed">
-        <img src="../../assets/banner3.png" alt="" className="" />
+        <Image src="../../assets/banner3.png" alt="" className="" />
       </div>
       <div className="flex  flex-row justify-between lg:justify-around pt-10 mb-2 lg:mb-24 header mx-4 ">
         <div className="hidden lg:block">
