@@ -3,7 +3,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![GNU License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <br />
@@ -48,10 +48,11 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing-guidelines">Contributing</a></li>
     <li><a href="#top-contributers">Top Contributers<a/></li>
+    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -125,7 +126,7 @@ Welcome to the official repository for ecellmjcet.com, the website of the Entrep
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Contributing Guidelines
+# Contributing Guidelines
 
 ## 1. Branching Strategy
 Start from dev branch: When starting any work, always create your branch from the dev branch.
@@ -180,7 +181,34 @@ The PR can then be approved by the CTO alone, bypassing the usual workflow.
   <img src="https://contrib.rocks/image?repo=E-Cell-MJCET/website" alt="contrib.rocks image" />
 </a>
 
+<!-- ROADMAP -->
+# Roadmap
 
+- [X] Feature 1
+- [ ] Feature 2
+- [ ] Feature 3
+    - [ ] Nested Feature
+
+See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# License
+
+This project is licensed under GPL-3.0 <a href="https://github.com/E-Cell-MJCET/Website/blob/main/LICENSE">Learn More</a>
+
+# Contact
+
+Email - ecellmjcet@mjcollege.ac.in
+
+Send a message = www.ecellmjcet.com/contact
+
+
+# Acknowledgements
+
+These are the open source projects used to build E-Cell MJCET Website
+* Shadcn
+* Supabase
 
 
 <!--Markdown Links-->
