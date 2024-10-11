@@ -1,14 +1,14 @@
 "use client";
 
-import Footer from "@/components/home/footer";
+import Head from "next/head";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
+import Footer from "@/components/home/footer";
 import Footers from "@/components/home/footer2";
 import Coordinator from "@/components/home/coordinator";
-import Head from "next/head";
-import elnwt from "../../public/favicon.ico";
 import SpeedDial from "@/components/home/speedDial";
 
-import { GoogleAnalytics } from "@next/third-parties/google";
+import elnwt from "../../public/favicon.ico";
 import Navbar from "../home/navbar";
 import Hero from "../home/hero";
 
@@ -80,15 +80,12 @@ export default function OldHome() {
         />
       </Head>
       <GoogleAnalytics gaId="G-RVM88W3QHK" />
-
       <Navbar />
       <Hero />
-
       {/* <About /> */}
       {/* <Banner /> */}
       <Coordinator />
       <SpeedDial />
-
       {/*<Blog />*/}
       {/* <button onClick={subscribeToPushNotifications}>
         Subscribe to Push Notifications
