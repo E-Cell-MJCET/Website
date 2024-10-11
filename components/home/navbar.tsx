@@ -1,30 +1,25 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import elnwt from "../../public/assets/Logo/logo-small-white.png";
-import ectext from "../../public/assets/Logo/logo-big-white.png";
 import Link from "next/link";
 
-import { Sheet } from "../ui/sheet";
-import { SheetTrigger, SheetContent } from "../ui/sheet";
+import elnwt from "../../public/assets/Logo/logo-small-white.png";
+import ectext from "../../public/assets/Logo/logo-big-white.png";
+import { Sheet, SheetTrigger, SheetContent } from "../ui/sheet";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const [isOpen] = useState(false);
 
   return (
     <div className={`${isOpen ? "overscroll-none" : ""}`}>
-      <div className="w-full lg:h-screen absolute -z-10 opacity-50 bg-fixed">
+      <div className="absolute -z-10 w-full bg-fixed opacity-50 lg:h-screen">
         <Image src="../../assets/banner3.png" alt="" className="" />
       </div>
-      <div className="flex  flex-row justify-between lg:justify-around pt-10 mb-2 lg:mb-24 header mx-4 ">
+      <div className="  mx-4 mb-2 flex flex-row justify-between pt-10 lg:mb-24 lg:justify-around ">
         <div className="hidden lg:block">
           <Image
             src={ectext}
             alt=""
-            className="h-[48px] lg:h-[70px] w-[48px] lg:w-fit lg:mt-1 logo"
+            className=" h-[48px] w-[48px] lg:mt-1 lg:h-[70px] lg:w-fit"
             height={200}
             width={500}
           />
@@ -33,115 +28,55 @@ const Navbar = () => {
           <Image
             src={elnwt}
             alt=""
-            className="h-[48px] lg:h-[70px] w-[48px] lg:w-fit lg:mt-1 logo"
+            className=" h-[48px] w-[48px] lg:mt-1 lg:h-[70px] lg:w-fit"
             height={200}
             width={500}
           />
         </div>
         <div className="hidden lg:inline ">
-          <ul className="flex items-center justify-center px-3 mt-6 ">
-            <li className="mx-3 text-xl text-white font-semibold menu1 hover:font-bold hover:underline underline-offset-8">
+          <ul className="mt-6 flex items-center justify-center px-3 ">
+            <li className=" mx-3 text-xl font-semibold text-white underline-offset-8 hover:font-bold hover:underline">
               <Link href={"/events"}>Events</Link>
             </li>
-            <li className="mx-3 text-xl text-white font-semibold menu2 hover:font-bold hover:underline underline-offset-8">
+            <li className=" mx-3 text-xl font-semibold text-white underline-offset-8 hover:font-bold hover:underline">
               <Link href={"/team"}>Team</Link>
             </li>
-            <li className="mx-3 text-xl text-white font-semibold menu3 hover:font-bold hover:underline underline-offset-8">
+            <li className=" mx-3 text-xl font-semibold text-white underline-offset-8 hover:font-bold hover:underline">
               <Link href={"/gallery"}>Gallery</Link>
             </li>
-            {/* <li className='mx-3 text-xl font-semibold  hover:font-bold hover:underline underline-offset-8'><Link href={''}>Blogs</Link></li> */}
-            <li className="mx-3 text-xl text-white font-semibold menu4 hover:font-bold hover:underline underline-offset-8">
+            <li className=" mx-3 text-xl font-semibold text-white underline-offset-8 hover:font-bold hover:underline">
               <Link href={"/contactus"}>Contact</Link>
             </li>
           </ul>
         </div>
-        <div className="in-line lg:hidden text-right mr-5 transition duration-300 ease-in-out">
-          {/* <button
-            onClick={toggleMenu}
-            type="button"
-            className="text-white focus:outline-none "
-          >
-            {isOpen ? (
-              <div className="rotate-90 flex flex-col items-center transition-all ease-in duration-100">
-                <div className="w-[22px] h-[4px] bg-white my-[2.5px] rounded-lg transition-all ease-in duration-150"></div>
-                <div className="w-[34px] h-[4px] bg-white my-[2.5px] rounded-lg transition-all ease-in duration-150"></div>
-                <div className="w-[22px] h-[4px] bg-white my-[2.5px]  rounded-lg transition-all ease-in duration-150 "></div>
-              </div>
-            ) : (
-              <div className="flex flex-col items-center transition-all ">
-                <div className="w-[22px] h-[4px] my-[2.5px] bg-white rounded-lg transition-all ease-out duration-150"></div>
-                <div className="w-[34px] h-[4px] my-[2.5px] bg-white rounded-lg transition-all ease-out duration-150"></div>
-                <div className="w-[22px] h-[4px] my-[2.5px] bg-white rounded-lg transition-all ease-out duration-150"></div>
-              </div>
-            )}
-          </button>
-          {isOpen ? (
-            <div className="md:w-1/3 text-right mt-6 overscroll-none absolute right-5 bg-black bg-opacity-70 z-10 transition-all ease-in duration-100 rounded-lg py-5 px-7  h-screen w-full">
-              <div>
-                <ul>
-                  <li className="mx-3 pt-2 pb-2 text-white text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/events"}>Events</Link>
-                  </li>
-                  <li className="mx-3 pt-2 pb-2 text-white text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/team"}>Team</Link>
-                  </li>
-                  <li className="mx-3 pt-2 pb-2 text-white text-xl font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/gallery"}>Gallery</Link>
-                  </li>
-                  <li className="mx-3 pt-2 pb-2 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/contactus"}>Contact</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          ) : (
-            <div className="md:w-1/2 text-right mt-5 absolute right-0 bg-black z-10 scale-0 transition-all ease-in duration-100">
-              <div>
-                <ul>
-                  <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/events"}>Events</Link>
-                  </li>
-                  <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/team"}>Team</Link>
-                  </li>
-                  <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/gallery"}>Gallery</Link>
-                  </li>
-                  <li className="mx-3 text-xl text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
-                    <Link href={"/contactus"}>Contact</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          )} */}
-
+        <div className=" mr-5 text-right transition duration-300 ease-in-out lg:hidden">
           <Sheet>
             <SheetTrigger>
               {" "}
-              <div className="flex flex-col items-center transition-all ease-in duration-100">
+              <div className="flex flex-col items-center transition-all duration-100 ease-in">
                 <div className="flex flex-col items-center transition-all ">
-                  <div className="w-[22px] h-[4px] my-[2.5px] bg-white rounded-lg transition-all ease-out duration-150"></div>
-                  <div className="w-[34px] h-[4px] my-[2.5px] bg-white rounded-lg transition-all ease-out duration-150"></div>
-                  <div className="w-[22px] h-[4px] my-[2.5px] bg-white rounded-lg transition-all ease-out duration-150"></div>
+                  <div className="my-[2.5px] h-[4px] w-[22px] rounded-lg bg-white transition-all duration-150 ease-out"></div>
+                  <div className="my-[2.5px] h-[4px] w-[34px] rounded-lg bg-white transition-all duration-150 ease-out"></div>
+                  <div className="my-[2.5px] h-[4px] w-[22px] rounded-lg bg-white transition-all duration-150 ease-out"></div>
                 </div>
               </div>
             </SheetTrigger>
             <SheetContent content="false">
               <div className="mt-10 ">
                 <ul>
-                  <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 my-5 from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] text-xl font-semibold text-black hover:bg-gradient-to-r hover:bg-clip-text hover:font-bold hover:text-transparent hover:underline dark:text-white">
                     <Link href={"/"}>Home</Link>
                   </li>
-                  <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 my-5 from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] text-xl font-semibold text-black hover:bg-gradient-to-r hover:bg-clip-text hover:font-bold hover:text-transparent hover:underline dark:text-white">
                     <Link href={"/events"}>Events</Link>
                   </li>
-                  <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 my-5 from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] text-xl font-semibold text-black hover:bg-gradient-to-r hover:bg-clip-text hover:font-bold hover:text-transparent hover:underline dark:text-white">
                     <Link href={"/team"}>Team</Link>
                   </li>
-                  <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 my-5 from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] text-xl font-semibold text-black hover:bg-gradient-to-r hover:bg-clip-text hover:font-bold hover:text-transparent hover:underline dark:text-white">
                     <Link href={"/gallery"}>Gallery</Link>
                   </li>
-                  <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
+                  <li className="mx-3 my-5 from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] text-xl font-semibold text-black hover:bg-gradient-to-r hover:bg-clip-text hover:font-bold hover:text-transparent hover:underline dark:text-white">
                     <Link href={"/contactus"}>Contact</Link>
                   </li>
                 </ul>

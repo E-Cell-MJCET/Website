@@ -1,4 +1,5 @@
 import React from "react";
+
 import { ParallaxScroll } from "../ui/parallax-scroll";
 
 const MainGallery = () => {

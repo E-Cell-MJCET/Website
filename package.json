@@ -27,6 +27,7 @@
     "@react-three/drei": "^9.89.0",
     "@react-three/fiber": "^8.15.11",
     "@supabase/ssr": "^0.4.0",
+    "@supabase/supabase-js": "^2.45.4",
     "@tanstack/react-table": "^8.16.0",
     "@types/node": "20.5.7",
     "@types/react": "18.2.21",
@@ -39,6 +40,10 @@
     "cwebp": "^3.0.0",
     "eslint": "8.48.0",
     "eslint-config-next": "latest",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-tailwindcss": "^3.17.5",
+    "eslint-plugin-unused-imports": "^4.1.4",
     "firebase": "^10.5.2",
     "framer-motion": "^10.18.0",
     "gsap": "^3.12.2",
@@ -72,5 +77,8 @@
   "bugs": {
     "url": "https://github.com/E-CELL-MJCET/website/issues"
   },
-  "homepage": "https://github.com/E-CELL-MJCET/website#readme"
+  "homepage": "https://github.com/E-CELL-MJCET/website#readme",
+  "devDependencies": {
+    "eslint-config-prettier": "^9.1.0"
+  }
 }

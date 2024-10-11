@@ -1,13 +1,14 @@
 "use client";
+import React from "react";
+
 import MainGallery from "@/components/gallery/mainGallery";
 import Footer from "@/components/home/footer";
 import Footers from "@/components/home/footer2";
 import Nav from "@/components/nav";
-import React from "react";
 
 const GalleryPage = () => {
   return (
-    <div className="dark:bg-back-dark bg-back-light">
+    <div className="bg-white dark:bg-black">
       <Nav />
       <MainGallery />
       <Footer />

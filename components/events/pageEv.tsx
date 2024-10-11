@@ -1,6 +1,6 @@
 import React from "react";
+
 import PrevEv from "./prevEv";
-import UpcomEv from "./upcomEv";
 
 const PageEv = () => {
   const HackRev2 = "/assets/upcoming-events/hackrev.jpeg";
@@ -13,40 +13,35 @@ const PageEv = () => {
   const goi = "/assets/upcoming-events/goi.jpg";
 
   return (
-    <div className="flex justify-center  bg-black h-auto pt-32">
+    <div className="flex h-auto  justify-center bg-black pt-32">
       <div className="w-[95%]">
-        <div className="text-center text-[45px] text-white header mt-10 mb-14">
+        <div className="mb-14 mt-10 text-center text-[45px] text-white">
           <span className="font-staatliches">Events</span>
         </div>
-
         {/* <div> <UpcomEv /></div> */}
-        <div className="flex justify-center flex-col items-center bg-black">
-          <div className="flex flex-col justify-center items-center ">
+        <div className="flex flex-col items-center justify-center bg-black">
+          <div className="flex flex-col items-center justify-center ">
             <div className="flex flex-col items-center justify-center">
-              <div className="h-[3px] w-[260px] bg-ecell-red-100 rounded-lg my-[2px]"></div>
-              <div className="h-[3px] w-[320px] bg-ecell-red-100 rounded-lg mt-[2px]"></div>
-              <div className="text-center poiret text-[30px] font-bold opacity-100 text-white bg-black px-3 absolute">
+              <div className="my-[2px] h-[3px] w-[260px] rounded-lg bg-ecell-red-100"></div>
+              <div className="mt-[2px] h-[3px] w-[320px] rounded-lg bg-ecell-red-100"></div>
+              <div className="absolute bg-black px-3 text-center text-[30px] font-bold text-white opacity-100">
                 Upcoming Events
               </div>
             </div>
-
-            <div className="text-center poiret text-[30px] mt-20 font-bold opacity-100 text-white bg-black px-3 ">
+            <div className="mt-20 bg-black px-3 text-center text-[30px] font-bold text-white opacity-100 ">
               Something great is cooking up :)
             </div>
           </div>
-
-          <div className="flex justify-center flex-col items-center mt-20 bg-black">
-            <div className="flex justify-center items-center mb-10 ">
+          <div className="mt-20 flex flex-col items-center justify-center bg-black">
+            <div className="mb-10 flex items-center justify-center ">
               <div className="flex flex-col items-center justify-center">
-                <div className="h-[3px] w-[260px] bg-ecell-red-100 rounded-lg my-[2px]"></div>
-                <div className="h-[3px] w-[320px] bg-ecell-red-100 rounded-lg mt-[2px]"></div>
+                <div className="my-[2px] h-[3px] w-[260px] rounded-lg bg-ecell-red-100"></div>
+                <div className="mt-[2px] h-[3px] w-[320px] rounded-lg bg-ecell-red-100"></div>
               </div>
-
-              <div className="text-center poiret text-[30px] font-bold opacity-100 text-white bg-black px-3 absolute">
+              <div className="absolute bg-black px-3 text-center text-[30px] font-bold text-white opacity-100">
                 Previous Events
               </div>
             </div>
-
             <PrevEv
               title="Game Of Investors"
               desc="Join the Ultimate Investment Challenge! Dive into the world of strategic investing with E-Cell’s “Game of Investors.” Discover the excitement of competitive finance as you invest in dynamic companies and make strategic decisions over 10 thrilling rounds. Boost your chances of winning fantastic rewards and the title of Best Investor!"
@@ -54,7 +49,6 @@ const PageEv = () => {
               date="11th July 2024"
               venue="Gulam Ahmed Hall, MJCET"
             />
-
             <PrevEv
               title="IPL Auction 2024"
               desc="IPL auction 2024, yet again a fantastic event hosted by your very own Entrepreneurship Cell MJCET where more than 80+ students engaged in groups of up to 5 members each and with names of 16 teams of the Indian Premier League, the teams were been given a budget of 100cr each in which they were expected to build a team of 11 players later with which the winner was decided on the basis of the grand total of every individual player rating of the team. A very competitive and strong play delivered by every single team participated."
@@ -62,7 +56,6 @@ const PageEv = () => {
               date="27th April 2024"
               venue="Seminar Hall 4th Block"
             />
-
             <PrevEv
               title="Build your own business"
               desc="A 90-minute program packed with insights on brand building. From domain ownership to effective marketing strategies, we've got you covered. No coding expertise required!"
@@ -77,7 +70,6 @@ const PageEv = () => {
               date="17th December 2023"
               venue="Ghulam Ahemed Hall"
             />
-
             <PrevEv
               image={DataForge}
               title="DataForge Fusion"
@@ -85,7 +77,6 @@ const PageEv = () => {
               date="25th November 2023"
               venue="CIC Lab, Block 2"
             />
-
             <PrevEv
               image={Flutter}
               title="FLUTTER FIESTA"
@@ -93,7 +84,6 @@ const PageEv = () => {
               date="18th November 2023"
               venue="CIC Lab, Block 2"
             />
-
             <PrevEv
               image={BOB}
               title="Battle of Brands"
@@ -101,7 +91,6 @@ const PageEv = () => {
               date="16th November 2023"
               venue="Seminar Hall 4th Block"
             />
-
             <PrevEv
               image={stack}
               title="Stack Sprint"

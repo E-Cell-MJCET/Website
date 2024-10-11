@@ -1,9 +1,9 @@
 "use client";
-import { useScroll, useTransform } from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
-import { motion } from "framer-motion";
-import Image from "next/image";
+
 import { cn } from "../../lib/utils";
+
 import ZoomedImage from "./zoomedImage";
 
 export const ParallaxScroll = ({
@@ -35,7 +35,7 @@ export const ParallaxScroll = ({
       ref={gridRef}
     >
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start max-w-5xl  mx-auto gap-10 py-40 px-10"
+        className="mx-auto grid max-w-5xl grid-cols-1 items-start gap-10  px-10 py-40 md:grid-cols-2 lg:grid-cols-3"
         ref={gridRef}
       >
         <div className="grid gap-10">

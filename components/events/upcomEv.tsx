@@ -22,11 +22,11 @@ const UpcomEv: React.FC<UpcomEvProps> = ({
   venue,
 }) => {
   return (
-    <div className="w-[80%] mb-6">
+    <div className="mb-6 w-4/5">
       <Link href={link} target="_blank">
-        <div className="flex justify-center shadow-lg shadow-gray-900 lg:shadow-none lg:bg-black h-full py-5 px-4 rounded-xl hover:border-ecell-red-100 group border-0 lg:border-[1px] lg:border-ecell-blue-100 transition-all duration-300 cursor-pointer">
-          <div className="w-full flex lg:justify-center lg:items-center flex-col lg:flex-row ">
-            <div className="relative h-[150px] w-[220px] lg:block hidden">
+        <div className="group flex h-full cursor-pointer justify-center rounded-xl border-0 px-4 py-5 shadow-lg shadow-gray-900 transition-all duration-300 hover:border-ecell-red-100 lg:border lg:border-ecell-blue-100 lg:bg-black lg:shadow-none">
+          <div className="flex w-full flex-col lg:flex-row lg:items-center lg:justify-center ">
+            <div className="relative hidden h-[150px] w-[220px] lg:block">
               <Image
                 src={image}
                 width={100}
@@ -35,9 +35,9 @@ const UpcomEv: React.FC<UpcomEvProps> = ({
                 className="rounded-lg"
               />
             </div>
-            <div className="flex flex-col text-center mt-4 lg:mt-0 lg:w-[70%] lg:px-5 items-center justify-center">
-              <div className="text-[24px] text-white header mb-5 ">{title}</div>
-              <div className="flex items-center justify-center h-[150px] w-[220px] lg:hidden">
+            <div className="mt-4 flex flex-col items-center justify-center text-center lg:mt-0 lg:w-[70%] lg:px-5">
+              <div className="mb-5 text-[24px] text-white ">{title}</div>
+              <div className="flex h-[150px] w-[220px] items-center justify-center lg:hidden">
                 <Image
                   src={image}
                   width={100}
@@ -46,15 +46,15 @@ const UpcomEv: React.FC<UpcomEvProps> = ({
                   className="rounded-lg text-center"
                 />
               </div>
-              <div className="flex flex-row mt-5 lg:mt-0 mb-5">
-                <Calendar className="w-5 h-5" />
+              <div className="my-5 flex flex-row lg:mt-0">
+                <Calendar className="h-5 w-5" />
                 <div className="text-sm  text-white "> : {date}</div>
               </div>
-              <div className="flex flex-row mb-5">
-                <Location className="w-5 h-5" />
+              <div className="mb-5 flex flex-row">
+                <Location className="h-5 w-5" />
                 <div className="text-sm  text-white "> : {venue}</div>
               </div>
-              <div className="text-sm tracking-tight text-white mt-5 lg:mt-0">
+              <div className="mt-5 text-sm tracking-tight text-white lg:mt-0">
                 {desc}
               </div>
             </div>
