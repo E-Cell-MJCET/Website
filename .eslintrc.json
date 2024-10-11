@@ -32,10 +32,8 @@
     "import/newline-after-import": ["error", { "count": 1 }], // Ensures newline after import statements
     "import/no-useless-path-segments": "error", // Prevents unnecessary path segments in imports
     "import/no-unresolved": "error", // Prevents unresolved imports
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }], // Prevents importing devDependencies in code
     "import/first": "error", // Ensures that imports are at the top of the file
     "import/no-named-as-default": "error", // Prevents using the same name as default export
     "import/no-cycle": ["error", { "maxDepth": 1 }] // Prevents circular dependencies in imports
   }
-
 }

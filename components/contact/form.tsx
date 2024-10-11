@@ -32,7 +32,7 @@ const Form = () => {
         phoneno: phoneno,
         message: message,
       });
-      if (error) throw error;
+      console.log(error);
     } catch (error) {
       console.log(error);
     }
