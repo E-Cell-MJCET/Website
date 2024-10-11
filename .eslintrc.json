@@ -37,4 +37,5 @@
     "import/no-named-as-default": "error", // Prevents using the same name as default export
     "import/no-cycle": ["error", { "maxDepth": 1 }] // Prevents circular dependencies in imports
   }
+
 }
