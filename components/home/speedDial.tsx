@@ -1,7 +1,6 @@
 "use client";
 import Email from "@mui/icons-material/Email";
 import Instagram from "@mui/icons-material/Instagram";
-import PhoneInTalk from "@mui/icons-material/PhoneInTalk";
 import WhatsApp from "@mui/icons-material/WhatsApp";
 import React, { useState } from "react";
 
@@ -15,11 +14,11 @@ const SpeedDial = () => {
   return (
     <div
       data-dial-init
-      className="fixed end-6 bottom-6 group z-50 block md:hidden"
+      className="group fixed bottom-6 end-6 z-50 block md:hidden"
     >
       <div
         id="speed-dial-menu-bottom-right"
-        className={`flex flex-col items-center mb-4 space-y-2 ${
+        className={`mb-4 flex flex-col items-center space-y-2 ${
           isMenuVisible ? "visible" : "invisible"
         }`}
       >
@@ -28,7 +27,7 @@ const SpeedDial = () => {
           href="https://www.instagram.com/ecellmjcet/"
           data-tooltip-target="tooltip-print"
           data-tooltip-placement="left"
-          className="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
+          className="flex h-[52px] w-[52px] items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-400"
         >
           <Instagram />
           <span className="sr-only">Instagram</span>
@@ -36,17 +35,17 @@ const SpeedDial = () => {
         <div
           id="tooltip-print"
           role="tooltip"
-          className="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          className="invisible absolute z-10 inline-block w-auto rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700"
         >
           Instagram
-          <div className="tooltip-arrow" data-popper-arrow></div>
+          <div data-popper-arrow></div>
         </div>
         <a
           type="button"
           href="https://wa.link/6o7xq3"
           data-tooltip-target="tooltip-download"
           data-tooltip-placement="left"
-          className="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
+          className="flex h-[52px] w-[52px] items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-400"
         >
           <WhatsApp />
           <span className="sr-only">Whatsapp</span>
@@ -54,17 +53,17 @@ const SpeedDial = () => {
         <div
           id="tooltip-download"
           role="tooltip"
-          className="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          className=" invisible absolute z-10 inline-block w-auto rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700"
         >
           Whatsapp
-          <div className="tooltip-arrow" data-popper-arrow></div>
+          <div data-popper-arrow></div>
         </div>
         <a
           type="button"
           href="mailto:ecellmjcet@mjcollege.ac.in"
           data-tooltip-target="tooltip-copy"
           data-tooltip-placement="left"
-          className="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-sm dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
+          className="flex h-[52px] w-[52px] items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 hover:text-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-400"
         >
           <Email />
           <span className="sr-only">Email</span>
@@ -72,10 +71,10 @@ const SpeedDial = () => {
         <div
           id="tooltip-copy"
           role="tooltip"
-          className="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          className=" invisible absolute z-10 inline-block w-auto rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700"
         >
           Email
-          <div className="tooltip-arrow" data-popper-arrow></div>
+          <div data-popper-arrow></div>
         </div>
       </div>
       <button
@@ -84,10 +83,10 @@ const SpeedDial = () => {
         data-dial-toggle="speed-dial-menu-bottom-right"
         aria-controls="speed-dial-menu-bottom-right"
         aria-expanded="false"
-        className="flex items-center justify-center text-white bg-[#ff403c] rounded-full w-14 h-14 "
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-[#ff403c] text-white "
       >
         <svg
-          className={`w-5 h-5 transition-transform ${
+          className={`h-5 w-5 transition-transform ${
             isMenuVisible ? "rotate-45" : "rotate-0"
           }`}
           aria-hidden="true"

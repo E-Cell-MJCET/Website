@@ -1,18 +1,17 @@
-import Link from "next/link";
 import React from "react";
 
 const Footers = () => {
   return (
-    <div className="flex justify-center pb-4 header bg-back-light dark:bg-back-dark">
+    <div className="flex justify-center bg-white pb-4 dark:bg-black">
       <div className="w-[90%]">
-        <hr className="h-[1px]  mx-auto bg-gradient-to-r from-[#ff403c]  to-[#0b5db0] border-0 mb-3" />
-        <div className="flex items-center lg:justify-between flex-col lg:flex-row">
+        <hr className="mx-auto  mb-3 h-px border-0  bg-gradient-to-r from-[#ff403c] to-[#0b5db0]" />
+        <div className="flex flex-col items-center lg:flex-row lg:justify-between">
           <div className="text-sm  text-black dark:text-white">
             &#169; E-Cell MJCET 2024-25 | all rights reserved
           </div>
-          <div className="text-sm text-black dark:text-white mt-1 lg:mt-0">
+          <div className="mt-1 text-sm text-black dark:text-white lg:mt-0">
             Developed by{" "}
-            <span className="text-black dark:text-white cursor-pointer bg-clip-text ">
+            <span className="cursor-pointer bg-clip-text text-black dark:text-white ">
               <p>E-Cell Tech Team</p>
             </span>{" "}
           </div>

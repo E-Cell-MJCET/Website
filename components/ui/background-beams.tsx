@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+
 import { cn } from "@/lib/utils";
 
 export const BackgroundBeams = React.memo(
@@ -57,6 +58,7 @@ export const BackgroundBeams = React.memo(
       "M-44 -573C-44 -573 24 -168 488 -41C952 86 1020 491 1020 491",
       "M-37 -581C-37 -581 31 -176 495 -49C959 78 1027 483 1027 483",
     ];
+
     return (
       <div
         className={cn(
@@ -65,7 +67,7 @@ export const BackgroundBeams = React.memo(
         )}
       >
         <svg
-          className=" z-0 h-full w-full pointer-events-none absolute "
+          className=" pointer-events-none absolute z-0 h-full w-full "
           width="100%"
           height="100%"
           viewBox="0 0 696 316"
@@ -78,7 +80,6 @@ export const BackgroundBeams = React.memo(
             strokeOpacity="0.05"
             strokeWidth="0.5"
           ></path>
-
           {paths.map((path, index) => (
             <motion.path
               key={`path-` + index}
@@ -118,7 +119,6 @@ export const BackgroundBeams = React.memo(
                 <stop offset="100%" stopColor="#AE48FF" stopOpacity="0"></stop>
               </motion.linearGradient>
             ))}
-
             <radialGradient
               id="paint0_radial_242_278"
               cx="0"
