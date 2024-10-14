@@ -1,43 +1,33 @@
-/* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import React from "react";
-// import elwt from '../../public/assets/money heaist.png'
+
 import abid from "../../public/assets/GB/abid.png";
 import maliha from "../../public/assets/GB/maliha.jpeg";
 import shuja from "../../public/assets/GB/shuja.jpeg";
 import ayesha from "../../public/assets/GB/ayesha.jpeg";
 import irfan from "../../public/assets/GB/irfan.jpeg";
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
-import EmailIcon from "@mui/icons-material/Email";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
+
 import GBCOMP from "./gb-comp";
 
 const GB = () => {
   return (
     <div className="flex justify-center pt-32">
       <div className="w-[85%]">
-        <div className="flex justify-center flex-col items-center">
-          <div className="text-center text-[45px] text-black dark:text-white header mt-10 mb-14">
+        <div className="flex flex-col items-center justify-center">
+          <div className="mb-14 mt-10 text-center text-[45px] text-black dark:text-white">
             <span className="font-staatliches uppercase">Teams</span>
           </div>
-          <div className="flex justify-center items-center mb-10">
+          <div className="mb-10 flex items-center justify-center">
             <div className="flex flex-col items-center justify-center">
-              <div className="h-[3px] w-[260px] bg-[#ff403c] rounded-lg my-[2px]"></div>
-              <div className="h-[3px] w-[320px] bg-[#ff403c] rounded-lg mt-[2px]"></div>
+              <div className="my-[2px] h-[3px] w-[260px] rounded-lg bg-[#ff403c]"></div>
+              <div className="mt-[2px] h-[3px] w-[320px] rounded-lg bg-[#ff403c]"></div>
             </div>
-
-            <div className="text-center text-black bg-black dark:text-white font-montserrat text-[30px] font-bold opacity-100  dark:bg-back-dark px-3 absolute">
+            <div className="absolute bg-black px-3 text-center font-montserrat text-[30px] font-bold  text-black opacity-100 dark:text-white">
               Governing Body
             </div>
           </div>
         </div>
-
         <div className="flex flex-wrap lg:flex-col">
-          <div className="flex flex-col lg:flex-row w-full justify-center items-center">
+          <div className="flex w-full flex-col items-center justify-center lg:flex-row">
             <GBCOMP
               image={shuja}
               name="SYED SHUJAUDDIN"
@@ -51,7 +41,7 @@ const GB = () => {
               qoute="You are not the work you do, you are the person you are."
             />
           </div>
-          <div className="flex flex-col lg:flex-row w-full items-center justify-center">
+          <div className="flex w-full flex-col items-center justify-center lg:flex-row">
             <GBCOMP
               image={irfan}
               name="MOHAMMAD IRFAN"

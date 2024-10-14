@@ -1,6 +1,5 @@
 import Image from "next/image";
-import React from "react";
-import { useCallback, useState } from "react";
+import React, { useCallback, useState } from "react";
 import { Controlled as Zoom } from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
@@ -18,7 +17,7 @@ const ZoomedImage = ({ url }: { url: string }) => {
         alt={""}
         className={`${
           isZoomed ? "h-[1000px]" : "h-80"
-        } w-full object-cover rounded-lg`}
+        } w-full rounded-lg object-cover`}
         width={500}
         height={500}
       />

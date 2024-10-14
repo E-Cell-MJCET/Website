@@ -1,5 +1,6 @@
-import Intro from "@/components/register/intro";
 import React from "react";
+
+import Intro from "@/components/register/intro";
 
 const RegisterDemoPage = () => {
   return (

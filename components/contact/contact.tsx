@@ -1,37 +1,32 @@
 import React from "react";
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
-import EmailIcon from "@mui/icons-material/Email";
-import AddressIcon from "@mui/icons-material/LocationOn";
 
 const ContactBlock = () => {
   return (
-    <div className="flex flex-col  items-center justify-center mt-[50px]">
-      <div className="flex flex-wrap justify-center  text-white items-center mt-[40px] gap-5">
-        <div className="flex flex-col h-52 items-start pl-5 pr-32 max-w-[320px] text-left text-black dark:text-white  rounded-2xl border-[1px] border-card-light dark:border-card-dark">
-          <h1 className="text-3xl mt-5 header">Phone</h1>
-          <div className="flex flex-col justify-start mt-5 mb-5 ">
-            <span className="text-xl mt-5">Syed Shujauddin</span>
-            <a href="tel:+919515130124" className="hover:underline text-xl">
+    <div className="mt-[50px] flex  flex-col items-center justify-center">
+      <div className="mt-[40px] flex flex-wrap  items-center justify-center gap-5 text-white">
+        <div className="flex h-52 max-w-[320px] flex-col items-start rounded-2xl border border-card-light pl-5 pr-32  text-left text-black dark:border-card-dark dark:text-white">
+          <h1 className="mt-5 text-3xl">Phone</h1>
+          <div className="my-5 flex flex-col justify-start ">
+            <span className="mt-5 text-xl">Syed Shujauddin</span>
+            <a href="tel:+919515130124" className="text-xl hover:underline">
               +91 95151 30124
             </a>
           </div>
         </div>
-
-        <div className="flex flex-col h-52 items-center pl-5 max-w-[320px] border-[1px] text-black dark:text-white border-card-light dark:border-card-dark rounded-2xl">
-          <div className="flex flex-col justify-start mb-5">
-            <h1 className="text-3xl mt-5 header">Address</h1>
-            <p className="text-lg mt-5">
+        <div className="flex h-52 max-w-[320px] flex-col items-center rounded-2xl border border-card-light pl-5 text-black dark:border-card-dark dark:text-white">
+          <div className="mb-5 flex flex-col justify-start">
+            <h1 className="mt-5 text-3xl">Address</h1>
+            <p className="mt-5 text-lg">
               Beside Veg Canteen, MJCET, Mount Pleasant,8-2-249, Road No. 3,
               Banjara Hills,Hyderabad, Telangana 500034
             </p>
           </div>
         </div>
-
-        <div className="flex flex-col h-52 items-start pl-5 pr-5 border-[1px] text-black dark:text-white border-card-light dark:border-card-dark   w-fit text-center rounded-2xl">
-          <h1 className="text-3xl mt-5 header">E-Mail</h1>
+        <div className="flex h-52 w-fit flex-col items-start rounded-2xl border border-card-light px-5 text-center text-black   dark:border-card-dark dark:text-white">
+          <h1 className="mt-5 text-3xl">E-Mail</h1>
           <a
             href="mailto:ecellmjcet@mjcollege.ac.in"
-            className="hover:underline text-[22px] mt-5"
+            className="mt-5 text-[22px] hover:underline"
           >
             ecellmjcet@mjcollege.ac.in
           </a>
