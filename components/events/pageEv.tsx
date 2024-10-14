@@ -29,7 +29,7 @@ const PageEv = () => {
               </div>
             </div>
             <div className="mt-20 bg-black px-3 text-center text-[30px] font-bold text-white opacity-100 ">
-              Something great is cooking up :)
+              Something great is cooking up :)!!!
             </div>
           </div>
           <div className="mt-20 flex flex-col items-center justify-center bg-black">
