@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Subscriber } from "framer-motion";
 
 import elnwt from "../../public/assets/Logo/logo-small-white.png";
 import ectext from "../../public/assets/Logo/logo-big-white.png";
