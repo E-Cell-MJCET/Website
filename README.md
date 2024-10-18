@@ -131,11 +131,11 @@ Welcome to the official repository for ecellmjcet.com, the website of the Entrep
 ## 1. Branching Strategy
 Start from dev branch: When starting any work, always create your branch from the dev branch.
 Branch naming convention:
-For new features: feat/featurename
-For bug fixes: fix/whatyouarefixing
-For documentation updates: docs/whatyouupdated
-For refactoring code: refactor/whatyourefactored
-For urgent hotfixes: hotfix/urgentfix
+* For new features: feat/featurename
+* For bug fixes: fix/whatyouarefixing
+* For documentation updates: docs/whatyouupdated
+* For refactoring code: refactor/whatyourefactored
+* For urgent hotfixes: hotfix/urgentfix
 
 ## 2. Pull Request (PR) Workflow
 ### Step 1: Development
