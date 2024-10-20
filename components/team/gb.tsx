@@ -21,7 +21,7 @@ const GB = () => {
               <div className="my-[2px] h-[3px] w-[260px] rounded-lg bg-[#ff403c]"></div>
               <div className="mt-[2px] h-[3px] w-[320px] rounded-lg bg-[#ff403c]"></div>
             </div>
-            <div className="font-montserrat absolute bg-black px-3 text-center text-[30px] font-bold  text-black opacity-100 dark:text-white">
+            <div className="absolute bg-black px-3 text-center font-montserrat text-[30px] font-bold  text-black opacity-100 dark:text-white">
               Governing Body
             </div>
           </div>
