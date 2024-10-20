@@ -119,10 +119,10 @@ export function FaqComp() {
             <a className="underline" href="https://forms.gle/ePeDHzKgrb9MUGTx6">
               here.
             </a>
-            Fill out a short form with your details and select your membership
-            type. After submitting your application, we&apos;ll send further
-            instructions on payment and next steps, so keep an eye out for a
-            confirmation email!
+            Fill out a short form with your details. After submitting your
+            application, make the payment to complete the process. You&apos;ll
+            receive a confirmation email and you&apos;ll be able to join our
+            whatsapp group.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
