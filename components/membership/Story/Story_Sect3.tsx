@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 
 const StorySect3 = () => {
   return (
-    <section className="bg-black px-6 py-12 text-white md:px-16">
+    <section className="mb-8 bg-black px-6 py-5 text-white md:px-16">
       <div className="mx-auto max-w-6xl text-center">
         {/* Title Section */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-4 text-sm font-semibold uppercase text-orange-400"
+          className="mb-4 font-silkscreen text-sm font-semibold uppercase text-[#f6e445]"
         >
           Our objective here is simple...
         </motion.h1>
@@ -19,7 +19,7 @@ const StorySect3 = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-8 text-3xl font-bold md:text-5xl"
+          className="mb-5 text-3xl font-bold md:text-5xl"
         >
           The objective of E-Cell MJCET is to inspire and empower students to
           ideate, innovate,
