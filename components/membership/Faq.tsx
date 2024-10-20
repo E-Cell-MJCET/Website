@@ -8,22 +8,22 @@ import {
 import { ShootingStars } from "../ui/shootingstars";
 import { StarsBackground } from "../ui/starsbackground";
 
-export function Faq() {
+export function FaqComp() {
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center gap-3 px-4">
-      <div className="z-50 text-center">
-        <h1 className="z-30 font-silkscreen text-3xl font-bold text-[#f6e445] sm:text-4xl">
+      <div className="text-center">
+        <h1 className="font-silkscreen text-3xl font-bold text-[#f6e445] sm:text-4xl">
           Frequently Asked Questions
         </h1>
       </div>
       <Accordion
         type="single"
         collapsible
-        className="z-50 w-full bg-black font-silkscreen sm:w-1/2"
+        className="w-full bg-black font-silkscreen sm:w-1/2"
       >
         <AccordionItem value="item-1">
           <AccordionTrigger> Can non-students join E-Cell?</AccordionTrigger>
-          <AccordionContent className="font-montserrat">
+          <AccordionContent className=" text-left font-montserrat">
             No, E-Cell focuses exclusively on current student members passionate
             about entrepreneurship and innovation. If you&apos;re a student
             interested in joining, we&apos;d love to have you! Please contact us
@@ -33,7 +33,7 @@ export function Faq() {
         {/* 2 */}
         <AccordionItem value="item-2">
           <AccordionTrigger> What is the membership fee?</AccordionTrigger>
-          <AccordionContent className="font-montserrat">
+          <AccordionContent className="text-left font-montserrat">
             The membership fee is a small contribution that helps us organise
             events, provide resources, and support entrepreneurial activities.
             We strive to keep the fee affordable to ensure broad participation.
@@ -41,11 +41,10 @@ export function Faq() {
         </AccordionItem>
         {/* 3 */}
         <AccordionItem value="item-3">
-          <AccordionTrigger>
-            {" "}
+          <AccordionTrigger className="text-left">
             What is the membership time frame?
           </AccordionTrigger>
-          <AccordionContent className="font-montserrat">
+          <AccordionContent className="text-left font-montserrat">
             The membership is typically valid for one academic year, giving you
             full access to all events, workshops, and resources during that
             time.
@@ -119,4 +118,4 @@ export function Faq() {
     </div>
   );
 }
-export default Faq;
+export default FaqComp;

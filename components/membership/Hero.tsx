@@ -62,7 +62,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-center overflow-hidden bg-black px-4">
+    <div className="max-w-screen flex h-screen flex-col items-center justify-center overflow-hidden bg-black px-4">
       <Image
         src="/icon-384x384.png"
         alt="Ecell Logo"
@@ -114,7 +114,7 @@ const Hero = () => {
       </h1>
       <div className="mt-12 flex w-96 flex-col items-center justify-center gap-5 sm:flex-row">
         <Link
-          href={"/"}
+          href={"https://forms.gle/ePeDHzKgrb9MUGTx6"}
           className="btn relative z-10 mt-12 flex h-12 w-52 items-center justify-center rounded bg-blue-700 px-4 py-3 text-center font-silkscreen text-sm text-white hover:cursor-pointer hover:bg-blue-600 sm:px-7 sm:py-4 sm:text-lg"
         >
           <div className="two absolute inset-0 flex items-center justify-center">

@@ -34,6 +34,9 @@ export function Perks() {
 
   return (
     <>
+      <h1 className="mb-8 text-center font-silkscreen text-4xl font-extrabold tracking-wide text-[#f6e445]">
+        Perks of Membership
+      </h1>
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
@@ -93,19 +96,11 @@ export function Perks() {
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400"
+                      className="text-neutral-200 text-lg"
                     >
                       {active.description}
                     </motion.p>
                   </div>
-                  <motion.a
-                    layoutId={`button-${active.title}-${id}`}
-                    href="https://forms.gle/ePeDHzKgrb9MUGTx6"
-                    target="_blank"
-                    className="mt-4 w-[200px] rounded-full bg-blue-800 px-4 py-3 text-center text-sm font-bold text-white md:mt-0"
-                  >
-                    Become a Member!
-                  </motion.a>
                 </div>
                 <div className="relative px-4 pt-4">
                   <motion.div
@@ -119,6 +114,14 @@ export function Perks() {
                       ? active.content()
                       : active.content}
                   </motion.div>
+                  <motion.a
+                    layoutId={`button-${active.title}-${id}`}
+                    href="https://forms.gle/ePeDHzKgrb9MUGTx6"
+                    target="_blank"
+                    className="mt-40 w-[200px] rounded-full bg-blue-800 px-4 py-3 text-center text-sm font-bold text-white md:mt-0"
+                  >
+                    Become a Member!
+                  </motion.a>
                 </div>
               </div>
             </motion.div>
@@ -379,7 +382,7 @@ const cards = [
   {
     description: "Join events hosted by MNCs",
     title: "Access events in major tech companies",
-    src: "https://thumbs.dreamstime.com/b/top-computer-companies-world-kiev-ukraine-may-logotype-collection-well-known-technologies-monitor-screen-41023829.jpg",
+    src: "/assets/membership/infosys.png",
     ctaText: "Know More",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
