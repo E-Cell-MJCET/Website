@@ -94,6 +94,14 @@ export function Perks() {
                     >
                       {active.title}
                     </motion.h3>
+                    <motion.a
+                      layoutId={`button-${active.title}-${id}`}
+                      href="https://forms.gle/ePeDHzKgrb9MUGTx6"
+                      target="_blank"
+                      className="mt-40 w-[200px] rounded-full bg-blue-800 px-4 py-3 text-center text-sm font-bold text-white md:mt-0"
+                    >
+                      Become a Member!
+                    </motion.a>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
                       className="text-lg text-neutral-200"
@@ -114,14 +122,6 @@ export function Perks() {
                       ? active.content()
                       : active.content}
                   </motion.div>
-                  <motion.a
-                    layoutId={`button-${active.title}-${id}`}
-                    href="https://forms.gle/ePeDHzKgrb9MUGTx6"
-                    target="_blank"
-                    className="mt-40 w-[200px] rounded-full bg-blue-800 px-4 py-3 text-center text-sm font-bold text-white md:mt-0"
-                  >
-                    Become a Member!
-                  </motion.a>
                 </div>
               </div>
             </motion.div>
@@ -149,12 +149,6 @@ export function Perks() {
                   className="h-24 w-24 rounded-lg object-cover object-top font-silkscreen md:h-14 md:w-14"
                 />
               </motion.div>
-              <motion.button
-                layoutId={`button-${card.title}-${id}`}
-                className="mt-4 w-32 rounded-full bg-blue-800 px-4 py-3 text-xs font-bold text-white hover:bg-blue-800 hover:text-white md:mt-0"
-              >
-                {card.ctaText}
-              </motion.button>
               <div className="grow text-center md:text-left">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
@@ -170,6 +164,12 @@ export function Perks() {
                 </motion.p>
               </div>
             </div>
+            <motion.button
+              layoutId={`button-${card.title}-${id}`}
+              className="mt-4 w-32 rounded-full bg-blue-800 px-4 py-3 text-xs font-bold text-white hover:bg-blue-800 hover:text-white md:mt-0"
+            >
+              {card.ctaText}
+            </motion.button>
           </motion.div>
         ))}
       </ul>
