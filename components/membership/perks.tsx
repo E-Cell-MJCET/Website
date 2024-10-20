@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
 export function Perks() {
@@ -25,6 +26,7 @@ export function Perks() {
     }
 
     window.addEventListener("keydown", onKeyDown);
+
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
 
@@ -38,13 +40,13 @@ export function Perks() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/20 h-full w-full z-10"
+            className="fixed inset-0 z-10 h-full w-full bg-black/20"
           />
         )}
       </AnimatePresence>
       <AnimatePresence>
         {active && typeof active === "object" ? (
-          <div className="fixed inset-0  grid place-items-center z-[100]">
+          <div className="fixed inset-0  z-[100] grid place-items-center">
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
@@ -60,7 +62,7 @@ export function Perks() {
                   duration: 0.05,
                 },
               }}
-              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
+              className="absolute right-2 top-2 flex h-6 w-6 items-center justify-center rounded-full bg-white lg:hidden"
               onClick={() => setActive(null)}
             >
               <CloseIcon />
@@ -68,7 +70,7 @@ export function Perks() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="flex h-full  w-full max-w-[500px] flex-col  overflow-hidden bg-white dark:bg-neutral-900 sm:rounded-3xl md:h-fit md:max-h-[90%]"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -77,43 +79,41 @@ export function Perks() {
                   height={200}
                   src={active.src}
                   alt={active.title}
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                  className="h-80 w-full object-cover object-top sm:rounded-t-lg lg:h-80"
                 />
               </motion.div>
-
               <div>
-              <div className="flex flex-col md:flex-row justify-between items-start p-4">
+                <div className="flex flex-col items-start justify-between p-4 md:flex-row">
                   <div className="w-full md:w-auto">
                     <motion.h3
-                    layoutId={`title-${active.title}-${id}`}
-                    className="font-bold text-neutral-700 dark:text-neutral-200"
+                      layoutId={`title-${active.title}-${id}`}
+                      className="font-bold text-neutral-700 dark:text-neutral-200"
+                    >
+                      {active.title}
+                    </motion.h3>
+                    <motion.p
+                      layoutId={`description-${active.description}-${id}`}
+                      className="text-neutral-600 dark:text-neutral-400"
+                    >
+                      {active.description}
+                    </motion.p>
+                  </div>
+                  <motion.a
+                    layoutId={`button-${active.title}-${id}`}
+                    href="https://forms.gle/ePeDHzKgrb9MUGTx6"
+                    target="_blank"
+                    className="mt-4 w-[200px] rounded-full bg-blue-800 px-4 py-3 text-center text-sm font-bold text-white md:mt-0"
                   >
-                    {active.title}
-                </motion.h3>
-                <motion.p
-                    layoutId={`description-${active.description}-${id}`}
-                    className="text-neutral-600 dark:text-neutral-400"
-                  >
-                   {active.description}
-                </motion.p>
-              </div>
-
-              <motion.a
-                layoutId={`button-${active.title}-${id}`}
-                href="https://forms.gle/ePeDHzKgrb9MUGTx6"
-                target="_blank"
-                className="px-4 py-3 text-sm rounded-full font-bold bg-blue-800 text-white mt-4 md:mt-0 w-[200px] text-center"
-              >
-                Become a Member!
-              </motion.a>
-            </div>
-                <div className="pt-4 relative px-4">
+                    Become a Member!
+                  </motion.a>
+                </div>
+                <div className="relative px-4 pt-4">
                   <motion.div
                     layout
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="flex h-40 flex-col items-start gap-4 overflow-auto pb-10 text-xs text-neutral-600 [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] dark:text-neutral-400 md:h-fit md:text-sm lg:text-base"
                   >
                     {typeof active.content === "function"
                       ? active.content()
@@ -125,25 +125,28 @@ export function Perks() {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="max-w-2xl mx-auto w-full gap-4">
-        {cards.map((card, index) => (
+      <ul className="mx-auto w-full max-w-2xl gap-4">
+        {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="flex cursor-pointer flex-col items-center justify-between rounded-xl p-4 hover:bg-neutral-50 dark:hover:bg-neutral-800 md:flex-row"
           >
-            <div className="flex gap-4 flex-col md:flex-row items-center md:items-start w-full">
-              <motion.div layoutId={`image-${card.title}-${id}`} className="flex-shrink-0">
+            <div className="flex w-full flex-col items-center gap-4 md:flex-row md:items-start">
+              <motion.div
+                layoutId={`image-${card.title}-${id}`}
+                className="shrink-0"
+              >
                 <Image
                   width={100}
                   height={100}
                   src={card.src}
                   alt={card.title}
-                  className="h-24 w-24 md:h-14 md:w-14 rounded-lg object-cover object-top"
+                  className="h-24 w-24 rounded-lg object-cover object-top md:h-14 md:w-14"
                 />
               </motion.div>
-              <div  className="flex-grow text-center md:text-left">
+              <div className="grow text-center md:text-left">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
                   className="font-medium text-neutral-200"
@@ -160,7 +163,7 @@ export function Perks() {
             </div>
             <motion.button
               layoutId={`button-${card.title}-${id}`}
-              className="px-4 py-3 text-xs rounded-full font-bold bg-blue-800 hover:bg-blue-800 hover:text-white text-white mt-4 md:mt-0 w-32"
+              className="mt-4 w-32 rounded-full bg-blue-800 px-4 py-3 text-xs font-bold text-white hover:bg-blue-800 hover:text-white md:mt-0"
             >
               {card.ctaText}
             </motion.button>
@@ -214,14 +217,16 @@ const cards = [
     content: () => {
       return (
         <p>
-         At E-Cell, we understand that navigating the world of technology can be challenging. That’s
-          why we offer a dedicated Tech Help Desk staffed by our talented tech team, ready to assist
-          you with any technical questions or issues you may encounter. Whether you need guidance
-          on coding, app development, or troubleshooting tech-related problems, our team is here to
-          provide personalised support and solutions. We believe that collaboration and assistance
-          are key to fostering innovation, and our experienced members are eager to share their
-          knowledge and expertise, ensuring you have the resources you need to succeed in your
-          projects and entrepreneurial endeavours.
+          At E-Cell, we understand that navigating the world of technology can
+          be challenging. That&apos;s why we offer a dedicated Tech Help Desk
+          staffed by our talented tech team, ready to assist you with any
+          technical questions or issues you may encounter. Whether you need
+          guidance on coding, app development, or troubleshooting tech-related
+          problems, our team is here to provide personalised support and
+          solutions. We believe that collaboration and assistance are key to
+          fostering innovation, and our experienced members are eager to share
+          their knowledge and expertise, ensuring you have the resources you
+          need to succeed in your projects and entrepreneurial endeavours.
         </p>
       );
     },
@@ -235,7 +240,16 @@ const cards = [
     content: () => {
       return (
         <p>
-          At E-Cell, we offer our members unparalleled access to a vast network of industry leaders, successful entrepreneurs, and experienced mentors. Through our exclusive networking events, members have the chance to connect directly with venture capitalists, startup founders, and tech innovators. Whether it's at our pitch nights, guest speaker sessions, or startup expos, these events provide invaluable opportunities to build relationships, gain insights, and explore potential collaborations. E-Cell ensures that every member is equipped not just with technical skills, but also with the connections they need to thrive in the entrepreneurial world.
+          At E-Cell, we offer our members unparalleled access to a vast network
+          of industry leaders, successful entrepreneurs, and experienced
+          mentors. Through our exclusive networking events, members have the
+          chance to connect directly with venture capitalists, startup founders,
+          and tech innovators. Whether it&apos;s at our pitch nights, guest
+          speaker sessions, or startup expos, these events provide invaluable
+          opportunities to build relationships, gain insights, and explore
+          potential collaborations. E-Cell ensures that every member is equipped
+          not just with technical skills, but also with the connections they
+          need to thrive in the entrepreneurial world.
         </p>
       );
     },
@@ -250,14 +264,17 @@ const cards = [
     content: () => {
       return (
         <p>
-          At E-Cell, we are committed to enhancing your professional journey in the tech world. Our
-          club not only provides an engaging platform for learning and collaboration but also focuses
-          on building your resume with valuable skills and experiences. Participate in our dynamic
-          events, including the renowned Hack Revolution, where you can showcase your creativity
-          and technical prowess in an intense hackathon environment. By joining E-Cell, you will
-          receive certificates that validate your participation and achievements, giving your resume a
-          competitive edge in the job market. Elevate your career prospects with us and become part
-          of a thriving community of innovators and entrepreneurs!
+          At E-Cell, we are committed to enhancing your professional journey in
+          the tech world. Our club not only provides an engaging platform for
+          learning and collaboration but also focuses on building your resume
+          with valuable skills and experiences. Participate in our dynamic
+          events, including the renowned Hack Revolution, where you can showcase
+          your creativity and technical prowess in an intense hackathon
+          environment. By joining E-Cell, you will receive certificates that
+          validate your participation and achievements, giving your resume a
+          competitive edge in the job market. Elevate your career prospects with
+          us and become part of a thriving community of innovators and
+          entrepreneurs!
         </p>
       );
     },
@@ -271,7 +288,15 @@ const cards = [
     content: () => {
       return (
         <p>
-          As an E-Cell member, you gain exclusive access to on-campus startup acceleration programs and our comprehensive Entrepreneurship Program, where we provide lessons on business planning, development, and growth strategies. These programs offer mentorship from experienced entrepreneurs, workshops, and potential funding opportunities, equipping you with the essential tools and knowledge to transform your ideas into successful ventures. Whether you’re just starting out or ready to launch, E-Cell supports you every step of the way on your entrepreneurial journey.
+          As an E-Cell member, you gain exclusive access to on-campus startup
+          acceleration programs and our comprehensive Entrepreneurship Program,
+          where we provide lessons on business planning, development, and growth
+          strategies. These programs offer mentorship from experienced
+          entrepreneurs, workshops, and potential funding opportunities,
+          equipping you with the essential tools and knowledge to transform your
+          ideas into successful ventures. Whether you&apos;re just starting out
+          or ready to launch, E-Cell supports you every step of the way on your
+          entrepreneurial journey.
         </p>
       );
     },
@@ -285,16 +310,20 @@ const cards = [
     content: () => {
       return (
         <p>
-          As a member of the E-Cell Tech Club, you gain exclusive access to a diverse range of
-          exciting events designed to enhance your entrepreneurial journey and connect you with
-          industry leaders. Participate in our flagship event, Game of Investors, where you can pitch
-          your startup ideas to a panel of experienced investors and receive invaluable feedback. Join
-          us for the Battle of Brands, a thrilling competition where teams strategize and showcase
-          their marketing skills to outshine their competitors. Don’t miss the highly anticipated IPL
-          Auction, where participants simulate the excitement of an auction, learning negotiation and
-          decision-making skills in a fast-paced environment. These events not only provide a platform
-          to showcase your talents but also foster networking opportunities and real-world experience
-          in the tech and entrepreneurship space.
+          As a member of the E-Cell Tech Club, you gain exclusive access to a
+          diverse range of exciting events designed to enhance your
+          entrepreneurial journey and connect you with industry leaders.
+          Participate in our flagship event, Game of Investors, where you can
+          pitch your startup ideas to a panel of experienced investors and
+          receive invaluable feedback. Join us for the Battle of Brands, a
+          thrilling competition where teams strategize and showcase their
+          marketing skills to outshine their competitors. Don&apos;t miss the
+          highly anticipated IPL Auction, where participants simulate the
+          excitement of an auction, learning negotiation and decision-making
+          skills in a fast-paced environment. These events not only provide a
+          platform to showcase your talents but also foster networking
+          opportunities and real-world experience in the tech and
+          entrepreneurship space.
         </p>
       );
     },
@@ -308,7 +337,20 @@ const cards = [
     content: () => {
       return (
         <p>
-          As an E-Cell member, you’ll have the unique opportunity to engage in one-on-one or group discussions with accomplished entrepreneurs from various industries. These interactions can take the form of informal chats, Q&A sessions, or structured mentorship meetings. To further enrich your experience, we will arrange seminars featuring successful entrepreneurs who will share their insights and experiences. You’ll gain invaluable knowledge about their journeys, the challenges they faced, and effective strategies for success. This is not just an opportunity to seek advice; it’s a chance to build meaningful connections that can inspire and guide your own entrepreneurial path. Whether you’re seeking guidance on starting your own venture or looking for inspiration, these conversations and seminars will provide a wealth of knowledge and motivation.
+          As an E-Cell member, you&apos;ll have the unique opportunity to engage
+          in one-on-one or group discussions with accomplished entrepreneurs
+          from various industries. These interactions can take the form of
+          informal chats, Q&A sessions, or structured mentorship meetings. To
+          further enrich your experience, we will arrange seminars featuring
+          successful entrepreneurs who will share their insights and
+          experiences. You&apos;ll gain invaluable knowledge about their
+          journeys, the challenges they faced, and effective strategies for
+          success. This is not just an opportunity to seek advice; it&apos;s a
+          chance to build meaningful connections that can inspire and guide your
+          own entrepreneurial path. Whether you&apos;re seeking guidance on
+          starting your own venture or looking for inspiration, these
+          conversations and seminars will provide a wealth of knowledge and
+          motivation.
         </p>
       );
     },
@@ -322,7 +364,14 @@ const cards = [
     content: () => {
       return (
         <p>
-          Being a part of E-Cell doesn’t just enhance your technical and business knowledge—it also focuses on building essential soft skills. Members will have access to workshops and mentorship sessions on leadership, communication, teamwork, time management, and problem-solving. These skills are invaluable in both entrepreneurial ventures and corporate careers, helping you become more adaptable, persuasive, and efficient in professional environments. By honing these skills, you’ll be better.
+          Being a part of E-Cell doesn&apos;t just enhance your technical and
+          business knowledge—it also focuses on building essential soft skills.
+          Members will have access to workshops and mentorship sessions on
+          leadership, communication, teamwork, time management, and
+          problem-solving. These skills are invaluable in both entrepreneurial
+          ventures and corporate careers, helping you become more adaptable,
+          persuasive, and efficient in professional environments. By honing
+          these skills, you&apos;ll be better.
         </p>
       );
     },
@@ -336,9 +385,15 @@ const cards = [
     content: () => {
       return (
         <p>
-          As a member of E-Cell, you gain exclusive invitations to events hosted by some of the world’s leading tech companies and multinational corporations (MNCs). Whether it’s a networking mixer, a hands-on workshop, or an insider panel discussion, these events offer unparalleled opportunities to connect with industry leaders, learn about the latest innovations, and explore potential career paths. This perk gives you a unique chance to engage directly with experts.
+          As a member of E-Cell, you gain exclusive invitations to events hosted
+          by some of the world&apos;s leading tech companies and multinational
+          corporations (MNCs). Whether it&apos;s a networking mixer, a hands-on
+          workshop, or an insider panel discussion, these events offer
+          unparalleled opportunities to connect with industry leaders, learn
+          about the latest innovations, and explore potential career paths. This
+          perk gives you a unique chance to engage directly with experts.
         </p>
       );
     },
-  }
+  },
 ];
