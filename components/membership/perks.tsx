@@ -96,7 +96,7 @@ export function Perks() {
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-200 text-lg"
+                      className="text-lg text-neutral-200"
                     >
                       {active.description}
                     </motion.p>
@@ -152,7 +152,7 @@ export function Perks() {
               <div className="grow text-center md:text-left">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-neutral-200"
+                  className="font-silkscreen font-medium text-neutral-200"
                 >
                   {card.title}
                 </motion.h3>
