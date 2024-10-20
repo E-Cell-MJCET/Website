@@ -361,7 +361,7 @@ const cards = [
   {
     description: "Cultivate soft skills to excel in any field.",
     title: "Soft Skills",
-    src: "https://img.freepik.com/premium-photo/man-suit-speaks-group-people_1228481-4257.jpg?w=740",
+    src: "/assets/membership/soft-skills.webp",
     ctaText: "Know More",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
