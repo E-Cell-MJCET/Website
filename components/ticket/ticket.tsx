@@ -8,7 +8,7 @@ import qr from "../../public/assets/test/qrcode.png";
 
 const Ticket = () => {
   return (
-    <div className="shadow-ticket flex h-fit w-[300px] flex-col bg-white">
+    <div className="flex h-fit w-[300px] flex-col bg-white shadow-ticket">
       <div id="Photo h-[250px]">
         <div className=" relative w-fit bg-cover bg-center">
           <Image src={cover} alt="cover" />
@@ -20,7 +20,7 @@ const Ticket = () => {
       >
         <div
           id="date"
-          className="font-staatliches mt-4 flex w-full flex-row items-center justify-between border-y border-gray-900 py-1 font-bold text-black"
+          className="mt-4 flex w-full flex-row items-center justify-between border-y border-gray-900 py-1 font-staatliches font-bold text-black"
         >
           <p>SATURDAY</p>
           <p className="text-xl text-blue-500">APRIL 27th</p>
@@ -37,13 +37,13 @@ const Ticket = () => {
             width={100}
             className="mt-5"
           />
-          <h1 className="font-staatliches text-center text-4xl text-blue-500">
+          <h1 className="text-center font-staatliches text-4xl text-blue-500">
             IPL Auctions
           </h1>
         </div>
         <div
           id="time"
-          className="font-staatliches flex w-full flex-row items-center justify-evenly text-xl text-red-500"
+          className="flex w-full flex-row items-center justify-evenly font-staatliches text-xl text-red-500"
         >
           <p>
             2:00 PM <span>TO</span> 5:00 PM
@@ -51,7 +51,7 @@ const Ticket = () => {
         </div>
         <div
           id="location"
-          className="font-staatliches my-3 flex flex-row items-center justify-center gap-5 text-black"
+          className="my-3 flex flex-row items-center justify-center gap-5 font-staatliches text-black"
         >
           <p>Civil Seminar Hall Block 4</p>
           <FaLocationDot />
