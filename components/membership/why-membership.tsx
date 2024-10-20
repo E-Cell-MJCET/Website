@@ -5,7 +5,7 @@ import why from "../../public/assets/membership/why.jpg";
 
 const WhyMembership = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center bg-black p-6 text-white">
+    <div className="flex flex-col items-center bg-black p-6 text-white">
       <h1 className="mb-8 text-center font-silkscreen text-4xl font-extrabold tracking-wide text-[#f6e445]">
         Why Membership?
       </h1>

@@ -53,6 +53,9 @@ const Navbar = () => {
             />
           </div>
           <div className="hidden items-center space-x-7 md:flex">
+            <Link href="/" className="text-lg text-white hover:text-blue-600">
+              Home
+            </Link>
             <Link
               href="/events"
               className="text-lg text-white hover:text-blue-600"
@@ -77,14 +80,20 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            <button className="rounded-md bg-blue-600 px-4 py-2 font-silkscreen font-bold text-white">
+            <Link
+              className="rounded-md bg-blue-600 px-4 py-2 font-silkscreen font-bold text-white"
+              href={"https://forms.gle/ePeDHzKgrb9MUGTx6"}
+            >
               Get Membership
-            </button>
+            </Link>
           </div>
           <div className="flex items-center space-x-2 md:hidden">
-            <button className="rounded-md bg-blue-600 px-4 py-2 font-silkscreen font-bold text-white">
+            <Link
+              className="rounded-md bg-blue-600 px-4 py-2 font-silkscreen font-bold text-white"
+              href={"https://forms.gle/ePeDHzKgrb9MUGTx6"}
+            >
               Get Membership
-            </button>
+            </Link>
             <button onClick={toggleMenu} className="h-8 w-8 px-1 text-white">
               {isMenuOpen ? (
                 <AiOutlineClose size={34} />
@@ -101,6 +110,11 @@ const Navbar = () => {
             }`}
           >
             <ul className="flex flex-col space-y-4 py-2">
+              <li>
+                <Link href="/" className="block px-4 py-2 text-lg text-white">
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/events"

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image"; // Import the Image component
+import Link from "next/link";
 
 const StorySect1 = () => {
   return (
@@ -67,9 +68,12 @@ const StorySect1 = () => {
               make your mark?
             </p>
             <div>
-              <button className="rounded-lg bg-blue-600 px-8 py-3 font-silkscreen font-bold text-white shadow-md transition duration-300">
+              <Link
+                href={"https://forms.gle/ePeDHzKgrb9MUGTx6"}
+                className="rounded-lg bg-blue-600 px-8 py-3 font-silkscreen font-bold text-white shadow-md transition duration-300"
+              >
                 Join the Movement!
-              </button>
+              </Link>
             </div>
           </motion.div>
         </div>
