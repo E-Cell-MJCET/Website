@@ -53,7 +53,7 @@ const Navbar = () => {
             <li className=" mx-3 text-xl font-semibold text-white underline-offset-8 hover:font-bold hover:underline">
               <Link href={"/contactus"}>Contact</Link>
             </li>
-            <li className=" mx-3 text-xl font-semibold text-white underline-offset-8 font-silkscreen hover:font-bold hover:underline">
+            <li className=" mx-3 font-silkscreen text-xl font-semibold text-white underline-offset-8 hover:font-bold hover:underline">
               <Link href={"/membership"}>Become a Member</Link>
             </li>
           </ul>
@@ -88,7 +88,7 @@ const Navbar = () => {
                   <li className="mx-3 my-5 from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] text-xl font-semibold text-black hover:bg-gradient-to-r hover:bg-clip-text hover:font-bold hover:text-transparent hover:underline dark:text-white">
                     <Link href={"/contactus"}>Contact</Link>
                   </li>
-                  <li className="mx-3 my-5 from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] text-xl font-semibold font-silkscreen text-black hover:bg-gradient-to-r hover:bg-clip-text hover:font-bold hover:text-transparent hover:underline dark:text-white">
+                  <li className="mx-3 my-5 from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] font-silkscreen text-xl font-semibold text-black hover:bg-gradient-to-r hover:bg-clip-text hover:font-bold hover:text-transparent hover:underline dark:text-white">
                     <Link href={"/membership"}>Become a Member</Link>
                   </li>
                 </ul>
