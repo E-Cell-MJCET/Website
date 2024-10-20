@@ -96,7 +96,7 @@ export function Perks() {
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-200 text-lg"
+                      className="text-lg text-neutral-200"
                     >
                       {active.description}
                     </motion.p>
@@ -149,6 +149,12 @@ export function Perks() {
                   className="h-24 w-24 rounded-lg object-cover object-top md:h-14 md:w-14"
                 />
               </motion.div>
+              <motion.button
+                layoutId={`button-${card.title}-${id}`}
+                className="mt-4 w-32 rounded-full bg-blue-800 px-4 py-3 text-xs font-bold text-white hover:bg-blue-800 hover:text-white md:mt-0"
+              >
+                {card.ctaText}
+              </motion.button>
               <div className="grow text-center md:text-left">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
@@ -164,12 +170,6 @@ export function Perks() {
                 </motion.p>
               </div>
             </div>
-            <motion.button
-              layoutId={`button-${card.title}-${id}`}
-              className="mt-4 w-32 rounded-full bg-blue-800 px-4 py-3 text-xs font-bold text-white hover:bg-blue-800 hover:text-white md:mt-0"
-            >
-              {card.ctaText}
-            </motion.button>
           </motion.div>
         ))}
       </ul>
