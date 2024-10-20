@@ -11,8 +11,15 @@ const StorySect2 = () => {
           transition={{ duration: 0.8 }}
           className="mb-8 text-center text-2xl font-bold sm:text-3xl md:text-4xl"
         >
-          `Your time is limited, so don’t waste it living someone else’s life.`{" "}
-          <br />– Steve Jobs
+          `Your{" "}
+          <span className="rounded bg-blue-500 p-1 font-silkscreen text-white">
+            time is limited,
+          </span>{" "}
+          so don&apos;t waste it living{" "}
+          <span className="rounded bg-black p-1 font-silkscreen text-[#f6e445]">
+            someone&apos;s
+          </span>{" "}
+          life.` <br />– Steve Jobs
         </motion.h2>
         {/* <motion.div 
           initial={{ opacity: 0 }} 
@@ -52,8 +59,8 @@ const StorySect2 = () => {
             your true potential?
           </p>
           <p>
-            Every moment spent living someone else’s dream is a moment lost from
-            creating your own.
+            Every moment spent living someone else&apos;s dream is a moment lost
+            from creating your own.
           </p>
           <p>
             At Mufakkam Jah College of Engineering and Technology, we believe
@@ -69,9 +76,10 @@ const StorySect2 = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-8 space-y-4 text-center text-sm sm:text-base"
         >
-          <p className="font-bold">So, what’s holding you back?</p>
+          <p className="font-bold">So, what&apos;s holding you back?</p>
           <p>
-            Here’s what you can achieve when you choose to follow your own path:
+            Here&apos;s what you can achieve when you choose to follow your own
+            path:
           </p>
           <ul className="mx-auto max-w-md list-inside list-disc text-left">
             <li>Innovate and create solutions that matter</li>
@@ -82,13 +90,13 @@ const StorySect2 = () => {
             <li>Make a lasting impact in your field</li>
           </ul>
           <p>
-            Remember, the road to success isn’t just about the destination; it’s
-            about the journey you create along the way.
+            Remember, the road to success isn&apos;t just about the destination;
+            it&apos;s about the journey you create along the way.
           </p>
           <p>The question is:</p>
           <p className="font-bold">
             Are you ready to take the leap and live your own life, not someone
-            else’s?
+            else&apos;s?
           </p>
         </motion.div>
       </div>
