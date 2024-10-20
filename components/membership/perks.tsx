@@ -101,14 +101,6 @@ export function Perks() {
                       {active.description}
                     </motion.p>
                   </div>
-                  <motion.a
-                    layoutId={`button-${active.title}-${id}`}
-                    href="https://forms.gle/ePeDHzKgrb9MUGTx6"
-                    target="_blank"
-                    className="mt-4 w-[200px] rounded-full bg-blue-800 px-4 py-3 text-center text-sm font-bold text-white md:mt-0"
-                  >
-                    Become a Member!
-                  </motion.a>
                 </div>
                 <div className="relative px-4 pt-4">
                   <motion.div
@@ -122,6 +114,14 @@ export function Perks() {
                       ? active.content()
                       : active.content}
                   </motion.div>
+                  <motion.a
+                    layoutId={`button-${active.title}-${id}`}
+                    href="https://forms.gle/ePeDHzKgrb9MUGTx6"
+                    target="_blank"
+                    className="mt-40 w-[200px] rounded-full bg-blue-800 px-4 py-3 text-center text-sm font-bold text-white md:mt-0"
+                  >
+                    Become a Member!
+                  </motion.a>
                 </div>
               </div>
             </motion.div>
