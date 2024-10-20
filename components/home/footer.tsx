@@ -58,7 +58,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="mb-5 mt-4 break-all text-sm font-semibold text-gray-700 dark:text-gray-400 lg:mb-0">
-              Beside Veg Canteen, Muffakham Jah College Of Engineering, Mount Pleasant,
+              Beside Veg Canteen, MJCET, Mount Pleasant,
               <div></div> 8-2-249, Road No. 3, Banjara Hills, <div></div>
               Hyderabad, Telangana 500034
             </div>

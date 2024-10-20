@@ -64,6 +64,9 @@ const Nav = () => {
             <li className=" mx-3 text-xl font-semibold text-black underline-offset-8 hover:font-bold hover:underline dark:text-white">
               <Link href={"/contactus"}>Contact</Link>
             </li>
+            <li className=" mx-3 text-xl font-semibold text-black underline-offset-8 hover:font-bold hover:underline dark:text-white">
+              <Link href={"/membership"}>Become a Member</Link>
+            </li>
           </ul>
         </div>
         <div className=" mr-5 text-right transition duration-300 ease-in-out lg:hidden">
@@ -95,6 +98,9 @@ const Nav = () => {
                   </li>
                   <li className="mx-3 my-5 from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] text-xl font-semibold text-black hover:bg-gradient-to-r hover:bg-clip-text hover:font-bold hover:text-transparent hover:underline dark:text-white">
                     <Link href={"/contactus"}>Contact</Link>
+                  </li>
+                  <li className="mx-3 my-5 from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] text-xl font-semibold text-black hover:bg-gradient-to-r hover:bg-clip-text hover:font-bold hover:text-transparent hover:underline dark:text-white">
+                    <Link href={"/membership"}>Become a Member</Link>
                   </li>
                   {/* <li className="mx-3 text-xl my-5 text-black dark:text-white font-semibold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] hover:font-bold hover:underline">
                     <Link href={"/ipl"}>IPL Auction</Link>

@@ -9,10 +9,10 @@ const Footers = () => {
           <div className="text-sm  text-black dark:text-white">
             &#169; E-Cell MJCET 2024-25 | All rights reserved.
           </div>
-          <div className="mt-1 text-sm text-black dark:text-white lg:mt-0">
+          <div className="mt-1 text-center text-sm text-black dark:text-white lg:mt-0">
             Developed by{" "}
             <span className="cursor-pointer bg-clip-text text-black dark:text-white ">
-              <p>E-Cell Tech Team</p>
+              <p>Tech Team of E-Cell</p>
             </span>{" "}
           </div>
         </div>
