@@ -4,13 +4,8 @@ import {
   Staatliches,
   Nanum_Pen_Script,
   Silkscreen,
-  Pixelify_Sans,
 } from "next/font/google";
-const pixelify_sans = Pixelify_Sans({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-Pixelify-Sans",
-});
+
 const silkscreen = Silkscreen({
   subsets: ["latin"],
   weight: "400",
