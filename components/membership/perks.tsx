@@ -94,21 +94,21 @@ export function Perks() {
                     >
                       {active.title}
                     </motion.h3>
-                    <motion.a
-                      layoutId={`button-${active.title}-${id}`}
-                      href="https://forms.gle/ePeDHzKgrb9MUGTx6"
-                      target="_blank"
-                      className="mt-40 w-[200px] rounded-full bg-blue-800 px-4 py-3 text-center text-sm font-bold text-white md:mt-0"
-                    >
-                      Become a Member!
-                    </motion.a>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-lg text-neutral-200"
+                      className="text-neutral-200 text-lg"
                     >
                       {active.description}
                     </motion.p>
                   </div>
+                  <motion.a
+                    layoutId={`button-${active.title}-${id}`}
+                    href="https://forms.gle/ePeDHzKgrb9MUGTx6"
+                    target="_blank"
+                    className="mt-4 w-[200px] rounded-full bg-blue-800 px-4 py-3 text-center text-sm font-bold text-white md:mt-0"
+                  >
+                    Become a Member!
+                  </motion.a>
                 </div>
                 <div className="relative px-4 pt-4">
                   <motion.div
@@ -146,7 +146,7 @@ export function Perks() {
                   height={100}
                   src={card.src}
                   alt={card.title}
-                  className="h-24 w-24 rounded-lg object-cover object-top font-silkscreen md:h-14 md:w-14"
+                  className="h-24 w-24 rounded-lg object-cover object-top md:h-14 md:w-14"
                 />
               </motion.div>
               <div className="grow text-center md:text-left">
