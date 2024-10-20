@@ -12,7 +12,13 @@ const Navbar = () => {
   return (
     <div className={`${isOpen ? "overscroll-none" : ""}`}>
       <div className="absolute -z-10 w-full bg-fixed opacity-50 lg:h-screen">
-        <Image src="../../assets/banner3.png" alt="" className="" width={2000} height={1500}/>
+        <Image
+          src="../../assets/banner3.png"
+          alt=""
+          className=""
+          width={2000}
+          height={1500}
+        />
       </div>
       <div className="  mx-4 mb-2 flex flex-row justify-between pt-10 lg:mb-24 lg:justify-around ">
         <div className="hidden lg:block">
@@ -47,6 +53,9 @@ const Navbar = () => {
             <li className=" mx-3 text-xl font-semibold text-white underline-offset-8 hover:font-bold hover:underline">
               <Link href={"/contactus"}>Contact</Link>
             </li>
+            <li className=" mx-3 text-xl font-semibold text-white underline-offset-8 hover:font-bold hover:underline">
+              <Link href={"/membership"}>Become a Member</Link>
+            </li>
           </ul>
         </div>
         <div className=" mr-5 text-right transition duration-300 ease-in-out lg:hidden">
@@ -78,6 +87,9 @@ const Navbar = () => {
                   </li>
                   <li className="mx-3 my-5 from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] text-xl font-semibold text-black hover:bg-gradient-to-r hover:bg-clip-text hover:font-bold hover:text-transparent hover:underline dark:text-white">
                     <Link href={"/contactus"}>Contact</Link>
+                  </li>
+                  <li className="mx-3 my-5 from-[#eb3c3b] via-[#525e8e] to-[#2c6ca4] text-xl font-semibold text-black hover:bg-gradient-to-r hover:bg-clip-text hover:font-bold hover:text-transparent hover:underline dark:text-white">
+                    <Link href={"/membership"}>Become a Member</Link>
                   </li>
                 </ul>
               </div>
