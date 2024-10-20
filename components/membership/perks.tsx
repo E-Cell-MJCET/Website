@@ -146,7 +146,7 @@ export function Perks() {
                   height={100}
                   src={card.src}
                   alt={card.title}
-                  className="h-24 w-24 rounded-lg object-cover object-top md:h-14 md:w-14"
+                  className="h-24 w-24 rounded-lg object-cover object-top font-silkscreen md:h-14 md:w-14"
                 />
               </motion.div>
               <motion.button
