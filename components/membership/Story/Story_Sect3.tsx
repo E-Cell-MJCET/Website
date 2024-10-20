@@ -21,10 +21,10 @@ const StorySect3 = () => {
           transition={{ duration: 0.6 }}
           className="mb-8 text-3xl font-bold md:text-5xl"
         >
-          Helping your idea by showing you what not to do...
+          The objective of E-Cell MJCET is to inspire and empower students to
+          ideate, innovate,
           <br />
-          and then giving you 3 paths to make your first $1,000 online in record
-          time.
+          and incubate entrepreneurial ventures that create lasting impact.
         </motion.h2>
         {/* <div className="relative flex items-center justify-center">
           <motion.div
