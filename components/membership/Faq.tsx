@@ -34,9 +34,9 @@ export function FaqComp() {
         <AccordionItem value="item-2">
           <AccordionTrigger> What is the membership fee?</AccordionTrigger>
           <AccordionContent className="text-left font-montserrat">
-            The membership fee is a small contribution that helps us organise
-            events, provide resources, and support entrepreneurial activities.
-            We strive to keep the fee affordable to ensure broad participation.
+            The membership fee helps us organize events, provide resources, and
+            support entrepreneurial activities. We keep it affordable to ensure
+            broad participation.
           </AccordionContent>
         </AccordionItem>
         {/* 3 */}
