@@ -1,11 +1,14 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable tailwindcss/no-custom-classname */
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
-import gsap from "gsap";
+import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import Link from "next/link";
+
 import { ShootingStars } from "../ui/shootingstars";
 import { StarsBackground } from "../ui/starsbackground";
-import Link from "next/link";
 // import {BackgroundBeams} from '../ui/background-beams'
 // import {BackgroundLines} from '../ui/backgroundlines'
 // import {hero} from '../ui/hero'
@@ -66,25 +69,25 @@ const Hero = () => {
   });
 
   return (
-    <div className="flex items-center bg-black justify-center h-screen max-w-screen overflow-hidden flex-col px-4">
+    <div className="max-w-screen flex h-screen flex-col items-center justify-center overflow-hidden bg-black px-4">
       <Image
         src="/icon-384x384.png"
         alt="Ecell Logo"
         width={304}
         height={304}
-        className="demo1 mb-4 w-40 h-40 sm:w-48 sm:h-48 lg:w-64 lg:h-64 z-10 bg-clip-text"
+        // eslint-disable-next-line tailwindcss/no-custom-classname
+        className="demo1 z-10 mb-4 h-40 w-40 bg-clip-text sm:h-48 sm:w-48 lg:h-64 lg:w-64"
       />
-
-      <p className="demo text-3xl text-white z-10 sm:text-5xl font-extrabold bg-clip-text hidden sm:block font-silkscreen ">
+      <p className="demo z-10 hidden bg-clip-text font-silkscreen text-3xl font-extrabold text-white sm:block sm:text-5xl ">
         Entrepreneurship Cell
       </p>
-      <p className="demo text-3xl text-white z-10 sm:hidden font-extrabold bg-clip-text font-silkscreen ">
+      // eslint-disable-next-line tailwindcss/no-custom-classname
+      <p className="demo z-10 bg-clip-text font-silkscreen text-3xl font-extrabold text-white sm:hidden ">
         E-Cell MJCET
       </p>
-
       <h1
-        className="z-10 text-2xl sm:text-3xl lg:text-4xl font-extrabold mt-2
-    text-center sm:flex sm:flex-col text-[#F6E445] lg:flex lg:flex-row bg-clip-text gap-3 items-center justify-center sm:mt-6 font-silkscreen"
+        className="z-10 mt-2 items-center justify-center gap-3 bg-clip-text
+    text-center font-silkscreen text-2xl font-extrabold text-[#F6E445] sm:mt-6 sm:flex sm:flex-col sm:text-3xl lg:flex lg:flex-row lg:text-4xl"
       >
         <div>
           <span>I</span>
@@ -118,29 +121,27 @@ const Hero = () => {
           <span>.</span>
         </div>
       </h1>
-      <div className="flex flex-col sm:flex-row items-center w-96 mt-12 justify-center gap-5">
+      <div className="mt-12 flex w-96 flex-col items-center justify-center gap-5 sm:flex-row">
         <Link
           href={"/"}
-          className="mt-12 px-4 py-3 z-10 sm:px-7 sm:py-4 bg-blue-700 text-white text-center text-sm sm:text-lg rounded font-silkscreen hover:bg-blue-600 hover:cursor-pointer w-52 h-12 flex justify-center items-center relative btn"
+          className="btn relative z-10 mt-12 flex h-12 w-52 items-center justify-center rounded bg-blue-700 px-4 py-3 text-center font-silkscreen text-sm text-white hover:cursor-pointer hover:bg-blue-600 sm:px-7 sm:py-4 sm:text-lg"
         >
           <div className="two absolute inset-0 flex items-center justify-center">
             Join us now
           </div>
-          <div className="one absolute text-sm inset-0 flex items-center justify-center flex-nowrap">
+          <div className="one absolute inset-0 flex flex-nowrap items-center justify-center text-sm">
             Become a Member
           </div>
         </Link>
-
         <button
           onClick={() =>
             window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
           }
-          className="lg:mt-12 sm:mt-4 px-4 py-3 z-10 sm:px-7 sm:py-4 text-center text-sm sm:text-lg rounded font-silkscreen hover:cursor-pointer w-52 h-12 flex justify-center items-center relative btn border-2 border-[#F6E445]"
+          className="btn relative z-10 flex h-12 w-52 items-center justify-center rounded border-2 border-[#F6E445] px-4 py-3 text-center font-silkscreen text-sm hover:cursor-pointer sm:mt-4 sm:px-7 sm:py-4 sm:text-lg lg:mt-12"
         >
           <p>Know more</p>
         </button>
       </div>
-
       <ShootingStars />
       <StarsBackground />
     </div>
