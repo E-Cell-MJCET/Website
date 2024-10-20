@@ -212,72 +212,28 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Your Tech Troubles, Solved Fast!",
-    title: "Tech Help Desk",
-    src: "https://img.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.jpg?t=st=1729407792~exp=1729411392~hmac=8551b072526249b41d6c2d15b95045f198fed5e84bc200431abe49cdafea4793&w=826",
+    description: "Your Ticket To All Ecell Activities.",
+    title: "Access To All Ecell Events",
+    src: "/assets/membership/events.JPG",
     ctaText: "Know More",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
-          At E-Cell, we understand that navigating the world of technology can
-          be challenging. That&apos;s why we offer a dedicated Tech Help Desk
-          staffed by our talented tech team, ready to assist you with any
-          technical questions or issues you may encounter. Whether you need
-          guidance on coding, app development, or troubleshooting tech-related
-          problems, our team is here to provide personalised support and
-          solutions. We believe that collaboration and assistance are key to
-          fostering innovation, and our experienced members are eager to share
-          their knowledge and expertise, ensuring you have the resources you
-          need to succeed in your projects and entrepreneurial endeavours.
-        </p>
-      );
-    },
-  },
-  {
-    description: "VIP access to top industry connections.",
-    title: "Exclusive Networking Opportunities",
-    src: "https://www.baass.com/hs-fs/hubfs/benefits-of-attending-networking-events-2.jpg?width=694&name=benefits-of-attending-networking-events-2.jpg",
-    ctaText: "Know More",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          At E-Cell, we offer our members unparalleled access to a vast network
-          of industry leaders, successful entrepreneurs, and experienced
-          mentors. Through our exclusive networking events, members have the
-          chance to connect directly with venture capitalists, startup founders,
-          and tech innovators. Whether it&apos;s at our pitch nights, guest
-          speaker sessions, or startup expos, these events provide invaluable
-          opportunities to build relationships, gain insights, and explore
-          potential collaborations. E-Cell ensures that every member is equipped
-          not just with technical skills, but also with the connections they
-          need to thrive in the entrepreneurial world.
-        </p>
-      );
-    },
-  },
-
-  {
-    description: "Design a resume that shines.",
-    title: "Resume Building",
-    src: "https://img.freepik.com/free-photo/resume-application-employment-form-concept_53876-125148.jpg?t=st=1729408495~exp=1729412095~hmac=f1aa5b84be411c64ccaf6bc82a70131593c9ddc907b5f7b3008f34cc88867071&w=740",
-    ctaText: "Know More",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          At E-Cell, we are committed to enhancing your professional journey in
-          the tech world. Our club not only provides an engaging platform for
-          learning and collaboration but also focuses on building your resume
-          with valuable skills and experiences. Participate in our dynamic
-          events, including the renowned Hack Revolution, where you can showcase
-          your creativity and technical prowess in an intense hackathon
-          environment. By joining E-Cell, you will receive certificates that
-          validate your participation and achievements, giving your resume a
-          competitive edge in the job market. Elevate your career prospects with
-          us and become part of a thriving community of innovators and
-          entrepreneurs!
+          As a member of the E-Cell Tech Club, you gain exclusive access to a
+          diverse range of exciting events designed to enhance your
+          entrepreneurial journey and connect you with industry leaders.
+          Participate in our flagship event, Game of Investors, where you can
+          pitch your startup ideas to a panel of experienced investors and
+          receive invaluable feedback. Join us for the Battle of Brands, a
+          thrilling competition where teams strategize and showcase their
+          marketing skills to outshine their competitors. Don&apos;t miss the
+          highly anticipated IPL Auction, where participants simulate the
+          excitement of an auction, learning negotiation and decision-making
+          skills in a fast-paced environment. These events not only provide a
+          platform to showcase your talents but also foster networking
+          opportunities and real-world experience in the tech and
+          entrepreneurship space.
         </p>
       );
     },
@@ -305,28 +261,67 @@ const cards = [
     },
   },
   {
-    description: "Your Ticket To All Ecell Activities.",
-    title: "Access To All Ecell Events",
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDBI-fDgSK43aUqpNZDkzZzDjqFSDViVIRGA&s",
+    description: "Join events hosted by MNCs",
+    title: "Access events in major tech companies",
+    src: "/assets/membership/infosys.png",
     ctaText: "Know More",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
-          As a member of the E-Cell Tech Club, you gain exclusive access to a
-          diverse range of exciting events designed to enhance your
-          entrepreneurial journey and connect you with industry leaders.
-          Participate in our flagship event, Game of Investors, where you can
-          pitch your startup ideas to a panel of experienced investors and
-          receive invaluable feedback. Join us for the Battle of Brands, a
-          thrilling competition where teams strategize and showcase their
-          marketing skills to outshine their competitors. Don&apos;t miss the
-          highly anticipated IPL Auction, where participants simulate the
-          excitement of an auction, learning negotiation and decision-making
-          skills in a fast-paced environment. These events not only provide a
-          platform to showcase your talents but also foster networking
-          opportunities and real-world experience in the tech and
-          entrepreneurship space.
+          As a member of E-Cell, you gain exclusive invitations to events hosted
+          by some of the world&apos;s leading tech companies and multinational
+          corporations (MNCs). Whether it&apos;s a networking mixer, a hands-on
+          workshop, or an insider panel discussion, these events offer
+          unparalleled opportunities to connect with industry leaders, learn
+          about the latest innovations, and explore potential career paths. This
+          perk gives you a unique chance to engage directly with experts.
+        </p>
+      );
+    },
+  },
+  {
+    description: "VIP access to top industry connections.",
+    title: "Exclusive Networking Opportunities",
+    src: "https://www.baass.com/hs-fs/hubfs/benefits-of-attending-networking-events-2.jpg?width=694&name=benefits-of-attending-networking-events-2.jpg",
+    ctaText: "Know More",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          At E-Cell, we offer our members unparalleled access to a vast network
+          of industry leaders, successful entrepreneurs, and experienced
+          mentors. Through our exclusive networking events, members have the
+          chance to connect directly with venture capitalists, startup founders,
+          and tech innovators. Whether it&apos;s at our pitch nights, guest
+          speaker sessions, or startup expos, these events provide invaluable
+          opportunities to build relationships, gain insights, and explore
+          potential collaborations. E-Cell ensures that every member is equipped
+          not just with technical skills, but also with the connections they
+          need to thrive in the entrepreneurial world.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Your Tech Troubles, Solved Fast!",
+    title: "Tech Help Desk",
+    src: "https://img.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.jpg?t=st=1729407792~exp=1729411392~hmac=8551b072526249b41d6c2d15b95045f198fed5e84bc200431abe49cdafea4793&w=826",
+    ctaText: "Know More",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          At E-Cell, we understand that navigating the world of technology can
+          be challenging. That&apos;s why we offer a dedicated Tech Help Desk
+          staffed by our talented tech team, ready to assist you with any
+          technical questions or issues you may encounter. Whether you need
+          guidance on coding, app development, or troubleshooting tech-related
+          problems, our team is here to provide personalised support and
+          solutions. We believe that collaboration and assistance are key to
+          fostering innovation, and our experienced members are eager to share
+          their knowledge and expertise, ensuring you have the resources you
+          need to succeed in your projects and entrepreneurial endeavours.
         </p>
       );
     },
@@ -359,6 +354,30 @@ const cards = [
     },
   },
   {
+    description: "Design a resume that shines.",
+    title: "Resume Building",
+    src: "https://img.freepik.com/free-photo/resume-application-employment-form-concept_53876-125148.jpg?t=st=1729408495~exp=1729412095~hmac=f1aa5b84be411c64ccaf6bc82a70131593c9ddc907b5f7b3008f34cc88867071&w=740",
+    ctaText: "Know More",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          At E-Cell, we are committed to enhancing your professional journey in
+          the tech world. Our club not only provides an engaging platform for
+          learning and collaboration but also focuses on building your resume
+          with valuable skills and experiences. Participate in our dynamic
+          events, including the renowned Hack Revolution, where you can showcase
+          your creativity and technical prowess in an intense hackathon
+          environment. By joining E-Cell, you will receive certificates that
+          validate your participation and achievements, giving your resume a
+          competitive edge in the job market. Elevate your career prospects with
+          us and become part of a thriving community of innovators and
+          entrepreneurs!
+        </p>
+      );
+    },
+  },
+  {
     description: "Cultivate soft skills to excel in any field.",
     title: "Soft Skills",
     src: "/assets/membership/soft-skills.webp",
@@ -375,26 +394,6 @@ const cards = [
           ventures and corporate careers, helping you become more adaptable,
           persuasive, and efficient in professional environments. By honing
           these skills, you&apos;ll be better.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Join events hosted by MNCs",
-    title: "Access events in major tech companies",
-    src: "/assets/membership/infosys.png",
-    ctaText: "Know More",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          As a member of E-Cell, you gain exclusive invitations to events hosted
-          by some of the world&apos;s leading tech companies and multinational
-          corporations (MNCs). Whether it&apos;s a networking mixer, a hands-on
-          workshop, or an insider panel discussion, these events offer
-          unparalleled opportunities to connect with industry leaders, learn
-          about the latest innovations, and explore potential career paths. This
-          perk gives you a unique chance to engage directly with experts.
         </p>
       );
     },

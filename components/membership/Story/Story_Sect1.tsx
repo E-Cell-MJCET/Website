@@ -15,17 +15,16 @@ const StorySect1 = () => {
             className="relative"
           >
             <Image
-              src="/assets/GB/abid.png" // Replace with your image path
+              src="/assets/membership/GB.jpg" // Replace with your image path
               alt="Person story"
               className="rounded-lg shadow-lg"
               layout="responsive" // Optional: Adjust as needed
               width={500} // Set your desired width
-              height={300} // Set your desired height
+              height={200} // Set your desired height
             />
             <p className="absolute bottom-4 left-4 text-xs text-white">
-              From the desk of [name] <br />
               The E-Cell, MJCET <br />
-              February 2024
+              August 2024
             </p>
           </motion.div>
           <motion.div
@@ -35,30 +34,37 @@ const StorySect1 = () => {
             className="space-y-4"
           >
             <h2 className="text-3xl font-bold leading-tight md:text-4xl">
-              `The way to get started is to quit talking and begin doing.` –
-              Walt Disney
+              `The biggest{" "}
+              <span className="font-silkscreen text-[#f6e445]">risk</span> is
+              not taking any{" "}
+              <span className="font-silkscreen text-[#f6e445]">risk.</span>`
             </h2>
             <br />
             <p className="text-sm leading-relaxed">
-              <strong>Entrepreneurs, listen up!</strong>
+              <strong>
+                Aspiring Entrepreneurs and Engineers, here’s your moment!
+              </strong>
               <br />
-              In the heart of Mufakkam Jah College of Engineering and Technology
-              lies a vibrant hub for aspiring innovators.
+              <br />
+              At MJCET, we understand one truth: The biggest risk is standing
+              still and not taking any risk at all.
             </p>
             <p className="text-sm leading-relaxed">
-              A space where dreams ignite and ideas flourish...
+              Join our Entrepreneurship Cell to connect with trailblazers,
+              innovators, and industry experts.
               <br />
-              Where you can turn your passion into profit!
-            </p>
-            <p className="text-sm leading-relaxed">
-              Join our Entrepreneurship Cell—a gateway to unparalleled
-              opportunities.
+              <br />
+              Whether you&apos;re an engineer, tech enthusiast, or creative
+              thinker, we provide the tools and guidance to turn risks into
+              results and ideas into impact.
+              <br />
               <br />
               Connect with like-minded peers, seasoned mentors, and access
               resources to launch your journey.
             </p>
             <p className="text-sm leading-relaxed">
-              Ready to transform your ideas into reality?
+              Are you ready to challenge the status quo, push boundaries, and
+              make your mark?
             </p>
             <div>
               <button className="rounded-lg bg-blue-600 px-8 py-3 font-silkscreen font-bold text-white shadow-md transition duration-300">

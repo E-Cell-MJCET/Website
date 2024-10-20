@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 
+import why from "../../public/assets/membership/why.jpg";
+
 const WhyMembership = () => {
   return (
     <div className="flex min-h-screen flex-col items-center bg-black p-6 text-white">
@@ -18,7 +20,7 @@ const WhyMembership = () => {
           entrepreneurial journey.
         </p>
         <Image
-          src="https://i0.wp.com/florencerotary.org/wp-content/uploads/2020/02/Membership.jpg?fit=800%2C600&ssl=1"
+          src={why}
           alt="why membership"
           width={500}
           height={300}

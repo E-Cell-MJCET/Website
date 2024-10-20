@@ -22,8 +22,11 @@ export function FaqComp() {
         className="w-full bg-black font-silkscreen sm:w-1/2"
       >
         <AccordionItem value="item-1">
-          <AccordionTrigger> Can non-students join E-Cell?</AccordionTrigger>
-          <AccordionContent className=" text-left font-montserrat">
+          <AccordionTrigger className="text-left">
+            {" "}
+            Can non-students join E-Cell?
+          </AccordionTrigger>
+          <AccordionContent className="text-left font-montserrat">
             No, E-Cell focuses exclusively on current student members passionate
             about entrepreneurship and innovation. If you&apos;re a student
             interested in joining, we&apos;d love to have you! Please contact us
@@ -32,7 +35,10 @@ export function FaqComp() {
         </AccordionItem>
         {/* 2 */}
         <AccordionItem value="item-2">
-          <AccordionTrigger> What is the membership fee?</AccordionTrigger>
+          <AccordionTrigger className="text-left">
+            {" "}
+            What is the membership fee?
+          </AccordionTrigger>
           <AccordionContent className="text-left font-montserrat">
             The membership fee helps us organize events, provide resources, and
             support entrepreneurial activities. We keep it affordable to ensure
@@ -53,7 +59,7 @@ export function FaqComp() {
         {/* 4 */}
         <AccordionItem value="item-4">
           <AccordionTrigger> Can I pay in cash or online?</AccordionTrigger>
-          <AccordionContent className="font-montserrat">
+          <AccordionContent className="text-left font-montserrat">
             We offer multiple payment options for your convenience. You can pay
             the membership fee online via our secure portal or make a cash
             payment at our campus office. Further instructions will be provided
@@ -66,7 +72,7 @@ export function FaqComp() {
             {" "}
             Can students from different branches/departments join E-Cell?
           </AccordionTrigger>
-          <AccordionContent className="font-montserrat">
+          <AccordionContent className="text-left font-montserrat">
             Yes, E-Cell is open to students from all branches and departments.
             Entrepreneurship is a universal skill that can benefit everyone, and
             we encourage students from diverse backgrounds to join and
@@ -79,7 +85,7 @@ export function FaqComp() {
             {" "}
             I&apos;m a first-year student. Can I join E-Cell?
           </AccordionTrigger>
-          <AccordionContent className="font-montserrat">
+          <AccordionContent className="text-left font-montserrat">
             Absolutely! First-year students are welcome and encouraged to join.
             Being part of E-Cell early in your academic journey can help you
             develop entrepreneurial skills, gain mentorship, and start building
@@ -93,7 +99,7 @@ export function FaqComp() {
             {" "}
             How does E-Cell promote work-life balance for its members?
           </AccordionTrigger>
-          <AccordionContent className="font-montserrat">
+          <AccordionContent className="text-left font-montserrat">
             We understand the importance of balancing academics and
             extracurricular activities. E-Cell&apos;s events are designed for
             flexibility, allowing you to participate without overwhelming your
@@ -103,8 +109,11 @@ export function FaqComp() {
         </AccordionItem>
         {/* 8 */}
         <AccordionItem value="item-8">
-          <AccordionTrigger> How do I sign up for membership?</AccordionTrigger>
-          <AccordionContent className="font-montserrat">
+          <AccordionTrigger className="text-left">
+            {" "}
+            How do I sign up for membership?
+          </AccordionTrigger>
+          <AccordionContent className="text-left font-montserrat">
             Signing up is easy! Just visit our website and click the “Join Now”
             button. Fill out a short form with your details and select your
             membership type. After submitting your application, we&apos;ll send
