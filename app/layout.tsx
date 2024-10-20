@@ -1,5 +1,16 @@
 import "./globals.css";
-import { Montserrat, Staatliches, Nanum_Pen_Script } from "next/font/google";
+import {
+  Montserrat,
+  Staatliches,
+  Nanum_Pen_Script,
+  Silkscreen,
+} from "next/font/google";
+
+const silkscreen = Silkscreen({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-silkscreen",
+});
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -29,9 +40,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${montserrat.variable} ${staatliches.variable} ${nanum_pen_script.variable}`}
+      className={`${montserrat.variable} ${staatliches.variable} ${nanum_pen_script.variable} ${silkscreen.variable}`}
     >
-      <body className={montserrat.className}>{children}</body>
+      <body className={`${montserrat.className} `}>{children}</body>
     </html>
   );
 }
