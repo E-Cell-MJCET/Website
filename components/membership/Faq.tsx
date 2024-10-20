@@ -12,14 +12,14 @@ export function Faq() {
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center gap-3 px-4">
       <div className="z-50 text-center">
-        <h1 className="font-silkscreen z-30 text-3xl font-bold text-[#f6e445] sm:text-4xl">
+        <h1 className="z-30 font-silkscreen text-3xl font-bold text-[#f6e445] sm:text-4xl">
           Frequently Asked Questions
         </h1>
       </div>
       <Accordion
         type="single"
         collapsible
-        className="font-silkscreen z-50 w-full bg-black sm:w-1/2"
+        className="z-50 w-full bg-black font-silkscreen sm:w-1/2"
       >
         <AccordionItem value="item-1">
           <AccordionTrigger> Can non-students join E-Cell?</AccordionTrigger>
