@@ -1,5 +1,3 @@
-/* eslint-disable tailwindcss/classnames-order */
-/* eslint-disable tailwindcss/no-custom-classname */
 import {
   Accordion,
   AccordionContent,
@@ -12,24 +10,24 @@ import { StarsBackground } from "../ui/starsbackground";
 
 export function Faq() {
   return (
-    <div className="max-w-screen flex h-screen flex-col items-center justify-center gap-3 px-4">
+    <div className="flex h-screen w-screen flex-col items-center justify-center gap-3 px-4">
       <div className="z-50 text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold z-30 font-silkscreen text-[#f6e445]">
+        <h1 className="z-30 font-silkscreen text-3xl font-bold text-[#f6e445] sm:text-4xl">
           Frequently Asked Questions
         </h1>
       </div>
       <Accordion
         type="single"
         collapsible
-        className="w-full sm:w-1/2 font-silkscreen z-50 bg-black"
+        className="z-50 w-full bg-black font-silkscreen sm:w-1/2"
       >
         <AccordionItem value="item-1">
           <AccordionTrigger> Can non-students join E-Cell?</AccordionTrigger>
           <AccordionContent className="font-montserrat">
             No, E-Cell focuses exclusively on current student members passionate
             about entrepreneurship and innovation. If you&apos;re a student
-            interested in joining, we’d love to have you! Please contact us for
-            details on the application process.
+            interested in joining, we&apos;d love to have you! Please contact us
+            for details on the application process.
           </AccordionContent>
         </AccordionItem>
         {/* 2 */}
@@ -86,8 +84,8 @@ export function Faq() {
             Absolutely! First-year students are welcome and encouraged to join.
             Being part of E-Cell early in your academic journey can help you
             develop entrepreneurial skills, gain mentorship, and start building
-            your network right from the start. It’s a fantastic opportunity to
-            get involved from day one.
+            your network right from the start. It&apos;s a fantastic opportunity
+            to get involved from day one.
           </AccordionContent>
         </AccordionItem>
         {/* 7 */}
@@ -98,7 +96,7 @@ export function Faq() {
           </AccordionTrigger>
           <AccordionContent className="font-montserrat">
             We understand the importance of balancing academics and
-            extracurricular activities. E-Cell’s events are designed for
+            extracurricular activities. E-Cell&apos;s events are designed for
             flexibility, allowing you to participate without overwhelming your
             schedule. We offer both online and offline options, spacing out
             events to fit your academic commitments.

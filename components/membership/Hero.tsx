@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
-/* eslint-disable tailwindcss/no-custom-classname */
 "use client";
 import React from "react";
 import Image from "next/image";
@@ -9,11 +7,6 @@ import Link from "next/link";
 
 import { ShootingStars } from "../ui/shootingstars";
 import { StarsBackground } from "../ui/starsbackground";
-// import {BackgroundBeams} from '../ui/background-beams'
-// import {BackgroundLines} from '../ui/backgroundlines'
-// import {hero} from '../ui/hero'
-// import {LampContainer} from '../ui/lamp'
-// import { motion } from "framer-motion";
 
 const Hero = () => {
   //3
@@ -69,19 +62,17 @@ const Hero = () => {
   });
 
   return (
-    <div className="max-w-screen flex h-screen flex-col items-center justify-center overflow-hidden bg-black px-4">
+    <div className="flex h-screen w-screen flex-col items-center justify-center overflow-hidden bg-black px-4">
       <Image
         src="/icon-384x384.png"
         alt="Ecell Logo"
         width={304}
         height={304}
-        // eslint-disable-next-line tailwindcss/no-custom-classname
         className="demo1 z-10 mb-4 h-40 w-40 bg-clip-text sm:h-48 sm:w-48 lg:h-64 lg:w-64"
       />
       <p className="demo z-10 hidden bg-clip-text font-silkscreen text-3xl font-extrabold text-white sm:block sm:text-5xl ">
         Entrepreneurship Cell
       </p>
-      // eslint-disable-next-line tailwindcss/no-custom-classname
       <p className="demo z-10 bg-clip-text font-silkscreen text-3xl font-extrabold text-white sm:hidden ">
         E-Cell MJCET
       </p>
