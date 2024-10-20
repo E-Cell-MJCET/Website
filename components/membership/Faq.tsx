@@ -114,11 +114,15 @@ export function FaqComp() {
             How do I sign up for membership?
           </AccordionTrigger>
           <AccordionContent className="text-left font-montserrat">
-            Signing up is easy! Just visit our website and click the “Join Now”
-            button. Fill out a short form with your details and select your
-            membership type. After submitting your application, we&apos;ll send
-            further instructions on payment and next steps, so keep an eye out
-            for a confirmation email!
+            Signing up is easy! Just click on Get Membership in this page or
+            click{" "}
+            <a className="underline" href="https://forms.gle/ePeDHzKgrb9MUGTx6">
+              here.
+            </a>
+            Fill out a short form with your details and select your membership
+            type. After submitting your application, we&apos;ll send further
+            instructions on payment and next steps, so keep an eye out for a
+            confirmation email!
           </AccordionContent>
         </AccordionItem>
       </Accordion>
