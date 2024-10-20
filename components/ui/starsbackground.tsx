@@ -1,5 +1,4 @@
 "use client";
-import { cn } from "@/lib/utils";
 import React, {
   useState,
   useEffect,
@@ -7,6 +6,8 @@ import React, {
   RefObject,
   useCallback,
 } from "react";
+
+import { cn } from "@/lib/utils";
 
 interface StarProps {
   x: number;
@@ -41,9 +42,11 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
     (width: number, height: number): StarProps[] => {
       const area = width * height;
       const numStars = Math.floor(area * starDensity);
+
       return Array.from({ length: numStars }, () => {
         const shouldTwinkle =
           allStarsTwinkle || Math.random() < twinkleProbability;
+
         return {
           x: Math.random() * width,
           y: Math.random() * height,
@@ -67,8 +70,8 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
 
   useEffect(() => {
     const updateStars = () => {
-      if (canvasRef.current) {
-        const canvas = canvasRef.current;
+      const canvas = canvasRef.current; // Store reference in a variable
+      if (canvas) {
         const ctx = canvas.getContext("2d");
         if (!ctx) return;
 
@@ -82,13 +85,14 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
     updateStars();
 
     const resizeObserver = new ResizeObserver(updateStars);
-    if (canvasRef.current) {
-      resizeObserver.observe(canvasRef.current);
+    const currentCanvas = canvasRef.current; // Store reference for cleanup
+    if (currentCanvas) {
+      resizeObserver.observe(currentCanvas);
     }
 
     return () => {
-      if (canvasRef.current) {
-        resizeObserver.unobserve(canvasRef.current);
+      if (currentCanvas) {
+        resizeObserver.unobserve(currentCanvas);
       }
     };
   }, [
@@ -101,7 +105,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
   ]);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
+    const canvas = canvasRef.current; // Store reference in a variable
     if (!canvas) return;
 
     const ctx = canvas.getContext("2d");
