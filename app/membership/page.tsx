@@ -1,6 +1,6 @@
-"use client";
 import React from "react";
 import Head from "next/head";
+import { Metadata } from "next";
 
 import Hero from "@/components/membership/Hero";
 import Navbar from "@/components/membership/NavbarMem";
@@ -10,6 +10,12 @@ import WhyMembership from "@/components/membership/why-membership";
 import Footer from "@/components/home/footer";
 import Footers from "@/components/home/footer2";
 import Faq from "@/components/membership/Faq";
+
+export const metadata: Metadata = {
+  title: "E-Cell Membership | Unlock Exclusive Tech & Startup Perks",
+  description:
+    "Join E-Cell and gain exclusive access to startup acceleration, networking with industry leaders, tech events, mentorship, and skill-building opportunities. Elevate your entrepreneurial journey today!",
+};
 
 const MembershipPage = () => {
   return (
