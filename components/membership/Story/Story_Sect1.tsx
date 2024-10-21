@@ -19,7 +19,6 @@ const StorySect1 = () => {
               src="/assets/membership/GB.jpg" // Replace with your image path
               alt="Person story"
               className="rounded-lg shadow-lg"
-              layout="responsive" // Optional: Adjust as needed
               width={500} // Set your desired width
               height={200} // Set your desired height
             />

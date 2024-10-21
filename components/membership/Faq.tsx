@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import {
   Accordion,
   AccordionContent,
@@ -29,7 +31,10 @@ export function FaqComp() {
           <AccordionContent className="text-left font-montserrat">
             No, E-Cell focuses exclusively on current student members passionate
             about entrepreneurship and innovation. If you&apos;re a student
-            interested in joining, we&apos;d love to have you! Please contact us
+            interested in joining, we&apos;d love to have you! Please{" "}
+            <Link href="/contactus" className="underline">
+              contact us
+            </Link>
             for details on the application process.
           </AccordionContent>
         </AccordionItem>
@@ -61,9 +66,9 @@ export function FaqComp() {
           <AccordionTrigger> Can I pay in cash or online?</AccordionTrigger>
           <AccordionContent className="text-left font-montserrat">
             We offer multiple payment options for your convenience. You can pay
-            the membership fee online via our secure portal or make a cash
-            payment at our campus office. Further instructions will be provided
-            after registration.
+            the membership fee online via the application form or make a cash
+            payment at our registeration desk near Ad Cell or E-Cell Room
+            (Beside Veg Canteen).
           </AccordionContent>
         </AccordionItem>
         {/* 5 */}
@@ -103,8 +108,7 @@ export function FaqComp() {
             We understand the importance of balancing academics and
             extracurricular activities. E-Cell&apos;s events are designed for
             flexibility, allowing you to participate without overwhelming your
-            schedule. We offer both online and offline options, spacing out
-            events to fit your academic commitments.
+            schedule. Spacing out events to fit your academic commitments.
           </AccordionContent>
         </AccordionItem>
         {/* 8 */}
