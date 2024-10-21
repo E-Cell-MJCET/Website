@@ -11,7 +11,6 @@ import Footer from "@/components/home/footer";
 import Footers from "@/components/home/footer2";
 import Faq from "@/components/membership/Faq";
 
-
 export const metadata: Metadata = {
   title: "E-Cell Membership | Unlock Exclusive Tech & Startup Perks",
   description:
