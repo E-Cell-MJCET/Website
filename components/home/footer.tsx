@@ -27,21 +27,38 @@ const Footer = () => {
               />
             </div>
             <div>
-              <p className="mt-4">Student Co-Ordinators Contact</p>
-              <div className="mt-2 flex  items-center">
-                <div className="text-black dark:text-white">
-                  <PhoneInTalkIcon />
-                </div>
-                <Link href={"tel:+919515130124"}>
-                  <div className="ml-[4px] font-medium text-black dark:text-white">
-                    {" "}
-                    Shujauddin :-{" "}
-                    <span className="text-black hover:underline dark:text-white">
-                      +91 95151 30124
-                    </span>
-                  </div>
-                </Link>
-                <div className="ml-[4px] font-medium"> </div>
+              <p className="mt-4 text-black dark:text-white">
+                Student Coordinators Contact
+              </p>
+              {/* start */}
+              <div className="mt-4 flex flex-col flex-wrap">
+                {[
+                  {
+                    name: "Faiz Ali",
+                    role: "Relations and Outreach",
+                    phone: "+91 91 82571 088",
+                  },
+                  {
+                    name: "Mohammad Irfan",
+                    role: "CIO",
+                    phone: " +91 89191 63391",
+                  },
+                ].map((contact,index) => (
+                  <Link
+                    href={`tel:${contact.phone}`}
+                    key={index}
+                    className="m-2 flex items-center rounded-3xl bg-blue-800 px-3 py-1 text-white shadow-lg hover:bg-blue-500 "
+                  >
+                    <PhoneInTalkIcon />
+                    <div className="ml-2">
+                      <div className="font-bold">{contact.name}</div>
+                      <p className="text-sm">{contact.role}</p>
+                      <div className="text-white underline">
+                        {contact.phone}
+                      </div>
+                    </div>
+                  </Link>
+                ))}
               </div>
               <div className="mt-6 flex  items-center">
                 <div className="text-black dark:text-white">
@@ -65,7 +82,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <div className="h-[270px] w-[350px] overflow-hidden rounded-lg bg-black lg:w-[450px] ">
+            <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-lg  lg:w-[450px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15226.609263238766!2d78.442398!3d17.4284654!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9181ad8c26f1%3A0x6c397f5fd4f4c585!2sECELL%20MJCET!5e0!3m2!1sen!2sin!4v1701412482039!5m2!1sen!2sin"
                 className="h-[270px] w-[350px] border-none dark:opacity-75 lg:w-[450px]"
