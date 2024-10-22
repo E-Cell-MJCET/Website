@@ -36,7 +36,7 @@ const Footer = () => {
                   {
                     name: "Faiz Ali",
                     role: "Relations and Outreach",
-                    phone: "+91 91 82571 088",
+                    phone: "+91 82571 088",
                   },
                   {
                     name: "Mohammad Irfan",
@@ -47,7 +47,7 @@ const Footer = () => {
                   <Link
                     href={`tel:${contact.phone}`}
                     key={index}
-                    className="m-2 flex items-center rounded-3xl bg-blue-800 px-3 py-1 text-white shadow-lg hover:bg-blue-500 "
+                    className="m-2 flex items-center rounded-3xl bg-blue-700 px-3 py-1 text-white shadow-lg hover:bg-blue-500 "
                   >
                     <PhoneInTalkIcon />
                     <div className="ml-2">
