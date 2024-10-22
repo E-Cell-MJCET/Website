@@ -36,7 +36,7 @@ const Footer = () => {
                   {
                     name: "Faiz Ali",
                     role: "Relations and Outreach",
-                    phone: "+91 82571 088",
+                    phone: "+91 91825 71088",
                   },
                   {
                     name: "Mohammad Irfan",
