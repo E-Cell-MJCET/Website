@@ -1,6 +1,7 @@
 import React from "react";
 
 import PrevEv from "./prevEv";
+import UpcomEv from "./upcomEv";
 
 const PageEv = () => {
   const HackRev2 = "/assets/upcoming-events/hackrev.jpeg";
@@ -29,7 +30,16 @@ const PageEv = () => {
               </div>
             </div>
             <div className="mt-20 bg-black px-3 text-center text-[30px] font-bold text-white opacity-100 ">
-              Something great is cooking up :)
+              <div className="mt-20 flex flex-col items-center justify-center bg-black"> 
+                <UpcomEv
+                title="Market Mayhem"
+                desc="Join the Ultimate Investment Challenge! Dive into the world of strategic investing with E-Cell’s “Game of Investors.” Discover the excitement of competitive finance as you invest in dynamic companies and make strategic decisions over 10 thrilling rounds. Boost your chances of winning fantastic rewards and the title of Best Investor!"
+                image={goi}
+                link="/"
+                date="29th July 2024"
+                venue="Gulam Ahmed Hall, MJCET"
+              />
+              </div>
             </div>
           </div>
           <div className="mt-20 flex flex-col items-center justify-center bg-black">
