@@ -1,6 +1,7 @@
 import React from "react";
 
 import PrevEv from "./prevEv";
+import UpcomEv from "./upcomEv";
 
 const PageEv = () => {
   const HackRev2 = "/assets/upcoming-events/hackrev.jpeg";
@@ -11,6 +12,22 @@ const PageEv = () => {
   const byob = "/assets/upcoming-events/byob.png";
   const stack = "/assets/upcoming-events/stack.jpg";
   const goi = "/assets/upcoming-events/goi.jpg";
+  const mayhem = "/assets/upcoming-events/market-mayhem.png";
+  const MARKET_MAYHEM_desc = `Round 1. Guess the Price: Estimate the prices of various products, Round 2. Guess the Brand Using Emojis: Identify brands based on emoji clues.
+Round 3. Debate: Teams engage in a marketing-related debate, Round 4. Surprise Round: A mystery challenge revealed on the spot.
+Participants: Duo: ₹60, Teams of up to 4 members: ₹100, Free for E-cell members`;
+
+const formatDescription = (desc: string): JSX.Element[] => {
+  return desc.split('\n').map((line, index) => {
+    return (
+      <div key={index} className="flex flex-wrap">
+        {line.split(', ').map((item, idx) => (
+          <span key={idx} className="mr-2">{item}</span>
+        ))}
+      </div>
+    );
+  });
+};
 
   return (
     <div className="flex h-auto  justify-center bg-black pt-32">
@@ -22,14 +39,23 @@ const PageEv = () => {
         <div className="flex flex-col items-center justify-center bg-black">
           <div className="flex flex-col items-center justify-center ">
             <div className="flex flex-col items-center justify-center">
-              <div className="my-[2px] h-[3px] w-[260px] rounded-lg bg-ecell-red-100"></div>
-              <div className="mt-[2px] h-[3px] w-[320px] rounded-lg bg-ecell-red-100"></div>
+              <div className="my-[2px] h-[2px] w-[260px] rounded-lg bg-ecell-red-100"></div>
+              <div className="mt-px h-[3px] w-[320px] rounded-lg bg-ecell-red-100"></div>
               <div className="absolute bg-black px-3 text-center text-[30px] font-bold text-white opacity-100">
                 Upcoming Events
               </div>
             </div>
-            <div className="mt-20 bg-black px-3 text-center text-[30px] font-bold text-white opacity-100 ">
-              Something great is cooking up :)
+            <div className="mt-10 bg-black px-3 text-center text-[30px] font-bold text-white opacity-100 ">
+              <div className="mt-20 flex flex-col items-center justify-center bg-black"> 
+                <UpcomEv
+                title="Market Mayhem"
+                desc={formatDescription(MARKET_MAYHEM_desc)}
+                image={mayhem}
+                link="https://docs.google.com/forms/d/e/1FAIpQLSfCTSfcZ9ir2L68x0syzzEv9XT2Z3wfD6zdV2KUbR0OrwOqug/viewform"
+                date="29th October 2024, 1:45 PM Onwards"
+                venue="Gulam Ahmed Hall, MJCET"
+              />
+              </div>
             </div>
           </div>
           <div className="mt-20 flex flex-col items-center justify-center bg-black">
