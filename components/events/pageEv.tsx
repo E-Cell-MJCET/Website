@@ -39,13 +39,13 @@ const formatDescription = (desc: string): JSX.Element[] => {
         <div className="flex flex-col items-center justify-center bg-black">
           <div className="flex flex-col items-center justify-center ">
             <div className="flex flex-col items-center justify-center">
-              <div className="my-[2px] h-[3px] w-[260px] rounded-lg bg-ecell-red-100"></div>
-              <div className="mt-[2px] h-[3px] w-[320px] rounded-lg bg-ecell-red-100"></div>
+              <div className="my-[2px] h-[2px] w-[260px] rounded-lg bg-ecell-red-100"></div>
+              <div className="mt-px h-[3px] w-[320px] rounded-lg bg-ecell-red-100"></div>
               <div className="absolute bg-black px-3 text-center text-[30px] font-bold text-white opacity-100">
                 Upcoming Events
               </div>
             </div>
-            <div className="mt-20 bg-black px-3 text-center text-[30px] font-bold text-white opacity-100 ">
+            <div className="mt-10 bg-black px-3 text-center text-[30px] font-bold text-white opacity-100 ">
               <div className="mt-20 flex flex-col items-center justify-center bg-black"> 
                 <UpcomEv
                 title="Market Mayhem"
