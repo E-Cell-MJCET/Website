@@ -133,6 +133,7 @@ Start from dev branch: When starting any work, always create your branch from th
 Branch naming convention:
 * For new features: feat/featurename
 * For bug fixes: fix/whatyouarefixing
+* For updating content: update/whereyouareupdating
 * For documentation updates: docs/whatyouupdated
 * For refactoring code: refactor/whatyourefactored
 * For urgent hotfixes: hotfix/urgentfix
