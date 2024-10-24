@@ -12,6 +12,22 @@ const PageEv = () => {
   const byob = "/assets/upcoming-events/byob.png";
   const stack = "/assets/upcoming-events/stack.jpg";
   const goi = "/assets/upcoming-events/goi.jpg";
+  const mayhem = "/assets/upcoming-events/market-mayhem.png";
+  const MARKET_MAYHEM_desc = `Round 1. Guess the Price: Estimate the prices of various products, Round 2. Guess the Brand Using Emojis: Identify brands based on emoji clues.
+Round 3. Debate: Teams engage in a marketing-related debate, Round 4. Surprise Round: A mystery challenge revealed on the spot.
+Participants: Duo: ₹60, Teams of up to 4 members: ₹100, Free for E-cell members`;
+
+const formatDescription = (desc: string): JSX.Element[] => {
+  return desc.split('\n').map((line, index) => {
+    return (
+      <div key={index} className="flex flex-wrap">
+        {line.split(', ').map((item, idx) => (
+          <span key={idx} className="mr-2">{item}</span>
+        ))}
+      </div>
+    );
+  });
+};
 
   return (
     <div className="flex h-auto  justify-center bg-black pt-32">
@@ -33,10 +49,10 @@ const PageEv = () => {
               <div className="mt-20 flex flex-col items-center justify-center bg-black"> 
                 <UpcomEv
                 title="Market Mayhem"
-                desc="Join the Ultimate Investment Challenge! Dive into the world of strategic investing with E-Cell’s “Game of Investors.” Discover the excitement of competitive finance as you invest in dynamic companies and make strategic decisions over 10 thrilling rounds. Boost your chances of winning fantastic rewards and the title of Best Investor!"
-                image={goi}
-                link="/"
-                date="29th July 2024"
+                desc={formatDescription(MARKET_MAYHEM_desc)}
+                image={mayhem}
+                link="https://docs.google.com/forms/d/e/1FAIpQLSfCTSfcZ9ir2L68x0syzzEv9XT2Z3wfD6zdV2KUbR0OrwOqug/viewform"
+                date="29th October 2024, 1:45 PM Onwards"
                 venue="Gulam Ahmed Hall, MJCET"
               />
               </div>

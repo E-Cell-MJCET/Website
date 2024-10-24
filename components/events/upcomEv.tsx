@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { ReactNode } from "react";
 import Calendar from "@mui/icons-material/CalendarMonthRounded";
 import Location from "@mui/icons-material/LocationOn";
 
 interface UpcomEvProps {
   title: string;
-  desc: string;
+  desc: string | ReactNode;
   image: any;
   link: string;
   date: string;
