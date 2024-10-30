@@ -1,11 +1,11 @@
 import { Calendar } from "lucide-react";
 import Location from "@mui/icons-material/LocationOn";
 import Image from "next/image";
-import React from "react";
+import React, { ReactNode } from "react";
 
 interface PrevEvProps {
   title: string;
-  desc: string;
+  desc: string | ReactNode;
   image: any;
   date: string;
   venue: string;
