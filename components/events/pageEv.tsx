@@ -1,7 +1,6 @@
 import React from "react";
 
 import PrevEv from "./prevEv";
-import UpcomEv from "./upcomEv";
 
 const PageEv = () => {
   const HackRev2 = "/assets/upcoming-events/hackrev.jpeg";
@@ -47,14 +46,7 @@ const formatDescription = (desc: string): JSX.Element[] => {
             </div>
             <div className="mt-10 bg-black px-3 text-center text-[30px] font-bold text-white opacity-100 ">
               <div className="mt-20 flex flex-col items-center justify-center bg-black"> 
-                <UpcomEv
-                title="Market Mayhem"
-                desc={formatDescription(MARKET_MAYHEM_desc)}
-                image={mayhem}
-                link="https://docs.google.com/forms/d/e/1FAIpQLSfCTSfcZ9ir2L68x0syzzEv9XT2Z3wfD6zdV2KUbR0OrwOqug/viewform"
-                date="29th October 2024, 1:45 PM Onwards"
-                venue="Gulam Ahmed Hall, MJCET"
-              />
+                <p className="mb-10">Something great is cooking up :)</p>
               </div>
             </div>
           </div>
@@ -68,6 +60,13 @@ const formatDescription = (desc: string): JSX.Element[] => {
                 Previous Events
               </div>
             </div>
+            <PrevEv
+                title="Market Mayhem"
+                desc={formatDescription(MARKET_MAYHEM_desc)}
+                image={mayhem}
+                date="29th October 2024, 1:45 PM Onwards"
+                venue="Gulam Ahmed Hall, MJCET"
+            />
             <PrevEv
               title="Game Of Investors"
               desc="Join the Ultimate Investment Challenge! Dive into the world of strategic investing with E-Cell’s “Game of Investors.” Discover the excitement of competitive finance as you invest in dynamic companies and make strategic decisions over 10 thrilling rounds. Boost your chances of winning fantastic rewards and the title of Best Investor!"
