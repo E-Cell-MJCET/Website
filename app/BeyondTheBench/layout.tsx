@@ -10,7 +10,7 @@ export const metadata = {
     title: "Beyond The Bench - The Ultimate Sports Adventure",
     description:
       "Join 'Beyond The Bench' for an exhilarating sports journey filled with strategy, surprises, and creativity. Step off the sidelines and into the action!",
-    url: "https://https://www.ecellmjcet.com/BeyondTheBench", // Change URL to match the actual website if different
+    url: "https://www.ecellmjcet.com/BeyondTheBench", // Change URL to match the actual website if different
     type: "website",
     image: "/assets/comingup", // Placeholder for image, update as per actual content
   },
@@ -26,7 +26,7 @@ export const metadata = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Beyond The Bench",
-    url: "https://https://www.ecellmjcet.com/BeyondTheBench",
+    url: "https://www.ecellmjcet.com/BeyondTheBench",
     logo: "/assets/Logo/logo-big-colour.png",
     contactPoint: {
       "@type": "ContactPoint",
