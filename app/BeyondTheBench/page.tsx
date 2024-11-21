@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 const Page = () => {
   const router = useRouter();
 
-  // Redirect after 6-7 seconds
+  // Redirect after 2.5 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push('https://forms.gle/sbysJDPsDXdwKjxE7'); // Change to your desired path
