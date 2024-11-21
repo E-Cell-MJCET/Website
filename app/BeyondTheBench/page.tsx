@@ -7,10 +7,11 @@ const Page = () => {
 
   // Redirect after 2.5 seconds
   useEffect(() => {
-    // const timer = setTimeout(() => {
-    //   router.push('https://forms.gle/sbysJDPsDXdwKjxE7'); // Change to your desired path
-    // }, 2500);
-    // return () => clearTimeout(timer); // Cleanup timer on component unmount
+    const timer = setTimeout(() => {
+      router.push("https://forms.gle/sbysJDPsDXdwKjxE7"); // Change to your desired path
+    }, 2500);
+
+    return () => clearTimeout(timer); // Cleanup timer on component unmount
   }, [router]);
 
   return (
