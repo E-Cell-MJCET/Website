@@ -1,7 +1,6 @@
 import React from "react";
 
 import PrevEv from "./prevEv";
-import UpcomEv from "./upcomEv";
 
 const PageEv = () => {
   const HackRev2 = "/assets/upcoming-events/hackrev.jpeg";
@@ -38,7 +37,7 @@ const PageEv = () => {
         </div>
         {/* Upcoming Events Section */}
         <div className="flex flex-col items-center justify-center bg-black">
-          <div className="flex flex-col items-center justify-center mb-10">
+          <div className="mb-10 flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center">
               <div className="my-[2px] h-[3px] w-[260px] rounded-lg bg-ecell-red-100"></div>
               <div className="mt-[2px] h-[3px] w-[320px] rounded-lg bg-ecell-red-100"></div>
@@ -47,7 +46,6 @@ const PageEv = () => {
               Upcoming Events
             </div>
           </div>
-          {/* Wrap "Beyond The Bench" card with <a> tag */}
           <a href="https://ecellmjcet.com/BeyondTheBench" target="_blank" rel="noopener noreferrer">
             <PrevEv
               title="Beyond The Bench"
@@ -59,8 +57,8 @@ const PageEv = () => {
           </a>
         </div>
         {/* Previous Events Section */}
-        <div className="flex flex-col items-center justify-center bg-black mt-20">
-          <div className="flex flex-col items-center justify-center mb-10">
+        <div className="mt-20 flex flex-col items-center justify-center bg-black">
+          <div className="mb-10 flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center">
               <div className="my-[2px] h-[3px] w-[260px] rounded-lg bg-ecell-red-100"></div>
               <div className="mt-[2px] h-[3px] w-[320px] rounded-lg bg-ecell-red-100"></div>
