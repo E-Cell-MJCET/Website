@@ -22,7 +22,7 @@ const LeftSection = ({ user }: { user: UserType }) => {
       <div className="flex flex-col items-center">
         <div className="size-32 relative mb-4">
           <Image
-            src={"/assets/GB/nazmeen.jpg"}
+            src={user.image}
             alt="Profile Picture"
             width={200}
             height={200}
