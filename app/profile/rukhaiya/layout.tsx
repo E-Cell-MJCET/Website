@@ -12,7 +12,7 @@ export const metadata = {
       "Discover the achievements and experiences of Rukhaiya Begum, a dedicated and innovative individual with a passion for leadership and collaboration.",
     url: "https://www.ecellmjcet.com/profile/rukhaiya", // Change URL to match the actual profile URL
     type: "profile",
-    image: "https://cf6znql0-3000.inc1.devtunnels.ms//assets/GB/rukhaiya.jpg", // Update with the actual image path
+    image: "https://ecellmjcet.com/assets/GB/rukhaiya.jpg", // Update with the actual image path
   },
   twitter: {
     card: "summary_large_image",
@@ -22,14 +22,14 @@ export const metadata = {
       "Rukhaiya Begum, profile, leadership, collaboration, innovation, events, communication, connections, Ecell, ecell, ecellmjcet, Ecell Mjcet, E-Cell MJCET",
     description:
       "Explore the profile of Rukhaiya Begum, a creative problem-solver with a passion for leadership, collaboration, and innovation.",
-    image: "https://cf6znql0-3000.inc1.devtunnels.ms//assets/GB/rukhaiya.jpg", // Update with the actual image path
+    image: "https://ecellmjcet.com/assets/GB/rukhaiya.jpg", // Update with the actual image path
   },
   structuredData: {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Rukhaiya Begum",
     url: "https://www.ecellmjcet.com/profile/rukhaiya",
-    image: "https://cf6znql0-3000.inc1.devtunnels.ms//assets/GB/rukhaiya.jpg",
+    image: "https://ecellmjcet.com/assets/GB/rukhaiya.jpg",
     jobTitle: "Execom",
     worksFor: {
       "@type": "Organization",
