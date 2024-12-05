@@ -8,7 +8,6 @@ import AboutSection from "./AboutSection";
 import EducationSection from "./EducationSection";
 import LeftSection from "./LeftSection";
 import AchievementSection from "./Achievements";
-import ProjectSection from "./ProjectsSection";
 
 // Interfaces for data structure
 interface Experience {
@@ -81,7 +80,6 @@ function CompletePage({ userData }: { userData: UserType }) {
               {/* About Section */}
               <AboutSection user={user} />
               <ExperienceSection experiences={user?.experience} />
-              <ProjectSection user={user?.projects} />
               <EducationSection user={user?.education} />
               <AchievementSection user={user?.achievements} />
             </div>
