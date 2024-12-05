@@ -26,14 +26,14 @@ const LeftSection = ({ user }: { user: UserType }) => {
             alt="Profile Picture"
             width={200}
             height={200}
-            className="h-40 w-40 rounded-full border-4 border-[#EDE8D0] object-cover"
+            className="h-40 w-40 rounded-full border-4 border-[#8e2ea3] object-cover"
           />
         </div>
         {/* Static Profile Name */}
         <h1 className="text-2xl font-semibold text-gray-100">{user.name}</h1>
         <h2 className="text-lg text-gray-300">{user.position}</h2>
         <div className="mt-2 flex space-x-2">
-          <span className="rounded-full bg-[#EDE8D0] px-3 py-1 text-xs text-black">
+          <span className="rounded-full bg-[#8e2ea3] px-3 py-1 text-xs text-white">
             {user.portfolio}
           </span>
         </div>
@@ -44,7 +44,7 @@ const LeftSection = ({ user }: { user: UserType }) => {
               <Link
                 href={user.social.github}
                 target="_blank"
-                className="text-[#EDE8D0] hover:text-indigo-400"
+                className="text-[#fe019a] hover:text-indigo-400"
               >
                 <FaGithub size={24} />
               </Link>
@@ -53,7 +53,7 @@ const LeftSection = ({ user }: { user: UserType }) => {
               <Link
                 href={user.social.linkedin}
                 target="_blank"
-                className="text-[#EDE8D0] hover:text-indigo-400"
+                className="text-[#8e2ea3] hover:text-indigo-400"
               >
                 <FaLinkedin size={24} />
               </Link>
@@ -62,7 +62,7 @@ const LeftSection = ({ user }: { user: UserType }) => {
               <Link
                 href={user.social.instagram}
                 target="_blank"
-                className="text-[#EDE8D0] hover:text-indigo-400"
+                className="text-[#fe019a] hover:text-indigo-400"
               >
                 <FaInstagram size={24} />
               </Link>
